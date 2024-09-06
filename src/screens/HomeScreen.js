@@ -5,6 +5,7 @@ import {
   SafeAreaView,
   Image,
   TextInput,
+  Button,
 } from "react-native";
 import React, { useEffect, useState } from "react";
 import {
@@ -15,18 +16,19 @@ import { StatusBar } from "expo-status-bar";
 import { heightPercentageToDP as hp } from "react-native-responsive-screen";
 import Categories from "../components/Categories";
 import axios from "axios";
-import { get } from "react-native/Libraries/TurboModule/TurboModuleRegistry";
 import Recipes from "../components/Recipes";
+import { useTranslation } from "react-i18next";  // Import translation hook
 
 export default function HomeScreen() {
   const [activeCategory, setActiveCategory] = useState("Beef");
   const [categories, setCategories] = useState([]);
   const [meals, setMeals] = useState([]);
+  const { t, i18n } = useTranslation();  // Initialize i18next translation functions
 
   useEffect(() => {
     getCategories();
     getRecipes();
-  }, []);
+  }, [i18n.language]);  // Rerun when language changes
 
   const handleChangeCategory = (category) => {
     getRecipes(category);
@@ -41,7 +43,6 @@ export default function HomeScreen() {
       );
       if (response && response.data) {
         setCategories(response.data.categories);
-        console.log(response.data.categories);
       }
     } catch (error) {
       console.log(error.message);
@@ -49,9 +50,19 @@ export default function HomeScreen() {
   };
 
   const getRecipes = async (category = "Beef") => {
+    let categoryToUse = category;
+
+    if (i18n.language === "vi") {
+      categoryToUse = "Bò";  // Example: Vietnamese equivalent
+    } else if (i18n.language === "ja") {
+      categoryToUse = "牛肉";  // Example: Japanese equivalent
+    } else if (i18n.language === "zh") {
+      categoryToUse = "牛肉";  // Example: Chinese equivalent
+    }
+
     try {
       const response = await axios.get(
-        `https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`
+        `https://www.themealdb.com/api/json/v1/1/filter.php?c=${categoryToUse}`
       );
       if (response && response.data) {
         setMeals(response.data.meals);
@@ -89,16 +100,14 @@ export default function HomeScreen() {
 
           {/* Headlines */}
           <View className="mx-4 space-y-1 mb-2">
-            <View>
-              <Text
-                style={{
-                  fontSize: hp(3.5),
-                }}
-                className="font-bold text-neutral-800"
-              >
-                Fast & Delicious
-              </Text>
-            </View>
+            <Text
+              style={{
+                fontSize: hp(3.5),
+              }}
+              className="font-bold text-neutral-800"
+            >
+              {t('fast_and_delicious')}  {/* Wrap translations in Text */}
+            </Text>
 
             <Text
               style={{
@@ -106,7 +115,7 @@ export default function HomeScreen() {
               }}
               className="font-extrabold text-neutral-800"
             >
-              Food You <Text className="text-[#f64e32]">Love</Text>
+              {t('food_you_love')} <Text className="text-[#f64e32]">Love</Text> {/* Make sure nested texts are also wrapped in <Text> */}
             </Text>
           </View>
 
@@ -119,8 +128,9 @@ export default function HomeScreen() {
                 strokeWidth={3}
               />
             </View>
+            {/* Translated placeholder */}
             <TextInput
-              placeholder="Search Your Favorite Food"
+              placeholder={t('search_placeholder')}  
               placeholderTextColor={"gray"}
               style={{
                 fontSize: hp(1.7),
@@ -144,6 +154,16 @@ export default function HomeScreen() {
           <View>
             <Recipes meals={meals} categories={categories} />
           </View>
+
+          {/* Language Switcher */}
+          <View style={{ flexDirection: 'row', justifyContent: 'space-around', marginTop: 20 }}>
+            <Button title={t("english_us")} onPress={() => i18n.changeLanguage('en')} />
+            <Button title={t("english_uk")} onPress={() => i18n.changeLanguage('en-UK')} />
+            <Button title={t("vietnamese")} onPress={() => i18n.changeLanguage('vi')} />
+            <Button title={t("japanese")} onPress={() => i18n.changeLanguage('ja')} />
+            <Button title={t("chinese")} onPress={() => i18n.changeLanguage('zh')} />
+          </View>
+
         </ScrollView>
       </SafeAreaView>
     </View>
