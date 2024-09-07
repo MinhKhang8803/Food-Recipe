@@ -69,7 +69,7 @@ export default function WelcomeScreen() {
             paddingHorizontal: hp(5),
             borderRadius: hp(1.5),
           }}
-          onPress={() => navigation.navigate("Home")}
+          onPress={() => navigation.navigate("Login")}
         >
           <Text
             style={{
