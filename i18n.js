@@ -9,6 +9,12 @@ const resources = {
       fast_and_delicious: "Fast & Delicious",
       food_you_love: "Food You Love",
       search_placeholder: "Search Your Favorite Food",
+      love: "Love",
+      english_us: "English (US)",
+      english_uk: "English (UK)",
+      vietnamese: "Vietnamese",
+      japanese: "Japanese",
+      chinese: "Chinese",
     },
   },
   "en-UK": {
@@ -23,6 +29,12 @@ const resources = {
       fast_and_delicious: "Nhanh & Ngon",
       food_you_love: "Món ăn bạn yêu thích",
       search_placeholder: "Tìm kiếm món ăn yêu thích",
+      love: "Yêu",
+      english_us: "Tiếng Anh (Mỹ)",
+      english_uk: "Tiếng Anh (Anh)",
+      vietnamese: "Tiếng Việt",
+      japanese: "Tiếng Nhật",
+      chinese: "Tiếng Trung",
     },
   },
   ja: {
@@ -51,7 +63,7 @@ i18n
     lng: 'en',  
     fallbackLng: 'en', 
     interpolation: {
-      escapeValue: false,  
+      escapeValue: false,  // React already escapes values
     },
   });
 

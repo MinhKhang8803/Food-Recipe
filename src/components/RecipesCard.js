@@ -4,7 +4,8 @@ import { heightPercentageToDP as hp } from "react-native-responsive-screen";
 import { LinearGradient } from "expo-linear-gradient";
 
 export default function RecipesCard({ index, navigation, item }) {
-  let isEven = index % 2 == 0;
+  const isEven = index % 2 === 0;
+  
   return (
     <View>
       <Pressable
@@ -21,7 +22,7 @@ export default function RecipesCard({ index, navigation, item }) {
           }}
           style={{
             width: "100%",
-            height: index % 3 == 0 ? hp(25) : hp(35),
+            height: index % 3 === 0 ? hp(25) : hp(35),
             borderRadius: 35,
           }}
           className="bg-black/5 relative"

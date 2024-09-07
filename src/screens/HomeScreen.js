@@ -6,8 +6,8 @@ import {
   Image,
   TextInput,
   Button,
-} from "react-native";
-import React, { useEffect, useState } from "react";
+} from 'react-native';
+import React, { useEffect, useState } from "react"; // Correct import, do not duplicate it
 import {
   MagnifyingGlassIcon,
   AdjustmentsHorizontalIcon,
@@ -115,7 +115,7 @@ export default function HomeScreen() {
               }}
               className="font-extrabold text-neutral-800"
             >
-              {t('food_you_love')} <Text className="text-[#f64e32]">Love</Text> {/* Make sure nested texts are also wrapped in <Text> */}
+              {t('food_you_love')} <Text className="text-[#f64e32]">{t('love')}</Text> {/* Make sure nested texts are also wrapped in <Text> */}
             </Text>
           </View>
 

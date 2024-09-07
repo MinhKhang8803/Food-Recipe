@@ -7,8 +7,11 @@ import MasonryList from "@react-native-seoul/masonry-list";
 import Loading from "./Loading";
 import Animated, { FadeInDown } from "react-native-reanimated";
 
-export default function Recipes({ meals, categories }) {
+export default function Recipes({ meals = [], categories = [] }) {
   const navigation = useNavigation();
+
+  // Safeguard: Ensure meals and categories are not null
+  const isLoading = !meals || meals.length === 0 || !categories || categories.length === 0;
 
   return (
     <Animated.View
@@ -21,13 +24,13 @@ export default function Recipes({ meals, categories }) {
         }}
         className="font-semibold text-neutral-600"
       >
-        {meals.length} Recipes
+        {meals?.length ?? 0} Recipes
       </Text>
 
       <Animated.View
         entering={FadeInDown.delay(200).duration(700).springify().damping(12)}
->
-        {categories.length == 0 || meals.length == 0 ? (
+      >
+        {isLoading ? (
           <Loading size="large" className="mt-20" />
         ) : (
           <MasonryList
