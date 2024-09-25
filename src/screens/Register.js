@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import {
     StyleSheet,
     SafeAreaView,
@@ -7,11 +7,13 @@ import {
     Text,
     TouchableOpacity,
     TextInput,
+    Alert,
 } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
-import { useNavigation } from '@react-navigation/native'; // Import useNavigation hook
+import axios from 'axios';
+import { AuthContext } from '../../App'; // Import AuthContext
 
-export default function Register() {
+export default function Register({ navigation }) {
     const [form, setForm] = useState({
         fullName: '',
         email: '',
@@ -19,7 +21,29 @@ export default function Register() {
         phone: '',
     });
 
-    const navigation = useNavigation(); // Initialize navigation
+    const { login } = useContext(AuthContext); // To log in after successful registration
+
+    const handleRegister = async () => {
+        try {
+            // Make POST request to register the user
+            const response = await axios.post('http://your-server-ip:5000/register', {
+                fullName: form.fullName,
+                email: form.email,
+                password: form.password,
+                phone: form.phone,
+            });
+
+            if (response.status === 201) {
+                Alert.alert('Success', 'Registration successful! You are now logged in.');
+                // Automatically log in the user after registration
+                await login(form.email, form.password);
+            }
+        } catch (error) {
+            // Improved error handling to show meaningful message
+            const errorMessage = error.response?.data?.message || 'Something went wrong.';
+            Alert.alert('Registration Failed', errorMessage);
+        }
+    };
 
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: '#f64e32' }}>
@@ -101,9 +125,7 @@ export default function Register() {
 
                         <View style={styles.formAction}>
                             <TouchableOpacity
-                                onPress={() => {
-                                    // handle onPress for Register
-                                }}>
+                                onPress={handleRegister}>
                                 <View style={styles.btn}>
                                     <Text style={styles.btnText}>Sign up</Text>
                                 </View>
@@ -113,7 +135,7 @@ export default function Register() {
                 </KeyboardAwareScrollView>
 
                 <TouchableOpacity
-                    onPress={() => navigation.navigate('Login')} // Navigate to Login when "Sign in" is pressed
+                    onPress={() => navigation.navigate('Login')}
                     style={{ marginTop: 'auto' }}>
                     <Text style={styles.formFooter}>
                         Already have an account?{' '}
@@ -124,6 +146,7 @@ export default function Register() {
         </SafeAreaView>
     );
 }
+
 const styles = StyleSheet.create({
     container: {
         paddingVertical: 24,
