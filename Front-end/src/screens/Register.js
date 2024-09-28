@@ -26,7 +26,7 @@ export default function Register({ navigation }) {
     const handleRegister = async () => {
         try {
             // Make POST request to register the user
-            const response = await axios.post('http://your-server-ip:5000/register', {
+            const response = await axios.post('http://localhost:5000/api/auth/register', {
                 fullName: form.fullName,
                 email: form.email,
                 password: form.password,

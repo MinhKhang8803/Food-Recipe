@@ -34,7 +34,7 @@ export default function App() {
 
   const login = async (email, password) => {
     try {
-      const response = await axios.post('http://your-server-ip:5000/login', { email, password });
+      const response = await axios.post('http://<backend-server-ip>:5000/api/auth/login', { email, password });
       const token = response.data.token;
       if (token) {
         setUserToken(token);
