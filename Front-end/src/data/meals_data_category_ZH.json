@@ -1,0 +1,88 @@
+{
+    "categories": [
+        {
+            "idCategory": "1",
+            "strCategory": "牛肉",
+            "strCategoryDescription": "牛肉是牛肉的烹饪名称，特别是骨骼肌。人类自史前时代就开始食用牛肉。[1] 牛肉是优质蛋白质和必需营养素的来源。[2]",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/beef.png"
+        },
+        {
+            "idCategory": "2",
+            "strCategory": "鸡",
+            "strCategoryDescription": "鸡是一种家禽，是红原鸡的一个亚种。它是最常见和分布最广泛的家养动物之一，截至 2011 年，总数量超过 190 亿只。[1] 人类通常将鸡作为食物来源（食用其肉和蛋），但很少将其作为宠物。",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/chicken.png"
+        },
+        {
+            "idCategory": "3",
+            "strCategory": "甜点",
+            "strCategoryDescription": "甜点是一顿饭的结束。甜点通常由甜食组成，例如甜点或水果，也可能是饮料，例如甜酒或甜酒，但在美国，甜点可能包括咖啡、奶酪、坚果或其他在其他地方被视为单独一道菜的咸味食品。在世界某些地区，例如中非和西非的大部分地区以及中国的大部分地区，没有以甜点结束一顿饭的传统。\n\n甜点一词适用于许多甜点，例如饼干、蛋糕、曲奇、蛋奶冻、果冻、冰淇淋、糕点、馅饼、布丁、甜汤和蛋挞。水果也经常出现在甜点中，因为它具有天然的甜味。有些文化会将通常咸味的食物变甜以制作甜点。",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/dessert.png"
+        },
+        {
+            "idCategory": "4",
+            "strCategory": "羊肉",
+            "strCategoryDescription": "羔羊肉、羊羔肉和羊肉是不同年龄的家养绵羊（Ovis aries 物种）的肉。\n\n一岁的绵羊被称为羔羊肉，其肉也被称为羔羊肉。 一岁以上的幼羊肉被称为羊羔肉；在美国以外，这也是活体动物的术语。 成年绵羊的肉被称为羊肉，这个术语仅用于指肉，而不用于指活体动物。 在印度次大陆，羊肉一词几乎总是用来指山羊肉。\n\n",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/lamb.png"
+        },
+        {
+            "idCategory": "5",
+            "strCategory": "各种各样的",
+            "strCategoryDescription": "不属于其他类别的一般食品",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/miscellaneous.png"
+        },
+        {
+            "idCategory": "6",
+            "strCategory": "面食",
+            "strCategoryDescription": "意大利面是传统意大利美食的主食，最早可追溯到 1154 年的西西里岛。\n\n意大利面也常用于指各种意大利面食，通常是一种面条，由硬粒小麦粉与水或鸡蛋混合的无酵面团制成，制成片状或各种形状，然后通过煮沸或烘烤制成。对于那些想要不同口味或需要避免含麸质产品的人来说，有些意大利面可以用米粉代替小麦制作。[3][4] 意大利面可分为两大类：干面条 (pasta secca) 和新鲜面条 (pasta fresca)。",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/pasta.png"
+        },
+        {
+            "idCategory": "7",
+            "strCategory": "猪肉",
+            "strCategoryDescription": "猪肉是家猪（Sus scrofa domesticus）肉的烹饪名称。它是世界上最常食用的肉类[1]，养猪的历史可以追溯到公元前 5000 年。猪肉既可以新鲜烹制也可以腌制食用。腌制可以延长猪肉制品的保质期。火腿、熏猪肉、腌火腿、培根和香肠都是腌制猪肉的例子。熟食是烹饪的一个分支，专门制作预制肉制品，其中许多都是猪肉制品。\n\n猪肉是东亚和东南亚最受欢迎的肉类，在西方世界也很常见，尤其是中欧。它在亚洲美食中因其脂肪含量和宜人的口感而备受推崇。犹太教和穆斯林饮食法禁止食用猪肉，这一禁忌根深蒂固，有几种可能的原因。以色列限制销售猪肉，在某些穆斯林国家则禁止销售猪肉。",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/pork.png"
+        },
+        {
+            "idCategory": "8",
+            "strCategory": "海鲜",
+            "strCategoryDescription": "海鲜是指任何被人类视为食物的海洋生物。海鲜主要包括鱼类和贝类。贝类包括各种软体动物、甲壳类动物和棘皮动物。从历史上看，鲸鱼和海豚等海洋哺乳动物曾被人类食用，尽管在现代，这种情况有所减少。可食用的海洋植物，如一些海藻和微藻，在世界各地被广泛食用，尤其是在亚洲（参见海菜类别）。在北美，“海鲜”一词扩展到人类食用的淡水生物，尽管在英国并不普遍如此，因此所有可食用的水生生物都可以称为海鲜。为了完整起见，本文包括所有可食用的水生生物。",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/seafood.png"
+        },
+        {
+            "idCategory": "9",
+            "strCategory": "边",
+            "strCategoryDescription": "配菜有时也被称为小菜、配菜或简称为配菜，是一顿饭中与主菜或主菜一起搭配的食物。在许多西方国家，沙拉、土豆和面包等配菜通常与主菜搭配。过去十年内推出的新配菜[需要引证]，如米饭和蒸粗麦粉，已经在整个欧洲变得相当受欢迎，尤其是在正式场合（蒸粗麦粉更常出现在与中东菜肴一起的晚宴上）。",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/side.png"
+        },
+        {
+            "idCategory": "10",
+            "strCategory": "起动机",
+            "strCategoryDescription": "在现代法国餐桌服务以及大部分英语国家（美国和加拿大部分地区除外）的餐桌服务中，主菜是一道在主菜之前上桌的菜；它可能是第一道菜，也可能是汤或其他小菜之后上桌的菜。在美国和加拿大部分地区，主菜是主菜或一顿饭的唯一一道菜。\n\n从历史上看，主菜是 18 和 19 世纪正式法国餐桌服务的“古典秩序”阶段之一。它是“第一道菜”的一部分，包括浓汤、开胃菜和主菜（包括肉汤和雷维）。“第二道菜”包括烤肉（rôti）、沙拉和主菜（主菜有时会被分成自己的“第三道菜”）。最后的一道菜只包括甜点。[3]:3–11 :13–25",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/starter.png"
+        },
+        {
+            "idCategory": "11",
+            "strCategory": "素食",
+            "strCategoryDescription": "素食主义既是一种不使用动物产品的做法，特别是在饮食方面，也是一种拒绝将动物作为商品的相关哲学。[b] 遵循这种饮食或哲学的人被称为素食主义者（发音为 /ˈviːɡən/ VEE-gən）。素食主义有时会分为几种类别。饮食素食主义者（或严格素食主义者）不食用动物产品，不仅不吃肉，也不吃蛋类、奶制品和其他动物衍生物质。[c] 道德素食主义者通常指那些不仅遵循素食饮食，还将这种哲学延伸到生活的其他领域，并反对将动物用于任何目的的人。[d] 另一个术语是环境素食主义，指避免食用动物产品，因为收获或工业化养殖动物会破坏环境并且不可持续。",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/vegan.png"
+        },
+        {
+            "idCategory": "12",
+            "strCategory": "素食",
+            "strCategoryDescription": "素食主义是一种戒除肉类（红肉、家禽、海鲜和任何其他动物的肉）的做法，也可能包括戒除动物屠宰的副产品。\n\n素食主义可能出于各种原因。许多人出于对有意识生命的尊重而反对吃肉。这些道德动机已被编入各种宗教信仰和动物权利倡导中。素食主义的其他动机与健康、政治、环境、文化、美学、经济或个人偏好有关。饮食也有变化：蛋奶素食包括鸡蛋和奶制品，蛋奶素食包括鸡蛋但不包括奶制品，奶素食包括奶制品但不包括鸡蛋。纯素饮食不包括所有动物产品，包括鸡蛋和奶制品。一些素食主义者还避免使用其他动物产品，如蜂蜡、皮革或丝绸服装和鹅脂鞋油。",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/vegetarian.png"
+        },
+        {
+            "idCategory": "十三",
+            "strCategory": "早餐",
+            "strCategoryDescription": "早餐是一天的第一餐。英语中早餐一词指的是打破前一晚的禁食期。大多数地方很可能存在一份或多份“典型”或“传统”的早餐菜单，但它们的组成因地而异，并且随着时间的推移而变化，因此如今全球范围内的早餐准备和配料种类繁多。",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/breakfast.png"
+        },
+        {
+            "idCategory": "14",
+            "strCategory": "山羊",
+            "strCategoryDescription": "家山羊或简称山羊（Capra aegagrus hircus）是家山羊的一个亚种，由西南亚和东欧的野山羊驯化而来。山羊属于牛科动物和羊亚科动物，这意味着它与绵羊密切相关。山羊有 300 多个不同的品种。山羊是最古老的驯养动物之一，在世界大部分地区都被用来产奶、吃肉、取皮毛和制作兽皮。山羊奶经常被制成山羊奶酪。",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/goat.png"
+        }
+    ]
+}

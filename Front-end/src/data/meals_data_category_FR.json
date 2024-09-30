@@ -1,0 +1,88 @@
+{
+    "categories": [
+        {
+            "idCategory": "1",
+            "strCategory": "Bœuf",
+            "strCategoryDescription": "Le bœuf est le nom culinaire de la viande bovine, en particulier du muscle squelettique. Les humains mangent du bœuf depuis la préhistoire.[1] Le bœuf est une source de protéines de haute qualité et de nutriments essentiels.[2]",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/beef.png"
+        },
+        {
+            "idCategory": "2",
+            "strCategory": "Poulet",
+            "strCategoryDescription": "Le poulet est une espèce de volaille domestique, une sous-espèce du coq de la jungle rouge. C'est l'un des animaux domestiques les plus courants et les plus répandus, avec une population totale de plus de 19 milliards en 2011.[1] Les humains élèvent généralement des poulets comme source de nourriture (en consommant à la fois leur viande et leurs œufs) et, plus rarement, comme animaux de compagnie.",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/chicken.png"
+        },
+        {
+            "idCategory": "3",
+            "strCategory": "Dessert",
+            "strCategoryDescription": "Le dessert est un plat qui conclut un repas. Le plat se compose généralement d'aliments sucrés, tels que des confiseries ou des fruits, et éventuellement d'une boisson comme du vin de dessert ou de la liqueur. Cependant, aux États-Unis, il peut inclure du café, des fromages, des noix ou d'autres plats salés considérés comme un plat distinct ailleurs. Dans certaines parties du monde, comme une grande partie de l'Afrique centrale et occidentale et la plupart des régions de Chine, il n'existe pas de tradition de dessert pour conclure un repas. \n\nLe terme dessert peut s'appliquer à de nombreuses confiseries, telles que les biscuits, les gâteaux, les cookies, les crèmes anglaises, les gélatines, les glaces, les pâtisseries, les tartes, les puddings et les soupes et tartelettes sucrées. Les fruits sont également couramment présents dans les desserts en raison de leur douceur naturelle. Certaines cultures sucrent les aliments plus généralement salés pour créer des desserts.",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/dessert.png"
+        },
+        {
+            "idCategory": "4",
+            "strCategory": "Agneau",
+            "strCategoryDescription": "L'agneau, le hogget et le mouton sont les viandes des moutons domestiques (espèce Ovis aries) à différents âges. \n\nUn mouton dans sa première année est appelé agneau, et sa viande est également appelée agneau. La viande d'un jeune mouton de plus d'un an est hogget ; en dehors des États-Unis, c'est également un terme pour l'animal vivant. La viande d'un mouton adulte est du mouton, un terme utilisé uniquement pour la viande, pas pour les animaux vivants. Le terme mouton est presque toujours utilisé pour désigner la viande de chèvre dans le sous-continent indien. \n\n",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/lamb.png"
+        },
+        {
+            "idCategory": "5",
+            "strCategory": "Divers",
+            "strCategoryDescription": "Aliments généraux qui n’entrent pas dans une autre catégorie",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/miscellaneous.png"
+        },
+        {
+            "idCategory": "6",
+            "strCategory": "Pâtes",
+            "strCategoryDescription": "Les pâtes sont un aliment de base de la cuisine italienne traditionnelle, la première mention remontant à 1154 en Sicile. \n\nÉgalement couramment utilisées pour désigner la variété de plats de pâtes, les pâtes sont généralement des nouilles faites d'une pâte sans levain de farine de blé dur mélangée à de l'eau ou des œufs et formées en feuilles ou de formes diverses, puis cuites par ébullition ou cuisson au four. Comme alternative pour ceux qui souhaitent un goût différent ou qui doivent éviter les produits contenant du gluten, certaines pâtes peuvent être préparées en utilisant de la farine de riz à la place du blé.[3][4] Les pâtes peuvent être divisées en deux grandes catégories, les pâtes sèches (pasta secca) et les pâtes fraîches (pasta fresca).",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/pasta.png"
+        },
+        {
+            "idCategory": "7",
+            "strCategory": "Porc",
+            "strCategoryDescription": "Le porc est le nom culinaire de la viande de porc domestique (Sus scrofa domesticus). C'est la viande la plus consommée dans le monde[1], avec des preuves d'élevage de porcs remontant à 5000 av. J.-C. Le porc est consommé à la fois fraîchement cuit et en conserve. La salaison prolonge la durée de conservation des produits à base de porc. Le jambon, le porc fumé, le jambon, le bacon et les saucisses sont des exemples de porc en conserve. La charcuterie est la branche de la cuisine consacrée aux produits à base de viande préparée, dont beaucoup sont à base de porc. \n\nLe porc est la viande la plus populaire en Asie de l'Est et du Sud-Est, et est également très répandu dans le monde occidental, en particulier en Europe centrale. Il est très prisé dans les cuisines asiatiques pour sa teneur en matières grasses et sa texture agréable. La consommation de porc est interdite par la loi alimentaire juive et musulmane, un tabou profondément enraciné dans la tradition, avec plusieurs causes possibles suggérées. La vente de porc est limitée en Israël et illégale dans certains pays musulmans.",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/pork.png"
+        },
+        {
+            "idCategory": "8",
+            "strCategory": "Fruit de mer",
+            "strCategoryDescription": "Les fruits de mer désignent toute forme de vie marine considérée comme un aliment par les humains. Les fruits de mer comprennent principalement les poissons et les crustacés. Les crustacés comprennent diverses espèces de mollusques, de crustacés et d'échinodermes. Historiquement, les mammifères marins tels que les baleines et les dauphins ont été consommés comme aliment, bien que cela se produise dans une moindre mesure à l'époque moderne. Les plantes marines comestibles, telles que certaines algues et microalgues, sont largement consommées comme fruits de mer dans le monde entier, en particulier en Asie (voir la catégorie des légumes de mer). En Amérique du Nord, mais pas généralement au Royaume-Uni, le terme « fruits de mer » s'étend aux organismes d'eau douce consommés par les humains, de sorte que toute vie aquatique comestible peut être qualifiée de fruits de mer. Par souci d'exhaustivité, cet article inclut toute la vie aquatique comestible.",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/seafood.png"
+        },
+        {
+            "idCategory": "9",
+            "strCategory": "Côté",
+            "strCategoryDescription": "Un plat d'accompagnement, parfois appelé plat d'accompagnement, plat d'accompagnement ou simplement plat d'accompagnement, est un aliment qui accompagne l'entrée ou le plat principal d'un repas. Les plats d'accompagnement tels que la salade, les pommes de terre et le pain sont couramment utilisés avec les plats principaux dans de nombreux pays du monde occidental. Les nouveaux plats d'accompagnement introduits au cours de la dernière décennie, tels que le riz et le couscous, sont devenus très populaires dans toute l'Europe, en particulier lors d'occasions formelles (le couscous apparaissant plus fréquemment lors des dîners avec des plats du Moyen-Orient).",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/side.png"
+        },
+        {
+            "idCategory": "10",
+            "strCategory": "Démarreur",
+            "strCategoryDescription": "Une entrée dans le service de table français moderne et dans une grande partie du monde anglophone (à l’exception des États-Unis et de certaines régions du Canada) est un plat servi avant le plat principal d’un repas ; il peut s’agir du premier plat servi, ou il peut suivre une soupe ou un ou plusieurs autres petits plats. Aux États-Unis et dans certaines régions du Canada, une entrée est le plat principal ou le seul plat d’un repas. \n\nHistoriquement, l’entrée était l’une des étapes de « l’ordre classique » du service de table français formel des XVIIIe et XIXe siècles. Elle faisait partie du « premier service » du repas, qui comprenait un potage, un hors-d’œuvre et une entrée (y compris le bouillon et le relevé). Le « deuxième service » comprenait un rôti (rôti), une salade et un entremets (l’entremets étant parfois séparé en un « troisième service » qui lui est propre). Le service final ne comprenait que le dessert.[3]:3–11 :13–25",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/starter.png"
+        },
+        {
+            "idCategory": "11",
+            "strCategory": "Végétalien",
+            "strCategoryDescription": "Le véganisme est à la fois la pratique de l'abstention de l'utilisation de produits d'origine animale, en particulier dans l'alimentation, et une philosophie associée qui rejette le statut de marchandise des animaux. [b] Un adepte de l'un ou l'autre de ce régime ou de cette philosophie est appelé végétalien (prononcé /ˈviːɡən/ VEE-gən). Des distinctions sont parfois faites entre plusieurs catégories de véganisme. Les végétaliens diététiques (ou végétariens stricts) s'abstiennent de consommer des produits d'origine animale, non seulement de la viande, mais aussi des œufs, des produits laitiers et d'autres substances d'origine animale. [c] Le terme végétalien éthique est souvent appliqué à ceux qui non seulement suivent un régime végétalien mais étendent la philosophie à d'autres domaines de leur vie et s'opposent à l'utilisation des animaux à quelque fin que ce soit. [d] Un autre terme est le véganisme environnemental, qui fait référence à l'évitement des produits d'origine animale en partant du principe que la récolte ou l'élevage industriel d'animaux est dommageable pour l'environnement et non durable.",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/vegan.png"
+        },
+        {
+            "idCategory": "12",
+            "strCategory": "Végétarien",
+            "strCategoryDescription": "Le végétarisme est la pratique consistant à s'abstenir de consommer de la viande (viande rouge, volaille, fruits de mer et chair de tout autre animal), et peut également inclure l'abstention de sous-produits de l'abattage d'animaux. \n\nLe végétarisme peut être adopté pour diverses raisons. De nombreuses personnes refusent de manger de la viande par respect pour la vie sensible. De telles motivations éthiques ont été codifiées dans diverses croyances religieuses, ainsi que dans la défense des droits des animaux. D'autres motivations du végétarisme sont liées à la santé, à la politique, à l'environnement, à la culture, à l'esthétique, à l'économie ou aux préférences personnelles. Il existe également des variantes de ce régime alimentaire : un régime ovo-lacto-végétarien comprend à la fois des œufs et des produits laitiers, un régime ovo-végétarien comprend des œufs mais pas de produits laitiers, et un régime lacto-végétarien comprend des produits laitiers mais pas d'œufs. Un régime végétalien exclut tous les produits d'origine animale, y compris les œufs et les produits laitiers. Certains végétaliens évitent également d'autres produits d'origine animale tels que la cire d'abeille, les vêtements en cuir ou en soie et le cirage à la graisse d'oie.",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/vegetarian.png"
+        },
+        {
+            "idCategory": "13",
+            "strCategory": "Petit-déjeuner",
+            "strCategoryDescription": "Le petit-déjeuner est le premier repas de la journée. En anglais, ce mot désigne la rupture de la période de jeûne de la nuit précédente. Il est fort probable qu'un ou plusieurs menus de petit-déjeuner « typiques » ou « traditionnels » existent dans la plupart des endroits, mais leur composition varie considérablement d'un endroit à l'autre et a varié au fil du temps, de sorte qu'à l'échelle mondiale, une très large gamme de préparations et d'ingrédients sont désormais associés au petit-déjeuner.",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/breakfast.png"
+        },
+        {
+            "idCategory": "14",
+            "strCategory": "Chèvre",
+            "strCategoryDescription": "La chèvre domestique ou simplement chèvre (Capra aegagrus hircus) est une sous-espèce de C. aegagrus domestiquée à partir de la chèvre sauvage d'Asie du Sud-Ouest et d'Europe de l'Est. La chèvre fait partie de la famille animale des Bovidae et de la sous-famille des Caprinae, ce qui signifie qu'elle est étroitement liée aux moutons. Il existe plus de 300 races distinctes de chèvres. Les chèvres sont l'une des plus anciennes espèces animales domestiquées et ont été utilisées pour le lait, la viande, la fourrure et la peau dans une grande partie du monde. Le lait de chèvre est souvent transformé en fromage de chèvre.",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/goat.png"
+        }
+    ]
+}

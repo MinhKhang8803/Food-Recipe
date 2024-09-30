@@ -1,47 +1,43 @@
-import {
-  View,
-  Text,
-  ScrollView,
-  TouchableOpacity,
-} from "react-native";
 import React, { useEffect, useState } from "react";
-import { StatusBar } from "expo-status-bar";
-import { CachedImage } from "../../utils/index";
+import { View, Text, ScrollView, Image, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import {
-  heightPercentageToDP as hp,
-  widthPercentageToDP as wp,
-} from "react-native-responsive-screen";
+import { heightPercentageToDP as hp, widthPercentageToDP as wp } from "react-native-responsive-screen";
 import { ChevronLeftIcon } from "react-native-heroicons/outline";
 import { HeartIcon } from "react-native-heroicons/solid";
 import Loading from "../components/Loading";
-import axios from "axios";
 import Animated, { FadeInDown } from "react-native-reanimated";
 import { useTranslation } from "react-i18next";
 
-// Function to translate text using LibreTranslate API
-async function translateText(text, targetLang) {
-  const url = `https://libretranslate.de/translate`;
+// Function to dynamically load the correct language JSON file
+const loadRecipeDetailsForLanguage = async (lang, mealId) => {
+  try {
+    let mealData;
 
-  for (let attempt = 0; attempt < 3; attempt++) {
-    try {
-      const response = await axios.post(url, {
-        q: text,
-        source: 'en',
-        target: targetLang,
-        format: 'text',
-      });
-
-      return response.data.translatedText;
-    } catch (error) {
-      console.error('Error translating text, attempt', attempt + 1, error.message);
-      if (attempt === 2) {
-        return text;  // Fallback to original text if translation fails after 3 attempts
-      }
+    switch (lang) {
+      case "vi":
+        mealData = (await import("../data/all_meals_data_VI.json")).default;
+        break;
+      case "fr":
+        mealData = (await import("../data/all_meals_data_FR.json")).default;
+        break;
+      case "ja":
+        mealData = (await import("../data/all_meals_data_JA.json")).default;
+        break;
+      case "zh":
+        mealData = (await import("../data/all_meals_data_ZH.json")).default;
+        break;
+      default:
+        mealData = (await import("../data/all_meals_data.json")).default; // English as default
+        break;
     }
-  }
-}
 
+    // Find the selected meal by ID
+    return mealData.find((meal) => meal.idMeal === mealId);
+  } catch (error) {
+    console.error(`Failed to load recipe details for language: ${lang}`, error);
+    return null;
+  }
+};
 
 export default function RecipeDetailsScreen(props) {
   let item = props.route.params;
@@ -52,31 +48,25 @@ export default function RecipeDetailsScreen(props) {
   const [isFavourite, setIsFavourite] = useState(false);
 
   useEffect(() => {
-    getMealData(item.idMeal);
+    fetchMealData(item.idMeal);
   }, [i18n.language]);
 
-  const getMealData = async (id) => {
-    try {
-      const response = await axios.get(
-        `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`
-      );
+  const fetchMealData = async (id) => {
+    setIsLoading(true);
+    const mealData = await loadRecipeDetailsForLanguage(i18n.language, id);
+    setMeal(mealData);
+    setIsLoading(false);
+  };
 
-      if (response && response.data) {
-        const mealData = response.data.meals[0];
+  // Get the image for the ingredient dynamically
+  const getIngredientImage = (ingredient) => {
+    if (!ingredient) return "https://www.themealdb.com/images/ingredients/default.png";
 
-        // Translate meal details
-        const translatedInstructions = await translateText(mealData.strInstructions, i18n.language);
-        const translatedMeal = {
-          ...mealData,
-          strInstructions: translatedInstructions,
-        };
+    // Sanitize and replace spaces with underscores
+    const sanitizedIngredient = ingredient.trim().replace(/\s+/g, "%20");
 
-        setMeal(translatedMeal);
-        setIsLoading(false);
-      }
-    } catch (error) {
-      console.log(error.message);
-    }
+    // Return the URL for the ingredient image
+    return `https://www.themealdb.com/images/ingredients/${sanitizedIngredient}.png`;
   };
 
   const ingredientsIndexes = (meal) => {
@@ -100,12 +90,9 @@ export default function RecipeDetailsScreen(props) {
         paddingBottom: 30,
       }}
     >
-      <StatusBar style="white" />
-
       <View className="flex-row justify-center">
-        <CachedImage
-          uri={item.strMealThumb}
-          sharedTransitionTag={item.strMeal}
+        <Image
+          source={{ uri: item.strMealThumb }}
           style={{
             width: wp(100),
             height: hp(45),
@@ -165,6 +152,7 @@ export default function RecipeDetailsScreen(props) {
             </Text>
           </Animated.View>
 
+          {/* Display Ingredients */}
           <Animated.View
             className="space-y-4 p-4"
             entering={FadeInDown.delay(300).duration(700).springify().damping(12)}
@@ -176,9 +164,11 @@ export default function RecipeDetailsScreen(props) {
             <View className="space-y-2 ml-3">
               {ingredientsIndexes(meal).map((i) => (
                 <View className="flex-row space-x-4 items-center" key={i}>
-                  <View
-                    className="bg-[#f64e32] rounded-full"
-                    style={{ height: hp(1.5), width: hp(1.5) }}
+                  {/* Ingredient image */}
+                  <Image
+                    source={{ uri: getIngredientImage(meal["strIngredient" + i]) }}
+                    style={{ width: hp(5), height: hp(5), resizeMode: "cover" }}
+                    className="rounded-full"
                   />
                   <View className="flex-row space-x-2">
                     <Text style={{ fontSize: hp(1.7) }} className="font-medium text-neutral-800">
@@ -193,6 +183,7 @@ export default function RecipeDetailsScreen(props) {
             </View>
           </Animated.View>
 
+          {/* Display Instructions */}
           <Animated.View
             className="space-y-4 p-4"
             entering={FadeInDown.delay(400).duration(700).springify().damping(12)}
