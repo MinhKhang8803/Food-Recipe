@@ -2,8 +2,6 @@ import {
   View,
   Text,
   ScrollView,
-  Image,
-  Touchable,
   TouchableOpacity,
 } from "react-native";
 import React, { useEffect, useState } from "react";
@@ -19,19 +17,43 @@ import { HeartIcon } from "react-native-heroicons/solid";
 import Loading from "../components/Loading";
 import axios from "axios";
 import Animated, { FadeInDown } from "react-native-reanimated";
+import { useTranslation } from "react-i18next";
+
+// Function to translate text using LibreTranslate API
+async function translateText(text, targetLang) {
+  const url = `https://libretranslate.de/translate`;
+
+  for (let attempt = 0; attempt < 3; attempt++) {
+    try {
+      const response = await axios.post(url, {
+        q: text,
+        source: 'en',
+        target: targetLang,
+        format: 'text',
+      });
+
+      return response.data.translatedText;
+    } catch (error) {
+      console.error('Error translating text, attempt', attempt + 1, error.message);
+      if (attempt === 2) {
+        return text;  // Fallback to original text if translation fails after 3 attempts
+      }
+    }
+  }
+}
+
 
 export default function RecipeDetailsScreen(props) {
   let item = props.route.params;
   const navigation = useNavigation();
+  const { i18n } = useTranslation();
   const [meal, setMeal] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [isFavourite, setIsFavourite] = useState(false);
 
-  console.log("Meal", meal);
-
   useEffect(() => {
     getMealData(item.idMeal);
-  });
+  }, [i18n.language]);
 
   const getMealData = async (id) => {
     try {
@@ -40,7 +62,16 @@ export default function RecipeDetailsScreen(props) {
       );
 
       if (response && response.data) {
-        setMeal(response.data.meals[0]);
+        const mealData = response.data.meals[0];
+
+        // Translate meal details
+        const translatedInstructions = await translateText(mealData.strInstructions, i18n.language);
+        const translatedMeal = {
+          ...mealData,
+          strInstructions: translatedInstructions,
+        };
+
+        setMeal(translatedMeal);
         setIsLoading(false);
       }
     } catch (error) {
@@ -71,8 +102,6 @@ export default function RecipeDetailsScreen(props) {
     >
       <StatusBar style="white" />
 
-      {/* Recipe Image */}
-
       <View className="flex-row justify-center">
         <CachedImage
           uri={item.strMealThumb}
@@ -83,8 +112,6 @@ export default function RecipeDetailsScreen(props) {
           }}
         />
       </View>
-
-      {/* Back Button and Favorite Icon */}
 
       <View className="w-full absolute flex-row justify-between items-center pt-10">
         <View className="p-2 rounded-full bg-white ml-5">
@@ -108,8 +135,6 @@ export default function RecipeDetailsScreen(props) {
         </View>
       </View>
 
-      {/* Meal Description */}
-
       {isLoading ? (
         <Loading size="large" className="mt-16" />
       ) : (
@@ -121,109 +146,62 @@ export default function RecipeDetailsScreen(props) {
             paddingTop: hp(3),
           }}
         >
-          {/* Meal Name */}
           <Animated.View
             className="space-y-2 px-4"
-            entering={FadeInDown.delay(200)
-              .duration(700)
-              .springify()
-              .damping(12)}
+            entering={FadeInDown.delay(200).duration(700).springify().damping(12)}
           >
             <Text
               className="font-bold flex-1 text-neutral-700"
-              style={{
-                fontSize: hp(3),
-              }}
+              style={{ fontSize: hp(3) }}
             >
               {meal?.strMeal}
             </Text>
 
             <Text
-              style={{
-                fontSize: hp(2),
-              }}
+              style={{ fontSize: hp(2) }}
               className="text-neutral-500 font-medium"
             >
               {meal?.strArea}
             </Text>
           </Animated.View>
 
-          {/* Ingredients */}
-
           <Animated.View
             className="space-y-4 p-4"
-            entering={FadeInDown.delay(300)
-              .duration(700)
-              .springify()
-              .damping(12)}
+            entering={FadeInDown.delay(300).duration(700).springify().damping(12)}
           >
-            <Text
-              style={{
-                fontSize: hp(2.5),
-              }}
-              className="font-bold flex-1 text-neutral-700"
-            >
+            <Text style={{ fontSize: hp(2.5) }} className="font-bold flex-1 text-neutral-700">
               Ingredients
             </Text>
 
             <View className="space-y-2 ml-3">
-              {ingredientsIndexes(meal).map((i) => {
-                return (
-                  <View className="flex-row space-x-4 items-center" key={i}>
-                    <View
-                      className="bg-[#f64e32] rounded-full"
-                      style={{
-                        height: hp(1.5),
-                        width: hp(1.5),
-                      }}
-                    />
-                    <View className="flex-row space-x-2">
-                      <Text
-                        style={{
-                          fontSize: hp(1.7),
-                        }}
-                        className="font-medium text-neutral-800"
-                      >
-                        {meal["strIngredient" + i]}
-                      </Text>
-                      <Text
-                        className="font-extrabold text-neutral-700"
-                        style={{
-                          fontSize: hp(1.7),
-                        }}
-                      >
-                        {meal["strMeasure" + i]}
-                      </Text>
-                    </View>
+              {ingredientsIndexes(meal).map((i) => (
+                <View className="flex-row space-x-4 items-center" key={i}>
+                  <View
+                    className="bg-[#f64e32] rounded-full"
+                    style={{ height: hp(1.5), width: hp(1.5) }}
+                  />
+                  <View className="flex-row space-x-2">
+                    <Text style={{ fontSize: hp(1.7) }} className="font-medium text-neutral-800">
+                      {meal["strIngredient" + i]}
+                    </Text>
+                    <Text className="font-extrabold text-neutral-700" style={{ fontSize: hp(1.7) }}>
+                      {meal["strMeasure" + i]}
+                    </Text>
                   </View>
-                );
-              })}
+                </View>
+              ))}
             </View>
           </Animated.View>
 
-          {/* Instructions */}
           <Animated.View
             className="space-y-4 p-4"
-            entering={FadeInDown.delay(400)
-              .duration(700)
-              .springify()
-              .damping(12)}
+            entering={FadeInDown.delay(400).duration(700).springify().damping(12)}
           >
-            <Text
-              className="font-bold flex-1 text-neutral-700"
-              style={{
-                fontSize: hp(2.5),
-              }}
-            >
+            <Text className="font-bold flex-1 text-neutral-700" style={{ fontSize: hp(2.5) }}>
               Instructions
             </Text>
 
-            <Text
-              className="text-neutral-700"
-              style={{
-                fontSize: hp(1.7),
-              }}
-            >
+            <Text className="text-neutral-700" style={{ fontSize: hp(1.7) }}>
               {meal?.strInstructions}
             </Text>
           </Animated.View>
