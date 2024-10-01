@@ -5,9 +5,9 @@ import {
   SafeAreaView,
   Image,
   TextInput,
-  Button,
-} from 'react-native';
-import React, { useEffect, useState } from "react"; // Correct import, do not duplicate it
+  ActivityIndicator,
+} from "react-native";
+import React, { useEffect, useState } from "react";
 import {
   MagnifyingGlassIcon,
   AdjustmentsHorizontalIcon,
@@ -15,156 +15,214 @@ import {
 import { StatusBar } from "expo-status-bar";
 import { heightPercentageToDP as hp } from "react-native-responsive-screen";
 import Categories from "../components/Categories";
-import axios from "axios";
 import Recipes from "../components/Recipes";
-import { useTranslation } from "react-i18next";  // Import translation hook
+import { useTranslation } from "react-i18next";
+import { Picker } from "@react-native-picker/picker";
+
+// Function to dynamically load the correct language JSON file for meals
+const loadMealDataForLanguage = async (lang) => {
+  try {
+    switch (lang) {
+      case 'vi':
+        return (await import('../data/all_meals_data_VI.json')).default;
+      case 'fr':
+        return (await import('../data/all_meals_data_FR.json')).default;
+      case 'ja':
+        return (await import('../data/all_meals_data_JA.json')).default;
+      case 'zh':
+        return (await import('../data/all_meals_data_ZH.json')).default;
+      default:
+        return (await import('../data/all_meals_data.json')).default; // English as default
+    }
+  } catch (error) {
+    console.error(`Failed to load meal data for language: ${lang}`, error);
+    return []; // Return empty array on failure
+  }
+};
+
+// Function to dynamically load the correct language JSON file for categories
+const loadCategoryDataForLanguage = async (lang) => {
+  try {
+    switch (lang) {
+      case 'vi':
+        return (await import('../data/meals_data_category_VI.json')).default;
+      case 'fr':
+        return (await import('../data/meals_data_category_FR.json')).default;
+      case 'ja':
+        return (await import('../data/meals_data_category_JA.json')).default;
+      case 'zh':
+        return (await import('../data/meals_data_category_ZH.json')).default;
+      default:
+        return (await import('../data/meals_data_category.json')).default; // English as default
+    }
+  } catch (error) {
+    console.error(`Failed to load category data for language: ${lang}`, error);
+    return []; // Return empty array on failure
+  }
+};
 
 export default function HomeScreen() {
   const [activeCategory, setActiveCategory] = useState("Beef");
   const [categories, setCategories] = useState([]);
   const [meals, setMeals] = useState([]);
-  const { t, i18n } = useTranslation();  // Initialize i18next translation functions
+  const [isLoading, setIsLoading] = useState(false); // Loading state
+  const [searchQuery, setSearchQuery] = useState(""); // State for search input
+  const [language, setLanguage] = useState("en");
+  const { t, i18n } = useTranslation();
+
+  // Function to load categories dynamically based on the selected language
+  const loadCategories = async () => {
+    setIsLoading(true);
+    const categoryData = await loadCategoryDataForLanguage(i18n.language); // Load categories
+    const categoriesWithImages = categoryData.categories.map((category) => ({
+      strCategory: category.strCategory,
+      strCategoryThumb: category.strCategoryThumb,
+      strCategoryTranslated: t(`${category.strCategory}`) || category.strCategory,  // Translate category if available
+    }));
+    setCategories(categoriesWithImages);
+    setIsLoading(false);
+  };
+
+  // Function to load meals based on category and language
+  const loadMeals = async (category = "Beef") => {
+    setIsLoading(true); // Start loading spinner
+    const mealData = await loadMealDataForLanguage(i18n.language); // Dynamically load the meal data
+    
+    const filteredMeals = mealData.filter(
+      (meal) => meal.strCategory.toLowerCase() === category.toLowerCase()
+    );
+
+    setMeals(filteredMeals);
+    setIsLoading(false); // Stop loading spinner
+  };
 
   useEffect(() => {
-    getCategories();
-    getRecipes();
-  }, [i18n.language]);  // Rerun when language changes
+    loadCategories();  // Load categories dynamically
+    loadMeals();       // Load meals for the default category (Beef)
+  }, [i18n.language]); // Re-load when language changes
 
   const handleChangeCategory = (category) => {
-    getRecipes(category);
-    setActiveCategory(category);
-    setMeals([]);
+    setActiveCategory(category);  // Update selected category
+    loadMeals(category);          // Load meals for the selected category
   };
 
-  const getCategories = async () => {
-    try {
-      const response = await axios.get(
-        "https://www.themealdb.com/api/json/v1/1/categories.php"
-      );
-      if (response && response.data) {
-        setCategories(response.data.categories);
-      }
-    } catch (error) {
-      console.log(error.message);
-    }
+  // Handle language change
+  const changeLanguage = (lang) => {
+    setLanguage(lang);
+    i18n.changeLanguage(lang);
   };
 
-  const getRecipes = async (category = "Beef") => {
-    let categoryToUse = category;
-
-    if (i18n.language === "vi") {
-      categoryToUse = "Bò";  // Example: Vietnamese equivalent
-    } else if (i18n.language === "ja") {
-      categoryToUse = "牛肉";  // Example: Japanese equivalent
-    } else if (i18n.language === "zh") {
-      categoryToUse = "牛肉";  // Example: Chinese equivalent
-    }
-
-    try {
-      const response = await axios.get(
-        `https://www.themealdb.com/api/json/v1/1/filter.php?c=${categoryToUse}`
-      );
-      if (response && response.data) {
-        setMeals(response.data.meals);
-      }
-    } catch (error) {
-      console.log(error.message);
-    }
-  };
+  // Filter meals based on search query
+  const filteredMeals = meals.filter((meal) =>
+    meal.strMeal.toLowerCase().includes(searchQuery.toLowerCase()) // Match search query (case-insensitive)
+  );
 
   return (
     <View className="flex-1 bg-white">
       <StatusBar style="dark" />
 
       <SafeAreaView>
-        <ScrollView
-          showsVerticalScrollIndicator={false}
-          contentContainerStyle={{
-            paddingBottom: 50,
-          }}
-          className="space-y-6 pt-14"
-        >
-          {/* Avatar and Bell Icon */}
-          <View className="mx-4 flex-row justify-between items-center">
-            <AdjustmentsHorizontalIcon size={hp(4)} color={"gray"} />
-            <Image
-              source={require("../../assets/images/avatar.png")}
-              style={{
-                width: hp(5),
-                height: hp(5),
-                resizeMode: "cover",
-              }}
-              className="rounded-full"
-            />
-          </View>
+        {isLoading ? ( // Show loading spinner if data is being loaded
+          <ActivityIndicator size="large" color="#f64e32" />
+        ) : (
+          <ScrollView
+            showsVerticalScrollIndicator={false}
+            contentContainerStyle={{
+              paddingBottom: 50,
+            }}
+            className="space-y-6 pt-14"
+          >
+            {/* Navbar with Avatar, Bell Icon, and Language Picker */}
+            <View className="mx-4 flex-row justify-between items-center">
+              <AdjustmentsHorizontalIcon size={hp(4)} color={"gray"} />
+              <View style={{ flexDirection: "row", alignItems: "center" }}>
+                <Image
+                  source={require("../../assets/images/avatar.png")}
+                  style={{
+                    width: hp(5),
+                    height: hp(5),
+                    resizeMode: "cover",
+                  }}
+                  className="rounded-full"
+                />
 
-          {/* Headlines */}
-          <View className="mx-4 space-y-1 mb-2">
-            <Text
-              style={{
-                fontSize: hp(3.5),
-              }}
-              className="font-bold text-neutral-800"
-            >
-              {t('fast_and_delicious')}  {/* Wrap translations in Text */}
-            </Text>
+                {/* Language Picker */}
+                <View style={{ marginLeft: 10 }}>
+                  <Picker
+                    selectedValue={language}
+                    style={{ height: 50, width: 150 }}
+                    onValueChange={(itemValue) => changeLanguage(itemValue)}
+                  >
+                    <Picker.Item label="English (US)" value="en" />
+                    <Picker.Item label="Tiếng Việt" value="vi" />
+                    <Picker.Item label="日本語" value="ja" />
+                    <Picker.Item label="中文" value="zh" />
+                    <Picker.Item label="Français" value="fr" />
+                  </Picker>
+                </View>
+              </View>
+            </View>
 
-            <Text
-              style={{
-                fontSize: hp(3.5),
-              }}
-              className="font-extrabold text-neutral-800"
-            >
-              {t('food_you_love')} <Text className="text-[#f64e32]">{t('love')}</Text> {/* Make sure nested texts are also wrapped in <Text> */}
-            </Text>
-          </View>
+            {/* Headlines */}
+            <View className="mx-4 space-y-1 mb-2">
+              <Text
+                style={{
+                  fontSize: hp(3.5),
+                }}
+                className="font-bold text-neutral-800"
+              >
+                {t("fast_and_delicious")}
+              </Text>
 
-          {/* Search Bar */}
-          <View className="mx-4 flex-row items-center border rounded-xl border-black p-[6px]">
-            <View className="bg-white rounded-full p-2">
-              <MagnifyingGlassIcon
-                size={hp(2.5)}
-                color={"gray"}
-                strokeWidth={3}
+              <Text
+                style={{
+                  fontSize: hp(3.5),
+                }}
+                className="font-extrabold text-neutral-800"
+              >
+                <Text>{t("choose_your")}</Text>
+                <Text className="text-[#f64e32]">{t("recipes")}</Text>
+              </Text>
+            </View>
+
+            {/* Search Bar */}
+            <View className="mx-4 flex-row items-center border rounded-xl border-black p-[6px]">
+              <View className="bg-white rounded-full p-2">
+                <MagnifyingGlassIcon
+                  size={hp(2.5)}
+                  color={"gray"}
+                  strokeWidth={3}
+                />
+              </View>
+              <TextInput
+                placeholder={t("search_placeholder")}
+                placeholderTextColor={"gray"}
+                value={searchQuery} // Bind the search query state
+                onChangeText={(text) => setSearchQuery(text)} // Update search query
+                style={{
+                  fontSize: hp(1.7),
+                }}
+                className="flex-1 text-base mb-1 pl-1 tracking-widest"
               />
             </View>
-            {/* Translated placeholder */}
-            <TextInput
-              placeholder={t('search_placeholder')}  
-              placeholderTextColor={"gray"}
-              style={{
-                fontSize: hp(1.7),
-              }}
-              className="flex-1 text-base mb-1 pl-1 tracking-widest"
-            />
-          </View>
 
-          {/* Categories */}
-          <View>
-            {categories.length > 0 && (
-              <Categories
-                categories={categories}
-                activeCategory={activeCategory}
-                handleChangeCategory={handleChangeCategory}
-              />
-            )}
-          </View>
+            {/* Categories */}
+            <View>
+              {categories.length > 0 && (
+                <Categories
+                  categories={categories}
+                  activeCategory={activeCategory}
+                  handleChangeCategory={handleChangeCategory}
+                />
+              )}
+            </View>
 
-          {/* Recipes Meal */}
-          <View>
-            <Recipes meals={meals} categories={categories} />
-          </View>
-
-          {/* Language Switcher */}
-          <View style={{ flexDirection: 'row', justifyContent: 'space-around', marginTop: 20 }}>
-            <Button title={t("english_us")} onPress={() => i18n.changeLanguage('en')} />
-            <Button title={t("english_uk")} onPress={() => i18n.changeLanguage('en-UK')} />
-            <Button title={t("vietnamese")} onPress={() => i18n.changeLanguage('vi')} />
-            <Button title={t("japanese")} onPress={() => i18n.changeLanguage('ja')} />
-            <Button title={t("chinese")} onPress={() => i18n.changeLanguage('zh')} />
-          </View>
-
-        </ScrollView>
+            {/* Meals */}
+            <View>
+              <Recipes meals={filteredMeals} categories={categories} />
+            </View>
+          </ScrollView>
+        )}
       </SafeAreaView>
     </View>
   );

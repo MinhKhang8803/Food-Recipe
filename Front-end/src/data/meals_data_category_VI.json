@@ -1,0 +1,88 @@
+{
+    "categories": [
+        {
+            "idCategory": "1",
+            "strCategory": "Thịt bò",
+            "strCategoryDescription": "Thịt bò là tên gọi ẩm thực của thịt từ gia súc, đặc biệt là cơ xương. Con người đã ăn thịt bò từ thời tiền sử.[1] Thịt bò là nguồn cung cấp protein chất lượng cao và các chất dinh dưỡng thiết yếu.[2]",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/beef.png"
+        },
+        {
+            "idCategory": "2",
+            "strCategory": "Thịt gà",
+            "strCategoryDescription": "Gà là một loại gia cầm được thuần hóa, một phân loài của gà rừng đỏ. Đây là một trong những loài động vật nuôi phổ biến và phân bố rộng rãi nhất, với tổng số lượng hơn 19 tỷ con tính đến năm 2011.[1] Con người thường nuôi gà như một nguồn thực phẩm (tiêu thụ cả thịt và trứng của chúng) và hiếm hơn là nuôi làm thú cưng.",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/chicken.png"
+        },
+        {
+            "idCategory": "3",
+            "strCategory": "Món tráng miệng",
+            "strCategoryDescription": "Món tráng miệng là món ăn kết thúc bữa ăn. Món ăn thường bao gồm các món ăn ngọt, chẳng hạn như các món bánh kẹo hoặc trái cây, và có thể là đồ uống như rượu vang tráng miệng hoặc rượu mùi, tuy nhiên ở Hoa Kỳ, món ăn có thể bao gồm cà phê, pho mát, các loại hạt hoặc các món mặn khác được coi là một món ăn riêng ở nơi khác. Ở một số nơi trên thế giới, chẳng hạn như phần lớn miền Trung và Tây Phi, và hầu hết các vùng của Trung Quốc, không có truyền thống về món tráng miệng để kết thúc bữa ăn. \n\nThuật ngữ món tráng miệng có thể áp dụng cho nhiều loại bánh kẹo, chẳng hạn như bánh quy, bánh ngọt, bánh quy, bánh trứng sữa, gelatin, kem, bánh ngọt, bánh nướng, bánh pudding và súp ngọt, và bánh tart. Trái cây cũng thường được tìm thấy trong các món tráng miệng vì vị ngọt tự nhiên của nó. Một số nền văn hóa làm ngọt các loại thực phẩm thường có vị mặn hơn để tạo ra món tráng miệng.",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/dessert.png"
+        },
+        {
+            "idCategory": "4",
+            "strCategory": "Cừu non",
+            "strCategoryDescription": "Thịt cừu non, thịt lợn và thịt cừu non là thịt của cừu nhà (loài Ovis aries) ở các độ tuổi khác nhau. \n\nMột con cừu trong năm đầu tiên được gọi là cừu non, và thịt của nó cũng được gọi là cừu non. Thịt của một con cừu non hơn một tuổi là lợn non; bên ngoài Hoa Kỳ, đây cũng là thuật ngữ chỉ động vật sống. Thịt của một con cừu trưởng thành là thịt cừu non, một thuật ngữ chỉ thịt, không phải động vật sống. Thuật ngữ thịt cừu non hầu như luôn được dùng để chỉ thịt dê ở tiểu lục địa Ấn Độ. \n\n",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/lamb.png"
+        },
+        {
+            "idCategory": "5",
+            "strCategory": "Lặt Vặt",
+            "strCategoryDescription": "Thực phẩm nói chung không phù hợp với danh mục khác",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/miscellaneous.png"
+        },
+        {
+            "idCategory": "6",
+            "strCategory": "Mì ống",
+            "strCategoryDescription": "Mì ống là một món ăn chính của ẩm thực truyền thống Ý, với lần đầu tiên xuất hiện vào năm 1154 tại Sicily. \n\nCũng thường được dùng để chỉ nhiều loại món mì ống, mì ống thường là một loại mì làm từ bột mì cứng không men trộn với nước hoặc trứng và tạo thành các tấm hoặc nhiều hình dạng khác nhau, sau đó nấu chín bằng cách luộc hoặc nướng. Đối với những người muốn có hương vị khác hoặc cần tránh các sản phẩm có chứa gluten, một số loại mì ống có thể được làm bằng bột gạo thay cho bột mì.[3][4] Mì ống có thể được chia thành hai loại chính, mì khô (pasta secca) và mì tươi (pasta fresca).",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/pasta.png"
+        },
+        {
+            "idCategory": "7",
+            "strCategory": "Thịt lợn",
+            "strCategoryDescription": "Thịt lợn là tên gọi ẩm thực của thịt lợn nhà (Sus scrofa domesticus). Đây là loại thịt được tiêu thụ phổ biến nhất trên toàn thế giới,[1] với bằng chứng về việc chăn nuôi lợn có từ năm 5000 trước Công nguyên. Thịt lợn được ăn cả khi nấu chín tươi và bảo quản. Việc ướp muối kéo dài thời hạn sử dụng của các sản phẩm thịt lợn. Giăm bông, thịt lợn hun khói, thịt đùi hun khói, thịt xông khói và xúc xích là những ví dụ về thịt lợn bảo quản. Charcuterie là nhánh nấu ăn dành riêng cho các sản phẩm thịt chế biến, nhiều sản phẩm từ thịt lợn. \n\nThịt lợn là loại thịt phổ biến nhất ở Đông Á và Đông Nam Á, và cũng rất phổ biến ở thế giới phương Tây, đặc biệt là ở Trung Âu. Thịt lợn được đánh giá cao trong các món ăn châu Á vì hàm lượng chất béo và kết cấu dễ chịu. Việc tiêu thụ thịt lợn bị cấm theo luật ăn kiêng của người Do Thái và người Hồi giáo, một điều cấm kỵ đã ăn sâu vào truyền thống, với một số nguyên nhân có thể được đưa ra. Việc bán thịt lợn bị hạn chế ở Israel và là bất hợp pháp ở một số quốc gia Hồi giáo.",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/pork.png"
+        },
+        {
+            "idCategory": "8",
+            "strCategory": "Hải sản",
+            "strCategoryDescription": "Hải sản là bất kỳ dạng sinh vật biển nào được con người coi là thực phẩm. Hải sản chủ yếu bao gồm cá và động vật có vỏ. Động vật có vỏ bao gồm nhiều loài động vật thân mềm, giáp xác và da gai. Theo truyền thống, động vật có vú biển như cá voi và cá heo đã được tiêu thụ làm thực phẩm, mặc dù điều đó xảy ra ở mức độ ít hơn trong thời hiện đại. Thực vật biển ăn được, chẳng hạn như một số rong biển và tảo nhỏ, được ăn rộng rãi như hải sản trên khắp thế giới, đặc biệt là ở Châu Á (xem danh mục rau biển). Ở Bắc Mỹ, mặc dù không phải nói chung ở Vương quốc Anh, thuật ngữ \"hải sản\" được mở rộng cho các sinh vật nước ngọt mà con người ăn, vì vậy tất cả các sinh vật thủy sinh ăn được có thể được gọi là hải sản. Để hoàn thiện, bài viết này bao gồm tất cả các sinh vật thủy sinh ăn được.",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/seafood.png"
+        },
+        {
+            "idCategory": "9",
+            "strCategory": "Bên",
+            "strCategoryDescription": "Một món ăn kèm, đôi khi được gọi là món ăn kèm, món ăn kèm, hoặc đơn giản là món ăn kèm, là một món ăn đi kèm với món chính hoặc món ăn chính trong một bữa ăn. Các món ăn kèm như salad, khoai tây và bánh mì thường được dùng với các món chính ở nhiều quốc gia phương Tây. Các món ăn kèm mới được giới thiệu trong thập kỷ qua [cần dẫn nguồn], chẳng hạn như cơm và couscous, đã trở nên khá phổ biến trên khắp châu Âu, đặc biệt là trong các dịp trang trọng (với couscous thường xuất hiện nhiều hơn trong các bữa tiệc tối với các món ăn Trung Đông).",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/side.png"
+        },
+        {
+            "idCategory": "10",
+            "strCategory": "Người khởi đầu",
+            "strCategoryDescription": "Món khai vị trong dịch vụ bàn ăn hiện đại của Pháp và của nhiều nước nói tiếng Anh (trừ Hoa Kỳ và một số vùng của Canada) là món ăn được phục vụ trước món chính của bữa ăn; có thể là món ăn đầu tiên được phục vụ hoặc có thể là món súp hoặc một hoặc nhiều món ăn nhỏ khác. Ở Hoa Kỳ và một số vùng của Canada, món khai vị là món chính hoặc món duy nhất của bữa ăn. \n\nTheo truyền thống, món khai vị là một trong những giai đoạn của “Trật tự cổ điển” trong dịch vụ bàn ăn chính thức của Pháp vào thế kỷ 18 và 19. Món này là một phần của “dịch vụ đầu tiên” của bữa ăn, bao gồm potage, hors d’œuvre và entrée (bao gồm bouilli và relevé). “Dịch vụ thứ hai” bao gồm thịt quay (rôti), salad và entremets (entremets đôi khi được tách thành “dịch vụ thứ ba” riêng). Dịch vụ cuối cùng chỉ bao gồm món tráng miệng.[3]:3–11 :13–25",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/starter.png"
+        },
+        {
+            "idCategory": "11",
+            "strCategory": "Thuần chay",
+            "strCategoryDescription": "Chủ nghĩa thuần chay vừa là việc kiêng sử dụng các sản phẩm từ động vật, đặc biệt là trong chế độ ăn uống, vừa là một triết lý liên quan phản đối tình trạng hàng hóa của động vật.[b] Người theo chế độ ăn uống hoặc triết lý này được gọi là người ăn chay trường (phát âm là /ˈviːɡən/ VEE-gən). Đôi khi, người ta phân biệt giữa một số loại chủ nghĩa thuần chay. Người ăn chay trường (hoặc người ăn chay nghiêm ngặt) kiêng tiêu thụ các sản phẩm từ động vật, không chỉ thịt mà còn cả trứng, các sản phẩm từ sữa và các chất khác có nguồn gốc từ động vật.[c] Thuật ngữ thuần chay có đạo đức thường được áp dụng cho những người không chỉ theo chế độ ăn thuần chay mà còn mở rộng triết lý này sang các lĩnh vực khác trong cuộc sống của họ và phản đối việc sử dụng động vật cho bất kỳ mục đích nào.[d] Một thuật ngữ khác là chủ nghĩa thuần chay vì môi trường, dùng để chỉ việc tránh các sản phẩm từ động vật với tiền đề rằng việc thu hoạch hoặc chăn nuôi công nghiệp động vật gây hại cho môi trường và không bền vững.",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/vegan.png"
+        },
+        {
+            "idCategory": "12",
+            "strCategory": "Người ăn chay",
+            "strCategoryDescription": "Ăn chay là việc kiêng tiêu thụ thịt (thịt đỏ, thịt gia cầm, hải sản và thịt của bất kỳ loài động vật nào khác), và cũng có thể bao gồm việc kiêng các sản phẩm phụ của quá trình giết mổ động vật. \n\nĂn chay có thể được áp dụng vì nhiều lý do. Nhiều người phản đối việc ăn thịt vì tôn trọng sự sống có tri giác. Những động cơ đạo đức như vậy đã được mã hóa theo nhiều tín ngưỡng tôn giáo khác nhau, cũng như việc ủng hộ quyền động vật. Những động cơ khác của việc ăn chay liên quan đến sức khỏe, chính trị, môi trường, văn hóa, thẩm mỹ, kinh tế hoặc sở thích cá nhân. Cũng có nhiều biến thể của chế độ ăn uống: chế độ ăn chay ovo-lacto bao gồm cả trứng và các sản phẩm từ sữa, chế độ ăn chay ovo bao gồm trứng nhưng không bao gồm các sản phẩm từ sữa và chế độ ăn chay lacto bao gồm các sản phẩm từ sữa nhưng không bao gồm trứng. Chế độ ăn thuần chay loại trừ tất cả các sản phẩm từ động vật, bao gồm trứng và sữa. Một số người ăn chay cũng tránh các sản phẩm từ động vật khác như sáp ong, quần áo da hoặc lụa và xi đánh giày mỡ ngỗng.",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/vegetarian.png"
+        },
+        {
+            "idCategory": "13",
+            "strCategory": "Bữa sáng",
+            "strCategoryDescription": "Bữa sáng là bữa ăn đầu tiên trong ngày. Từ này trong tiếng Anh có nghĩa là phá vỡ thời gian nhịn ăn của đêm hôm trước. Có khả năng cao là có một hoặc nhiều thực đơn bữa sáng \"điển hình\" hoặc \"truyền thống\" ở hầu hết các nơi, nhưng thành phần của chúng thay đổi rất nhiều tùy theo từng nơi và thay đổi theo thời gian, do đó trên toàn cầu, hiện nay có rất nhiều chế phẩm và thành phần liên quan đến bữa sáng.",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/breakfast.png"
+        },
+        {
+            "idCategory": "14",
+            "strCategory": "Con dê",
+            "strCategoryDescription": "Dê nhà hay đơn giản là dê (Capra aegagrus hircus) là một phân loài của C. aegagrus được thuần hóa từ loài dê hoang dã ở Tây Nam Á và Đông Âu. Dê là thành viên của họ động vật Bovidae và phân họ Caprinae, có nghĩa là chúng có quan hệ họ hàng gần với loài cừu. Có hơn 300 giống dê khác nhau. Dê là một trong những loài động vật được thuần hóa lâu đời nhất và đã được sử dụng để lấy sữa, thịt, lông và da ở nhiều nơi trên thế giới. Sữa từ dê thường được chế biến thành pho mát dê.",
+            "strCategoryThumb": "https://www.themealdb.com/images/category/goat.png"
+        }
+    ]
+}

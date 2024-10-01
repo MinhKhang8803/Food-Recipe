@@ -1,13 +1,11 @@
 import { View, Text, ScrollView, TouchableOpacity, Image } from "react-native";
 import React from "react";
-import { categoryData } from "../constants";
 import { heightPercentageToDP as hp } from "react-native-responsive-screen";
+import { useTranslation } from "react-i18next";
 
-export default function Categories({
-  categories,
-  activeCategory,
-  handleChangeCategory,
-}) {
+export default function Categories({ categories, activeCategory, handleChangeCategory }) {
+  const { t } = useTranslation();
+
   return (
     <View>
       <ScrollView
@@ -40,13 +38,14 @@ export default function Categories({
                   className="rounded-full"
                 />
               </View>
+              {/* Display Translated Category Name */}
               <Text
                 className="text-neutral-800 "
                 style={{
                   fontSize: hp(1.6),
                 }}
               >
-                {category.strCategory}
+                {category.strCategoryTranslated} {/* Show translated name */}
               </Text>
             </TouchableOpacity>
           );

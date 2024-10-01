@@ -2,10 +2,15 @@ import { View, Text, Pressable, Image } from "react-native";
 import React from "react";
 import { heightPercentageToDP as hp } from "react-native-responsive-screen";
 import { LinearGradient } from "expo-linear-gradient";
+import { useTranslation } from "react-i18next";
 
 export default function RecipesCard({ index, navigation, item }) {
+  const { t } = useTranslation();
   const isEven = index % 2 === 0;
   
+  // Lấy tên món ăn đã dịch
+  const translatedMealName = t(`meals.${item.strMeal}`, { defaultValue: item.strMeal });
+
   return (
     <View>
       <Pressable
@@ -48,9 +53,9 @@ export default function RecipesCard({ index, navigation, item }) {
           }}
           className="font-semibold ml-2 text-white absolute bottom-7 left-2 max-w-[80%]"
         >
-          {item.strMeal.length > 20
-            ? item.strMeal.slice(0, 20) + "..."
-            : item.strMeal}
+          {translatedMealName.length > 20
+            ? translatedMealName.slice(0, 20) + "..."
+            : translatedMealName}
         </Text>
       </Pressable>
     </View>
