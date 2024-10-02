@@ -6,6 +6,7 @@ const userSchema = new mongoose.Schema({
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true },
   phone: { type: String },
+  role: { type: String, default: "user" }
 });
 
 // Hash password before saving only if it has not been hashed already
@@ -14,7 +15,7 @@ userSchema.pre('save', async function (next) {
 
   // Check if the password is already hashed by checking if it starts with $2a$ or $2b$
   if (this.password.startsWith('$2a$') || this.password.startsWith('$2b$')) {
-    return next(); // Skip re-hashing if it's already hashed
+    return next(); 
   }
 
   // Otherwise, hash the password

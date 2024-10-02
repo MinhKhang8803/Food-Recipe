@@ -5,9 +5,8 @@ import { heightPercentageToDP as hp, widthPercentageToDP as wp } from "react-nat
 import { ChevronLeftIcon } from "react-native-heroicons/outline";
 import { HeartIcon } from "react-native-heroicons/solid";
 import Loading from "../components/Loading";
-import Animated, { FadeInDown } from "react-native-reanimated";
+import Animated, { FadeInDown } from "react-native-reanimated";  
 import { useTranslation } from "react-i18next";
-import { setShouldAnimateExitingForTag } from "react-native-reanimated/lib/typescript/reanimated2/core";
 
 // Function to dynamically load the correct language JSON file for recipe details
 const loadRecipeDetailsForLanguage = async (lang, mealId) => {
@@ -63,7 +62,6 @@ export default function RecipeDetailsScreen(props) {
     setIsLoading(false);
   };
 
-  // Get the image for the ingredient dynamically
   const getIngredientImage = (ingredient) => {
     if (!ingredient) return "https://www.themealdb.com/images/ingredients/default.png";
 
@@ -73,17 +71,6 @@ export default function RecipeDetailsScreen(props) {
     // Return the URL for the ingredient image
     return `https://www.themealdb.com/images/ingredients/${sanitizedIngredient}.png`;
   };
-
-  // const getIngredientImage = (ingredient) => {
-  //   if (!ingredient) return "https://www.themealdb.com/images/ingredients/default.png";
-  
-  //   // URL encode the entire ingredient name to handle spaces and special characters
-  //   const sanitizedIngredient = encodeURIComponent(ingredient.trim());
-  
-  //   // Return the URL for the ingredient image
-  //   return `https://www.themealdb.com/images/ingredients/${sanitizedIngredient}.png`;
-  // };
-  
 
   const ingredientsIndexes = (meal) => {
     if (!meal) return [];
