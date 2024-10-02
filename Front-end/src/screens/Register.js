@@ -7,9 +7,11 @@ import {
     Text,
     TouchableOpacity,
     TextInput,
+    Alert,
 } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
-import { useNavigation } from '@react-navigation/native'; // Import useNavigation hook
+import { useNavigation } from '@react-navigation/native';
+import axios from 'axios';
 
 export default function Register() {
     const [form, setForm] = useState({
@@ -19,7 +21,24 @@ export default function Register() {
         phone: '',
     });
 
-    const navigation = useNavigation(); // Initialize navigation
+    const navigation = useNavigation();
+
+    // Updated backend URL
+    const handleRegister = async () => {
+        const { fullName, email, password, phone } = form; // Destructure form values
+        try {
+            const response = await axios.post('http://192.168.1.21:5000/api/auth/register', { fullName, email, password, phone });
+            if (response.status === 201) {
+                Alert.alert('Success', 'Registration successful');
+                navigation.navigate('Login'); // Redirect to login after successful registration
+            } else {
+                Alert.alert('Error', 'Failed to register. Try again.');
+            }
+        } catch (error) {
+            Alert.alert('Error', error.response?.data?.message || 'An error occurred during registration.');
+            console.error('Registration error: ', error);
+        }
+    };
 
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: '#f64e32' }}>
@@ -44,7 +63,6 @@ export default function Register() {
                     <View style={styles.form}>
                         <View style={styles.input}>
                             <Text style={styles.inputLabel}>Full Name</Text>
-
                             <TextInput
                                 autoCapitalize="words"
                                 autoCorrect={false}
@@ -58,7 +76,6 @@ export default function Register() {
 
                         <View style={styles.input}>
                             <Text style={styles.inputLabel}>Email address</Text>
-
                             <TextInput
                                 autoCapitalize="none"
                                 autoCorrect={false}
@@ -73,7 +90,6 @@ export default function Register() {
 
                         <View style={styles.input}>
                             <Text style={styles.inputLabel}>Password</Text>
-
                             <TextInput
                                 autoCorrect={false}
                                 clearButtonMode="while-editing"
@@ -87,7 +103,6 @@ export default function Register() {
 
                         <View style={styles.input}>
                             <Text style={styles.inputLabel}>Phone Number</Text>
-
                             <TextInput
                                 autoCorrect={false}
                                 clearButtonMode="while-editing"
@@ -100,10 +115,7 @@ export default function Register() {
                         </View>
 
                         <View style={styles.formAction}>
-                            <TouchableOpacity
-                                onPress={() => {
-                                    // handle onPress for Register
-                                }}>
+                            <TouchableOpacity onPress={handleRegister}>
                                 <View style={styles.btn}>
                                     <Text style={styles.btnText}>Sign up</Text>
                                 </View>
@@ -112,12 +124,9 @@ export default function Register() {
                     </View>
                 </KeyboardAwareScrollView>
 
-                <TouchableOpacity
-                    onPress={() => navigation.navigate('Login')} // Navigate to Login when "Sign in" is pressed
-                    style={{ marginTop: 'auto' }}>
+                <TouchableOpacity onPress={() => navigation.navigate('Login')} style={{ marginTop: 'auto' }}>
                     <Text style={styles.formFooter}>
-                        Already have an account?{' '}
-                        <Text style={{ textDecorationLine: 'underline' }}>Sign in</Text>
+                        Already have an account? <Text style={{ textDecorationLine: 'underline' }}>Sign in</Text>
                     </Text>
                 </TouchableOpacity>
             </View>

@@ -1,0 +1,4029 @@
+{
+    "meals": [
+        {
+            "idIngredient": "1",
+            "strIngredient": "チキン",
+            "strDescription": "鶏は、セキショクヤケイ（Gallus gallus）の亜種である家禽の一種です。最も一般的で広く普及している家畜の 1 つで、2011 年時点で総個体数は 190 億を超えています。世界では、他のどの鳥や家禽よりも鶏の数が多いです。人間は主に食料源として鶏を飼っています（肉と卵の両方を食べます）が、ペットとして飼われることもあまりありません。もともと闘鶏や特別な儀式のために飼育されていた鶏は、ヘレニズム時代（紀元前 4 世紀から 2 世紀）まで食用として飼われることはありませんでした。\n\n遺伝子研究では、南アジア、東南アジア、東アジアに複数の母系起源があることが示されていますが、アメリカ大陸、ヨーロッパ、中東、アフリカに見られる系統群はインド亜大陸に起源があります。古代インドから、家禽は小アジア西部のリディアに広がり、紀元前 5 世紀までにギリシャにまで広がりました。トトメス3世の年代記によると、鶏は紀元前15世紀半ばからエジプトで知られており、「毎日子供を産む鳥」はシリアとバビロニアのシナルの間の地からエジプトに渡ってきたという。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chicken.png"
+        },
+        {
+            "idIngredient": "2",
+            "strIngredient": "鮭",
+            "strDescription": "サケは、サケ科の条鰭類のいくつかの種の総称です。同じ科の他の魚には、マス、イワナ、グレイリング、ホワイトフィッシュなどがあります。サケは北大西洋 (Salmo 属) と太平洋 (Oncorhynchus 属) の支流に生息します。多くのサケ種が、北米の五大湖や南米のパタゴニアなどの非在来環境に導入されています。サケは世界の多くの地域で集中的に養殖されています。\n\n通常、サケは遡河性です。淡水で孵化し、海に回遊し、その後、繁殖のために淡水に戻ります。ただし、いくつかの種の個体群は生涯を通じて淡水に限定されています。伝説によると、魚は産卵のために孵化した場所に戻ると言われています。追跡調査により、これはほぼ真実であることが示されています。戻ってきたサケの一部は、別の淡水系に迷い込んで産卵することがあります。迷い込む割合はサケ種によって異なります。帰巣行動は嗅覚記憶に依存することがわかっています。サケの歴史は新第三紀にまで遡ります。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Salmon.png"
+        },
+        {
+            "idIngredient": "3",
+            "strIngredient": "牛肉",
+            "strDescription": "牛肉は、牛の肉、特に骨格筋の料理名です。人類は先史時代から牛肉を食べてきました。牛肉は高品質のタンパク質と栄養素の源です。\n\n牛の骨格筋肉のほとんどは、ロースト、ショートリブ、ステーキ（フィレミニヨン、サーロインステーキ、ランプステーキ、リブステーキ、リブアイステーキ、ハンガーステーキなど）などの特定の部分にカットするだけでそのまま使用できますが、他の部位は加工されます（コンビーフまたはビーフジャーキー）。一方、トリミングは通常、より高齢で脂肪の少ない（したがってより硬い）牛の肉と混ぜられ、挽かれたり、ミンチにされたり、ソーセージに使用されます。血液は、ブラッドソーセージと呼ばれるいくつかの種類に使用されます。他に食べられる部位としては、牛の尾、肝臓、舌、第一胃の胃袋、腺（特に膵臓と胸腺は胸腺と呼ばれ、スウィートブレッドと呼ばれる）、心臓、脳（ただし、牛海綿状脳症（BSE、一般に狂牛病と呼ばれる）の危険がある地域では禁止されている）、腎臓、雄牛の柔らかい睾丸（米国ではカーフフライ、プレーリーオイスター、ロッキーマウンテンオイスターとして知られている）などの筋肉や内臓がある。腸は調理されてそのまま食べられることもあるが、洗浄されて天然のソーセージの皮として使われることが多い。骨はビーフストックを作るのに使われる。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Beef.png"
+        },
+        {
+            "idIngredient": "4",
+            "strIngredient": "豚肉",
+            "strDescription": "豚肉は、家畜の豚（Sus scrofa domesticus）の肉の料理名です。豚肉は世界中で最も一般的に消費されている肉で、[1] 豚の飼育は紀元前5000年にまで遡ります。\n\n豚肉は、新鮮な状態でも保存食としても食べられます。保存食にすると、豚肉製品の保存期間が長くなります。ハム、燻製豚肉、ハム、ベーコン、ソーセージは、保存食の例です。シャルキュトリーは、豚肉を原料とする肉製品に特化した料理の一分野です。\n\n豚肉は、東南アジアの東部および非イスラム教地域（インドシナ、フィリピン、シンガポール、東ティモール）で最も人気のある肉であり、西洋世界、特に中央ヨーロッパでも非常に一般的です。豚肉は、脂肪分が多く、食感がよいため、アジア料理で高く評価されています。豚肉の摂取は、ユダヤ教、イスラム教、ラスタファリアンの食事法で宗教上の理由で禁じられていますが、その原因はいくつか考えられます。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pork.png"
+        },
+        {
+            "idIngredient": "5",
+            "strIngredient": "アボカド",
+            "strDescription": "アボカドはメキシコ中南部に起源を持つ木で、顕花植物のクスノキ科に属します。アボカド（またはアボカドナシ、アリゲーターナシ）とも呼ばれるこの植物の果実は、植物学的には大きなベリーで、大きな種子が 1 つ入っています。\n\nアボカドは商業的に価値があり、世界中の熱帯気候と地中海気候で栽培されています。緑色の皮を被った肉質の果実で、ナシ型、卵型、または球形になることがあります。商業的には、収穫後に熟します。アボカドの木は部分的に自家受粉し、予測可能な果実の品質と量を維持するために接ぎ木で繁殖することがよくあります。2017 年、メキシコは世界のアボカド供給量の 34% を生産しました。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Avocado.png"
+        },
+        {
+            "idIngredient": "9",
+            "strIngredient": "アップルサイダービネガー",
+            "strDescription": "アップルサイダービネガー、またはサイダービネガーは、発酵させたリンゴジュースから作られる酢で、サラダドレッシング、マリネ、ビネグレットソース、食品保存料、チャツネなどに使われます。リンゴを潰し、果汁を搾り出して作られます。液体にバクテリアと酵母を加えるとアルコール発酵が始まり、糖がアルコールに変わります。2 番目の発酵段階では、酢酸形成バクテリア (アセトバクター属) によってアルコールが酢に変わります。酢酸とリンゴ酸が結合して酢に酸味を与えます。アップルサイダービネガーには薬効や栄養価はありません。アップルサイダービネガーを定期的に摂取すると体重を維持または減量できる、あるいは血糖値や脂質レベルを管理するのに効果的であるという質の高い臨床的証拠はありません。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Apple%20Cider%20Vinegar.png"
+        },
+        {
+            "idIngredient": "10",
+            "strIngredient": "アスパラガス",
+            "strDescription": "アスパラガス、またはガーデンアスパラガス、俗称スズメ草、学名 Asparagus officinalis は、アスパラガス属の多年生開花植物種です。その若芽は春野菜として使用されます。\n\nかつては、近縁のネギ属、タマネギ、ニンニクと同様にユリ科に分類されていました。しかし、遺伝子研究により、ユリ、ネギ、アスパラガスはそれぞれユリ科、ヒガンバナ科、キジカクシ科の 3 つの別々の科に分類され、ヒガンバナ科とキジカクシ科はキジカクシ目にまとめられています。アスパラガスの原産地については情報源によって異なりますが、一般的にはヨーロッパの大部分と西温帯アジアが含まれます。野菜作物として広く栽培されています。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Asparagus.png"
+        },
+        {
+            "idIngredient": "11",
+            "strIngredient": "茄子",
+            "strDescription": "ナス（米国、オーストラリア）、ナス（英国）、またはナス（南アジアおよび南アフリカ）は、ナス科の植物種です。ナスは世界中で食用果実のために栽培されています。\n\n最も一般的には紫色で、スポンジ状の吸収性のある果実は、さまざまな料理に使用されます。野菜と見なされることが多いですが、植物学上の定義ではベリーです。ナス属のメンバーとして、トマトやジャガイモと関連があります。トマトと同様に、皮と種は食べられますが、ジャガイモと同様に、通常は調理して食べられます。ナスは栄養的に主要栄養素と微量栄養素の含有量が低いですが、調理によって果実が油と風味を肉に吸収する能力があるため、料理の分野での使用が広がっています。\n\nもともとは野生のナス科の種であるトゲまたはビターアップル、S. incanum から栽培化されましたが、おそらく南アジアと東アジアで 2 回独立して栽培化されました。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Aubergine.png"
+        },
+        {
+            "idIngredient": "13",
+            "strIngredient": "ベビープラムトマト",
+            "strDescription": "トマトは、トマト科の植物Solanum lycopersicumの食用で、赤い実が多い。この種は南アメリカ西部と中央アメリカが原産である。ナワトル語（アステカ語）のtomatlからスペイン語のtomateが生まれ、英語のtomatoがそこから派生した。[3][4] トマトの栽培と栽培食品としての利用は、メキシコの先住民に由来すると考えられる。アステカ人は、スペインがアステカ帝国を征服した当時、トマトを料理に使用しており、スペイン人はアステカ人との接触後に初めてトマトに遭遇し、この植物をヨーロッパに持ち込んだ。そこから、16世紀にヨーロッパの植民地化された世界の他の地域にトマトがもたらされた。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Baby%20Plum%20Tomatoes.png"
+        },
+        {
+            "idIngredient": "14",
+            "strIngredient": "ベーコン",
+            "strDescription": "ベーコンは塩漬け豚肉の一種です。ベーコンは、豚バラ肉や背肉など、さまざまな部位の肉から作られます。背肉は、腹肉よりも脂肪分が少ないのが一般的です。ベーコンは、そのまま食べたり、付け合わせとして（特に朝食）、料理の味付けに副材料として（クラブサンドイッチなど）使われます。ベーコンは、鹿肉やキジ肉などのジビエのローストの付け合わせやラーディングにも使われます。この単語は、古高ドイツ語の「お尻」、「ハム」、「ベーコンの側面」を意味する「bacho」に由来し、古フランス語の「bacon」と同義です。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Bacon.png"
+        },
+        {
+            "idIngredient": "15",
+            "strIngredient": "ベーキングパウダー",
+            "strDescription": "ベーキングパウダーは、炭酸塩または重炭酸塩と弱酸の混合物である乾燥化学膨張剤です。コーンスターチなどの緩衝剤を含めることで、塩基と酸が早期に反応するのを防ぎます。ベーキングパウダーは、焼き菓子のボリュームを増やし、食感を軽くするために使用されます。酸塩基反応によって生地または生地に二酸化炭素ガスを放出し、湿った混合物の泡を膨張させて混合物を膨らませる働きがあります。最初のシングルアクションベーキングパウダーは、1843年にイギ​​リスのバーミンガムを拠点とする食品製造業者アルフレッドバードによって開発されました。最初のダブルアクションベーキングパウダーは、1860年代にアメリカのエベンノートンホースフォードによって開発されました。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Baking%20Powder.png"
+        },
+        {
+            "idIngredient": "16",
+            "strIngredient": "バルサミコ酢",
+            "strDescription": "バルサミコ酢（イタリア語：アセト・バルサミコ）は、バルサミコと略されることもある、非常に濃く、濃縮された、強い風味の酢で、イタリア原産で、ブドウの果汁から全部または一部作られています。ブドウの果汁は、皮、種、茎をすべて含んだ、搾りたてのブドウジュースです。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Balsamic%20Vinegar.png"
+        },
+        {
+            "idIngredient": "17",
+            "strIngredient": "バジル",
+            "strDescription": "バジルは、グレートバジルとも呼ばれ、シソ科（ミント）の料理用ハーブです。\n\nバジルは、中央アフリカから東南アジアまでの熱帯地域が原産です。柔らかい植物で、世界中の料理に使われています。種や品種によって異なりますが、葉はアニスのような味がし、強い刺激臭があり、甘い香りがします。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Basil.png"
+        },
+        {
+            "idIngredient": "18",
+            "strIngredient": "バジルの葉",
+            "strDescription": "バジルは、グレートバジルとも呼ばれ、シソ科（ミント）の料理用ハーブです。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Basil%20Leaves.png"
+        },
+        {
+            "idIngredient": "19",
+            "strIngredient": "バスマティライス",
+            "strDescription": "バスマティ米は、インド亜大陸原産の伝統的品種で、細長い粒の香り米です。インド国営の農産物・加工食品輸出開発局とパキスタン政府運営のパキスタン経済調査によると、2018～2019年現在、インドは海外のバスマティ米市場の90％以上を輸出し、パキスタンが残りを占めています。多くの国が国内産のバスマティ米を使用していますが、バスマティ米は地理的にインド、パキスタン、ネパール、バングラデシュの特定の地域に限定されています。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Basmati%20Rice.png"
+        },
+        {
+            "idIngredient": "20",
+            "strIngredient": "ベイリーフ",
+            "strDescription": "月桂樹の葉は、料理によく使われる香りのよい葉です。丸ごと、または乾燥させて粉末にして使用できます。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Bay%20Leaf.png"
+        },
+        {
+            "idIngredient": "21",
+            "strIngredient": "ベイリーフ",
+            "strDescription": "月桂樹の葉は、料理によく使われる香りのよい葉です。丸ごと、または乾燥させて粉末にして使用できます。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Bay%20Leaves.png"
+        },
+        {
+            "idIngredient": "23",
+            "strIngredient": "ビーフブリスケット",
+            "strDescription": "牛肉は、牛の肉、特に骨格筋の料理名です。人類は先史時代から牛肉を食べてきました。牛肉は高品質のタンパク質と栄養素の源です。\n\n牛の骨格筋肉のほとんどは、ロースト、ショートリブ、ステーキ（フィレミニヨン、サーロインステーキ、ランプステーキ、リブステーキ、リブアイステーキ、ハンガーステーキなど）などの特定の部分にカットするだけでそのまま使用できますが、他の部位は加工されます（コンビーフまたはビーフジャーキー）。一方、トリミングは通常、より高齢で脂肪の少ない（したがってより硬い）牛の肉と混ぜられ、挽かれたり、ミンチにされたり、ソーセージに使用されます。血液は、ブラッドソーセージと呼ばれるいくつかの種類に使用されます。他に食べられる部位としては、牛の尾、肝臓、舌、第一胃の胃袋、腺（特に膵臓と胸腺は胸腺と呼ばれ、スウィートブレッドと呼ばれる）、心臓、脳（ただし、牛海綿状脳症（BSE、一般に狂牛病と呼ばれる）の危険がある地域では禁止されている）、腎臓、雄牛の柔らかい睾丸（米国ではカーフフライ、プレーリーオイスター、ロッキーマウンテンオイスターとして知られている）などの筋肉や内臓がある。腸は調理されてそのまま食べられることもあるが、洗浄されて天然のソーセージの皮として使われることが多い。骨はビーフストックを作るのに使われる。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Beef%20Brisket.png"
+        },
+        {
+            "idIngredient": "24",
+            "strIngredient": "牛フィレ肉",
+            "strDescription": "牛肉は、牛の肉、特に骨格筋の料理名です。人類は先史時代から牛肉を食べてきました。牛肉は高品質のタンパク質と栄養素の源です。\n\n牛の骨格筋肉のほとんどは、ロースト、ショートリブ、ステーキ（フィレミニヨン、サーロインステーキ、ランプステーキ、リブステーキ、リブアイステーキ、ハンガーステーキなど）などの特定の部分にカットするだけでそのまま使用できますが、他の部位は加工されます（コンビーフまたはビーフジャーキー）。一方、トリミングは通常、より高齢で脂肪の少ない（したがってより硬い）牛の肉と混ぜられ、挽かれたり、ミンチにされたり、ソーセージに使用されます。血液は、ブラッドソーセージと呼ばれるいくつかの種類に使用されます。他に食べられる部位としては、牛の尾、肝臓、舌、第一胃の胃袋、腺（特に膵臓と胸腺は胸腺と呼ばれ、スウィートブレッドと呼ばれる）、心臓、脳（ただし、牛海綿状脳症（BSE、一般に狂牛病と呼ばれる）の危険がある地域では禁止されている）、腎臓、雄牛の柔らかい睾丸（米国ではカーフフライ、プレーリーオイスター、ロッキーマウンテンオイスターとして知られている）などの筋肉や内臓がある。腸は調理されてそのまま食べられることもあるが、洗浄されて天然のソーセージの皮として使われることが多い。骨はビーフストックを作るのに使われる。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Beef%20Fillet.png"
+        },
+        {
+            "idIngredient": "25",
+            "strIngredient": "ビーフグレービー",
+            "strDescription": "牛肉は、牛の肉、特に骨格筋の料理名です。人類は先史時代から牛肉を食べてきました。牛肉は高品質のタンパク質と栄養素の源です。\n\n牛の骨格筋肉のほとんどは、ロースト、ショートリブ、ステーキ（フィレミニヨン、サーロインステーキ、ランプステーキ、リブステーキ、リブアイステーキ、ハンガーステーキなど）などの特定の部分にカットするだけでそのまま使用できますが、他の部位は加工されます（コンビーフまたはビーフジャーキー）。一方、トリミングは通常、より高齢で脂肪の少ない（したがってより硬い）牛の肉と混ぜられ、挽かれたり、ミンチにされたり、ソーセージに使用されます。血液は、ブラッドソーセージと呼ばれるいくつかの種類に使用されます。他に食べられる部位としては、牛の尾、肝臓、舌、第一胃の胃袋、腺（特に膵臓と胸腺は胸腺と呼ばれ、スウィートブレッドと呼ばれる）、心臓、脳（ただし、牛海綿状脳症（BSE、一般に狂牛病と呼ばれる）の危険がある地域では禁止されている）、腎臓、雄牛の柔らかい睾丸（米国ではカーフフライ、プレーリーオイスター、ロッキーマウンテンオイスターとして知られている）などの筋肉や内臓がある。腸は調理されてそのまま食べられることもあるが、洗浄されて天然のソーセージの皮として使われることが多い。骨はビーフストックを作るのに使われる。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Beef%20Gravy.png"
+        },
+        {
+            "idIngredient": "26",
+            "strIngredient": "ビーフストック",
+            "strDescription": "牛肉は、牛の肉、特に骨格筋の料理名です。人類は先史時代から牛肉を食べてきました。牛肉は高品質のタンパク質と栄養素の源です。\n\n牛の骨格筋肉のほとんどは、ロースト、ショートリブ、ステーキ（フィレミニヨン、サーロインステーキ、ランプステーキ、リブステーキ、リブアイステーキ、ハンガーステーキなど）などの特定の部分にカットするだけでそのまま使用できますが、他の部位は加工されます（コンビーフまたはビーフジャーキー）。一方、トリミングは通常、より高齢で脂肪の少ない（したがってより硬い）牛の肉と混ぜられ、挽かれたり、ミンチにされたり、ソーセージに使用されます。血液は、ブラッドソーセージと呼ばれるいくつかの種類に使用されます。他に食べられる部位としては、牛の尾、肝臓、舌、第一胃の胃袋、腺（特に膵臓と胸腺は胸腺と呼ばれ、スウィートブレッドと呼ばれる）、心臓、脳（ただし、牛海綿状脳症（BSE、一般に狂牛病と呼ばれる）の危険がある地域では禁止されている）、腎臓、雄牛の柔らかい睾丸（米国ではカーフフライ、プレーリーオイスター、ロッキーマウンテンオイスターとして知られている）などの筋肉や内臓がある。腸は調理されてそのまま食べられることもあるが、洗浄されて天然のソーセージの皮として使われることが多い。骨はビーフストックを作るのに使われる。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Beef%20Stock.png"
+        },
+        {
+            "idIngredient": "27",
+            "strIngredient": "重曹",
+            "strDescription": "重曹として知られる重炭酸ナトリウムは、化学式 NaHCO3 の化合物です。ナトリウム陽イオン (Na+) と重炭酸陰イオン (HCO3-) からなる塩です。重炭酸ナトリウムは結晶性の白色固体ですが、細かい粉末として現れることもよくあります。洗濯用ソーダ (炭酸ナトリウム) に似た、わずかに塩辛いアルカリ性の味がします。天然の鉱物形態はナコライトです。これは鉱物ナトロンの成分であり、多くの鉱泉に溶けています。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/重炭酸%20Of%20Soda.png"
+        },
+        {
+            "idIngredient": "28",
+            "strIngredient": "ビリヤニマサラ",
+            "strDescription": "ビリヤニは、ビリヤニ、ビリアニ、ビラニ、ブリヤニとも呼ばれ、インド亜大陸のイスラム教徒に起源を持つ混ぜご飯料理です。カレーを混ぜ、それを半調理したご飯と別々に混ぜ合わせた料理にたとえることができます。この料理は、インド亜大陸全域で特に人気があり、この地域の離散民の間でも人気があります。イラクのクルディスタンなど他の地域でも作られています。インドのスパイス、米、肉（鶏肉、ヤギ肉、牛肉、羊肉、エビ、魚）、野菜、卵を使って作られます。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Biryani%20Masala.png"
+        },
+        {
+            "idIngredient": "29",
+            "strIngredient": "ブラックペッパー",
+            "strDescription": "黒コショウ（Piper nigrum）は、コショウ科の花が咲く蔓性植物で、果実のために栽培されます。果実はコショウの実と呼ばれ、通常は乾燥させてスパイスや調味料として使用されます。新鮮で完全に成熟すると、直径約 5 mm（0.20 インチ）で濃い赤色になり、すべての核果と同様に 1 つの種子が含まれます。コショウの実とそこから得られる挽いたコショウは、単にコショウと呼ばれることもありますが、より正確には、黒コショウ（調理して乾燥させた未熟な果実）、青コショウ（乾燥させた未熟な果実）、または白コショウ（熟した果実の種子）と呼ばれます。\n\n黒コショウは、現在のインド南西部のケララ州原産で、同州および熱帯地域の他の地域で広く栽培されています。ベトナムは世界最大のコショウの生産国および輸出国であり、2013 年現在、世界の収穫量の 34% を生産しています。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Black%20Pepper.png"
+        },
+        {
+            "idIngredient": "30",
+            "strIngredient": "ブラック トレクル",
+            "strDescription": "糖蜜（アメリカ英語）または黒糖蜜（イギリス英語）は、サトウキビまたはテンサイを砂糖に精製して得られる粘性のある製品です。糖蜜は、砂糖の量、抽出方法、植物の年齢によって異なります。サトウキビ糖蜜は、主に米国、カナダ、その他の地域で食品の甘味料や風味付けに使用されます。糖蜜は、高品質の市販の黒砂糖の決定的な成分です。\n\nスイートソルガムシロップは、米国南部では口語で「ソルガム糖蜜」と呼ばれることがあります。[2][3] 同様の製品には、蜂蜜、メープルシロップ、コーンシロップ、転化シロップなどがあります。これらの代替シロップのほとんどは、よりマイルドな風味です。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Black%20Treacle.png"
+        },
+        {
+            "idIngredient": "31",
+            "strIngredient": "ボロロッティビーンズ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Borlotti%20Beans.png"
+        },
+        {
+            "idIngredient": "32",
+            "strIngredient": "ボウタイパスタ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Bowtie%20Pasta.png"
+        },
+        {
+            "idIngredient": "33",
+            "strIngredient": "ブラムリーアップル",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Bramley%20Apples.png"
+        },
+        {
+            "idIngredient": "34",
+            "strIngredient": "ブランデー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Brandy.png"
+        },
+        {
+            "idIngredient": "35",
+            "strIngredient": "パン",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Bread.png"
+        },
+        {
+            "idIngredient": "36",
+            "strIngredient": "パンくず",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Breadcrumbs.png"
+        },
+        {
+            "idIngredient": "37",
+            "strIngredient": "ブロッコリー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Broccoli.png"
+        },
+        {
+            "idIngredient": "38",
+            "strIngredient": "ブラウンレンズ豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Brown%20Lentils.png"
+        },
+        {
+            "idIngredient": "39",
+            "strIngredient": "玄米",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Brown%20Rice.png"
+        },
+        {
+            "idIngredient": "40",
+            "strIngredient": "ブラウンシュガー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Brown%20Sugar.png"
+        },
+        {
+            "idIngredient": "41",
+            "strIngredient": "バター",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Butter.png"
+        },
+        {
+            "idIngredient": "43",
+            "strIngredient": "カカオ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cacao.png"
+        },
+        {
+            "idIngredient": "44",
+            "strIngredient": "ケイジャン",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cajun.png"
+        },
+        {
+            "idIngredient": "45",
+            "strIngredient": "缶詰トマト",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Canned%20Tomatoes.png"
+        },
+        {
+            "idIngredient": "46",
+            "strIngredient": "カネリーニ豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cannellini%20Beans.png"
+        },
+        {
+            "idIngredient": "47",
+            "strIngredient": "カルダモン",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cardamom.png"
+        },
+        {
+            "idIngredient": "49",
+            "strIngredient": "ニンジン",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/キャロット.png"
+        },
+        {
+            "idIngredient": "50",
+            "strIngredient": "カシューナッツ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cashew%20Nuts.png"
+        },
+        {
+            "idIngredient": "51",
+            "strIngredient": "カシューナッツ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cashews.png"
+        },
+        {
+            "idIngredient": "52",
+            "strIngredient": "グラニュー糖",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Caster%20Sugar.png"
+        },
+        {
+            "idIngredient": "53",
+            "strIngredient": "カイエンペッパー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cayenne%20Pepper.png"
+        },
+        {
+            "idIngredient": "54",
+            "strIngredient": "セロリアック",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Celeriac.png"
+        },
+        {
+            "idIngredient": "55",
+            "strIngredient": "セロリ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Celery.png"
+        },
+        {
+            "idIngredient": "56",
+            "strIngredient": "セロリ塩",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Celery%20Salt.png"
+        },
+        {
+            "idIngredient": "57",
+            "strIngredient": "シャロット",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Challots.png"
+        },
+        {
+            "idIngredient": "58",
+            "strIngredient": "シャーロットポテト",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Charlotte%20Potatoes.png"
+        },
+        {
+            "idIngredient": "59",
+            "strIngredient": "チェダーチーズ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cheddar%20Cheese.png"
+        },
+        {
+            "idIngredient": "60",
+            "strIngredient": "チーズ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cheese.png"
+        },
+        {
+            "idIngredient": "61",
+            "strIngredient": "チーズカード",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cheese%20Curds.png"
+        },
+        {
+            "idIngredient": "62",
+            "strIngredient": "チェリートマト",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cherry%20Tomatoes.png"
+        },
+        {
+            "idIngredient": "63",
+            "strIngredient": "栗茸",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chestnut%20Mushroom.png"
+        },
+        {
+            "idIngredient": "65",
+            "strIngredient": "鶏胸肉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chicken%20Breast.png"
+        },
+        {
+            "idIngredient": "66",
+            "strIngredient": "鶏の胸肉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chicken%20Breasts.png"
+        },
+        {
+            "idIngredient": "67",
+            "strIngredient": "鶏の脚",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chicken%20Legs.png"
+        },
+        {
+            "idIngredient": "68",
+            "strIngredient": "チキンストック",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chicken%20Stock.png"
+        },
+        {
+            "idIngredient": "70",
+            "strIngredient": "鶏もも肉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chicken%20Thighs.png"
+        },
+        {
+            "idIngredient": "71",
+            "strIngredient": "ひよこ豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chickpeas.png"
+        },
+        {
+            "idIngredient": "72",
+            "strIngredient": "チリパウダー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chili%20Powder.png"
+        },
+        {
+            "idIngredient": "73",
+            "strIngredient": "冷やしたバター",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chilled%20Butter.png"
+        },
+        {
+            "idIngredient": "74",
+            "strIngredient": "チリ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chilli.png"
+        },
+        {
+            "idIngredient": "75",
+            "strIngredient": "チリパウダー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chilli%20Powder.png"
+        },
+        {
+            "idIngredient": "76",
+            "strIngredient": "ブロッコリー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/ Chinese%20Broccoli.png"
+        },
+        {
+            "idIngredient": "77",
+            "strIngredient": "チョコレートチップ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chocolate%20Chips.png"
+        },
+        {
+            "idIngredient": "78",
+            "strIngredient": "玉ねぎのみじん切り",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chopped%20Onion.png"
+        },
+        {
+            "idIngredient": "79",
+            "strIngredient": "パセリのみじん切り",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chopped%20Parsley.png"
+        },
+        {
+            "idIngredient": "80",
+            "strIngredient": "トマトのみじん切り",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chopped%20Tomatoes.png"
+        },
+        {
+            "idIngredient": "81",
+            "strIngredient": "チョリソ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chorizo​​.png"
+        },
+        {
+            "idIngredient": "82",
+            "strIngredient": "クリスマスプディング",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Christmas%20Pudding.png"
+        },
+        {
+            "idIngredient": "83",
+            "strIngredient": "コリアンダー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cilantro.png"
+        },
+        {
+            "idIngredient": "84",
+            "strIngredient": "シナモン",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cinnamon.png"
+        },
+        {
+            "idIngredient": "85",
+            "strIngredient": "シナモンスティック",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cinnamon%20Stick.png"
+        },
+        {
+            "idIngredient": "87",
+            "strIngredient": "クローブ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cloves.png"
+        },
+        {
+            "idIngredient": "88",
+            "strIngredient": "ココシュガー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Coco%20Sugar.png"
+        },
+        {
+            "idIngredient": "89",
+            "strIngredient": "ココア",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cocoa.png"
+        },
+        {
+            "idIngredient": "90",
+            "strIngredient": "ココナッツクリーム",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Coconut%20Cream.png"
+        },
+        {
+            "idIngredient": "91",
+            "strIngredient": "ココナッツミルク",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Coconut%20Milk.png"
+        },
+        {
+            "idIngredient": "92",
+            "strIngredient": "コルビージャックチーズ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Colby%20Jack%20Cheese.png"
+        },
+        {
+            "idIngredient": "93",
+            "strIngredient": "冷たい水",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cold%20Water.png"
+        },
+        {
+            "idIngredient": "94",
+            "strIngredient": "練乳",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Condensed%20Milk.png"
+        },
+        {
+            "idIngredient": "95",
+            "strIngredient": "コリアンダー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Coriander.png"
+        },
+        {
+            "idIngredient": "96",
+            "strIngredient": "コリアンダーの葉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Coriander%20Leaves.png"
+        },
+        {
+            "idIngredient": "97",
+            "strIngredient": "コリアンダーシード",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Coriander%20Seeds.png"
+        },
+        {
+            "idIngredient": "98",
+            "strIngredient": "コーントルティーヤ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Corn%20Tortillas.png"
+        },
+        {
+            "idIngredient": "99",
+            "strIngredient": "コーンスターチ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cornstarch.png"
+        },
+        {
+            "idIngredient": "100",
+            "strIngredient": "クリーム",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cream.png"
+        },
+        {
+            "idIngredient": "101",
+            "strIngredient": "クレームフレッシュ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Creme%20Fraiche.png"
+        },
+        {
+            "idIngredient": "102",
+            "strIngredient": "角切りフェタチーズ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cubed%20Feta%20Cheese.png"
+        },
+        {
+            "idIngredient": "103",
+            "strIngredient": "キュウリ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cucumber.png"
+        },
+        {
+            "idIngredient": "104",
+            "strIngredient": "クミン",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cumin.png"
+        },
+        {
+            "idIngredient": "105",
+            "strIngredient": "クミンシード",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cumin%20Seeds.png"
+        },
+        {
+            "idIngredient": "106",
+            "strIngredient": "カレー粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Curry%20Powder.png"
+        },
+        {
+            "idIngredient": "107",
+            "strIngredient": "ダークブラウンシュガー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Dark%20Brown%20Sugar.png"
+        },
+        {
+            "idIngredient": "108",
+            "strIngredient": "ダークソフトブラウンシュガー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Dark%20Soft%20Brown%20Sugar.png"
+        },
+        {
+            "idIngredient": "109",
+            "strIngredient": "濃い醤油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Dark%20Soy%20Sauce.png"
+        },
+        {
+            "idIngredient": "110",
+            "strIngredient": "デメララシュガー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Demerara%20Sugar.png"
+        },
+        {
+            "idIngredient": "111",
+            "strIngredient": "角切りトマト",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Diced%20Tomatoes.png"
+        },
+        {
+            "idIngredient": "112",
+            "strIngredient": "消化ビスケット",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Digestive%20Biscuits.png"
+        },
+        {
+            "idIngredient": "113",
+            "strIngredient": "ディル",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Dill.png"
+        },
+        {
+            "idIngredient": "114",
+            "strIngredient": "ドネル肉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Doner%20Meat.png"
+        },
+        {
+            "idIngredient": "115",
+            "strIngredient": "ダブルクリーム",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Double%20Cream.png"
+        },
+        {
+            "idIngredient": "116",
+            "strIngredient": "乾燥オレガノ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Dried%20Oregano.png"
+        },
+        {
+            "idIngredient": "117",
+            "strIngredient": "辛口の白ワイン",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Dry%20White%20Wine.png"
+        },
+        {
+            "idIngredient": "119",
+            "strIngredient": "ナス",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Egg%20Plants.png"
+        },
+        {
+            "idIngredient": "120",
+            "strIngredient": "エッグロール",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Egg%20Rolls.png"
+        },
+        {
+            "idIngredient": "121",
+            "strIngredient": "卵白",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Egg%20White.png"
+        },
+        {
+            "idIngredient": "122",
+            "strIngredient": "卵黄",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Egg%20Yolks.png"
+        },
+        {
+            "idIngredient": "123",
+            "strIngredient": "卵",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Eggs.png"
+        },
+        {
+            "idIngredient": "124",
+            "strIngredient": "エンチラーダソース",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Enchilada%20Sauce.png"
+        },
+        {
+            "idIngredient": "125",
+            "strIngredient": "イングリッシュマスタード",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/English%20Mustard.png"
+        },
+        {
+            "idIngredient": "126",
+            "strIngredient": "エキストラバージンオリーブオイル",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Extra%20Virgin%20Olive%20Oil.png"
+        },
+        {
+            "idIngredient": "127",
+            "strIngredient": "ファヒータ調味料",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fajita%20Seasoning.png"
+        },
+        {
+            "idIngredient": "128",
+            "strIngredient": "ファルファッレ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Farfalle.png"
+        },
+        {
+            "idIngredient": "130",
+            "strIngredient": "フェンネルの球根",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fennel%20Bulb.png"
+        },
+        {
+            "idIngredient": "131",
+            "strIngredient": "フェンネルシード",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fennel%20Seeds.png"
+        },
+        {
+            "idIngredient": "132",
+            "strIngredient": "フェヌグリーク",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fenugreek.png"
+        },
+        {
+            "idIngredient": "133",
+            "strIngredient": "フェタチーズ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Feta.png"
+        },
+        {
+            "idIngredient": "134",
+            "strIngredient": "魚醤",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fish%20Sauce.png"
+        },
+        {
+            "idIngredient": "135",
+            "strIngredient": "アーモンドフレーク",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Flaked%20Almonds.png"
+        },
+        {
+            "idIngredient": "136",
+            "strIngredient": "亜麻の卵",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Flax%20Eggs.png"
+        },
+        {
+            "idIngredient": "137",
+            "strIngredient": "小麦粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Flour.png"
+        },
+        {
+            "idIngredient": "138",
+            "strIngredient": "小麦粉トルティーヤ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Flour%20Tortilla.png"
+        },
+        {
+            "idIngredient": "139",
+            "strIngredient": "粉っぽいジャガイモ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Floury%20Potatoes.png"
+        },
+        {
+            "idIngredient": "140",
+            "strIngredient": "放し飼いの卵、溶き卵",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Free-range%20Egg%2C%20Been.png"
+        },
+        {
+            "idIngredient": "141",
+            "strIngredient": "放し飼いの卵、溶き卵",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Free-range%20Eggs%2C%20Been.png"
+        },
+        {
+            "idIngredient": "142",
+            "strIngredient": "フランス産レンズ豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/French%20Lentils.png"
+        },
+        {
+            "idIngredient": "143",
+            "strIngredient": "フレッシュバジル",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fresh%20Basil.png"
+        },
+        {
+            "idIngredient": "144",
+            "strIngredient": "フレッシュタイム",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fresh%20Thyme.png"
+        },
+        {
+            "idIngredient": "145",
+            "strIngredient": "新鮮なパセリのみじん切り",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Freshly%20Chopped%20Parsley.png"
+        },
+        {
+            "idIngredient": "146",
+            "strIngredient": "フライドポテト",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fries.png"
+        },
+        {
+            "idIngredient": "147",
+            "strIngredient": "全脂肪ヨーグルト",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Full%20Fat%20Yogurt.png"
+        },
+        {
+            "idIngredient": "148",
+            "strIngredient": "ガラムマサラ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Garam%20Masala.png"
+        },
+        {
+            "idIngredient": "149",
+            "strIngredient": "ニンニク",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Garlic.png"
+        },
+        {
+            "idIngredient": "150",
+            "strIngredient": "ニンニク",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Garlic%20Clove.png"
+        },
+        {
+            "idIngredient": "151",
+            "strIngredient": "ガーリックパウダー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Garlic%20Powder.png"
+        },
+        {
+            "idIngredient": "152",
+            "strIngredient": "ガーリックソース",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Garlic%20Sauce.png"
+        },
+        {
+            "idIngredient": "153",
+            "strIngredient": "ギー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ghee.png"
+        },
+        {
+            "idIngredient": "154",
+            "strIngredient": "ジンジャー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ginger.png"
+        },
+        {
+            "idIngredient": "155",
+            "strIngredient": "ジンジャーコーディアル",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ginger%20Cordial.png"
+        },
+        {
+            "idIngredient": "156",
+            "strIngredient": "生姜ニンニクペースト",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ginger%20Garlic%20Paste.png"
+        },
+        {
+            "idIngredient": "157",
+            "strIngredient": "生姜ペースト",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ginger%20Paste.png"
+        },
+        {
+            "idIngredient": "158",
+            "strIngredient": "ゴールデンシロップ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Golden%20Syrup.png"
+        },
+        {
+            "idIngredient": "159",
+            "strIngredient": "ゴーダチーズ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Gouda%20Cheese.png"
+        },
+        {
+            "idIngredient": "160",
+            "strIngredient": "グラニュー糖",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Granulated%20Sugar.png"
+        },
+        {
+            "idIngredient": "161",
+            "strIngredient": "グレープトマト",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Grape%20Tomatoes.png"
+        },
+        {
+            "idIngredient": "162",
+            "strIngredient": "ギリシャヨーグルト",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Greek%20Yogurt.png"
+        },
+        {
+            "idIngredient": "163",
+            "strIngredient": "グリーンビーンズ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Green%20Beans.png"
+        },
+        {
+            "idIngredient": "165",
+            "strIngredient": "グリーンチリ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Green%20Chilli.png"
+        },
+        {
+            "idIngredient": "166",
+            "strIngredient": "グリーンオリーブ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Green%20Olives.png"
+        },
+        {
+            "idIngredient": "167",
+            "strIngredient": "緑赤レンズ豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Green%20Red%20Lentils.png"
+        },
+        {
+            "idIngredient": "168",
+            "strIngredient": "グリーンサルサ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Green%20Salsa.png"
+        },
+        {
+            "idIngredient": "169",
+            "strIngredient": "アーモンドパウダー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ground%20Almonds.png"
+        },
+        {
+            "idIngredient": "170",
+            "strIngredient": "クミンパウダー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ground%20Cumin.png"
+        },
+        {
+            "idIngredient": "171",
+            "strIngredient": "粉末生姜",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ground%20Ginger.png"
+        },
+        {
+            "idIngredient": "172",
+            "strIngredient": "グリュイエール",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Gruy%C3%A8re.png"
+        },
+        {
+            "idIngredient": "173",
+            "strIngredient": "ハードタコスシェル",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Hard%20Taco%20Shells.png"
+        },
+        {
+            "idIngredient": "175",
+            "strIngredient": "ハリッサスパイス",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Harissa%20Spice.png"
+        },
+        {
+            "idIngredient": "176",
+            "strIngredient": "生クリーム",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Heavy%20Cream.png"
+        },
+        {
+            "idIngredient": "177",
+            "strIngredient": "ハニー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Honey.png"
+        },
+        {
+            "idIngredient": "178",
+            "strIngredient": "ホースラディッシュ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Horseradish.png"
+        },
+        {
+            "idIngredient": "179",
+            "strIngredient": "ホットビーフストック",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Hot%20Beef%20Stock.png"
+        },
+        {
+            "idIngredient": "180",
+            "strIngredient": "ホットソース",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Hotsauce.png"
+        },
+        {
+            "idIngredient": "181",
+            "strIngredient": "アイスクリーム",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ice%20Cream.png"
+        },
+        {
+            "idIngredient": "182",
+            "strIngredient": "イタリアのフェンネルソーセージ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Italian%20Fennel%20Sausages.png"
+        },
+        {
+            "idIngredient": "183",
+            "strIngredient": "イタリアンシーズニング",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Italian%20Seasoning.png"
+        },
+        {
+            "idIngredient": "184",
+            "strIngredient": "ハラペーニョ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Jalapeno.png"
+        },
+        {
+            "idIngredient": "185",
+            "strIngredient": "ジャスミンライス",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Jasmine%20Rice.png"
+        },
+        {
+            "idIngredient": "186",
+            "strIngredient": "キクイモ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Jerusalem%20Artichokes.png"
+        },
+        {
+            "idIngredient": "187",
+            "strIngredient": "ケール",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Kale.png"
+        },
+        {
+            "idIngredient": "188",
+            "strIngredient": "クスクス",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Khus%20Khus.png"
+        },
+        {
+            "idIngredient": "189",
+            "strIngredient": "キングエビ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/King%20Prawns.png"
+        },
+        {
+            "idIngredient": "190",
+            "strIngredient": "コーシャソルト",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Kosher%20Salt.png"
+        },
+        {
+            "idIngredient": "191",
+            "strIngredient": "子羊",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lamb.png"
+        },
+        {
+            "idIngredient": "192",
+            "strIngredient": "ラムロースチョップ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lamb%20Loin%20Chops.png"
+        },
+        {
+            "idIngredient": "193",
+            "strIngredient": "ラムミンチ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lamb%20Mince.png"
+        },
+        {
+            "idIngredient": "194",
+            "strIngredient": "ラザニアシート",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lasagne%20Sheets.png"
+        },
+        {
+            "idIngredient": "195",
+            "strIngredient": "赤身牛ミンチ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lean%20Minced%20Beef.png"
+        },
+        {
+            "idIngredient": "196",
+            "strIngredient": "リーキ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Leek.png"
+        },
+        {
+            "idIngredient": "197",
+            "strIngredient": "レモン",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lemon.png"
+        },
+        {
+            "idIngredient": "198",
+            "strIngredient": "レモンジュース",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lemon%20Juice.png"
+        },
+        {
+            "idIngredient": "199",
+            "strIngredient": "レモンの皮",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lemon%20Zest.png"
+        },
+        {
+            "idIngredient": "200",
+            "strIngredient": "レモン",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lemons.png"
+        },
+        {
+            "idIngredient": "201",
+            "strIngredient": "レタス",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lettuce.png"
+        },
+        {
+            "idIngredient": "202",
+            "strIngredient": "ライム",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lime.png"
+        },
+        {
+            "idIngredient": "203",
+            "strIngredient": "リトルジェムレタス",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Little%20Gem%20Lettuce.png"
+        },
+        {
+            "idIngredient": "204",
+            "strIngredient": "マカロニ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Macaroni.png"
+        },
+        {
+            "idIngredient": "205",
+            "strIngredient": "サバ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mackerel.png"
+        },
+        {
+            "idIngredient": "206",
+            "strIngredient": "マドラスペースト",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Madras%20Paste.png"
+        },
+        {
+            "idIngredient": "207",
+            "strIngredient": "マージョラム",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Marjoram.png"
+        },
+        {
+            "idIngredient": "208",
+            "strIngredient": "マッサマンカレーペースト",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Massaman%20Curry%20Paste.png"
+        },
+        {
+            "idIngredient": "209",
+            "strIngredient": "メジュールデーツ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Medjool%20Dates.png"
+        },
+        {
+            "idIngredient": "210",
+            "strIngredient": "メレンゲの巣",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Meringue%20Nests.png"
+        },
+        {
+            "idIngredient": "211",
+            "strIngredient": "牛乳",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Milk.png"
+        },
+        {
+            "idIngredient": "212",
+            "strIngredient": "ニンニクのみじん切り",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Minced%20Garlic.png"
+        },
+        {
+            "idIngredient": "213",
+            "strIngredient": "ミニチュアマシュマロ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Miniature%20Marshmallows.png"
+        },
+        {
+            "idIngredient": "214",
+            "strIngredient": "ミント",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mint.png"
+        },
+        {
+            "idIngredient": "215",
+            "strIngredient": "モントレージャックチーズ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Monterey%20Jack%20Cheese.png"
+        },
+        {
+            "idIngredient": "216",
+            "strIngredient": "モッツァレラボール",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mozzarella%20Balls.png"
+        },
+        {
+            "idIngredient": "217",
+            "strIngredient": "マスコバド砂糖",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Muscovado%20Sugar.png"
+        },
+        {
+            "idIngredient": "218",
+            "strIngredient": "キノコ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mushrooms.png"
+        },
+        {
+            "idIngredient": "219",
+            "strIngredient": "マスタード",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mustard.png"
+        },
+        {
+            "idIngredient": "220",
+            "strIngredient": "マスタードパウダー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mustard%20Powder.png"
+        },
+        {
+            "idIngredient": "221",
+            "strIngredient": "マスタードシード",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mustard%20Seeds.png"
+        },
+        {
+            "idIngredient": "222",
+            "strIngredient": "ナツメグ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Nutmeg.png"
+        },
+        {
+            "idIngredient": "223",
+            "strIngredient": "油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Oil.png"
+        },
+        {
+            "idIngredient": "224",
+            "strIngredient": "オリーブ油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Olive%20Oil.png"
+        },
+        {
+            "idIngredient": "226",
+            "strIngredient": "オニオンソルト",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Onion%20Salt.png"
+        },
+        {
+            "idIngredient": "227",
+            "strIngredient": "玉ねぎ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Onions.png"
+        },
+        {
+            "idIngredient": "228",
+            "strIngredient": "オレンジ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Orange.png"
+        },
+        {
+            "idIngredient": "229",
+            "strIngredient": "オレンジの皮",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Orange%20Zest.png"
+        },
+        {
+            "idIngredient": "230",
+            "strIngredient": "オレガノ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Oregano.png"
+        },
+        {
+            "idIngredient": "231",
+            "strIngredient": "オイスターソース",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Oyster%20Sauce.png"
+        },
+        {
+            "idIngredient": "232",
+            "strIngredient": "パプリカ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/パプリカ.png"
+        },
+        {
+            "idIngredient": "233",
+            "strIngredient": "パルマハム",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Parma%20Ham.png"
+        },
+        {
+            "idIngredient": "234",
+            "strIngredient": "パルメザン",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Parmesan.png"
+        },
+        {
+            "idIngredient": "235",
+            "strIngredient": "パルメザンチーズ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Parmesan%20Cheese.png"
+        },
+        {
+            "idIngredient": "236",
+            "strIngredient": "パルミジャーノ・レッジャーノ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Parmigiano-reggiano.png"
+        },
+        {
+            "idIngredient": "237",
+            "strIngredient": "パセリ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Parsley.png"
+        },
+        {
+            "idIngredient": "238",
+            "strIngredient": "ピーナッツバター",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Peanut%20Butter.png"
+        },
+        {
+            "idIngredient": "239",
+            "strIngredient": "ピーナッツオイル",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Peanut%20Oil.png"
+        },
+        {
+            "idIngredient": "240",
+            "strIngredient": "ピーナッツ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Peanuts.png"
+        },
+        {
+            "idIngredient": "241",
+            "strIngredient": "エンドウ豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Peas.png"
+        },
+        {
+            "idIngredient": "242",
+            "strIngredient": "ペコリーノ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pecorino.png"
+        },
+        {
+            "idIngredient": "243",
+            "strIngredient": "ペンネ・リガーテ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Penne%20Rigate.png"
+        },
+        {
+            "idIngredient": "244",
+            "strIngredient": "ペッパー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pepper.png"
+        },
+        {
+            "idIngredient": "245",
+            "strIngredient": "松の実",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pine%20Nuts.png"
+        },
+        {
+            "idIngredient": "246",
+            "strIngredient": "種抜きブラックオリーブ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pitted%20Black%20Olives.png"
+        },
+        {
+            "idIngredient": "247",
+            "strIngredient": "プレーンチョコレート",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Plain%20Chocolate.png"
+        },
+        {
+            "idIngredient": "248",
+            "strIngredient": "普通の小麦粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Plain%20Flour.png"
+        },
+        {
+            "idIngredient": "249",
+            "strIngredient": "プラムトマト",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Plum%20Tomatoes.png"
+        },
+        {
+            "idIngredient": "252",
+            "strIngredient": "じゃがいも澱粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Potato%20Starch.png"
+        },
+        {
+            "idIngredient": "253",
+            "strIngredient": "ジャガイモ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Potatoes.png"
+        },
+        {
+            "idIngredient": "254",
+            "strIngredient": "エビ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Prawns.png"
+        },
+        {
+            "idIngredient": "255",
+            "strIngredient": "パイ生地",
+            "strDescription": null,
+            "strType": "ペストリー",
+            "image_url": "https://www.themealdb.com/images/ingredients/Puff%20Pastry.png"
+        },
+        {
+            "idIngredient": "256",
+            "strIngredient": "ラズベリージャム",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Raspberry%20Jam.png"
+        },
+        {
+            "idIngredient": "257",
+            "strIngredient": "生キングエビ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Raw%20King%20Prawns.png"
+        },
+        {
+            "idIngredient": "258",
+            "strIngredient": "赤唐辛子フレーク",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Red%20Chilli%20Flakes.png"
+        },
+        {
+            "idIngredient": "259",
+            "strIngredient": "赤唐辛子",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Red%20Chilli.png"
+        },
+        {
+            "idIngredient": "261",
+            "strIngredient": "赤唐辛子パウダー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Red%20Chilli%20Powder.png"
+        },
+        {
+            "idIngredient": "263",
+            "strIngredient": "赤玉ねぎ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Red%20Onions.png"
+        },
+        {
+            "idIngredient": "264",
+            "strIngredient": "赤唐辛子",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Red%20Pepper.png"
+        },
+        {
+            "idIngredient": "265",
+            "strIngredient": "赤唐辛子フレーク",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Red%20Pepper%20Flakes.png"
+        },
+        {
+            "idIngredient": "266",
+            "strIngredient": "赤ワイン",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Red%20Wine.png"
+        },
+        {
+            "idIngredient": "267",
+            "strIngredient": "リフライドビーンズ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Refried%20Beans.png"
+        },
+        {
+            "idIngredient": "268",
+            "strIngredient": "米",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rice.png"
+        },
+        {
+            "idIngredient": "269",
+            "strIngredient": "ライスヌードル",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rice%20Noodles.png"
+        },
+        {
+            "idIngredient": "270",
+            "strIngredient": "ライススティックヌードル",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rice%20Stick%20Noodles.png"
+        },
+        {
+            "idIngredient": "271",
+            "strIngredient": "ビーフン",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rice%20Vermicelli.png"
+        },
+        {
+            "idIngredient": "272",
+            "strIngredient": "リガトーニ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rigatoni.png"
+        },
+        {
+            "idIngredient": "273",
+            "strIngredient": "ロケット",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rocket.png"
+        },
+        {
+            "idIngredient": "274",
+            "strIngredient": "ロールドオーツ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rolled%20Oats.png"
+        },
+        {
+            "idIngredient": "276",
+            "strIngredient": "サフラン",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Saffron.png"
+        },
+        {
+            "idIngredient": "277",
+            "strIngredient": "セージ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sage.png"
+        },
+        {
+            "idIngredient": "278",
+            "strIngredient": "酒",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sake.png"
+        },
+        {
+            "idIngredient": "280",
+            "strIngredient": "サルサ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Salsa.png"
+        },
+        {
+            "idIngredient": "281",
+            "strIngredient": "塩",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Salt.png"
+        },
+        {
+            "idIngredient": "282",
+            "strIngredient": "有塩バター",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Salted%20Butter.png"
+        },
+        {
+            "idIngredient": "283",
+            "strIngredient": "ソーセージ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sausages.png"
+        },
+        {
+            "idIngredient": "284",
+            "strIngredient": "海塩",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sea%20Salt.png"
+        },
+        {
+            "idIngredient": "286",
+            "strIngredient": "セルフレイジング小麦粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Self-raise%20Flour.png"
+        },
+        {
+            "idIngredient": "287",
+            "strIngredient": "半脱脂乳",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Semi-skimmed%20Milk.png"
+        },
+        {
+            "idIngredient": "288",
+            "strIngredient": "ゴマ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sesame%20Seed.png"
+        },
+        {
+            "idIngredient": "289",
+            "strIngredient": "エシャロット",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/シャロット.png"
+        },
+        {
+            "idIngredient": "290",
+            "strIngredient": "メキシカンチーズ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Shredded%20Mexican%20Cheese.png"
+        },
+        {
+            "idIngredient": "291",
+            "strIngredient": "モントレージャックチーズ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Shredded%20Monterey%20Jack%20Cheese.png"
+        },
+        {
+            "idIngredient": "292",
+            "strIngredient": "小さなジャガイモ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Small%20Potatoes.png"
+        },
+        {
+            "idIngredient": "293",
+            "strIngredient": "スモークパプリカ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Smoked%20パプリカ.png"
+        },
+        {
+            "idIngredient": "294",
+            "strIngredient": "スモーキーパプリカ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Smoky%20パプリカ.png"
+        },
+        {
+            "idIngredient": "295",
+            "strIngredient": "サワークリーム",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sour%20Cream.png"
+        },
+        {
+            "idIngredient": "296",
+            "strIngredient": "しょうゆ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Soy%20Sauce.png"
+        },
+        {
+            "idIngredient": "297",
+            "strIngredient": "豆乳",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Soya%20Milk.png"
+        },
+        {
+            "idIngredient": "298",
+            "strIngredient": "スパゲッティ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Spaghetti.png"
+        },
+        {
+            "idIngredient": "299",
+            "strIngredient": "ほうれん草",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Spinach.png"
+        },
+        {
+            "idIngredient": "301",
+            "strIngredient": "ネギ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Spring%20Onions.png"
+        },
+        {
+            "idIngredient": "302",
+            "strIngredient": "スカッシュ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Squash.png"
+        },
+        {
+            "idIngredient": "303",
+            "strIngredient": "野菜炒め",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Stir-fry%20 Vegetables.png"
+        },
+        {
+            "idIngredient": "304",
+            "strIngredient": "イチゴ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Strawberries.png"
+        },
+        {
+            "idIngredient": "305",
+            "strIngredient": "砂糖",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sugar.png"
+        },
+        {
+            "idIngredient": "306",
+            "strIngredient": "スルタナ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sultanas.png"
+        },
+        {
+            "idIngredient": "307",
+            "strIngredient": "ひまわり油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sunflower%20Oil.png"
+        },
+        {
+            "idIngredient": "308",
+            "strIngredient": "タマリンドボール",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tamarind%20Ball.png"
+        },
+        {
+            "idIngredient": "309",
+            "strIngredient": "タマリンドペースト",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tamarind%20Paste.png"
+        },
+        {
+            "idIngredient": "310",
+            "strIngredient": "タイの魚​​醤",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Thai%20Fish%20Sauce.png"
+        },
+        {
+            "idIngredient": "311",
+            "strIngredient": "タイグリーンカレーペースト",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Thai%20Green%20Curry%20Paste.png"
+        },
+        {
+            "idIngredient": "312",
+            "strIngredient": "タイのレッドカレーペースト",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Thai%20Red%20Curry%20Paste.png"
+        },
+        {
+            "idIngredient": "313",
+            "strIngredient": "タイム",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Thyme.png"
+        },
+        {
+            "idIngredient": "315",
+            "strIngredient": "トマトケチャップ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tomato%20Ketchup.png"
+        },
+        {
+            "idIngredient": "316",
+            "strIngredient": "トマトピューレ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tomato%20Puree.png"
+        },
+        {
+            "idIngredient": "317",
+            "strIngredient": "トマト",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/トマト.png"
+        },
+        {
+            "idIngredient": "318",
+            "strIngredient": "トゥール・ダル",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Toor%20Dal.png"
+        },
+        {
+            "idIngredient": "319",
+            "strIngredient": "マグロ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tuna.png"
+        },
+        {
+            "idIngredient": "320",
+            "strIngredient": "ターメリック",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Turmeric.png"
+        },
+        {
+            "idIngredient": "321",
+            "strIngredient": "ターメリックパウダー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Turmeric%20Powder.png"
+        },
+        {
+            "idIngredient": "322",
+            "strIngredient": "カブ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Turnips.png"
+        },
+        {
+            "idIngredient": "323",
+            "strIngredient": "バニラ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Vanilla.png"
+        },
+        {
+            "idIngredient": "324",
+            "strIngredient": "バニラエキス",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Vanilla%20Extract.png"
+        },
+        {
+            "idIngredient": "325",
+            "strIngredient": "子牛肉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Veal.png"
+        },
+        {
+            "idIngredient": "326",
+            "strIngredient": "ビーガンバター",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Vegan%20Butter.png"
+        },
+        {
+            "idIngredient": "327",
+            "strIngredient": "植物油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/ Vegetable%20Oil.png"
+        },
+        {
+            "idIngredient": "328",
+            "strIngredient": "野菜ストック",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/ Vegetable%20Stock.png"
+        },
+        {
+            "idIngredient": "329",
+            "strIngredient": "野菜ストックキューブ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/ Vegetable%20Stock%20Cube.png"
+        },
+        {
+            "idIngredient": "330",
+            "strIngredient": "ビネグレットドレッシング",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Vinaigrette%20Dressing.png"
+        },
+        {
+            "idIngredient": "331",
+            "strIngredient": "ブドウの葉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Vine%20Leaves.png"
+        },
+        {
+            "idIngredient": "332",
+            "strIngredient": "酢",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Vinegar.png"
+        },
+        {
+            "idIngredient": "333",
+            "strIngredient": "水",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Water.png"
+        },
+        {
+            "idIngredient": "334",
+            "strIngredient": "ホワイトチョコレートチップ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/White%20Chocolate%20Chips.png"
+        },
+        {
+            "idIngredient": "335",
+            "strIngredient": "白身魚",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/White%20Fish.png"
+        },
+        {
+            "idIngredient": "336",
+            "strIngredient": "白身魚の切り身",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/White%20Fish%20Fillets.png"
+        },
+        {
+            "idIngredient": "337",
+            "strIngredient": "ホワイトビネガー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/White%20Vinegar.png"
+        },
+        {
+            "idIngredient": "338",
+            "strIngredient": "白ワイン",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/White%20Wine.png"
+        },
+        {
+            "idIngredient": "339",
+            "strIngredient": "全乳",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Whole%20Milk.png"
+        },
+        {
+            "idIngredient": "340",
+            "strIngredient": "全粒小麦",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Whole%20Wheat.png"
+        },
+        {
+            "idIngredient": "341",
+            "strIngredient": "全粒粉パン",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Wholegran%20Bread.png"
+        },
+        {
+            "idIngredient": "342",
+            "strIngredient": "ウスターソース",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Worcestershire%20Sauce.png"
+        },
+        {
+            "idIngredient": "343",
+            "strIngredient": "ヨーグルト",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Yogurt.png"
+        },
+        {
+            "idIngredient": "344",
+            "strIngredient": "ズッキーニ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/ズッキーニ.png"
+        },
+        {
+            "idIngredient": "345",
+            "strIngredient": "プレッツェル",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pretzels.png"
+        },
+        {
+            "idIngredient": "346",
+            "strIngredient": "クリームチーズ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cream%20Cheese.png"
+        },
+        {
+            "idIngredient": "347",
+            "strIngredient": "アイシングシュガー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Icing%20Sugar.png"
+        },
+        {
+            "idIngredient": "348",
+            "strIngredient": "トフィーポップコーン",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Toffee%20Popcorn.png"
+        },
+        {
+            "idIngredient": "349",
+            "strIngredient": "キャラメル",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Caramel.png"
+        },
+        {
+            "idIngredient": "350",
+            "strIngredient": "キャラメルソース",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Caramel%20Sauce.png"
+        },
+        {
+            "idIngredient": "351",
+            "strIngredient": "タリアテッレ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tagliatelle.png"
+        },
+        {
+            "idIngredient": "352",
+            "strIngredient": "フェットチーネ",
+            "strDescription": "",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fettuccine.png"
+        },
+        {
+            "idIngredient": "353",
+            "strIngredient": "クロテッドクリーム",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Clotted%20Cream.png"
+        },
+        {
+            "idIngredient": "354",
+            "strIngredient": "コーンフラワー",
+            "strDescription": "",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Corn%20Flour.png"
+        },
+        {
+            "idIngredient": "355",
+            "strIngredient": "ムール貝",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mussels.png"
+        },
+        {
+            "idIngredient": "356",
+            "strIngredient": "フィデオ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fideo.png"
+        },
+        {
+            "idIngredient": "357",
+            "strIngredient": "アンコウ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/アンコウ.png"
+        },
+        {
+            "idIngredient": "358",
+            "strIngredient": "春雨パスタ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Vermicelli%20Pasta.png"
+        },
+        {
+            "idIngredient": "359",
+            "strIngredient": "ベビーイカ",
+            "strDescription": "",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Baby%20Squid.png"
+        },
+        {
+            "idIngredient": "360",
+            "strIngredient": "イカ",
+            "strDescription": "",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Squid.png"
+        },
+        {
+            "idIngredient": "361",
+            "strIngredient": "魚のストック",
+            "strDescription": "",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fish%20Stock.png"
+        },
+        {
+            "idIngredient": "362",
+            "strIngredient": "イワシ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pilchards.png"
+        },
+        {
+            "idIngredient": "363",
+            "strIngredient": "ブラックオリーブ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Black%20Olives.png"
+        },
+        {
+            "idIngredient": "364",
+            "strIngredient": "タマネギ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Onion.png"
+        },
+        {
+            "idIngredient": "365",
+            "strIngredient": "トマト",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tomato.png"
+        },
+        {
+            "idIngredient": "366",
+            "strIngredient": "アヒル",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Duck.png"
+        },
+        {
+            "idIngredient": "367",
+            "strIngredient": "鴨の脚",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Duck%20Legs.png"
+        },
+        {
+            "idIngredient": "368",
+            "strIngredient": "チキンストックキューブ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chicken%20Stock%20Cube.png"
+        },
+        {
+            "idIngredient": "369",
+            "strIngredient": "パッパルデッレパスタ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pappardelle%20Pasta.png"
+        },
+        {
+            "idIngredient": "370",
+            "strIngredient": "パッケリパスタ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Paccheri%20Pasta.png"
+        },
+        {
+            "idIngredient": "371",
+            "strIngredient": "リングイネパスタ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Linguine%20Pasta.png"
+        },
+        {
+            "idIngredient": "373",
+            "strIngredient": "スナップエンドウ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sugar%20Snap%20Peas.png"
+        },
+        {
+            "idIngredient": "374",
+            "strIngredient": "クラスティブレッド",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Crusty%20Bread.png"
+        },
+        {
+            "idIngredient": "375",
+            "strIngredient": "フロマージュフレ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fromage%20Frais.png"
+        },
+        {
+            "idIngredient": "376",
+            "strIngredient": "ハマグリ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Clams.png"
+        },
+        {
+            "idIngredient": "377",
+            "strIngredient": "パスタ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Passata.png"
+        },
+        {
+            "idIngredient": "378",
+            "strIngredient": "菜種油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rapeseed%20Oil.png"
+        },
+        {
+            "idIngredient": "379",
+            "strIngredient": "スティルトンチーズ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Stilton%20Cheese.png"
+        },
+        {
+            "idIngredient": "380",
+            "strIngredient": "ラムレッグ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lamb%20Leg.png"
+        },
+        {
+            "idIngredient": "381",
+            "strIngredient": "ラム肩肉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lamb%20Shoulder.png"
+        },
+        {
+            "idIngredient": "382",
+            "strIngredient": "アプリコット",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Apricot.png"
+        },
+        {
+            "idIngredient": "383",
+            "strIngredient": "バターナッツスクワッシュ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Butternut%20Squash.png"
+        },
+        {
+            "idIngredient": "384",
+            "strIngredient": "クスクス",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Couscous.png"
+        },
+        {
+            "idIngredient": "387",
+            "strIngredient": "牛ミンチ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Minced%20Beef.png"
+        },
+        {
+            "idIngredient": "388",
+            "strIngredient": "七面鳥ミンチ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Turkey%20Mince.png"
+        },
+        {
+            "idIngredient": "389",
+            "strIngredient": "バーベキューソース",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Barbeque%20Sauce.png"
+        },
+        {
+            "idIngredient": "390",
+            "strIngredient": "スイートコーン",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sweetcorn.png"
+        },
+        {
+            "idIngredient": "391",
+            "strIngredient": "ガチョウの脂肪",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Goose%20Fat.png"
+        },
+        {
+            "idIngredient": "392",
+            "strIngredient": "鴨脂",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Duck%20Fat.png"
+        },
+        {
+            "idIngredient": "393",
+            "strIngredient": "フェンネル",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fennel.png"
+        },
+        {
+            "idIngredient": "394",
+            "strIngredient": "赤ワインビネガー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Red%20Wine%20Vinegar.png"
+        },
+        {
+            "idIngredient": "395",
+            "strIngredient": "インゲン豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Haricot%20Beans.png"
+        },
+        {
+            "idIngredient": "396",
+            "strIngredient": "ローズマリー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rosemary.png"
+        },
+        {
+            "idIngredient": "397",
+            "strIngredient": "バタービーンズ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Butter%20Beans.png"
+        },
+        {
+            "idIngredient": "398",
+            "strIngredient": "ピント豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pinto%20Beans.png"
+        },
+        {
+            "idIngredient": "399",
+            "strIngredient": "トマトソース",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tomato%20Sauce.png"
+        },
+        {
+            "idIngredient": "401",
+            "strIngredient": "マスカルポーネ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mascarpone.png"
+        },
+        {
+            "idIngredient": "402",
+            "strIngredient": "モッツァレラ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mozzarella.png"
+        },
+        {
+            "idIngredient": "403",
+            "strIngredient": "リコッタ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ricotta.png"
+        },
+        {
+            "idIngredient": "405",
+            "strIngredient": "ドライアプリコット",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Dried%20Apricots.png"
+        },
+        {
+            "idIngredient": "406",
+            "strIngredient": "ケーパー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Capers.png"
+        },
+        {
+            "idIngredient": "407",
+            "strIngredient": "バナナ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Banana.png"
+        },
+        {
+            "idIngredient": "408",
+            "strIngredient": "ラズベリー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Raspberries.png"
+        },
+        {
+            "idIngredient": "409",
+            "strIngredient": "ブルーベリー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Blueberries.png"
+        },
+        {
+            "idIngredient": "410",
+            "strIngredient": "クルミ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Walnuts.png"
+        },
+        {
+            "idIngredient": "411",
+            "strIngredient": "ピーカンナッツ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pecan%20Nuts.png"
+        },
+        {
+            "idIngredient": "412",
+            "strIngredient": "メープルシロップ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Maple%20Syrup.png"
+        },
+        {
+            "idIngredient": "413",
+            "strIngredient": "ライトブラウンソフトシュガー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Light%20Brown%20Soft%20Sugar.png"
+        },
+        {
+            "idIngredient": "414",
+            "strIngredient": "ダークブラウンソフトシュガー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Dark%20Brown%20Soft%20Sugar.png"
+        },
+        {
+            "idIngredient": "415",
+            "strIngredient": "ダークチョコレートチップ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Dark%20Chocolate%20Chips.png"
+        },
+        {
+            "idIngredient": "416",
+            "strIngredient": "ミルクチョコレート",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Milk%20Chocolate.png"
+        },
+        {
+            "idIngredient": "417",
+            "strIngredient": "ダークチョコレート",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Dark%20Chocolate.png"
+        },
+        {
+            "idIngredient": "418",
+            "strIngredient": "パンプキン",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pumpkin.png"
+        },
+        {
+            "idIngredient": "419",
+            "strIngredient": "ショートクラストペストリー",
+            "strDescription": null,
+            "strType": "ペストリー",
+            "image_url": "https://www.themealdb.com/images/ingredients/Shortcrust%20Pastry.png"
+        },
+        {
+            "idIngredient": "420",
+            "strIngredient": "ピーナッツクッキー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Peanut%20Cookies.png"
+        },
+        {
+            "idIngredient": "421",
+            "strIngredient": "ゼラチンリーフ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Gelatine%20Leafs.png"
+        },
+        {
+            "idIngredient": "422",
+            "strIngredient": "ピーナッツブリトル",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Peanut%20Brittle.png"
+        },
+        {
+            "idIngredient": "423",
+            "strIngredient": "桃",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Peaches.png"
+        },
+        {
+            "idIngredient": "424",
+            "strIngredient": "イエローペッパー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Yellow%20Pepper.png"
+        },
+        {
+            "idIngredient": "425",
+            "strIngredient": "ピーマン",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Green%20Pepper.png"
+        },
+        {
+            "idIngredient": "426",
+            "strIngredient": "ズッキーニ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/ズッキーニ.png"
+        },
+        {
+            "idIngredient": "427",
+            "strIngredient": "缶詰トマト",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tinned%20Tomatos.png"
+        },
+        {
+            "idIngredient": "428",
+            "strIngredient": "栗",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chestnuts.png"
+        },
+        {
+            "idIngredient": "429",
+            "strIngredient": "野生キノコ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Wild%20Mushrooms.png"
+        },
+        {
+            "idIngredient": "430",
+            "strIngredient": "トリュフオイル",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Truffle%20Oil.png"
+        },
+        {
+            "idIngredient": "431",
+            "strIngredient": "パニール",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Paneer.png"
+        },
+        {
+            "idIngredient": "432",
+            "strIngredient": "ナン",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Naan%20Bread.png"
+        },
+        {
+            "idIngredient": "433",
+            "strIngredient": "レンズ豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lentils.png"
+        },
+        {
+            "idIngredient": "434",
+            "strIngredient": "ロースト野菜",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Roasted%20 Vegetables.png"
+        },
+        {
+            "idIngredient": "435",
+            "strIngredient": "インゲン豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Kidney%20Beans.png"
+        },
+        {
+            "idIngredient": "436",
+            "strIngredient": "ミックスグレイン",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mixed%20Grain.png"
+        },
+        {
+            "idIngredient": "437",
+            "strIngredient": "タヒニ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tahini.png"
+        },
+        {
+            "idIngredient": "438",
+            "strIngredient": "トルティーヤ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tortillas.png"
+        },
+        {
+            "idIngredient": "439",
+            "strIngredient": "うどん",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Udon%20Noodles.png"
+        },
+        {
+            "idIngredient": "440",
+            "strIngredient": "キャベツ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cabbage.png"
+        },
+        {
+            "idIngredient": "441",
+            "strIngredient": "椎茸",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Shiitake%20Mushrooms.png"
+        },
+        {
+            "idIngredient": "442",
+            "strIngredient": "みりん",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mirin.png"
+        },
+        {
+            "idIngredient": "443",
+            "strIngredient": "ごま油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sesame%20Seed%20Oil.png"
+        },
+        {
+            "idIngredient": "444",
+            "strIngredient": "バゲット",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Baguette.png"
+        },
+        {
+            "idIngredient": "445",
+            "strIngredient": "つるトマト",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Vine%20Tomatoes.png"
+        },
+        {
+            "idIngredient": "446",
+            "strIngredient": "スエット",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Suet.png"
+        },
+        {
+            "idIngredient": "447",
+            "strIngredient": "スウェーデン人",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Swede.png"
+        },
+        {
+            "idIngredient": "448",
+            "strIngredient": "ハム",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ham.png"
+        },
+        {
+            "idIngredient": "449",
+            "strIngredient": "牡蠣",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Oysters.png"
+        },
+        {
+            "idIngredient": "450",
+            "strIngredient": "スタウト",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Stout.png"
+        },
+        {
+            "idIngredient": "451",
+            "strIngredient": "ラード",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lard.png"
+        },
+        {
+            "idIngredient": "452",
+            "strIngredient": "ラムの腎臓",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lamb%20Kidney.png"
+        },
+        {
+            "idIngredient": "453",
+            "strIngredient": "牛の腎臓",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Beef%20Kidney.png"
+        },
+        {
+            "idIngredient": "454",
+            "strIngredient": "ハドック",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Haddock.png"
+        },
+        {
+            "idIngredient": "455",
+            "strIngredient": "スモークハドック",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Smoked%20Haddock.png"
+        },
+        {
+            "idIngredient": "456",
+            "strIngredient": "芽キャベツ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Brussels%20Sprouts.png"
+        },
+        {
+            "idIngredient": "457",
+            "strIngredient": "レーズン",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Raisins.png"
+        },
+        {
+            "idIngredient": "458",
+            "strIngredient": "カラント",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Currants.png"
+        },
+        {
+            "idIngredient": "459",
+            "strIngredient": "カスタード",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Custard.png"
+        },
+        {
+            "idIngredient": "460",
+            "strIngredient": "ミックスピール",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mixed%20Peel.png"
+        },
+        {
+            "idIngredient": "461",
+            "strIngredient": "レッドカラント",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Redcurrants.png"
+        },
+        {
+            "idIngredient": "462",
+            "strIngredient": "ブラックベリー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Blackberries.png"
+        },
+        {
+            "idIngredient": "463",
+            "strIngredient": "ヘーゼルナッツ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Hazlenuts.png"
+        },
+        {
+            "idIngredient": "464",
+            "strIngredient": "ブレーバーンアップル",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Braeburn%20Apples.png"
+        },
+        {
+            "idIngredient": "465",
+            "strIngredient": "赤色食品着色料",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Red%20Food%20Colouring.png"
+        },
+        {
+            "idIngredient": "466",
+            "strIngredient": "ピンク色の食品着色料",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pink%20Food%20Colouring.png"
+        },
+        {
+            "idIngredient": "467",
+            "strIngredient": "青色食品着色料",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Blue%20Food%20Colouring.png"
+        },
+        {
+            "idIngredient": "468",
+            "strIngredient": "黄色の食品着色料",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Yellow%20Food%20Colouring.png"
+        },
+        {
+            "idIngredient": "469",
+            "strIngredient": "アプリコットジャム",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Apricot%20Jam.png"
+        },
+        {
+            "idIngredient": "470",
+            "strIngredient": "マジパン",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Marzipan.png"
+        },
+        {
+            "idIngredient": "471",
+            "strIngredient": "アーモンド",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Almonds.png"
+        },
+        {
+            "idIngredient": "472",
+            "strIngredient": "ブラックプディング",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Black%20Pudding.png"
+        },
+        {
+            "idIngredient": "473",
+            "strIngredient": "ベイクドビーンズ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Baked%20Beans.png"
+        },
+        {
+            "idIngredient": "474",
+            "strIngredient": "白小麦粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/White%20Flour.png"
+        },
+        {
+            "idIngredient": "475",
+            "strIngredient": "酵母",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Yeast.png"
+        },
+        {
+            "idIngredient": "476",
+            "strIngredient": "フルーツミックス",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fruit%20Mix.png"
+        },
+        {
+            "idIngredient": "477",
+            "strIngredient": "ドライフルーツ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Dried%20Fruit.png"
+        },
+        {
+            "idIngredient": "478",
+            "strIngredient": "チェリー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cherry.png"
+        },
+        {
+            "idIngredient": "479",
+            "strIngredient": "グラスチェリー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Glace%20Cherry.png"
+        },
+        {
+            "idIngredient": "480",
+            "strIngredient": "糖蜜",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Treacle.png"
+        },
+        {
+            "idIngredient": "481",
+            "strIngredient": "オートミール",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Oatmeal.png"
+        },
+        {
+            "idIngredient": "482",
+            "strIngredient": "オート麦",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Oats.png"
+        },
+        {
+            "idIngredient": "483",
+            "strIngredient": "卵",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Egg.png"
+        },
+        {
+            "idIngredient": "484",
+            "strIngredient": "牛すね肉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Beef%20Shin.png"
+        },
+        {
+            "idIngredient": "485",
+            "strIngredient": "ブーケガルニ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Bouquet%20Garni.png"
+        },
+        {
+            "idIngredient": "486",
+            "strIngredient": "シングルクリーム",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Single%20Cream.png"
+        },
+        {
+            "idIngredient": "487",
+            "strIngredient": "赤ワインゼリー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Red%20Wine%20Jelly.png"
+        },
+        {
+            "idIngredient": "488",
+            "strIngredient": "リンゴ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Apples.png"
+        },
+        {
+            "idIngredient": "489",
+            "strIngredient": "ヤギのチーズ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Goats%20Cheese.png"
+        },
+        {
+            "idIngredient": "490",
+            "strIngredient": "生ハム",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Prosciutto.png"
+        },
+        {
+            "idIngredient": "491",
+            "strIngredient": "無塩バター",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Unsalted%20Butter.png"
+        },
+        {
+            "idIngredient": "492",
+            "strIngredient": "ブリー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Brie.png"
+        },
+        {
+            "idIngredient": "493",
+            "strIngredient": "タラゴンの葉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tarragon%20Leaves.png"
+        },
+        {
+            "idIngredient": "494",
+            "strIngredient": "チャイブ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chives.png"
+        },
+        {
+            "idIngredient": "495",
+            "strIngredient": "梨",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pears.png"
+        },
+        {
+            "idIngredient": "496",
+            "strIngredient": "ホワイトチョコレート",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/White%20Chocolate.png"
+        },
+        {
+            "idIngredient": "497",
+            "strIngredient": "スターアニス",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Star%20Anise.png"
+        },
+        {
+            "idIngredient": "498",
+            "strIngredient": "タイガーエビ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tiger%20Prawns.png"
+        },
+        {
+            "idIngredient": "499",
+            "strIngredient": "カスタードパウダー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Custard%20Powder.png"
+        },
+        {
+            "idIngredient": "500",
+            "strIngredient": "乾燥ココナッツ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Desiccated%20Coconut.png"
+        },
+        {
+            "idIngredient": "501",
+            "strIngredient": "冷凍エンドウ豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Frozen%20Peas.png"
+        },
+        {
+            "idIngredient": "502",
+            "strIngredient": "豚ひき肉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Minced%20Pork.png"
+        },
+        {
+            "idIngredient": "503",
+            "strIngredient": "クリームコーン",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Creamed%20Corn.png"
+        },
+        {
+            "idIngredient": "504",
+            "strIngredient": "天日干しトマト",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sun-Dried%20Tomatoes.png"
+        },
+        {
+            "idIngredient": "505",
+            "strIngredient": "ディジョンマスタード",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Dijon%20Mustard.png"
+        },
+        {
+            "idIngredient": "506",
+            "strIngredient": "タバスコソース",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tabasco%20Sauce.png"
+        },
+        {
+            "idIngredient": "507",
+            "strIngredient": "キャノーラ油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Canola%20Oil.png"
+        },
+        {
+            "idIngredient": "508",
+            "strIngredient": "タラ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cod.png"
+        },
+        {
+            "idIngredient": "509",
+            "strIngredient": "塩ダラ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Salt%20Cod.png"
+        },
+        {
+            "idIngredient": "510",
+            "strIngredient": "アキー",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ackee.png"
+        },
+        {
+            "idIngredient": "511",
+            "strIngredient": "ジャーク",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Jerk.png"
+        },
+        {
+            "idIngredient": "512",
+            "strIngredient": "牛ひき肉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ground%20Beef.png"
+        },
+        {
+            "idIngredient": "513",
+            "strIngredient": "ベビーナス",
+            "strDescription": "ナス（Solanum melongena）またはaubergineは、食用果実のために栽培されるナス科植物の一種です。北米、オーストラリア、ニュージーランドではナスが一般的な名前です。イギリス英語ではaubergine、南アジアと南アフリカではbrinjalです。\n\nナスの果実は料理に広く使われています。Solanum属に属し、トマトやジャガイモと関連があります。もともとは野生のナス科植物であるトゲナシまたはビターアップル（S. incanum）から栽培化されましたが、南アジアと東アジアでそれぞれ2回栽培化されたと考えられます。",
+            "strType": "野菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Baby%20Aubergine.png"
+        },
+        {
+            "idIngredient": "514",
+            "strIngredient": "パエリアライス",
+            "strDescription": "パエリアはバレンシアの米料理で、その起源は古代に遡りますが、現代の形は19世紀半ばにスペイン東海岸のバレンシア市に隣接するアルブフェラ潟周辺で生まれました。スペイン人以外の人々の多くはパエリアをスペインの国民食と見なしていますが、ほとんどのスペイン人はパエリアをバレンシア地方の料理と見なしています。一方、バレンシア人はパエリアを自分たちのアイデンティティのシンボルの1つと見なしています。\n\nパエリアの種類には、バレンシア風パエリア、野菜パエリア（スペイン語：paella de verduras）、シーフードパエリア（スペイン語：paella de mariscos）、ミックスパエリア（スペイン語：paella mixta）などがあります。バレンシアのパエリアは、オリジナルのレシピであると考えられており、白米、インゲン豆（バホケタとタベージャ）、肉（鶏肉、鴨肉、ウサギ肉）、白インゲン豆（ガロフォン）、カタツムリ、サフランやローズマリーなどの調味料で構成されています。もう1つの非常に一般的ですが季節の食材はアーティチョークです。シーフードパエリアでは、肉の代わりにシーフードを使用し、豆と緑の野菜は省きます。ミックスパエリアは、陸生動物の肉、シーフード、野菜、時には豆を自由に組み合わせたものです。ほとんどのパエリアシェフは、加熱しすぎる可能性が低いためボンバライスを使用しますが、バレンシア人は、セニアと呼ばれる少し粘り気のある（したがって加熱しすぎやすい）品種を使用する傾向があります。すべての種類のパエリアでオリーブオイルが使用されます。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Paella%20Rice.png"
+        },
+        {
+            "idIngredient": "515",
+            "strIngredient": "スコッチボネット",
+            "strDescription": "スコッチ ボネットは、ボニー ペッパー、またはカリブ レッド ペッパーとも呼ばれ、タム オ シャンター ハットに似ていることから名付けられた唐辛子の一種です。ナイジェリアのヨルバ語話者からはアタ ロドとも呼ばれ、主にカリブ諸島で栽培されています。また、ガイアナ (ここではボール オブ ファイア ペッパーと呼ばれています)、モルディブ諸島 (ここではギテヨ ミルスと呼ばれています)、パナマ (ここではアヒ チョンボと呼ばれています)、西アフリカでも栽培されています。ほとんどのスコッチ ボネットの辛さは 100,000 ～ 350,000 スコヴィル ユニットです。比較すると、ほとんどのハラペーニョ ペッパーの辛さはスコヴィル スケールで 2,500 ～ 8,000 です。ただし、カリブ諸島の一部では、カチューチャ ペッパーと呼ばれる、完全に甘いスコッチ ボネットの品種が栽培されています。\n\nこれらの唐辛子は、世界中のさまざまな料理や料理の風味付けに使用され、ホットソースや調味料によく使用されます。スコッチ ボネットは、よく混同されるハバネロの仲間とは異なり、より甘い風味とより頑丈な形状をしており、ジャーク料理 (豚肉/鶏肉) やその他のカリブ料理に独特の風味を与えます。スコッチ ボネットは、主に西アフリカ、アンティグア、キティチアン/ネビス、アンギラ、ドミニカ、セントルシア、セントビンセンティアン、グレナダ、トリニダード、ジャマイカ、バルバドス、ガイアナ、スリナム、ハイチ、ケイマンの料理や唐辛子ソースに使用されますが、他のカリブ料理にもよく登場します。また、コスタリカやパナマでは、ライス アンド ビーンズ、ロンドン、ソース、ビーフ パテ、セビーチェなどのカリブ風のレシピにも使用されます。\n\n新鮮で熟したスコッチボネットは、緑から黄色、そして緋色に変化しますが、この唐辛子の他の多くの品種は、オレンジ、黄色、桃色、さらにはチョコレートブラウンに熟します。",
+            "strType": "野菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Scotch%20Bonnet.png"
+        },
+        {
+            "idIngredient": "516",
+            "strIngredient": "牛テール",
+            "strDescription": "オックステール（ox tail または ox-tail と綴られることもある）は、牛の尾の料理名である。以前は、雄牛または去勢された雄牛の尾のみを指していた。[要出典] オックステールは通常、2～4ポンド（1～1.8 kg）の重さがあり、皮を剥がされて短くカットされて販売される。\n\nオックステールは骨が多くゼラチン質が豊富な肉で、通常はシチュー[1]または蒸し煮としてゆっくり調理される。スープの伝統的なストックベースである。伝統的な調理法ではゆっくり調理するため、現代のレシピの中には圧力鍋を使って手抜きをするものがある。オックステールはイタリア料理のコーダ・アッラ・ヴァチナーラ（ローマ料理の古典）の主な材料である。イギリスとアイルランドでは、粉末スープ、インスタントスープ、缶詰スープの人気の味である。牛の尾は、豚足や耳、牛の「膝」とともに、ロシアのゼリー前菜（холодец または студень）の人気のベースでもありますが、コーシャになる可能性があるため、ロシアのユダヤ人の間で好まれる食材です。\n\n牛の尾のスープのバリエーションは、南アメリカ、西アフリカ、中国、スペイン [2]、インドネシアで人気の伝統料理です。中華料理では、牛尾汤（niúwěi tāng、「牛の尾のスープ」）と呼ばれるスープにするのが一般的です。韓国料理では、牛の尾を使ったスープはコリ コムタン（コムグクを参照）と呼ばれます。これは塩で味付けした濃厚なスープで、ご飯と一緒に食べます。トックク（餅のスープ）を作るためのスープストックとして使用できます。バタービーンと一緒に煮込んだ牛の尾、またはメインディッシュ（ご飯付き）は、ジャマイカ、トリニダード、その他の西インド諸島の文化で人気があります。牛テールは南アフリカでも非常に人気があり、ポティエと呼ばれる伝統的なフライパンで調理されることが多い。ポティエとは、直火にかけた3本脚の鋳鉄鍋である。牛テールはジンバブエなどアフリカ南部でも食べられ、サザや野菜と一緒に出される。米国では、牛テールはアフリカ系アメリカ人や西インド諸島の家庭で定番となっている。キューバ料理では、牛テールからラボ・エンセンディドと呼ばれるシチューを作ることができる。フィリピンでは、カレ・カレと呼ばれるピーナッツベースのシチューで調理される。イランでは、牛テールはゆっくり調理され、米、すね肉（または牛テール）、ディル、コリアンダー、パセリ、ニンニクなどのハーブの混合物で調理されるバグラ・ポリ・マヒチェと呼ばれるメインディッシュですね肉の代わりに出される。\n\n米国では、牛テールは肉の切り分け分類NAMP 1791である。",
+            "strType": "肉",
+            "image_url": "https://www.themealdb.com/images/ingredients/Oxtail.png"
+        },
+        {
+            "idIngredient": "517",
+            "strIngredient": "ソラマメ",
+            "strDescription": "Vicia faba は、ソラマメ、ソラマメ、ソラマメ、フィールドビーン、ベルビーン、チックビーンとも呼ばれ、エンドウ豆や豆の仲間であるマメ科の花を咲かせる植物です。北アフリカ[疑わしい – 議論する]、南西アジア、南アジアが原産で、他の地域でも広く栽培されています。[要出典] 変種 Vicia faba var. equina Pers. – horse bean が以前に認識されていました。",
+            "strType": "野菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Broad%20Beans.png"
+        },
+        {
+            "idIngredient": "518",
+            "strIngredient": "鯛",
+            "strDescription": "キタハナダイ (Lutjanus campechanus) は、メキシコ湾を含む西大西洋に生息するスナッパーの一種で、サンゴ礁に関連する環境に生息しています。この種は商業的に重要であり、また、ゲームフィッシュとしても人気があります。\n\nキタハナダイの体は、マングローブスナッパー、マトンスナッパー、レーンスナッパー、ドッグスナッパーなどの他のスナッパーと形が非常に似ています。いずれも傾斜したプロファイル、中型から大型の鱗、棘のある背びれ、横に圧縮された体が特徴です。キタハナダイは短く鋭い針のような歯を持っていますが、マトンスナッパー、ドッグスナッパー、マングローブスナッパーに見られる目立つ上犬歯はありません。このスナッパーは、約 39 cm (15 インチ) で成熟します。一般的な成魚の体長は 60 cm (24 インチ) ですが、100 cm (39 インチ) に達することもあります。公表されている最大体重は 38 kg (84 ポンド) で、最高齢は 100 歳以上とされています。アカハタの体色は明るい赤で、背中の色素がより濃くなっています。背棘は 10 本、背軟条は 14 本、臀棘は 3 本、臀軟条は 8 ～ 9 本あります。幼魚 (30 ～ 35 cm 未満) には、前背軟条の下の体側面に暗い斑点がある場合もありますが、年齢とともに薄くなります。",
+            "strType": "魚",
+            "image_url": "https://www.themealdb.com/images/ingredients/Red%20Snapper.png"
+        },
+        {
+            "idIngredient": "519",
+            "strIngredient": "モルトビネガー",
+            "strDescription": "酢は、酢酸 (CH3COOH) 約 5～20%、水、その他の微量化学物質 (香料を含む場合もある) からなる液体です。酢酸は、酢酸菌によるエタノールの発酵によって生成されます。酢は現在、主に調理材料として、または漬物に使用されています。最も簡単に製造できる弱酸であるため、歴史的に工業、医療、家庭でさまざまな用途があり、その一部 (一般的な家庭用洗剤としての使用など) は今日でも一般的に使用されています。\n\n市販の酢は、高速発酵または低速発酵のいずれかの方法で製造されます。一般的に、低速発酵法は伝統的な酢に使用され、数か月から最大 1 年かけてゆっくりと発酵が進行します。発酵期間が長いほど、酢酸菌からなる無毒の粘液が蓄積されます。高速発酵法では、空気を加える前に酢の母液 (細菌培養物) を原料液に加え、酸素を供給して最速の発酵を促進します。高速製造プロセスでは、酢は 20 時間から 3 日間で製造されます。",
+            "strType": "調味料",
+            "image_url": "https://www.themealdb.com/images/ingredients/Malt%20Vinegar.png"
+        },
+        {
+            "idIngredient": "520",
+            "strIngredient": "米酢",
+            "strDescription": "米酢は、中国、日本、韓国、ベトナムで発酵させた米から作られる酢です。\n\n中国の米酢は日本のものよりも濃厚で、色は透明から赤、茶色、黒のさまざまな色合いまでさまざまであるため、米酒酢として知られています。中国の酢、特に日本の酢は、蒸留された西洋の酢よりも酸味が少なく、そのため米酢の適切な代替品ではありません。アジアの米酢の大半は、西洋で一般的に使用される酢よりもマイルドで甘いですが、黒酢は顕著な例外です。中国の米酢は、米酒の一種である黄酒から作られています。",
+            "strType": "酢",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rice%20Vinegar.png"
+        },
+        {
+            "idIngredient": "521",
+            "strIngredient": "ウォーターチェスナット",
+            "strDescription": "Eleocharis dulcis は、中国ヒシまたはクサヒシとも呼ばれ、アジア (中国、日本、インド、フィリピンなど)、オーストラリア、熱帯アフリカ、太平洋とインド洋のさまざまな島々に自生する草のようなスゲ科の植物です。食用の球根を目的に多くの国で栽培されています。\n\nヒシは木の実ではなく、沼地、水中、泥の中で育つ水生植物です。茎のような管状の緑の葉があり、高さは約 1.5 メートルです。同じ名前で呼ばれるヒシは無関係で、ヒシと混同されることがよくあります。\n\n小さく丸い球根はパリパリとした白い肉質で、生で食べたり、軽く茹でたり、グリルしたりして食べることができ、漬物や缶詰にされることもよくあります。中国料理で人気の食材です。中国では生で食べることが最も多く、甘くすることもあります。また、点心料理の一部としてよく使われるクチナシケーキを作るのに使われる粉状に挽かれることもあります。 調理したり缶詰にしたりしてもシャキシャキした食感を保つ野菜としては珍しく、これはクチナシの細胞壁がフェルラ酸オリゴマーなどの特定のフェノール化合物によって架橋され強化されているためです。この特性は、タイガーナッツやレンコンなど、このようにシャキシャキした食感を保つ他の野菜にも共通しています。 球茎には抗生物質プチンが含まれており、高温でも安定しています。 食用球茎のほかに、葉は牛の飼料、マルチ、堆肥として使用できます。\n\n球茎には炭水化物（乾燥重量で約90%）、特にデンプン（乾燥重量で約60%）が豊富に含まれており、食物繊維、リボフラビン、ビタミンB6、カリウム、銅、マンガンの優れた供給源でもあります。\n\n生のまま食べると、植物の表面から吸虫症が伝染する可能性があります。",
+            "strType": "スゲ",
+            "image_url": "https://www.themealdb.com/images/ingredients/Water%20Chestnut.png"
+        },
+        {
+            "idIngredient": "522",
+            "strIngredient": "豆腐",
+            "strDescription": "豆腐は豆腐とも呼ばれ、豆乳を凝固させて柔らかい白い塊に圧縮して作られる食品です。東アジア料理や東南アジア料理の材料です。豆腐は柔らかいもの、硬いもの、非常に硬いものがあります。豆腐は繊細な風味があり、塩味や甘味のある料理に使用できます。料理に合わせて味付けしたりマリネしたりすることもよくあります。\n\n豆腐はカロリーが低く、タンパク質が比較的多く含まれています。鉄分が多く、製造時に使用する凝固剤（塩化カルシウム、硫酸カルシウム、硫酸マグネシウムなど）に応じて、カルシウムやマグネシウムの含有量が多くなることがあります。",
+            "strType": "カード",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tofu.png"
+        },
+        {
+            "idIngredient": "523",
+            "strIngredient": "Doubanjiang",
+            "strDescription": "豆板醤（IPA: [tôupântɕjâŋ]）、または単に豆板、または豆板醤、唐辛子ソースは、発酵させたソラマメ、大豆、塩、米、およびさまざまなスパイスから作られた、辛くて塩辛いペーストです。豆板醤にはプレーンバージョンとスパイシーバージョンがあり、後者には赤唐辛子が含まれており、辣豆瓣酱（ピンイン：là dòubànjiàng、làは「辛い」または「辛い」という意味）と呼ばれています。\n\n特に四川料理で使用され、実際、四川省の人々はこれを「四川料理の魂」とよく呼んでいます。特によく知られている種類は、四川省郫県豆瓣（簡体字：郫县豆瓣、繁体字：郫縣豆瓣、ピンイン：Píxiàn dòubàn）と呼ばれ、四川省郫県地区にちなんで名付けられました。[1]\n\nこのソースは油で炒めてご飯や麺と一緒に食べることもありますが、揚げ豆腐料理や冷奴サラダの主な味付けとしてもよく使用されます。インスタントラーメンと混ぜることもよくあります。\n\n多くの中国人コミュニティや食品工場では、豆板醤は大豆と塩だけで作られており、四川風の豆板醤に典型的なソラマメや唐辛子は含まれていません。\n\n韓国料理では、同様の形の豆ペーストをテンジャンと呼びます。",
+            "strType": "ソース",
+            "image_url": "https://www.themealdb.com/images/ingredients/Doubanjiang.png"
+        },
+        {
+            "idIngredient": "524",
+            "strIngredient": "発酵黒豆",
+            "strDescription": "豆豉（中国語：豆豉、ピンイン：dòuchǐ）、またはトチは、発酵および塩漬けされた黒豆の一種です。英語では、発酵黒豆、中国発酵黒豆（中国語：黑豆豆豉、ピンイン：hēidòu dòuchǐ）、塩漬け黒豆、塩味黒豆、または単に黒豆として知られています。これらは中国料理で最も人気のある調味料であり、黒豆ソース料理を作るのに最も広く使用されています。[1][ページが必要]\n\n豆豉は、黒豆を発酵および塩漬けして作られます。最も一般的に使用されるのは黒タイプの大豆で、このプロセスにより豆は柔らかくなり、ほとんどが半乾燥になります（豆を乾燥させる場合）。通常の大豆（白大豆）も使用されますが、これは「塩漬け黒豆」にはなりません。代わりに、これらの豆は茶色になります。匂いは鋭く、刺激的で、スパイシー。味は塩辛く、やや苦く、甘い。[引用が必要] 白大豆で作られた製品はミアンチと呼ばれる。\n\nプロセスと製品はオギリやイルに似ており、どちらもアフリカの発酵豆製品である[引用が必要]。\n\nドウチ、「中国の塩漬け黒豆」、および「黒大豆」は、中米、南米、カリブ海の料理で一般的に使用される一般的な豆の一種である黒亀豆と混同しないでください。",
+            "strType": "豆",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fermented%20Black%20Beans.png"
+        },
+        {
+            "idIngredient": "525",
+            "strIngredient": "ネギ",
+            "strDescription": "ネギ（青ネギ、春ネギ、サラダネギ）は、ネギ属のさまざまな野菜です。ネギは、ほとんどのタマネギよりも味がマイルドです。近縁種には、ニンニク、エシャロット、ニラ、チャイブ、チャイブなどがあります。\n\n多くのネギ属の球根は食用として使用されますが、ネギ属の特徴は、完全に成長した球根がないことです。すべてのネギ属の植物と同様に、ネギには球根から直接生える中空の管状の緑の葉があります。これらの葉は野菜として使用され、生でも調理しても食べられます。葉は、タマネギやニンニクのように、他の料理に刻んで入れられることがよくあります。ネギまたは青ネギとも呼ばれる春ネギは、実際には非常に若いタマネギで、球根が膨らむ前に収穫されます。",
+            "strType": "野菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Scallions.png"
+        },
+        {
+            "idIngredient": "526",
+            "strIngredient": "花椒",
+            "strDescription": "四川胡椒、四川胡椒の実、または四川胡椒は、中国料理でよく使われるスパイスです。これは、Z. simulans と Z. bungeanum を含む、少なくとも 2 種の Zanthoxylum 属から派生したものです。Zanthoxylum 属はヘンルーダ科または柑橘類に属し、その名前にもかかわらず、黒胡椒や唐辛子とは近縁ではありません。\n\n種子の周りの殻または外皮 (果皮) は、特に四川料理では丸ごと使用されることがあり、細かく挽いた粉末は五香粉の材料の 1 つです。伝統的な中国医学でも使用されます。果皮が最もよく使用されますが、中国の一部の地域ではさまざまな種の葉も使用されます。\n\n中国原産の Zanthoxylum 属の別の種である Z. schinifolium は、xiāng jiāo zi (香椒子、「芳香性胡椒」) または qīng huā jiāo (青花椒、「緑の花胡椒」) と呼ばれ、河北省ではスパイスとして使用されています。\n\nZanthoxylum 属の異なる種は、正確な風味と成分が異なりますが、ほとんどは同じ基本的な特徴を共有しています。したがって、「四川胡椒」と山椒という用語は、それぞれ Z. simulans と Z. piperitum を指す場合もありますが、この 2 つは一般的に互換的に使用されます。\n\n関連する種は、チベット、ブータン、ネパール、タイ、インド (コンカニ族とウッタラーカンド族)、およびトバ・バタク族の料理で使用されています。ブータンでは、この唐辛子はティンジェとして知られ、スープ、粥、パグシャパ（豚肉のスライス）の調理に広く使用されています。[要出典] ネパールでは、ティムールはモモ、トゥクパ、焼きそば、チキンチリ、その他の肉料理などの人気料理に使用されています。また、自家製の漬物にも広く使用されています。人々は、ニンニク片と山塩を温水で調合して、胃や消化の問題の薬としてティムールを摂取しています。",
+            "strType": "スパイス",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sichuan%20Pepper.png"
+        },
+        {
+            "idIngredient": "527",
+            "strIngredient": "ワンタンの皮",
+            "strDescription": "ワンタンの皮。小麦粉、水、卵、塩から作られた紙のように薄い四角い生地で、ワンタン、卵焼き、餃子を作るのに使われます。",
+            "strType": "ペストリー",
+            "image_url": "https://www.themealdb.com/images/ingredients/Wonton%20Skin.png"
+        },
+        {
+            "idIngredient": "528",
+            "strIngredient": "スターチ",
+            "strDescription": "デンプンまたはアミラムは、グリコシド結合で結合した多数のグルコース単位からなる高分子炭水化物です。この多糖類は、ほとんどの緑色植物によってエネルギー貯蔵として生成されます。これは人間の食事で最も一般的な炭水化物であり、ジャガイモ、小麦、トウモロコシ、米、キャッサバなどの主食に大量に含まれています。\n\n純粋なデンプンは、冷水やアルコールに溶けない、無味無臭の白い粉末です。これは、線状およびらせん状のアミロースと分岐アミロペクチンの 2 種類の分子で構成されています。植物によって異なりますが、デンプンには通常、重量で 20 ～ 25% のアミロースと 75 ～ 80% のアミロペクチンが含まれています。[4] 動物のグルコース貯蔵庫であるグリコーゲンは、アミロペクチンのより分岐したバージョンです。\n\n産業では、デンプンは、例えば麦芽化によって糖に変換され、発酵されて、ビール、ウイスキー、バイオ燃料の製造でエタノールが生産されます。デンプンは加工されて、加工食品に使用される糖の多くを生産します。ほとんどのデンプンを温水に混ぜると、小麦粉ペーストなどのペーストが生成され、増粘剤、硬化剤、または接着剤として使用できます。デンプンの最大の非食品産業用途は、製紙工程での接着剤です。アイロンをかける前に、デンプンを衣服の一部に塗布して、衣服を硬化させることができます。",
+            "strType": "側",
+            "image_url": "https://www.themealdb.com/images/ingredients/Starch.png"
+        },
+        {
+            "idIngredient": "529",
+            "strIngredient": "ライスワイン",
+            "strDescription": "ライスワインは、米を発酵・蒸留して作られるアルコール飲料で、東アジア、東南アジア、南アジアで伝統的に消費されています。ライスワインは、米のデンプンを発酵させて糖に変えて作られます。デンプンを糖に変える酵素の源は微生物です。[1]\n\nライスワインのアルコール度数は通常 18～25% です。ライスワインは、アジアの美食ではフォーマルなディナーや宴会、料理に使用されます。また、宗教的および儀式的な場面でも使用されます。",
+            "strType": "ワイン",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rice%20wine.png"
+        },
+        {
+            "idIngredient": "530",
+            "strIngredient": "料理用ワイン",
+            "strDescription": "キャセロール、ソース、マリネに加えると、まろやかで鮮やかな風味が生まれます。",
+            "strType": "ワイン",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cooking%20wine.png"
+        },
+        {
+            "idIngredient": "531",
+            "strIngredient": "ダックソース",
+            "strDescription": "ダックソース（またはオレンジソース）は、甘酸っぱい味と薄いゼリーのような半透明のオレンジ色の外観を持つ調味料です。中華系アメリカ人レストランで提供され、ワンタン、春巻き、エッグロール、アヒル、鶏肉、魚などの揚げ物にディップとして、またはご飯や麺と一緒に使用されます。醤油、マスタード、ホットソース、または赤唐辛子パウダーと一緒に、1食分ずつの袋で提供されることがよくあります。鶏肉などの食品の艶出しとして使用されることもあります。名前にもかかわらず、このソースはアヒルの肉を使用して作られていません。",
+            "strType": "ソース",
+            "image_url": "https://www.themealdb.com/images/ingredients/Duck%20Sauce.png"
+        },
+        {
+            "idIngredient": "532",
+            "strIngredient": "コチュジャン",
+            "strDescription": "コチュジャンまたは赤唐辛子ペーストは、唐辛子粉、もち米、メジュ粉、ヨッキルム、塩から作られた風味豊かで甘くて辛い発酵調味料です。",
+            "strType": "ソース",
+            "image_url": "https://www.themealdb.com/images/ingredients/コチュジャン.png"
+        },
+        {
+            "idIngredient": "533",
+            "strIngredient": "もやし",
+            "strDescription": "もやしは世界中でよく使われる食材です。特に東アジア料理ではよく使われます。\n\n一般的なもやしには 2 種類あります。\n\n緑がかった緑豆のもやしから作られます。\n\n大豆のもやしは、黄色で粒が大きい大豆から作られます。\n完全に成長するまでには通常 1 週間かかります。発芽した豆は元の豆よりも栄養価が高く、調理時間も大幅に短縮されます。",
+            "strType": "野菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Bean%20Sprouts.png"
+        },
+        {
+            "idIngredient": "534",
+            "strIngredient": "麺",
+            "strDescription": "麺は多くの文化において主食です。麺は発酵させない生地から作られ、伸ばしたり、押し出したり、平らに丸めたりして、さまざまな形に切り分けられます。細長いストリップが最も一般的ですが、波型、らせん型、チューブ型、ひも型、殻型、折り畳み型、その他の形に切ったりした麺も数多くあります。麺は通常、沸騰したお湯で調理されますが、食用油や塩を加えることもあります。フライパンで揚げたり、油で揚げたりすることもよくあります。麺はソースを添えて、またはスープに入れて提供されることが多いです。麺は短期保存のために冷蔵したり、乾燥させて保存しておいて後で使用することもできます。麺について話すときは、材料の組成や地理的文化的起源を指定する必要があります。この単語はドイツ語の Nudel に由来しています。[1]",
+            "strType": "側",
+            "image_url": "https://www.themealdb.com/images/ingredients/Noodles.png"
+        },
+        {
+            "idIngredient": "535",
+            "strIngredient": "キクラゲ",
+            "strDescription": "Auricularia auricula-judae は、ユダヤ人の耳、木の耳、ゼリーの耳、または他のいくつかの一般的な名前で知られ、世界中で見られる食用の Auriculariales 菌類の一種です。子実体は、目立つ耳のような形と茶色で区別され、特にニワトコの木に生育します。種小名は、イスカリオテのユダがニワトコの木で首を吊ったという信仰に由来しています。一般的な名前「ユダの耳」は、訛りの「ユダヤ人の耳」に大きく影をひそめられ、今日では「ゼリーの耳」やその他の名前が使用されることがあります。この菌類は、世界中の温帯地域で一年中見られ、枯れた木と生きている木の両方に生育します。\n\n西洋では、A. auricula-judae は、19 世紀という比較的最近まで、喉の痛み、目の痛み、黄疸などの症状に民間療法で使用され、収斂剤としても使用されていました。西洋では広く消費されていませんが、中国では昔から人気があり、20 世紀初頭にはオーストラリアから中国に大量に輸出されていました。今日、この菌は酸辣湯など多くの中華料理で人気の食材であり、漢方薬としても使用されています。ガーナでは、血液強壮剤としても使用されています。医療用途の可能性に関する現代の研究では、A. auricula-judae には抗腫瘍、低血糖、抗凝固、コレステロール低下の作用があるとさまざまな結論が出ています。",
+            "strType": "野菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Wood%20Ear%20Mushrooms.png"
+        },
+        {
+            "idIngredient": "536",
+            "strIngredient": "ダークラム",
+            "strDescription": "ラム酒は、糖蜜などのサトウキビの副産物、またはサトウキビのジュースから直接発酵と蒸留によって作られる蒸留酒です。蒸留された透明な液体は、通常、オーク樽で熟成されます。\n\n世界のラム酒の生産の大部分は、カリブ海とラテンアメリカで行われています。ラム酒は、オーストラリア、ポルトガル、オーストリア、カナダ、フィジー、インド、日本、モーリシャス、ネパール、ニュージーランド、フィリピン、レユニオン島、南アフリカ、スペイン、スウェーデン、台湾、タイ、イギリス、アメリカでも生産されています。\n\nラム酒にはさまざまなグレードがあります。ライトラムはカクテルによく使用されますが、「ゴールデン」ラムと「ダーク」ラムは、通常、ストレートまたはストレート、オンザロック、または料理に使用されてきましたが、現在ではミキサーで飲むのが一般的です。ストレートまたはアイスで飲めるように作られたプレミアムラムもあります。\n\nラム酒は、西インド諸島のほとんどの島々、沿海地方、ニューファンドランドの文化に深く関わっています。この飲み物は、イギリス海軍（水やビールと混ぜてグロッグを作った）や海賊行為（バンボとして飲んだ）との関連が有名です。また、ラム酒は経済交換の手段としても人気があり、奴隷制度（三角貿易を参照）、組織犯罪、軍事反乱（アメリカ独立戦争やオーストラリアのラム酒反乱など）などの事業の資金援助に使われてきました。",
+            "strType": "精神",
+            "image_url": "https://www.themealdb.com/images/ingredients/Dark%20Rum.png"
+        },
+        {
+            "idIngredient": "537",
+            "strIngredient": "ライトラム",
+            "strDescription": "ラム酒は、糖蜜などのサトウキビの副産物、またはサトウキビのジュースから直接発酵と蒸留によって作られる蒸留酒です。蒸留された透明な液体は、通常、オーク樽で熟成されます。\n\n世界のラム酒の生産の大部分は、カリブ海とラテンアメリカで行われています。ラム酒は、オーストラリア、ポルトガル、オーストリア、カナダ、フィジー、インド、日本、モーリシャス、ネパール、ニュージーランド、フィリピン、レユニオン島、南アフリカ、スペイン、スウェーデン、台湾、タイ、イギリス、アメリカでも生産されています。\n\nラム酒にはさまざまなグレードがあります。ライトラムはカクテルによく使用されますが、「ゴールデン」ラムと「ダーク」ラムは、通常、ストレートまたはストレート、オンザロック、または料理に使用されてきましたが、現在ではミキサーで飲むのが一般的です。ストレートまたはアイスで飲めるように作られたプレミアムラムもあります。\n\nラム酒は、西インド諸島のほとんどの島々、沿海地方、ニューファンドランドの文化に深く関わっています。この飲み物は、イギリス海軍（水やビールと混ぜてグロッグを作った）や海賊行為（バンボとして飲んだ）との関連が有名です。また、ラム酒は経済交換の手段としても人気があり、奴隷制度（三角貿易を参照）、組織犯罪、軍事反乱（アメリカ独立戦争やオーストラリアのラム酒反乱など）などの事業の資金援助に使われてきました。",
+            "strType": "精神",
+            "image_url": "https://www.themealdb.com/images/ingredients/Light%20Rum.png"
+        },
+        {
+            "idIngredient": "538",
+            "strIngredient": "ラム酒",
+            "strDescription": "ラム酒は、糖蜜などのサトウキビの副産物、またはサトウキビのジュースから直接発酵と蒸留によって作られる蒸留酒です。蒸留された透明な液体は、通常、オーク樽で熟成されます。\n\n世界のラム酒の生産の大部分は、カリブ海とラテンアメリカで行われています。ラム酒は、オーストラリア、ポルトガル、オーストリア、カナダ、フィジー、インド、日本、モーリシャス、ネパール、ニュージーランド、フィリピン、レユニオン島、南アフリカ、スペイン、スウェーデン、台湾、タイ、イギリス、アメリカでも生産されています。\n\nラム酒にはさまざまなグレードがあります。ライトラムはカクテルによく使用されますが、「ゴールデン」ラムと「ダーク」ラムは、通常、ストレートまたはストレート、オンザロック、または料理に使用されてきましたが、現在ではミキサーで飲むのが一般的です。ストレートまたはアイスで飲めるように作られたプレミアムラムもあります。\n\nラム酒は、西インド諸島のほとんどの島々、沿海地方、ニューファンドランドの文化に深く関わっています。この飲み物は、イギリス海軍（水やビールと混ぜてグロッグを作った）や海賊行為（バンボとして飲んだ）との関連が有名です。また、ラム酒は経済交換の手段としても人気があり、奴隷制度（三角貿易を参照）、組織犯罪、軍事反乱（アメリカ独立戦争やオーストラリアのラム酒反乱など）などの事業の資金援助に使われてきました。",
+            "strType": "精神",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rum.png"
+        },
+        {
+            "idIngredient": "539",
+            "strIngredient": "イングリッシュマフィン",
+            "strDescription": "イングリッシュマフィンは、小さくて丸くて平らなイースト発酵パンで、通常は水平にスライスしてトーストし、バターを塗ります。[2] トーストしたイングリッシュマフィンは、米国では朝食としてよく使われ、甘いトッピング（フルーツジャムや蜂蜜など）や塩味のトッピング（卵、ソーセージの輪切り、ベーコン、チーズなど）を添えて提供されます。イングリッシュマフィンは、さまざまな朝食サンドイッチのパンとしても使用され、エッグベネディクトとそのバリエーションのほとんどに欠かせない材料です。\n\n米国および米国の影響を受けた地域では、より大きくて甘いミニチュアの焼きたての速成パンである米国のマフィンと区別するために、イングリッシュマフィンと呼ばれています。ポルトガル料理のボロドカコに非常に似ています。",
+            "strType": "パン",
+            "image_url": "https://www.themealdb.com/images/ingredients/English%20Muffins.png"
+        },
+        {
+            "idIngredient": "540",
+            "strIngredient": "マフィン",
+            "strDescription": "マフィンは、一口大の焼き菓子です。部分的に膨らんだフラットブレッドとカップケーキのようなクイックブレッドの 2 つの異なる食品を指します。フラットブレッドはイギリスまたはヨーロッパ発祥で、少なくとも 18 世紀初頭にさかのぼりますが、クイックブレッドは 19 世紀に北米で生まれました。現在ではどちらも世界中で一般的です。",
+            "strType": "パン",
+            "image_url": "https://www.themealdb.com/images/ingredients/Muffins.png"
+        },
+        {
+            "idIngredient": "541",
+            "strIngredient": "白ワインビネガー",
+            "strDescription": "ワインビネガーは赤ワインまたは白ワインから作られ、南ヨーロッパ、中央ヨーロッパ、キプロス、イスラエルで最も一般的に使用されているビネガーです。ワインと同様に、品質にはかなりの幅があります。高品質のワインビネガーは、最大 2 年間木樽で熟成され、複雑でまろやかな風味があります。ワインビネガーは、白ビネガーやサイダービネガーよりも酸味が低い傾向があります。より高価なワインビネガーは、シャンパン、シェリー、ピノグリなどの個別のワインから作られています。",
+            "strType": "ドレッシング",
+            "image_url": "https://www.themealdb.com/images/ingredients/White%20Wine%20Vinegar.png"
+        },
+        {
+            "idIngredient": "542",
+            "strIngredient": "スモークサーモン",
+            "strDescription": "スモークサーモンはサーモンの調理法で、通常は切り身を塩漬けにして熱燻製または冷燻製にします。スモークサーモンはやや高価なため、珍味とされています。スモークサーモンにロックスという用語が使われることもありますが、これらは異なる製品です。",
+            "strType": "魚",
+            "image_url": "https://www.themealdb.com/images/ingredients/Smoked%20Salmon.png"
+        },
+        {
+            "idIngredient": "543",
+            "strIngredient": "マースバー",
+            "strDescription": "マーズは、マーズ・インコーポレイテッドが製造するチョコレートバーの一種です。1932年にイギリスのスラウでフォレスト・マーズ・シニアによって初めて製造されました。このバーは2種類の配合で販売されました。最初のイギリス版は、キャラメルとヌガーをミルクチョコレートで包んだもので、10年前に発売されたミルキーウェイというアメリカのキャンディーバーに似せて作られました。マーズバーのアメリカ版も製造され、ヌガーとトーストしたアーモンドをミルクチョコレートで包みました。後に、キャラメルもレシピに加えられました。アメリカ版は2002年に製造中止になりましたが、それ以来、短期間で復活しています。",
+            "strType": "菓子類",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mars%20Bar.png"
+        },
+        {
+            "idIngredient": "544",
+            "strIngredient": "ライスクリスピー",
+            "strDescription": "ライスクリスピー（オーストラリアとニュージーランドではライスバブルとも呼ばれる）は、1927年にケロッグ社が販売し、1928年に一般向けに発売された朝食用シリアルです。ライスクリスピーは、クリスプドライス（米と砂糖のペーストを米の形または「ベリー」の形に成形し、調理、乾燥、トーストしたもの）で作られており、膨張して非常に薄く中が空洞になった、カリカリとしたサクサクした食感の壁を形成します。シリアルにミルクを加えると、壁が崩れて「パチパチ、パチパチ、ポップ」という音が出ます。\n\nライスクリスピーシリアルには長い広告の歴史があり、エルフの漫画キャラクターであるスナップ、クラックル、ポップがこのブランドを宣伝しています。1963年、ローリングストーンズはライスクリスピーのテレビ広告用に短い歌を録音しました。",
+            "strType": "穀物",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rice%20Krispies.png"
+        },
+        {
+            "idIngredient": "545",
+            "strIngredient": "アンチョチリ",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ancho%20Chillies.png"
+        },
+        {
+            "idIngredient": "546",
+            "strIngredient": "アーモンドミルク",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Almond%20Milk.png"
+        },
+        {
+            "idIngredient": "548",
+            "strIngredient": "オールスパイス",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Allspice.png"
+        },
+        {
+            "idIngredient": "550",
+            "strIngredient": "アーモンドエキス",
+            "strDescription": "アーモンド（Prunus dulcis、別名 Prunus amygdalus）は、地中海性気候の中東地域に自生する樹木の一種ですが、他の地域でも広く栽培されています。アーモンドは、この樹木の食用で広く栽培されている種子の名前でもあります。Prunus 属では、桃とともに亜属 Amygdalus に分類され、種子を囲む殻（内果皮）の波状構造によって他の亜属と区別されます。\n\nアーモンドの実は核果で、外殻と硬い殻で構成され、その中には真のナッツではない種子があります。アーモンドの殻むきとは、殻を取り除いて種子を露出させることを指します。アーモンドは殻付きまたは殻なしの状態で販売されています。ブランチングアーモンドは、殻付きアーモンドを熱湯で処理して種皮を柔らかくし、その後取り除いて白い胚を露出させたものです。",
+            "strType": "フルーツ",
+            "image_url": "https://www.themealdb.com/images/ingredients/Almond%20Extract.png"
+        },
+        {
+            "idIngredient": "552",
+            "strIngredient": "くだらない話",
+            "strDescription": "トライプは、さまざまな家畜の胃から得られる食用の内壁の一種です。トライプのほとんどは牛や羊から得られます。",
+            "strType": "肉",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tripe.png"
+        },
+        {
+            "idIngredient": "553",
+            "strIngredient": "ヤギ肉",
+            "strDescription": "家畜ヤギまたは単にヤギ (Capra aegagrus hircus) は、南西アジアと東ヨーロッパの野生ヤギから家畜化された C. aegagrus の亜種です。ヤギはウシ科の動物で、ヤギ亜科 Caprinae に属し、ヒツジと近縁です。ヤギには 300 種類以上の品種があります。ヤギは最も古くから家畜化された動物の 1 つで、世界中の多くの場所でミルク、肉、毛皮、皮として利用されてきました。ヤギのミルクは、しばしばヤギチーズに加工されます。",
+            "strType": "肉",
+            "image_url": "https://www.themealdb.com/images/ingredients/Goat%20Meat.png"
+        },
+        {
+            "idIngredient": "554",
+            "strIngredient": "黒豆",
+            "strDescription": "ブラック タートル ビーンは、一般的な豆 (Phaseolus vulgaris) の小型で光沢のある変種で、特にラテン アメリカ料理で人気がありますが、南ルイジアナのケイジャン料理やクレオール料理にも使われています。ほとんどの一般的な豆と同様に、アメリカ大陸原産ですが、世界中に導入されています。東インド料理、パンジャブ料理にも使用され、マハーラーシュトラ料理ではカラ ゲバダとして知られています。米国などの国では、vigna mungo (ブラック グラム) と同じ意味で使用されています。ブラック タートル ビーンは、単にブラック ビーン (スペイン語では frijoles negros、zaragoza、judía negra、poroto negro、または caraota o habichuela negra、ポルトガル語では feijão preto) と呼ばれることがよくありますが、この用語は他の黒豆と混同される可能性があります。",
+            "strType": "豆",
+            "image_url": "https://www.themealdb.com/images/ingredients/Black%20Beans.png"
+        },
+        {
+            "idIngredient": "555",
+            "strIngredient": "アンチョビフィレ",
+            "strDescription": "アンチョビは、地中海や南ヨーロッパの海岸で獲れる銀色の小さな魚です。塩漬けにされ、通常は油漬けにされ、切り身にされて売られています。一般的には、平らにされたり丸められたりして缶や瓶に入れられたり、すりつぶされて油やバターと混ぜられたペースト状にされてチューブ入りで売られています。アンチョビは単体では塩辛いのですが、ソース、ドレッシング、パスタに混ぜると、驚くほど深い味わいが加わります。",
+            "strType": "魚",
+            "image_url": "https://www.themealdb.com/images/ingredients/Anchovy%20Fillet.png"
+        },
+        {
+            "idIngredient": "556",
+            "strIngredient": "ラス・エル・ハヌート",
+            "strDescription": "ラス・エル・ハヌート（アラビア語：راس الحانوت‎ raʾs al-ḥānūt、発音は [rɑʔs ælħɑːnuːt]（このサウンドについて聞く））は、チュニジア、アルジェリア、モロッコでさまざまな形で見られるスパイスミックスです。[1] 北アフリカ料理では、インド料理のガラムマサラと同様の役割を果たしています。アラビア語でこの名前は「店長」を意味し、売り手が提供する最高のスパイスの混合物を意味します。ラス・エル・ハヌートは多くの風味豊かな料理に使用され、肉や魚に塗ったり、クスクスや米に混ぜたりします。\n\nラス・エル・ハヌートを構成するスパイスの明確な構成はありません。各店、会社、または家族が独自のブレンドを持っている場合があります。混合物は通常、さまざまな割合で 12 種類以上のスパイスで構成されています。よく使用される材料には、カルダモン、クミン、クローブ、シナモン、ナツメグ、メース、オールスパイス、乾燥ショウガ、チリペッパー、コリアンダーシード、ペッパーコーン、スイートパプリカとホットパプリカ、フェヌグリーク、乾燥ターメリックなどがあります。一部のスパイスは、トネリコの実、チュファ、グレイン オブ パラダイス、オリスの根、モンクスペッパー、キュベブ、乾燥ローズバッド、フェンネルシードまたはアニスシード、ガランガル、ロングペッパーなど、地域特有のものである場合があります。材料は、すりつぶすか、乳鉢でたたいて混ぜ合わせる前にトーストされることがあります。一部の調合には塩や砂糖が含まれていますが、一般的に受け入れられている方法ではありません。ニンニク、サフラン、ナッツ、乾燥ハーブは、通常、料理に個別に追加されるため、通常は含まれませんが、特にヨーロッパと北米の市販の調合には含まれている場合があります。\n\nラス エル ハヌートの成分はバハラト スパイス ミックスと多少異なりますが、その違いは、その成分よりも、関連する料理の種類や地域によるところが大きいです。ベルベル人が使用していますが、エチオピアの「ベルベル」スパイス ミックスと混同しないでください。\n\n悪名高い危険な「緑の金属甲虫」カンタリドを含む、特定の媚薬とされるものは、多くのモロッコの処方箋に登場していますが、これらは風味付けには無関係のようです。",
+            "strType": "スパイス",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ras%20el%20hanout.png"
+        },
+        {
+            "idIngredient": "557",
+            "strIngredient": "フィロ生地",
+            "strDescription": "フィロ（ギリシャ語：φύλλο「葉」）は、中東料理やバルカン料理でバクラヴァやボレックなどのペストリーを作るのに使われる、非常に薄い無発酵生地です。フィロをベースにしたペストリーは、油やバターを塗ったフィロのシートを何枚も重ねて焼きます。",
+            "strType": "ペストリー",
+            "image_url": "https://www.themealdb.com/images/ingredients/Filo%20Pastry.png"
+        },
+        {
+            "idIngredient": "558",
+            "strIngredient": "オレンジブロッサムウォーター",
+            "strDescription": "オレンジフラワーウォーター、またはオレンジブロッサムウォーターは、新鮮なビターオレンジの花から精油を蒸留した際に得られる透明で芳香のある副産物です。\n\n用途\nMediterranean Relief.jpg\nこの精油は、フランスのジバシエやポンペ・ア・ルイユ、スペインのロスコン・デ・レイエス（王様のケーキ）、チュニジアのサムサ、モロッコのコーヒーなど、地中海の伝統的なデザート料理の多くで伝統的に芳香剤として使用されてきましたが、最近では他の料理にも使われるようになりました。たとえば、オレンジフラワーウォーターは、ヨーロッパではマドレーヌの風味付けに、メキシコでは小さなウェディングケーキやパン・デ・ムエルトの風味付けに、米国ではオレンジブロッサムスコーンやマシュマロを作るのに使用されています。オレンジフラワーウォーターは、ラモスジンフィズなどのカクテルの材料としても使用されています。マルタや多くの北アフリカ諸国、中東諸国では、オレンジの花水は胃痛の薬として広く使用されており、大人だけでなく小さな子供にも与えられています。\n\nオレンジの花水は、北アフリカ料理や中東料理でよく使用される伝統的な材料です。アラブのバクラヴァでは、オレンジの花水は風味付けのために甘いシロップと混ぜられることがよくあります。オレンジの花がこのように使用されるのは、伝統的な花嫁の花と見なされ、純粋さ（白く、小さく、繊細）を象徴しているためだと考えられています。中東では、ミネラル含有量が多いことやその他の不快な風味（例えば、ゼールに似た方法で水を冷たく保つ粘土製の水差しの一種であるクッラに保存することで生じる風味）を隠すために、普通の水に加えられます。普通の水の味に関係なく香りを加える人もいます。",
+            "strType": "飲む",
+            "image_url": "https://www.themealdb.com/images/ingredients/Orange%20Blossom%20Water.png"
+        },
+        {
+            "idIngredient": "559",
+            "strIngredient": "砂糖漬けの皮",
+            "strDescription": "砂糖漬けの果物は、砂糖漬けの果物、またはグラッセフルーツとも呼ばれ、14 世紀から存在しています。果物全体、果物の小片、または皮の破片を加熱した砂糖シロップに入れ、果物の内部の水分を吸収して保存します。",
+            "strType": "菓子類",
+            "image_url": "https://www.themealdb.com/images/ingredients/Candied%20Peel.png"
+        },
+        {
+            "idIngredient": "560",
+            "strIngredient": "グランマルニエ",
+            "strDescription": "グラン マルニエはフランスのリキュールのブランドです。このブランドの最も有名な製品はグラン マルニエ コルドン ルージュで、1880 年にアレクサンドル マルニエ ラポストールが作ったオレンジ風味のリキュールです。コニャック ブランデー、ビター オレンジの蒸留エッセンス、砂糖をブレンドして作られています。グラン マルニエ コルドン ルージュのアルコール度数は 40% です。",
+            "strType": "リキュール",
+            "image_url": "https://www.themealdb.com/images/ingredients/Grand%20Marnier.png"
+        },
+        {
+            "idIngredient": "561",
+            "strIngredient": "シェリー",
+            "strDescription": "シェリー酒は、スペインのアンダルシア州ヘレス・デ・ラ・フロンテーラ市近郊で栽培される白ブドウから作られる酒精強化ワインです。",
+            "strType": "ワイン",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sherry.png"
+        },
+        {
+            "idIngredient": "562",
+            "strIngredient": "ローズウォーター",
+            "strDescription": "ローズウォーターは、バラの花びらを水に浸して作る風味水です。また、ローズウォーターは、香水に使用されるローズオイルの製造時に副産物として得られる、バラの花びらの蒸留液のハイドロゾル部分です。ヨーロッパやアジアでは、食品の風味付け、一部の化粧品や医薬品の成分、宗教的な目的で使用されています。",
+            "strType": "飲む",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rose%20water.png"
+        },
+        {
+            "idIngredient": "563",
+            "strIngredient": "ミックススパイス",
+            "strDescription": "ミックススパイスはプディングスパイスとも呼ばれ、イギリス[1]の甘いスパイスのブレンドで、アメリカで使われるパンプキンパイスパイスに似ています。シナモンが主な風味で、ナツメグとオールスパイスが使われています。ベーキングやフルーツや他の甘い食べ物の引き立てによく使われます。",
+            "strType": "スパイス",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mixed%20Spice.png"
+        },
+        {
+            "idIngredient": "564",
+            "strIngredient": "ミンスミート",
+            "strDescription": "ミンスミートは、刻んだドライフルーツ、蒸留酒、スパイス、そして時には牛脂、牛肉、鹿肉を混ぜ合わせたものです。もともとミンスミートには必ず肉が含まれていました。現代のレシピの多くには牛脂が含まれていますが、代わりに植物性ショートニングが使用されることもあります。",
+            "strType": "スパイス",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mincemeat.png"
+        },
+        {
+            "idIngredient": "565",
+            "strIngredient": "サツマイモ",
+            "strDescription": "サツマイモは、ヒルガオ科ヒルガオ属に属する双子葉植物です。大きくてデンプン質で甘い塊茎は根菜です。若い葉や新芽は青菜として食べられることもあります。",
+            "strType": "根菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sweet%20Potatoes.png"
+        },
+        {
+            "idIngredient": "566",
+            "strIngredient": "ロールパン",
+            "strDescription": "ロールパンは、食事の付け合わせ（そのまままたはバターを塗って食べる）として出される、通常は円形または長方形の小さなパンの塊です。ロールパンは、そのまま食べても、横に切って2つの半分の間に具材を挟んで食べてもかまいません。また、ロールパンは、スライスしたパンで作るサンドイッチによく使用されます。ロールパンは、世界中のほとんどの料理に使用されています。『デイプノソフィスタエ』の中で、著者アテナイオス（170年頃 - 230年頃）は、古典世界で食べられるパン、ケーキ、ペストリーの一部について説明しています。言及されているパンの中には、グリドルケーキ、蜂蜜と油のパン、ケシの実をまぶしたキノコ型のパン、串に刺して焼いた軍隊の名物ロールパンなどがあります。",
+            "strType": "パン",
+            "image_url": "https://www.themealdb.com/images/ingredients/Bread%20Rolls.png"
+        },
+        {
+            "idIngredient": "567",
+            "strIngredient": "パン",
+            "strDescription": "バンズは、小さくて甘いパン[1]またはロールパンです。形や大きさは様々ですが、最も一般的なのは手のひらサイズかそれより小さく、上部が丸く、底が平らなものです。",
+            "strType": "パン",
+            "image_url": "https://www.themealdb.com/images/ingredients/Bun.png"
+        },
+        {
+            "idIngredient": "568",
+            "strIngredient": "ポテトパン",
+            "strDescription": "ポテトパンは、通常の小麦粉の一部をポテト粉またはポテトに置き換えたパンの一種です。熱いグリドルやフライパン、オーブンで焼くなど、さまざまな方法で調理されます。発酵させたり発酵させなかったり、さまざまな他の材料を混ぜて焼くことができます。ジャガイモと小麦粉の比率はレシピごとに大きく異なり、ジャガイモが大部分を占めるレシピもあれば、小麦粉が大部分を占めるレシピもあります。マッシュポテトを使用するレシピもあれば、乾燥ポテトフレークを使用するレシピもあります。多くの国で市販品として入手可能で、材料、調理方法、その他の変数は同様に異なります。",
+            "strType": "パン",
+            "image_url": "https://www.themealdb.com/images/ingredients/Potatoe%20Buns.png"
+        },
+        {
+            "idIngredient": "569",
+            "strIngredient": "豚ひき肉",
+            "strDescription": "ひき肉は、北米以外（英国や英連邦諸国）ではミンチまたはミンチ肉と呼ばれ、インド亜大陸ではキーマまたはキーマ（ヒンドゥスターニー語：क़ीमा（デーバナーガリー文字）、قیمہ（Nastaleeq）、[ˈqiːmaː]と発音）と呼ばれ、肉挽き器またはチョッピングナイフで細かく刻んだ肉です。一般的なひき肉は牛ひき肉ですが、豚肉、羊肉、鶏肉など、他の多くの種類の肉も同様の方法で調理されます。インド亜大陸では、羊肉と山羊肉の両方がひき肉になってキーマが作られます。",
+            "strType": "肉",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ground%20Pork.png"
+        },
+        {
+            "idIngredient": "570",
+            "strIngredient": "ポークチョップ",
+            "strDescription": "ポークチョップは、他の肉チョップと同様に、豚の背骨に対して垂直に切ったロース肉で、通常は肋骨または椎骨の一部が含まれています。ポークチョップは加工されておらず、他の豚肉の部位よりも脂肪分が少ないです。チョップは、通常、1人分として提供されます。",
+            "strType": "肉",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pork%20Chops.png"
+        },
+        {
+            "idIngredient": "571",
+            "strIngredient": "ユーコンゴールドポテト",
+            "strDescription": "ユーコン ゴールドは、薄くて滑らかで、芽のない皮と黄色がかった肉質が特徴の大型ジャガイモ品種です。このジャガイモは、1960 年代にカナダのオンタリオ州グエルフでガーネット ジョンストンが、グエルフ大学のジェフ ロウベリーの協力を得て開発しました。正式な交配は 1966 年に行われ、ユーコン ゴールドは 1980 年にようやく市場に投入されました。",
+            "strType": "根菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Yukon%20Gold%20Potatoes.png"
+        },
+        {
+            "idIngredient": "572",
+            "strIngredient": "黄玉ねぎ",
+            "strDescription": "茶色のタマネギまたは黄色のタマネギは、強い風味を持つ乾燥タマネギの一種です。内側は緑がかった白、薄い黄色、または白色で、紙のような皮の層は黄褐色または淡い金色です。",
+            "strType": "野菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Yellow%20Onion.png"
+        },
+        {
+            "idIngredient": "573",
+            "strIngredient": "ビーフストック濃縮液",
+            "strDescription": "ストックは、骨のスープとも呼ばれ、多くの料理、特にスープ、シチュー、ソースのベースとなる風味豊かな調理液です。ストックを作るには、動物の骨や肉、魚介類、野菜を水やワインで煮込み、多くの場合は長時間煮込みます。風味を増すために、ミルポワやその他の香辛料を加えることもあります。",
+            "strType": "ストック",
+            "image_url": "https://www.themealdb.com/images/ingredients/Beef%20Stock%20Concentrate.png"
+        },
+        {
+            "idIngredient": "574",
+            "strIngredient": "チキンストック濃縮液",
+            "strDescription": "ストックは、骨のスープとも呼ばれ、多くの料理、特にスープ、シチュー、ソースのベースとなる風味豊かな調理液です。ストックを作るには、動物の骨や肉、魚介類、野菜を水やワインで煮込み、多くの場合は長時間煮込みます。風味を増すために、ミルポワやその他の香辛料を加えることもあります。",
+            "strType": "ストック",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chicken%20Stock%20Concentrate.png"
+        },
+        {
+            "idIngredient": "575",
+            "strIngredient": "ペルシャキュウリ",
+            "strDescription": "キュウリ (Cucumis sativus) は、ウリ科のウリ属で広く栽培されている植物です。野菜として使用されるキュウリ状の果実をつける蔓性植物です。キュウリには、スライス用、漬物用、種なしの 3 つの主な品種があります。これらの品種の中には、いくつかの栽培品種が作られています。北米では、「野生キュウリ」という用語は、Echinocystis 属と Marah 属の植物を指しますが、これらは近縁ではありません。キュウリはもともと南アジア原産ですが、現在ではほとんどの大陸で生育しています。世界市場では、さまざまな種類のキュウリが取引されています。",
+            "strType": "野菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Persian%20Cucumber.png"
+        },
+        {
+            "idIngredient": "576",
+            "strIngredient": "マヨネーズ",
+            "strDescription": "マヨネーズ、通称マヨは、サンドイッチやサラダ、フライドポテトによく使われる濃厚な冷たい調味料またはドレッシングです。また、タルタルソースなどのソースのベースにもなります。",
+            "strType": "ソース",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mayonnaise.png"
+        },
+        {
+            "idIngredient": "577",
+            "strIngredient": "シーラチャー",
+            "strDescription": "シラチャは、唐辛子、蒸留酢、ニンニク、砂糖、塩のペーストから作られたホットソースまたはチリソースの一種です。",
+            "strType": "ソース",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sriracha.png"
+        },
+        {
+            "idIngredient": "578",
+            "strIngredient": "ダイオウ",
+            "strDescription": "ルバーブは、タデ科ダイオウ属の栽培植物の総称です。短く太い根茎から生える多年生草本です。歴史的に、英語ではさまざまな植物が「ルバーブ」と呼ばれてきました。",
+            "strType": "野菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rhubarb.png"
+        },
+        {
+            "idIngredient": "579",
+            "strIngredient": "ピタパン",
+            "strDescription": "ピタまたはピッタは、地中海、中東、および近隣地域で一般的な、小麦粉から焼いたイースト発酵の丸い平らなパンの一種です。",
+            "strType": "パン",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pita%20Bread.png"
+        },
+        {
+            "idIngredient": "580",
+            "strIngredient": "ブルガー小麦",
+            "strDescription": "ブルグルは、数種類の小麦（主にデュラム小麦）を砕いて茹でた穀物から作られるシリアル食品です。中東料理に由来しています。",
+            "strType": "穀物",
+            "image_url": "https://www.themealdb.com/images/ingredients/Bulgur%20Wheat.png"
+        },
+        {
+            "idIngredient": "581",
+            "strIngredient": "キノア",
+            "strDescription": "キヌアはアマランサス科の花を咲かせる植物です。キヌアは主に食用種子を目的に栽培される一年生草本植物で、種子には多くの穀物よりも多くの量のタンパク質、食物繊維、ビタミン B、食物ミネラルが豊富に含まれています。",
+            "strType": "粒",
+            "image_url": "https://www.themealdb.com/images/ingredients/Quinoa.png"
+        },
+        {
+            "idIngredient": "582",
+            "strIngredient": "ディルピクルス",
+            "strDescription": "ピクルスにしたキュウリは、キュウリを塩水、酢、またはその他の溶液に漬け、酸性溶液に浸すか、乳酸発酵によって酸味をつけることによって、一定期間発酵させたものです。ピクルスにしたキュウリは、ミックスピクルスの一部であることが多いです。",
+            "strType": "野菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Dill%20Pickles.png"
+        },
+        {
+            "idIngredient": "583",
+            "strIngredient": "ゴマバーガーバンズ",
+            "strDescription": "バンズは、小さくて甘いパンまたはロールパンです。形や大きさはさまざまですが、最も一般的なのは、丸い上部と平らな底を持つ、手で握れる大きさかそれより小さいものです。バンズは通常、小麦粉、砂糖、牛乳、イースト、バターから作られています。",
+            "strType": "パン",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sesame%20Seed%20Burger%20Buns.png"
+        },
+        {
+            "idIngredient": "585",
+            "strIngredient": "パン",
+            "strDescription": "バンズは、小さくて甘いパンまたはロールパンです。形や大きさはさまざまですが、最も一般的なのは、丸い上部と平らな底を持つ、手で握れる大きさかそれより小さいものです。バンズは通常、小麦粉、砂糖、牛乳、イースト、バターから作られています。",
+            "strType": "パン",
+            "image_url": "https://www.themealdb.com/images/ingredients/Buns.png"
+        },
+        {
+            "idIngredient": "586",
+            "strIngredient": "アイスバーグレタス",
+            "strDescription": "アイスバーグは、キャベツに似た球形の穂先にパリパリとした葉を持つレタスの一種です。ロメインレタスやバターヘッドレタスと同様に、より甘いレタスの一種と考えられています。成熟したアイスバーグレタスは、直径約 1 フィートに成長します。",
+            "strType": "野菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Iceberg%20Lettuce.png"
+        },
+        {
+            "idIngredient": "587",
+            "strIngredient": "ガーキンレリッシュ",
+            "strDescription": "レリッシュは、みじん切りにした野菜、果物、またはハーブを煮て漬けた製品で、主食を引き立てる調味料としてよく使われる食品です。例としては、チャツネや、ホットドッグやハンバーガーと一緒に食べるキュウリのジャム漬けである北米のレリッシュなどがあります。",
+            "strType": "ソース",
+            "image_url": "https://www.themealdb.com/images/ingredients/Gherkin%20Relish.png"
+        },
+        {
+            "idIngredient": "588",
+            "strIngredient": "チーズスライス",
+            "strDescription": "プロセスチーズは、チーズとその他の発酵していない乳製品原料を乳化剤と混ぜて作られた食品です。植物油、塩、食品着色料、砂糖などの追加原料が含まれる場合もあります。その結果、プロセスチーズにはさまざまな味、色、食感が存在します。",
+            "strType": "チーズ",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cheese%20Slices.png"
+        },
+        {
+            "idIngredient": "589",
+            "strIngredient": "短縮",
+            "strDescription": "ショートニングは室温で固体の脂肪で、砕けやすいペストリーやその他の食品の製造に使用されます。バターは室温で固体で、ペストリーの製造によく使用されますが、「ショートニング」という用語はバターを指すことはほとんどなく、マーガリンに近い用語です。",
+            "strType": "脂肪",
+            "image_url": "https://www.themealdb.com/images/ingredients/Shortening.png"
+        },
+        {
+            "idIngredient": "590",
+            "strIngredient": "温水",
+            "strDescription": "水は無機物で、透明、無味無臭、ほぼ無色の化学物質であり、地球の水圏の主成分であり、ほとんどの生物の体液です。水はカロリーや有機栄養素を提供しませんが、既知のすべての生命体にとって不可欠です。その化学式は H2O です。つまり、各分子には共有結合でつながった 1 つの酸素原子と 2 つの水素原子が含まれています。水は、標準の周囲温度と圧力での H2O の液体状態の名前です。水は、雨の形で降水し、霧の形でエアロゾルを形成します。雲は、浮遊する水滴と固体状態の氷から形成されます。細かく分割されると、結晶氷が雪の形で沈殿することがあります。水の気体状態は蒸気または水蒸気です。水は、蒸発、蒸散 (蒸発散量)、凝縮、降水、流出という水循環を継続的に移動し、通常は海に達します。",
+            "strType": "液体",
+            "image_url": "https://www.themealdb.com/images/ingredients/Warm%20Water.png"
+        },
+        {
+            "idIngredient": "591",
+            "strIngredient": "沸騰したお湯",
+            "strDescription": "水は無機物で、透明、無味無臭、ほぼ無色の化学物質であり、地球の水圏の主成分であり、ほとんどの生物の体液です。水はカロリーや有機栄養素を提供しませんが、既知のすべての生命体にとって不可欠です。その化学式は H2O です。つまり、各分子には共有結合でつながった 1 つの酸素原子と 2 つの水素原子が含まれています。水は、標準の周囲温度と圧力での H2O の液体状態の名前です。水は、雨の形で降水し、霧の形でエアロゾルを形成します。雲は、浮遊する水滴と固体状態の氷から形成されます。細かく分割されると、結晶氷が雪の形で沈殿することがあります。水の気体状態は蒸気または水蒸気です。水は、蒸発、蒸散 (蒸発散量)、凝縮、降水、流出という水循環を継続的に移動し、通常は海に達します。",
+            "strType": "液体",
+            "image_url": "https://www.themealdb.com/images/ingredients/Boiling%20Water.png"
+        },
+        {
+            "idIngredient": "592",
+            "strIngredient": "ピクルスジュース",
+            "strDescription": "ピクルスは、塩水での嫌気性発酵または酢への浸漬によって食品を保存したり、賞味期限を延ばしたりするプロセスです。東アジアでは、ビネグレットもピクルスの媒体として使用されます。ピクルスの手順は、通常、食品の食感、味、風味に影響を与えます。",
+            "strType": "ジュース",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pickle%20Juice.png"
+        },
+        {
+            "idIngredient": "593",
+            "strIngredient": "粉砂糖",
+            "strDescription": "粉砂糖は、粉砂糖やアイシングシュガーとも呼ばれ、グラニュー糖を粉砕して粉末状にした、細かく砕いた砂糖です。通常、固まるのを防ぎ、流動性を高めるために少量の固結防止剤が含まれています。",
+            "strType": "砂糖",
+            "image_url": "https://www.themealdb.com/images/ingredients/Powdered%20Sugar.png"
+        },
+        {
+            "idIngredient": "594",
+            "strIngredient": "キルバサ",
+            "strDescription": "キルバサはポーランドの肉ソーセージの一種で、ポーランド料理の定番です。アメリカ英語では、この言葉は一般的に、あらゆる種類の肉で作られた粗いU字型の燻製ソーセージを指し、イギリス英語のヴィエスカソーセージによく似ています。",
+            "strType": "肉",
+            "image_url": "https://www.themealdb.com/images/ingredients/Kielbasa.png"
+        },
+        {
+            "idIngredient": "595",
+            "strIngredient": "ポーランドソーセージ",
+            "strDescription": "キルバサはポーランドの肉ソーセージの一種で、ポーランド料理の定番です。アメリカ英語では、この言葉は一般的に、あらゆる種類の肉で作られた粗いU字型の燻製ソーセージを指し、イギリス英語のヴィエスカソーセージによく似ています。",
+            "strType": "肉",
+            "image_url": "https://www.themealdb.com/images/ingredients/Polish%20Sausage.png"
+        },
+        {
+            "idIngredient": "596",
+            "strIngredient": "ザワークラウト",
+            "strDescription": "ザワークラウトは、生のキャベツを細かく切って、さまざまな乳酸菌で発酵させたものです。キャベツの葉に含まれる糖分を乳酸菌が発酵させるときに生成される乳酸により、保存期間が長く、独特の酸味があります。",
+            "strType": "野菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sauerkraut.png"
+        },
+        {
+            "idIngredient": "597",
+            "strIngredient": "キャラウェイシード",
+            "strDescription": "キャラウェイはメリディアンフェンネルやペルシャクミン（Carum carvi）としても知られ、2年生植物です。たとえば、グーラッシュ、ザワークラウト、キャラウェイシードケーキに使用されます。根はパースニップやニンジンのような野菜として調理されることがあります。",
+            "strType": "スパイス",
+            "image_url": "https://www.themealdb.com/images/ingredients/Caraway%20Seed.png"
+        },
+        {
+            "idIngredient": "598",
+            "strIngredient": "ニシン",
+            "strDescription": "ニシンは餌となる魚で、主にニシン科に属します。ニシンは漁場の周辺や海岸近くで大きな群れをなして移動することが多く、特にバルト海を含む北太平洋と北大西洋の浅く温暖な海域、および南アメリカの西海岸沖で見られます。",
+            "strType": "魚",
+            "image_url": "https://www.themealdb.com/images/ingredients/Herring.png"
+        },
+        {
+            "idIngredient": "599",
+            "strIngredient": "ジャム",
+            "strDescription": "フルーツジャムは、果物、野菜、砂糖を調合したもので、ガラスのジャム瓶やメイソンジャーに保存されることが多いです。\n\n世界中でさまざまな種類のフルーツジャムが作られており、イチゴやアプリコットなどの甘いフルーツジャムや、トマトやカボチャなどの風味豊かなジャムがあります。ジャムの種類は、使用する材料と作り方によって決まります。ジャム、ゼリー、マーマレードはすべて、使用する果物によって異なるさまざまなスタイルのフルーツジャムの例です。英語では、複数形の「preserves」という単語が、すべての種類のジャムやゼリーを表すのに使用されます。",
+            "strType": "保存する",
+            "image_url": "https://www.themealdb.com/images/ingredients/Jam.png"
+        },
+        {
+            "idIngredient": "600",
+            "strIngredient": "ムルキヤ",
+            "strDescription": "モロヘイヤ、モロヘイヤ、モロキアまたはムルヒーヤ (アラビア語: ملوخية‎ mulūkhiyyah) ギリシャ語: molokha は、Corchorus olitorius の葉で、英語では一般に jute、nalta jute、tossa jute、jute mallow または Jew's mallow として知られています。野菜として使用されます。中東、東アフリカ、北アフリカ諸国で人気があり、フィリピンでは「Saluyot」と呼ばれています。モロヘイヤはかなり苦く、煮ると、ドロドロした粘液質のスープになります。調理したオクラのように「ぬるぬるしている」とよく表現されます。モロヘイヤは一般に生ではなく調理して食べられ、最も頻繁にはスープやシチューのようなものにされ、通常は現地の言語で野菜と同じ名前が付けられます。伝統的に、モロヘイヤは風味をつけるために鶏肉、または少なくとも鶏肉のスープで調理され、レモンまたはライムを添えた白米と一緒に出されます。",
+            "strType": "野菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mulukhiyah.png"
+        },
+        {
+            "idIngredient": "601",
+            "strIngredient": "寿司飯",
+            "strDescription": "日本のお米は日本の主食なので、その炊き方を知ることは日本料理の達人になるための重要な第一歩です。完璧に炊き上がった日本米は、炊いたときに軽くてふわふわで、少し粘り気があるはずです。",
+            "strType": "米",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sushi%20Rice.png"
+        },
+        {
+            "idIngredient": "602",
+            "strIngredient": "イチジク",
+            "strDescription": "イチジクは、アジア原産のクワ科の花木で、イチジクとも呼ばれます。イチジクとも呼ばれる果実の原料であり、商業的に栽培されている地域では重要な作物です。",
+            "strType": "フルーツ",
+            "image_url": "https://www.themealdb.com/images/ingredients/Figs.png"
+        },
+        {
+            "idIngredient": "603",
+            "strIngredient": "サイダー",
+            "strDescription": "サイダー（/ˈsaɪdər/ SY-dər）は、発酵させたリンゴの果汁から作られるアルコール飲料である。サイダーはイギリス（特にウェストカントリー）とアイルランド共和国で広く入手可能である。イギリスは一人当たりの消費量が世界一であり、サイダー製造会社も最大である。イングランド南西部のサイダーは一般的にアルコール度数が高い。サイダーはインド、カナダ、オーストラリア、ニュージーランドなど多くの英連邦諸国でも人気がある。イギリスとその旧植民地だけでなく、ポルトガル（主にミーニョとマデイラ）、フランス（特にノルマンディーとブルターニュ）、北イタリア（ピエモンテとフリウリ）、北スペイン（特にアストゥリアス公国とバスク地方）でもサイダーは人気がある。中央ヨーロッパにも独自の種類のサイダーがあり、ラインラント＝プファルツ州とヘッセン州ではアプフェルヴァインとして知られる特に酸味の強いサイダーが生産されている。米国では、発酵サイダーのさまざまな種類は、アルコール入りサイダーと、同じくリンゴから作られるノンアルコールのアップルサイダーまたは「スイートサイダー」を区別するために、ハードサイダーと呼ばれることがよくあります。カナダでは、リンゴが入っていないサイダーはサイダーと呼ぶことはできません。さらに、カナダの食品医薬品規制によると、サイダーには容積比で 2.5% 未満または 13% を超える絶対アルコールが含まれていてはなりません。",
+            "strType": "飲む",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cider.png"
+        },
+        {
+            "idIngredient": "604",
+            "strIngredient": "ビートルート",
+            "strDescription": "ビートルートはビート植物の主根部分で、カナダと米国では通常ビートとして知られていますが、イギリス英語ではこの野菜はビートルートと呼ばれ、テーブルビート、ガーデンビート、レッドビート、ディナービート、ゴールデンビートとも呼ばれています。",
+            "strType": "野菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Beetroot.png"
+        },
+        {
+            "idIngredient": "605",
+            "strIngredient": "イワシ",
+            "strDescription": "「イワシ」と「イワシ」は、ニシン科のさまざまな小型で油分の多い餌用魚を指す一般的な名前です。「イワシ」という用語は、15 世紀初頭に英語で初めて使用され、かつてイワシが豊富に生息していた地中海のサルデーニャ島に由来していると考えられます。",
+            "strType": "シーフード",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sardines.png"
+        },
+        {
+            "idIngredient": "606",
+            "strIngredient": "チャバタ",
+            "strDescription": "チャバタは、小麦粉、水、塩、酵母、オリーブオイルから作られるイタリアの白パンで、フランスのバゲットの人気に応えて、1982年にイタリアのヴェネト州ロヴィーゴ県アドリアのパン屋によって作られました。",
+            "strType": "パン",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ciabatta.png"
+        },
+        {
+            "idIngredient": "607",
+            "strIngredient": "そば",
+            "strDescription": "ソバ（Fagopyrum esculentum）は、穀物のような種子と被覆作物として栽培される植物です。ソバという名前は、アジアで栽培されている食用植物であるFagopyrum tataricumなど、他のいくつかの種にも使用されています。ソバは名前にもかかわらず、草ではないため、小麦と密接な関係はありません。代わりに、ソバはスイバ、イタドリ、およびルバーブと関連があります。ソバは、複合炭水化物の組成により、種子の料理への使用が穀物と同じであるため、擬似穀物と呼ばれます。",
+            "strType": "粒",
+            "image_url": "https://www.themealdb.com/images/ingredients/Buckwheat.png"
+        },
+        {
+            "idIngredient": "608",
+            "strIngredient": "プルーン",
+            "strDescription": "プルーンは乾燥したプラムで、最も一般的にはヨーロッパ産プラムです。すべてのプラムの種や品種がプルーンに乾燥できるわけではありません。プルーンは、可溶性固形分が多く、乾燥中に発酵しない Prunus domestica 品種の果肉が硬い果実 (プラム) です。生のプラムに「プルーン」という用語を使用することは、乾燥用に栽培されたプラムの品種に適用される場合を除き、廃れています。",
+            "strType": "フルーツ",
+            "image_url": "https://www.themealdb.com/images/ingredients/Prunes.png"
+        }
+    ]
+}

@@ -1,0 +1,4029 @@
+{
+    "meals": [
+        {
+            "idIngredient": "1",
+            "strIngredient": "鸡",
+            "strDescription": "鸡是一种家禽，是红原鸡 (Gallus gallus) 的一个亚种。它是最常见和分布最广的家畜之一，截至 2011 年，总数量超过 190 亿只。世界上鸡的数量比任何其他鸟类或家禽都要多。人类饲养鸡主要是为了食物来源（既吃肉也吃蛋），也不太常见，作为宠物。最初，人们饲养鸡是为了斗鸡或举行特殊仪式，直到希腊化时期（公元前 4 至 2 世纪）才开始饲养鸡作为食物。\n\n遗传学研究表明，鸡的母系起源于南亚、东南亚和东亚，但美洲、欧洲、中东和非洲的鸡支起源于印度次大陆。从古印度，家鸡传播到小亚细亚西部的吕底亚，公元前 5 世纪传播到希腊。根据图特摩斯三世的编年史，早在公元前 15 世纪中叶，埃及人就开始知道家禽的存在，而“每天产仔的鸟”就是从叙利亚和巴比伦示拿之间的土地来到埃及的。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chicken.png"
+        },
+        {
+            "idIngredient": "2",
+            "strIngredient": "三文鱼",
+            "strDescription": "鲑鱼是鲑科中几种辐鳍鱼的俗称。该科的其他鱼类包括鳟鱼、红点鲑、茴鱼和白鱼。鲑鱼原产于北大西洋（鲑属）和太平洋（鲑属）的支流。许多鲑鱼品种已被引入非本土环境，如北美五大湖和南美巴塔哥尼亚。鲑鱼在世界许多地方被密集养殖。\n\n通常，鲑鱼是溯河洄游动物：它们在淡水中孵化，迁移到海洋，然后返回淡水中繁殖。然而，几种鲑鱼的种群在其一生中都只能生活在淡水中。民间传说，鲑鱼会回到它们孵化的确切地点产卵。追踪研究表明，这基本是正确的。一部分回游的鲑鱼可能会在不同的淡水系统中游走并产卵；游走的百分比取决于鲑鱼的种类。研究表明，归巢行为取决于嗅觉记忆。鲑鱼的历史可以追溯到新近纪。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Salmon.png"
+        },
+        {
+            "idIngredient": "3",
+            "strIngredient": "牛肉",
+            "strDescription": "牛肉是牛肉的烹饪名称，特别是骨骼肌。人类自史前时代就开始食用牛肉。牛肉是优质蛋白质和营养素的来源。\n\n大多数牛骨骼肌肉可以直接使用，只需切成某些部位即可，例如烤肉、牛小排或牛排（菲力牛排、沙朗牛排、牛臀肉、肋排、肋眼牛排、腹肉牛排等），而其他部位则需要加工（咸牛肉或牛肉干）。另一方面，边角料通常与年龄较大、较瘦（因此更坚韧）的牛肉混合，然后绞碎、剁碎或用于香肠。血液用于某些品种的血香肠中。可食用的其他部位包括其他肌肉和内脏，例如牛尾、肝脏、舌头、来自网胃或瘤胃的牛肚、腺体（特别是胰腺和胸腺，称为胸腺）、心脏、脑（尽管在有牛海绵状脑病（BSE，通常称为疯牛病）危险的地方是被禁止的）、肾脏和公牛的嫩睾丸（在美国被称为小牛苗、草原牡蛎或落基山牡蛎）。一些肠子是煮熟后直接食用的，但更常见的是清洗后用作天然香肠肠衣。骨头用于制作牛肉汤。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Beef.png"
+        },
+        {
+            "idIngredient": "4",
+            "strIngredient": "猪肉",
+            "strDescription": "猪肉是家猪（Sus scrofa domesticus）肉的烹饪名称。它是世界上最常见的肉类[1]，养猪的历史可以追溯到公元前 5000 年。\n\n猪肉既可以新鲜烹饪也可以腌制食用。腌制可以延长猪肉产品的保质期。火腿、熏猪肉、腌火腿、培根和香肠都是腌制猪肉的例子。熟食是烹饪的一个分支，专门制作肉制品，其中许多都是猪肉制品。\n\n猪肉是东亚和非穆斯林东南亚地区（印度支那、菲律宾、新加坡、东帝汶）最受欢迎的肉类，在西方世界也很常见，尤其是在中欧。它在亚洲美食中因其脂肪含量和宜人的口感而备受推崇。出于宗教原因，犹太教、穆斯林和拉斯特法里教饮食法禁止食用猪肉，有几种可能的原因。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pork.png"
+        },
+        {
+            "idIngredient": "5",
+            "strIngredient": "牛油果",
+            "strDescription": "鳄梨是一种可能起源于墨西哥中南部的树，被归类为樟科开花植物。这种植物的果实也称为鳄梨（或鳄梨或鳄梨），在植物学上是一种含有一颗大种子的大浆果。\n\n鳄梨具有商业价值，在世界各地的热带和地中海气候中都有种植。鳄梨果皮呈绿色，肉质，可能是梨形、蛋形或球形。从商业角度来看，鳄梨在采摘后成熟。鳄梨树是部分自花授粉的，通常通过嫁接繁殖以保持可预测的果实质量和数量。2017 年，墨西哥生产了全球 34% 的鳄梨。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Avocado.png"
+        },
+        {
+            "idIngredient": "9",
+            "strIngredient": "苹果醋",
+            "strDescription": "苹果醋，或称苹果酒醋，是一种由发酵的苹果汁制成的醋，用于沙拉酱、腌料、油醋汁、食品防腐剂和酸辣酱。制作方法为压碎苹果，然后挤出果汁。将细菌和酵母添加到液体中以启动酒精发酵过程，将糖转化为酒精。在第二次发酵步骤中，酒精被产乙酸的细菌（醋杆菌属）转化为醋。乙酸和苹果酸结合在一起使醋具有酸味。苹果醋没有药用或营养价值。没有高质量的临床证据表明经常食用苹果醋有助于维持或减轻体重，或有效控制血糖和血脂水平。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Apple%20Cider%20Vinegar.png"
+        },
+        {
+            "idIngredient": "10",
+            "strIngredient": "芦笋",
+            "strDescription": "芦笋，又名园芦笋，民间名称为麻雀草，学名为 Asparagus officinalis，是芦笋属的一种多年生开花植物。其嫩枝可用作春季蔬菜。\n\n它曾被归类为百合科，就像相关的葱属植物、洋葱和大蒜一样。然而，遗传学研究将百合、葱属植物和芦笋归入三个不同的科——百合科、石蒜科和天门冬科——石蒜科和天门冬科被归为天门冬目。关于芦笋的原产地，来源不同，但一般包括欧洲大部分地区和西温带亚洲。它被广泛种植为蔬菜作物。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Asparagus.png"
+        },
+        {
+            "idIngredient": "11",
+            "strIngredient": "茄子",
+            "strDescription": "茄子（美国、澳大利亚）、茄子（英国）或茄子（南亚和南非）是茄科植物的一种。茄子因其可食用的果实而在世界各地种植。\n\n最常见的是紫色，这种海绵状、吸水的果实用于各种菜肴。虽然它通常被认为是一种蔬菜，但从植物学的定义来看，它是一种浆果。作为茄属的一员，它与番茄和土豆有关。像番茄一样，它的皮和种子可以食用，但像土豆一样，它通常是煮熟后食用的。茄子的营养价值不高，其常量营养素和微量营养素含量较低，但这种果实在烹饪过程中能够吸收油脂和味道进入果肉，这扩大了它在烹饪艺术中的用途。\n\n它最初是从野生茄属植物刺或苦苹果 S. incanum 驯化而来的，可能经历了两次独立的驯化：一次在南亚，一次在东亚。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Aubergine.png"
+        },
+        {
+            "idIngredient": "十三",
+            "strIngredient": "小李子番茄",
+            "strDescription": "番茄是一种可食用的红色浆果，产于番茄属植物，俗称番茄植物。该物种原产于南美洲西部和中美洲。纳瓦特尔语（阿兹特克语）中的 tomatl 一词衍生了西班牙语单词 tomate，英语单词 tomato 即源于此。[3][4] 番茄的驯化和作为栽培食品的使用可能起源于墨西哥的土著民族。西班牙征服阿兹特克帝国时，阿兹特克人在烹饪中使用番茄，西班牙人在与阿兹特克人接触后首次遇到番茄，并将这种植物带到了欧洲。从那里，番茄在 16 世纪被引入欧洲殖民地世界的其他地区。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Baby%20Plum%20Tomatoes.png"
+        },
+        {
+            "idIngredient": "14",
+            "strIngredient": "熏肉",
+            "strDescription": "培根是一种盐腌猪肉。培根由几种不同的肉块制成，通常是五花肉或背部肉块，这些部位的脂肪比五花肉少。培根可以单独食用，也可以作为配菜（尤其是早餐），或者作为调味料（例如，俱乐部三明治）来调味。培根还用于烤肉和猪油，尤其是野味，包括鹿肉和野鸡。这个词源于古高地德语 bacho，意为“臀部”、“火腿”或“培根侧面”，与古法语 bacon 同源。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Bacon.png"
+        },
+        {
+            "idIngredient": "15",
+            "strIngredient": "发酵粉",
+            "strDescription": "泡打粉是一种干性化学膨松剂，是碳酸盐或碳酸氢盐与弱酸的混合物。通过加入玉米淀粉等缓冲剂，可防止碱和酸过早发生反应。泡打粉用于增加烘焙食品的体积并减轻其质地。它的工作原理是通过酸碱反应将二氧化碳气体释放到面糊或面团中，使湿混合物中的气泡膨胀，从而使混合物膨松。第一种单效泡打粉是由英国伯明翰的食品制造商 Alfred Bird 于 1843 年开发的。第一种双效泡打粉是由美国的 Eben Norton Horsford 于 19 世纪 60 年代开发的。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Baking%20Powder.png"
+        },
+        {
+            "idIngredient": "16",
+            "strIngredient": "香醋",
+            "strDescription": "巴萨米克醋（意大利语：aceto balsamico），有时简称为 balsamic，是一种原产于意大利的非常深色、浓稠且味道浓郁的醋，全部或部分由葡萄汁制成。葡萄汁是新鲜压碎的葡萄汁，带有所有的皮、籽和茎。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Balsamic%20Vinegar.png"
+        },
+        {
+            "idIngredient": "17",
+            "strIngredient": "罗勒",
+            "strDescription": "罗勒，也称大罗勒，是唇形科（薄荷）的一种烹饪香草。\n\n罗勒原产于从中非到东南亚的热带地区。它是一种嫩植物，在世界各地的菜肴中都有使用。根据种类和栽培品种的不同，罗勒叶的味道可能有点像茴香，带有强烈、辛辣、通常带有甜味的气味。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Basil.png"
+        },
+        {
+            "idIngredient": "18",
+            "strIngredient": "罗勒叶",
+            "strDescription": "罗勒，也称为大罗勒，是唇形科（薄荷）的一种烹饪香草。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Basil%20Leaves.png"
+        },
+        {
+            "idIngredient": "19",
+            "strIngredient": "印度香米",
+            "strDescription": "巴斯马蒂是一种细长粒香米，传统上产自印度次大陆。根据印度国营农业和加工食品出口发展局和巴基斯坦政府运营的巴基斯坦经济调查局的数据，截至 2018-19 年，印度向海外巴斯马蒂大米市场出口了 90% 以上的份额，而巴基斯坦则占据了剩余份额。许多国家都使用国产巴斯马蒂大米作物；然而，巴斯马蒂大米在地理上仅限于印度、巴基斯坦、尼泊尔和孟加拉国的部分地区。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Basmati%20Rice.png"
+        },
+        {
+            "idIngredient": "20",
+            "strIngredient": "月桂叶",
+            "strDescription": "月桂叶是一种芳香的叶子，常用于烹饪。月桂叶可以整片使用，也可以晒干后磨碎使用。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Bay%20Leaf.png"
+        },
+        {
+            "idIngredient": "21",
+            "strIngredient": "月桂叶",
+            "strDescription": "月桂叶是一种芳香的叶子，常用于烹饪。月桂叶可以整片使用，也可以晒干后磨碎使用。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Bay%20Leaves.png"
+        },
+        {
+            "idIngredient": "23",
+            "strIngredient": "牛腩",
+            "strDescription": "牛肉是牛肉的烹饪名称，特别是骨骼肌。人类自史前时代就开始食用牛肉。牛肉是优质蛋白质和营养素的来源。\n\n大多数牛骨骼肌肉可以直接使用，只需切成某些部位即可，例如烤肉、牛小排或牛排（菲力牛排、沙朗牛排、牛臀肉、肋排、肋眼牛排、腹肉牛排等），而其他部位则需要加工（咸牛肉或牛肉干）。另一方面，边角料通常与年龄较大、较瘦（因此更坚韧）的牛肉混合，然后绞碎、剁碎或用于香肠。血液用于某些品种的血香肠中。可食用的其他部位包括其他肌肉和内脏，例如牛尾、肝脏、舌头、来自网胃或瘤胃的牛肚、腺体（特别是胰腺和胸腺，称为胸腺）、心脏、脑（尽管在有牛海绵状脑病（BSE，通常称为疯牛病）危险的地方是被禁止的）、肾脏和公牛的嫩睾丸（在美国被称为小牛苗、草原牡蛎或落基山牡蛎）。一些肠子是煮熟后直接食用的，但更常见的是清洗后用作天然香肠肠衣。骨头用于制作牛肉汤。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Beef%20Brisket.png"
+        },
+        {
+            "idIngredient": "24",
+            "strIngredient": "牛柳",
+            "strDescription": "牛肉是牛肉的烹饪名称，特别是骨骼肌。人类自史前时代就开始食用牛肉。牛肉是优质蛋白质和营养素的来源。\n\n大多数牛骨骼肌肉可以直接使用，只需切成某些部位即可，例如烤肉、牛小排或牛排（菲力牛排、沙朗牛排、牛臀肉、肋排、肋眼牛排、腹肉牛排等），而其他部位则需要加工（咸牛肉或牛肉干）。另一方面，边角料通常与年龄较大、较瘦（因此更坚韧）的牛肉混合，然后绞碎、剁碎或用于香肠。血液用于某些品种的血香肠中。可食用的其他部位包括其他肌肉和内脏，例如牛尾、肝脏、舌头、来自网胃或瘤胃的牛肚、腺体（特别是胰腺和胸腺，称为胸腺）、心脏、脑（尽管在有牛海绵状脑病（BSE，通常称为疯牛病）危险的地方是被禁止的）、肾脏和公牛的嫩睾丸（在美国被称为小牛苗、草原牡蛎或落基山牡蛎）。一些肠子是煮熟后直接食用的，但更常见的是清洗后用作天然香肠肠衣。骨头用于制作牛肉汤。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Beef%20Fillet.png"
+        },
+        {
+            "idIngredient": "二十五",
+            "strIngredient": "牛肉汁",
+            "strDescription": "牛肉是牛肉的烹饪名称，特别是骨骼肌。人类自史前时代就开始食用牛肉。牛肉是优质蛋白质和营养素的来源。\n\n大多数牛骨骼肌肉可以直接使用，只需切成某些部位即可，例如烤肉、牛小排或牛排（菲力牛排、沙朗牛排、牛臀肉、肋排、肋眼牛排、腹肉牛排等），而其他部位则需要加工（咸牛肉或牛肉干）。另一方面，边角料通常与年龄较大、较瘦（因此更坚韧）的牛肉混合，然后绞碎、剁碎或用于香肠。血液用于某些品种的血香肠中。可食用的其他部位包括其他肌肉和内脏，例如牛尾、肝脏、舌头、来自网胃或瘤胃的牛肚、腺体（特别是胰腺和胸腺，称为胸腺）、心脏、脑（尽管在有牛海绵状脑病（BSE，通常称为疯牛病）危险的地方是被禁止的）、肾脏和公牛的嫩睾丸（在美国被称为小牛苗、草原牡蛎或落基山牡蛎）。一些肠子是煮熟后直接食用的，但更常见的是清洗后用作天然香肠肠衣。骨头用于制作牛肉汤。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Beef%20Gravy.png"
+        },
+        {
+            "idIngredient": "二十六",
+            "strIngredient": "牛肉汤",
+            "strDescription": "牛肉是牛肉的烹饪名称，特别是骨骼肌。人类自史前时代就开始食用牛肉。牛肉是优质蛋白质和营养素的来源。\n\n大多数牛骨骼肌肉可以直接使用，只需切成某些部位即可，例如烤肉、牛小排或牛排（菲力牛排、沙朗牛排、牛臀肉、肋排、肋眼牛排、腹肉牛排等），而其他部位则需要加工（咸牛肉或牛肉干）。另一方面，边角料通常与年龄较大、较瘦（因此更坚韧）的牛肉混合，然后绞碎、剁碎或用于香肠。血液用于某些品种的血香肠中。可食用的其他部位包括其他肌肉和内脏，例如牛尾、肝脏、舌头、来自网胃或瘤胃的牛肚、腺体（特别是胰腺和胸腺，称为胸腺）、心脏、脑（尽管在有牛海绵状脑病（BSE，通常称为疯牛病）危险的地方是被禁止的）、肾脏和公牛的嫩睾丸（在美国被称为小牛苗、草原牡蛎或落基山牡蛎）。一些肠子是煮熟后直接食用的，但更常见的是清洗后用作天然香肠肠衣。骨头用于制作牛肉汤。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Beef%20Stock.png"
+        },
+        {
+            "idIngredient": "二十七",
+            "strIngredient": "小苏打",
+            "strDescription": "碳酸氢钠，俗称小苏打，是一种化学式为 NaHCO3 的化合物。它是一种由钠阳离子 (Na+) 和碳酸氢根阴离子 (HCO3−) 组成的盐。碳酸氢钠是一种白色结晶固体，但通常呈细粉状。它略带咸味，呈碱性，类似于洗涤苏打（碳酸钠）。天然矿物形式是苏打石。它是矿物泡碱的一种成分，在许多矿泉中都可发现其溶解。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Bicarbonate%20Of%20Soda.png"
+        },
+        {
+            "idIngredient": "二十八",
+            "strIngredient": "印度香饭",
+            "strDescription": "Biryani 也被称为 biriyani、biriani、birani 或 briyani，是一种源自印度次大陆穆斯林的混合米饭。它可以比作混合咖喱，然后将其与半熟米饭分开混合。这道菜在整个印度次大陆以及该地区的侨民中特别受欢迎。伊拉克库尔德斯坦等其他地区也有这种菜。它由印度香料、米饭、肉类（鸡肉、山羊肉、牛肉、羊肉、虾或鱼）、蔬菜或鸡蛋制成。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Biryani%20Masala.png"
+        },
+        {
+            "idIngredient": "二十九",
+            "strIngredient": "黑胡椒",
+            "strDescription": "黑胡椒 (Piper nigrum) 是胡椒科的一种开花藤本植物，人们种植它是为了获取其果实，即所谓的胡椒粒，这种果实通常干燥后用作香料和调味品。新鲜且完全成熟的胡椒粒直径约为 5 毫米 (0.20 英寸)，呈深红色，与所有核果一样，含有一颗种子。胡椒粒和由其制成的胡椒粉可以简单地描述为胡椒，或者更准确地说是黑胡椒 (煮熟并干燥的未成熟果实)、绿胡椒 (干燥的未成熟果实) 或白胡椒 (成熟果实种子)。\n\n黑胡椒原产于现今印度西南部的喀拉拉邦，并在那里和其他热带地区广泛种植。截至 2013 年，越南是世界上最大的胡椒生产国和出口国，占世界胡椒产量的 34%。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Black%20Pepper.png"
+        },
+        {
+            "idIngredient": "三十",
+            "strIngredient": "黑糖蜜",
+            "strDescription": "糖蜜（美式英语）或黑糖浆（英式英语）是一种粘稠产品，由甘蔗或甜菜精炼成糖而成。糖蜜因糖的含量、提取方法和植物年龄而异。甘蔗糖蜜主要用于美国、加拿大和其他地方的甜味和调味食品。糖蜜是优质商业红糖的主要成分。\n\n甜高粱糖浆在美国南部可能被俗称为“高粱糖蜜”。[2][3] 类似产品包括蜂蜜、枫糖浆、玉米糖浆和转化糖浆。大多数这些替代糖浆的味道都比较温和。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Black%20Treacle.png"
+        },
+        {
+            "idIngredient": "31",
+            "strIngredient": "波罗蒂豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Borlotti%20Beans.png"
+        },
+        {
+            "idIngredient": "三十二",
+            "strIngredient": "蝴蝶结意大利面",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Bowtie%20Pasta.png"
+        },
+        {
+            "idIngredient": "33",
+            "strIngredient": "布拉姆利苹果",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Bramley%20Apples.png"
+        },
+        {
+            "idIngredient": "三十四",
+            "strIngredient": "白兰地",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Brandy.png"
+        },
+        {
+            "idIngredient": "三十五",
+            "strIngredient": "面包",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Bread.png"
+        },
+        {
+            "idIngredient": "三十六",
+            "strIngredient": "面包屑",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Breadcrumbs.png"
+        },
+        {
+            "idIngredient": "三十七",
+            "strIngredient": "西兰花",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Broccoli.png"
+        },
+        {
+            "idIngredient": "三十八",
+            "strIngredient": "棕色小扁豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Brown%20Lentils.png"
+        },
+        {
+            "idIngredient": "三十九",
+            "strIngredient": "糙米",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Brown%20Rice.png"
+        },
+        {
+            "idIngredient": "40",
+            "strIngredient": "红糖",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Brown%20Sugar.png"
+        },
+        {
+            "idIngredient": "41",
+            "strIngredient": "黄油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Butter.png"
+        },
+        {
+            "idIngredient": "43",
+            "strIngredient": "可可",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cacao.png"
+        },
+        {
+            "idIngredient": "四十四",
+            "strIngredient": "卡津人",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cajun.png"
+        },
+        {
+            "idIngredient": "四十五",
+            "strIngredient": "番茄罐头",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Canned%20Tomatoes.png"
+        },
+        {
+            "idIngredient": "四十六",
+            "strIngredient": "白豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cannellini%20Beans.png"
+        },
+        {
+            "idIngredient": "四十七",
+            "strIngredient": "小豆蔻",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cardamom.png"
+        },
+        {
+            "idIngredient": "49",
+            "strIngredient": "胡萝卜",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Carrots.png"
+        },
+        {
+            "idIngredient": "50",
+            "strIngredient": "腰果",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cashew%20Nuts.png"
+        },
+        {
+            "idIngredient": "51",
+            "strIngredient": "腰果",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cashews.png"
+        },
+        {
+            "idIngredient": "52",
+            "strIngredient": "细砂糖",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Caster%20Sugar.png"
+        },
+        {
+            "idIngredient": "53",
+            "strIngredient": "辣椒",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cayenne%20Pepper.png"
+        },
+        {
+            "idIngredient": "54",
+            "strIngredient": "芹菜根",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Celeriac.png"
+        },
+        {
+            "idIngredient": "55",
+            "strIngredient": "芹菜",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Celery.png"
+        },
+        {
+            "idIngredient": "56",
+            "strIngredient": "芹菜盐",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Celery%20Salt.png"
+        },
+        {
+            "idIngredient": "57",
+            "strIngredient": "查洛特",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Challots.png"
+        },
+        {
+            "idIngredient": "58",
+            "strIngredient": "夏洛特土豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Charlotte%20Potatoes.png"
+        },
+        {
+            "idIngredient": "59",
+            "strIngredient": "切达干酪",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cheddar%20Cheese.png"
+        },
+        {
+            "idIngredient": "60",
+            "strIngredient": "奶酪",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cheese.png"
+        },
+        {
+            "idIngredient": "61",
+            "strIngredient": "奶酪凝乳",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cheese%20Curds.png"
+        },
+        {
+            "idIngredient": "62",
+            "strIngredient": "圣女果",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cherry%20Tomatoes.png"
+        },
+        {
+            "idIngredient": "63",
+            "strIngredient": "栗菇",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chestnut%20Mushroom.png"
+        },
+        {
+            "idIngredient": "65",
+            "strIngredient": "鸡胸肉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chicken%20Breast.png"
+        },
+        {
+            "idIngredient": "66",
+            "strIngredient": "鸡胸肉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chicken%20Breasts.png"
+        },
+        {
+            "idIngredient": "67",
+            "strIngredient": "鸡腿",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chicken%20Legs.png"
+        },
+        {
+            "idIngredient": "68",
+            "strIngredient": "鸡汤",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chicken%20Stock.png"
+        },
+        {
+            "idIngredient": "70",
+            "strIngredient": "鸡大腿",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chicken%20Thighs.png"
+        },
+        {
+            "idIngredient": "71",
+            "strIngredient": "鹰嘴豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chickpeas.png"
+        },
+        {
+            "idIngredient": "72",
+            "strIngredient": "辣椒粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chili%20Powder.png"
+        },
+        {
+            "idIngredient": "73",
+            "strIngredient": "冷冻黄油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chilled%20Butter.png"
+        },
+        {
+            "idIngredient": "74",
+            "strIngredient": "辣椒",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chilli.png"
+        },
+        {
+            "idIngredient": "75",
+            "strIngredient": "辣椒粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chilli%20Powder.png"
+        },
+        {
+            "idIngredient": "76",
+            "strIngredient": "芥兰",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chinese%20Broccoli.png"
+        },
+        {
+            "idIngredient": "77",
+            "strIngredient": "巧克力片",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chocolate%20Chips.png"
+        },
+        {
+            "idIngredient": "78",
+            "strIngredient": "切碎的洋葱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chopped%20Onion.png"
+        },
+        {
+            "idIngredient": "79",
+            "strIngredient": "切碎的欧芹",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chopped%20Parsley.png"
+        },
+        {
+            "idIngredient": "80",
+            "strIngredient": "切碎的西红柿",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chopped%20Tomatoes.png"
+        },
+        {
+            "idIngredient": "81",
+            "strIngredient": "香肠",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chorizo​​.png"
+        },
+        {
+            "idIngredient": "82",
+            "strIngredient": "圣诞布丁",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Christmas%20Pudding.png"
+        },
+        {
+            "idIngredient": "83",
+            "strIngredient": "香菜",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cilantro.png"
+        },
+        {
+            "idIngredient": "84",
+            "strIngredient": "肉桂",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cinnamon.png"
+        },
+        {
+            "idIngredient": "85",
+            "strIngredient": "肉桂棒",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cinnamon%20Stick.png"
+        },
+        {
+            "idIngredient": "87",
+            "strIngredient": "丁香",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cloves.png"
+        },
+        {
+            "idIngredient": "88",
+            "strIngredient": "可可糖",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Coco%20Sugar.png"
+        },
+        {
+            "idIngredient": "89",
+            "strIngredient": "可可",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cocoa.png"
+        },
+        {
+            "idIngredient": "90",
+            "strIngredient": "椰奶",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Coconut%20Cream.png"
+        },
+        {
+            "idIngredient": "91",
+            "strIngredient": "椰奶",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Coconut%20Milk.png"
+        },
+        {
+            "idIngredient": "92",
+            "strIngredient": "科尔比杰克奶酪",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Colby%20Jack%20Cheese.png"
+        },
+        {
+            "idIngredient": "93",
+            "strIngredient": "冷水",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cold%20Water.png"
+        },
+        {
+            "idIngredient": "94",
+            "strIngredient": "炼乳",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Condensed%20Milk.png"
+        },
+        {
+            "idIngredient": "95",
+            "strIngredient": "香菜",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Coriander.png"
+        },
+        {
+            "idIngredient": "96",
+            "strIngredient": "芫荽叶",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Coriander%20Leaves.png"
+        },
+        {
+            "idIngredient": "97",
+            "strIngredient": "芫荽籽",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Coriander%20Seeds.png"
+        },
+        {
+            "idIngredient": "98",
+            "strIngredient": "玉米饼",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Corn%20Tortillas.png"
+        },
+        {
+            "idIngredient": "99",
+            "strIngredient": "玉米淀粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cornstarch.png"
+        },
+        {
+            "idIngredient": "100",
+            "strIngredient": "奶油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cream.png"
+        },
+        {
+            "idIngredient": "101",
+            "strIngredient": "鲜奶油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Creme%20Fraiche.png"
+        },
+        {
+            "idIngredient": "102",
+            "strIngredient": "菲达奶酪块",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cubed%20Feta%20Cheese.png"
+        },
+        {
+            "idIngredient": "103",
+            "strIngredient": "黄瓜",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cucumber.png"
+        },
+        {
+            "idIngredient": "104",
+            "strIngredient": "孜然",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cumin.png"
+        },
+        {
+            "idIngredient": "105",
+            "strIngredient": "孜然",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cumin%20Seeds.png"
+        },
+        {
+            "idIngredient": "106",
+            "strIngredient": "咖喱粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Curry%20Powder.png"
+        },
+        {
+            "idIngredient": "107",
+            "strIngredient": "深红糖",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Dark%20Brown%20Sugar.png"
+        },
+        {
+            "idIngredient": "108",
+            "strIngredient": "深软红糖",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Dark%20Soft%20Brown%20Sugar.png"
+        },
+        {
+            "idIngredient": "109",
+            "strIngredient": "黑酱油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Dark%20Soy%20Sauce.png"
+        },
+        {
+            "idIngredient": "110",
+            "strIngredient": "德梅拉拉糖",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Demerara%20Sugar.png"
+        },
+        {
+            "idIngredient": "111",
+            "strIngredient": "西红柿丁",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Diced%20Tomatoes.png"
+        },
+        {
+            "idIngredient": "112",
+            "strIngredient": "消化饼干",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Digestive%20Biscuits.png"
+        },
+        {
+            "idIngredient": "113",
+            "strIngredient": "莳萝",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Dill.png"
+        },
+        {
+            "idIngredient": "114",
+            "strIngredient": "烤肉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Doner%20Meat.png"
+        },
+        {
+            "idIngredient": "115",
+            "strIngredient": "双倍奶油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Double%20Cream.png"
+        },
+        {
+            "idIngredient": "116",
+            "strIngredient": "干牛至",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Dried%20Oregano.png"
+        },
+        {
+            "idIngredient": "117",
+            "strIngredient": "不甜的白葡萄酒",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Dry%20White%20Wine.png"
+        },
+        {
+            "idIngredient": "119",
+            "strIngredient": "茄子",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Egg%20Plants.png"
+        },
+        {
+            "idIngredient": "120",
+            "strIngredient": "蛋卷",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Egg%20Rolls.png"
+        },
+        {
+            "idIngredient": "121",
+            "strIngredient": "蛋白",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Egg%20White.png"
+        },
+        {
+            "idIngredient": "122",
+            "strIngredient": "蛋黄",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Egg%20Yolks.png"
+        },
+        {
+            "idIngredient": "123",
+            "strIngredient": "鸡蛋",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Eggs.png"
+        },
+        {
+            "idIngredient": "124",
+            "strIngredient": "辣酱玉米卷饼",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Enchilada%20Sauce.png"
+        },
+        {
+            "idIngredient": "125",
+            "strIngredient": "英国芥末",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/English%20Mustard.png"
+        },
+        {
+            "idIngredient": "126",
+            "strIngredient": "特级初榨橄榄油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Extra%20Virgin%20Olive%20Oil.png"
+        },
+        {
+            "idIngredient": "127",
+            "strIngredient": "法士达调味料",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fajita%20Seasoning.png"
+        },
+        {
+            "idIngredient": "128",
+            "strIngredient": "蝴蝶意面",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Farfalle.png"
+        },
+        {
+            "idIngredient": "130",
+            "strIngredient": "茴香球茎",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fennel%20Bulb.png"
+        },
+        {
+            "idIngredient": "131",
+            "strIngredient": "茴香籽",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fennel%20Seeds.png"
+        },
+        {
+            "idIngredient": "132",
+            "strIngredient": "葫芦巴",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fenugreek.png"
+        },
+        {
+            "idIngredient": "133",
+            "strIngredient": "羊乳酪",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Feta.png"
+        },
+        {
+            "idIngredient": "134",
+            "strIngredient": "鱼露",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fish%20Sauce.png"
+        },
+        {
+            "idIngredient": "135",
+            "strIngredient": "杏仁片",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Flaked%20Almonds.png"
+        },
+        {
+            "idIngredient": "136",
+            "strIngredient": "亚麻蛋",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Flax%20Eggs.png"
+        },
+        {
+            "idIngredient": "137",
+            "strIngredient": "面粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Flour.png"
+        },
+        {
+            "idIngredient": "138",
+            "strIngredient": "面粉玉米饼",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Flour%20Tortilla.png"
+        },
+        {
+            "idIngredient": "139",
+            "strIngredient": "粉质土豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Floury%20Potatoes.png"
+        },
+        {
+            "idIngredient": "140",
+            "strIngredient": "散养鸡蛋，打散",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Free-range%20Egg%2C%20Beaten.png"
+        },
+        {
+            "idIngredient": "141",
+            "strIngredient": "散养鸡蛋，打散",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Free-range%20Eggs%2C%20Beaten.png"
+        },
+        {
+            "idIngredient": "142",
+            "strIngredient": "法国扁豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/French%20Lentils.png"
+        },
+        {
+            "idIngredient": "143",
+            "strIngredient": "新鲜罗勒",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fresh%20Basil.png"
+        },
+        {
+            "idIngredient": "144",
+            "strIngredient": "新鲜百里香",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fresh%20Thyme.png"
+        },
+        {
+            "idIngredient": "145",
+            "strIngredient": "新鲜切碎的欧芹",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Freshly%20Chopped%20Parsley.png"
+        },
+        {
+            "idIngredient": "146",
+            "strIngredient": "炸薯条",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fries.png"
+        },
+        {
+            "idIngredient": "147",
+            "strIngredient": "全脂酸奶",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Full%20Fat%20Yogurt.png"
+        },
+        {
+            "idIngredient": "148",
+            "strIngredient": "加兰玛沙拉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Garam%20Masala.png"
+        },
+        {
+            "idIngredient": "149",
+            "strIngredient": "蒜",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Garlic.png"
+        },
+        {
+            "idIngredient": "150",
+            "strIngredient": "蒜瓣",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Garlic%20Clove.png"
+        },
+        {
+            "idIngredient": "151",
+            "strIngredient": "蒜粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Garlic%20Powder.png"
+        },
+        {
+            "idIngredient": "152",
+            "strIngredient": "蒜蓉酱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Garlic%20Sauce.png"
+        },
+        {
+            "idIngredient": "153",
+            "strIngredient": "酥油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ghee.png"
+        },
+        {
+            "idIngredient": "154",
+            "strIngredient": "姜",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ginger.png"
+        },
+        {
+            "idIngredient": "155",
+            "strIngredient": "姜汁汽水",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ginger%20Cordial.png"
+        },
+        {
+            "idIngredient": "156",
+            "strIngredient": "姜蒜酱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ginger%20Garlic%20Paste.png"
+        },
+        {
+            "idIngredient": "157",
+            "strIngredient": "姜蓉酱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ginger%20Paste.png"
+        },
+        {
+            "idIngredient": "158",
+            "strIngredient": "金色糖浆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Golden%20Syrup.png"
+        },
+        {
+            "idIngredient": "159",
+            "strIngredient": "高达奶酪",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Gouda%20Cheese.png"
+        },
+        {
+            "idIngredient": "160",
+            "strIngredient": "砂糖",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Granulated%20Sugar.png"
+        },
+        {
+            "idIngredient": "161",
+            "strIngredient": "葡萄番茄",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Grape%20Tomatoes.png"
+        },
+        {
+            "idIngredient": "162",
+            "strIngredient": "希腊酸奶",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Greek%20Yogurt.png"
+        },
+        {
+            "idIngredient": "163",
+            "strIngredient": "绿豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Green%20Beans.png"
+        },
+        {
+            "idIngredient": "165",
+            "strIngredient": "青辣椒",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Green%20Chilli.png"
+        },
+        {
+            "idIngredient": "166",
+            "strIngredient": "绿橄榄",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Green%20Olives.png"
+        },
+        {
+            "idIngredient": "167",
+            "strIngredient": "绿红扁豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Green%20Red%20Lentils.png"
+        },
+        {
+            "idIngredient": "168",
+            "strIngredient": "绿色莎莎酱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Green%20Salsa.png"
+        },
+        {
+            "idIngredient": "169",
+            "strIngredient": "杏仁粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ground%20Almonds.png"
+        },
+        {
+            "idIngredient": "170",
+            "strIngredient": "孜然粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ground%20Cumin.png"
+        },
+        {
+            "idIngredient": "171",
+            "strIngredient": "姜末",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ground%20Ginger.png"
+        },
+        {
+            "idIngredient": "172",
+            "strIngredient": "格吕耶尔",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Gruy%C3%A8re.png"
+        },
+        {
+            "idIngredient": "173",
+            "strIngredient": "硬玉米饼壳",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Hard%20Taco%20Shells.png"
+        },
+        {
+            "idIngredient": "175",
+            "strIngredient": "哈里萨辣酱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Harissa%20Spice.png"
+        },
+        {
+            "idIngredient": "176",
+            "strIngredient": "浓奶油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Heavy%20Cream.png"
+        },
+        {
+            "idIngredient": "177",
+            "strIngredient": "蜂蜜",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Honey.png"
+        },
+        {
+            "idIngredient": "178",
+            "strIngredient": "辣根",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Horseradish.png"
+        },
+        {
+            "idIngredient": "179",
+            "strIngredient": "热牛肉汤",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Hot%20Beef%20Stock.png"
+        },
+        {
+            "idIngredient": "180",
+            "strIngredient": "辣酱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Hotsauce.png"
+        },
+        {
+            "idIngredient": "181",
+            "strIngredient": "冰淇淋",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ice%20Cream.png"
+        },
+        {
+            "idIngredient": "182",
+            "strIngredient": "意大利茴香香肠",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Italian%20Fennel%20Sausages.png"
+        },
+        {
+            "idIngredient": "183",
+            "strIngredient": "意大利调味料",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Italian%20Seasoning.png"
+        },
+        {
+            "idIngredient": "184",
+            "strIngredient": "墨西哥胡椒",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Jalapeno.png"
+        },
+        {
+            "idIngredient": "185",
+            "strIngredient": "茉莉香米",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Jasmine%20Rice.png"
+        },
+        {
+            "idIngredient": "186",
+            "strIngredient": "洋姜",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Jerusalem%20Artichokes.png"
+        },
+        {
+            "idIngredient": "187",
+            "strIngredient": "羽衣甘蓝",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Kale.png"
+        },
+        {
+            "idIngredient": "188",
+            "strIngredient": "胡斯胡斯",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Khus%20Khus.png"
+        },
+        {
+            "idIngredient": "189",
+            "strIngredient": "大虾",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/King%20Prawns.png"
+        },
+        {
+            "idIngredient": "190",
+            "strIngredient": "犹太盐",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Kosher%20Salt.png"
+        },
+        {
+            "idIngredient": "191",
+            "strIngredient": "羊肉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lamb.png"
+        },
+        {
+            "idIngredient": "192",
+            "strIngredient": "羊腰排",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lamb%20Loin%20Chops.png"
+        },
+        {
+            "idIngredient": "193",
+            "strIngredient": "羊肉碎",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lamb%20Mince.png"
+        },
+        {
+            "idIngredient": "194",
+            "strIngredient": "千层面片",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lasagne%20Sheets.png"
+        },
+        {
+            "idIngredient": "195",
+            "strIngredient": "瘦牛肉碎",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lean%20Minced%20Beef.png"
+        },
+        {
+            "idIngredient": "196",
+            "strIngredient": "韭葱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Leek.png"
+        },
+        {
+            "idIngredient": "197",
+            "strIngredient": "柠檬",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lemon.png"
+        },
+        {
+            "idIngredient": "198",
+            "strIngredient": "柠檬汁",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lemon%20Juice.png"
+        },
+        {
+            "idIngredient": "199",
+            "strIngredient": "柠檬皮",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lemon%20Zest.png"
+        },
+        {
+            "idIngredient": "200",
+            "strIngredient": "柠檬",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lemons.png"
+        },
+        {
+            "idIngredient": "201",
+            "strIngredient": "莴苣",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lettuce.png"
+        },
+        {
+            "idIngredient": "202",
+            "strIngredient": "酸橙",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lime.png"
+        },
+        {
+            "idIngredient": "203",
+            "strIngredient": "小宝石生菜",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Little%20Gem%20Lettuce.png"
+        },
+        {
+            "idIngredient": "204",
+            "strIngredient": "通心粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Macaroni.png"
+        },
+        {
+            "idIngredient": "205",
+            "strIngredient": "鲭鱼",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mackerel.png"
+        },
+        {
+            "idIngredient": "206",
+            "strIngredient": "马德拉斯酱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Madras%20Paste.png"
+        },
+        {
+            "idIngredient": "207",
+            "strIngredient": "马郁兰",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Marjoram.png"
+        },
+        {
+            "idIngredient": "208",
+            "strIngredient": "马沙文咖喱酱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Massaman%20Curry%20Paste.png"
+        },
+        {
+            "idIngredient": "209",
+            "strIngredient": "梅朱尔枣",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Medjool%20Dates.png"
+        },
+        {
+            "idIngredient": "210",
+            "strIngredient": "蛋白饼巢",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Meringue%20Nests.png"
+        },
+        {
+            "idIngredient": "211",
+            "strIngredient": "牛奶",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Milk.png"
+        },
+        {
+            "idIngredient": "212",
+            "strIngredient": "蒜末",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Minced%20Garlic.png"
+        },
+        {
+            "idIngredient": "213",
+            "strIngredient": "迷你棉花糖",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Miniature%20Marshmallows.png"
+        },
+        {
+            "idIngredient": "214",
+            "strIngredient": "薄荷",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mint.png"
+        },
+        {
+            "idIngredient": "215",
+            "strIngredient": "蒙特利杰克奶酪",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Monterey%20Jack%20Cheese.png"
+        },
+        {
+            "idIngredient": "216",
+            "strIngredient": "马苏里拉奶酪球",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mozzarella%20Balls.png"
+        },
+        {
+            "idIngredient": "217",
+            "strIngredient": "粗砂糖",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Muscovado%20Sugar.png"
+        },
+        {
+            "idIngredient": "218",
+            "strIngredient": "蘑菇",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mushrooms.png"
+        },
+        {
+            "idIngredient": "219",
+            "strIngredient": "芥末",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mustard.png"
+        },
+        {
+            "idIngredient": "220",
+            "strIngredient": "芥末粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mustard%20Powder.png"
+        },
+        {
+            "idIngredient": "221",
+            "strIngredient": "芥菜籽",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mustard%20Seeds.png"
+        },
+        {
+            "idIngredient": "222",
+            "strIngredient": "肉豆蔻",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Nutmeg.png"
+        },
+        {
+            "idIngredient": "223",
+            "strIngredient": "油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Oil.png"
+        },
+        {
+            "idIngredient": "224",
+            "strIngredient": "橄榄油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Olive%20Oil.png"
+        },
+        {
+            "idIngredient": "226",
+            "strIngredient": "洋葱盐",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Onion%20Salt.png"
+        },
+        {
+            "idIngredient": "227",
+            "strIngredient": "洋葱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Onions.png"
+        },
+        {
+            "idIngredient": "228",
+            "strIngredient": "橙子",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Orange.png"
+        },
+        {
+            "idIngredient": "229",
+            "strIngredient": "橙皮",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Orange%20Zest.png"
+        },
+        {
+            "idIngredient": "230",
+            "strIngredient": "牛至",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Oregano.png"
+        },
+        {
+            "idIngredient": "231",
+            "strIngredient": "蚝油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Oyster%20Sauce.png"
+        },
+        {
+            "idIngredient": "232",
+            "strIngredient": "辣椒",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Paprika.png"
+        },
+        {
+            "idIngredient": "233",
+            "strIngredient": "帕尔马火腿",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Parma%20Ham.png"
+        },
+        {
+            "idIngredient": "234",
+            "strIngredient": "帕尔马干酪",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Parmesan.png"
+        },
+        {
+            "idIngredient": "235",
+            "strIngredient": "帕尔马干酪",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Parmesan%20Cheese.png"
+        },
+        {
+            "idIngredient": "236",
+            "strIngredient": "帕尔马干酪",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Parmigiano-reggiano.png"
+        },
+        {
+            "idIngredient": "237",
+            "strIngredient": "香菜",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Parsley.png"
+        },
+        {
+            "idIngredient": "238",
+            "strIngredient": "花生酱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Peanut%20Butter.png"
+        },
+        {
+            "idIngredient": "239",
+            "strIngredient": "花生油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Peanut%20Oil.png"
+        },
+        {
+            "idIngredient": "240",
+            "strIngredient": "花生",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Peanuts.png"
+        },
+        {
+            "idIngredient": "241",
+            "strIngredient": "豌豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Peas.png"
+        },
+        {
+            "idIngredient": "242",
+            "strIngredient": "佩科里诺干酪",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pecorino.png"
+        },
+        {
+            "idIngredient": "243",
+            "strIngredient": "意大利斜管线",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Penne%20Rigate.png"
+        },
+        {
+            "idIngredient": "244",
+            "strIngredient": "胡椒",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pepper.png"
+        },
+        {
+            "idIngredient": "245",
+            "strIngredient": "松子",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pine%20Nuts.png"
+        },
+        {
+            "idIngredient": "246",
+            "strIngredient": "去核黑橄榄",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pitted%20Black%20Olives.png"
+        },
+        {
+            "idIngredient": "247",
+            "strIngredient": "纯巧克力",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Plain%20Chocolate.png"
+        },
+        {
+            "idIngredient": "248",
+            "strIngredient": "普通面粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Plain%20Flour.png"
+        },
+        {
+            "idIngredient": "249",
+            "strIngredient": "梅子番茄",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Plum%20Tomatoes.png"
+        },
+        {
+            "idIngredient": "252",
+            "strIngredient": "马铃薯淀粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Potato%20Starch.png"
+        },
+        {
+            "idIngredient": "253",
+            "strIngredient": "土豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Potatoes.png"
+        },
+        {
+            "idIngredient": "254",
+            "strIngredient": "虾",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Prawns.png"
+        },
+        {
+            "idIngredient": "255",
+            "strIngredient": "酥皮糕点",
+            "strDescription": null,
+            "strType": "糕点",
+            "image_url": "https://www.themealdb.com/images/ingredients/Puff%20Pastry.png"
+        },
+        {
+            "idIngredient": "256",
+            "strIngredient": "覆盆子果酱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Raspberry%20Jam.png"
+        },
+        {
+            "idIngredient": "257",
+            "strIngredient": "生大虾",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Raw%20King%20Prawns.png"
+        },
+        {
+            "idIngredient": "258",
+            "strIngredient": "红辣椒片",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Red%20Chilli%20Flakes.png"
+        },
+        {
+            "idIngredient": "259",
+            "strIngredient": "红辣椒",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Red%20Chilli.png"
+        },
+        {
+            "idIngredient": "261",
+            "strIngredient": "红辣椒粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Red%20Chilli%20Powder.png"
+        },
+        {
+            "idIngredient": "263",
+            "strIngredient": "红洋葱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Red%20Onions.png"
+        },
+        {
+            "idIngredient": "264",
+            "strIngredient": "辣椒",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Red%20Pepper.png"
+        },
+        {
+            "idIngredient": "265",
+            "strIngredient": "红辣椒片",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Red%20Pepper%20Flakes.png"
+        },
+        {
+            "idIngredient": "266",
+            "strIngredient": "红葡萄酒",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Red%20Wine.png"
+        },
+        {
+            "idIngredient": "267",
+            "strIngredient": "炒豆泥",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Refried%20Beans.png"
+        },
+        {
+            "idIngredient": "268",
+            "strIngredient": "米",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rice.png"
+        },
+        {
+            "idIngredient": "269",
+            "strIngredient": "米粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rice%20Noodles.png"
+        },
+        {
+            "idIngredient": "270",
+            "strIngredient": "米粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rice%20Stick%20Noodles.png"
+        },
+        {
+            "idIngredient": "271",
+            "strIngredient": "米粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rice%20Vermicelli.png"
+        },
+        {
+            "idIngredient": "272",
+            "strIngredient": "通心粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rigatoni.png"
+        },
+        {
+            "idIngredient": "273",
+            "strIngredient": "火箭",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rocket.png"
+        },
+        {
+            "idIngredient": "274",
+            "strIngredient": "燕麦片",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rolled%20Oats.png"
+        },
+        {
+            "idIngredient": "276",
+            "strIngredient": "藏红花",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Saffron.png"
+        },
+        {
+            "idIngredient": "277",
+            "strIngredient": "圣人",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sage.png"
+        },
+        {
+            "idIngredient": "278",
+            "strIngredient": "清酒",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sake.png"
+        },
+        {
+            "idIngredient": "280",
+            "strIngredient": "萨尔萨舞",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Salsa.png"
+        },
+        {
+            "idIngredient": "281",
+            "strIngredient": "盐",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Salt.png"
+        },
+        {
+            "idIngredient": "282",
+            "strIngredient": "咸黄油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Salted%20Butter.png"
+        },
+        {
+            "idIngredient": "283",
+            "strIngredient": "香肠",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sausages.png"
+        },
+        {
+            "idIngredient": "284",
+            "strIngredient": "海盐",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sea%20Salt.png"
+        },
+        {
+            "idIngredient": "286",
+            "strIngredient": "自发面粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Self-raise%20Flour.png"
+        },
+        {
+            "idIngredient": "287",
+            "strIngredient": "半脱脂牛奶",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Semi-skimmed%20Milk.png"
+        },
+        {
+            "idIngredient": "288",
+            "strIngredient": "芝麻",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sesame%20Seed.png"
+        },
+        {
+            "idIngredient": "289",
+            "strIngredient": "青葱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Shallots.png"
+        },
+        {
+            "idIngredient": "290",
+            "strIngredient": "墨西哥奶酪丝",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Shredded%20Mexican%20Cheese.png"
+        },
+        {
+            "idIngredient": "291",
+            "strIngredient": "蒙特利杰克奶酪丝",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Shredded%20Monterey%20Jack%20Cheese.png"
+        },
+        {
+            "idIngredient": "292",
+            "strIngredient": "小土豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Small%20Potatoes.png"
+        },
+        {
+            "idIngredient": "293",
+            "strIngredient": "烟熏辣椒粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Smoked%20Paprika.png"
+        },
+        {
+            "idIngredient": "294",
+            "strIngredient": "烟熏辣椒粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Smoky%20Paprika.png"
+        },
+        {
+            "idIngredient": "295",
+            "strIngredient": "酸奶油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sour%20Cream.png"
+        },
+        {
+            "idIngredient": "296",
+            "strIngredient": "酱油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Soy%20Sauce.png"
+        },
+        {
+            "idIngredient": "297",
+            "strIngredient": "豆浆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Soya%20Milk.png"
+        },
+        {
+            "idIngredient": "298",
+            "strIngredient": "意大利细面条",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Spaghetti.png"
+        },
+        {
+            "idIngredient": "299",
+            "strIngredient": "菠菜",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Spinach.png"
+        },
+        {
+            "idIngredient": "301",
+            "strIngredient": "葱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Spring%20Onions.png"
+        },
+        {
+            "idIngredient": "302",
+            "strIngredient": "壁球",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Squash.png"
+        },
+        {
+            "idIngredient": "303",
+            "strIngredient": "炒蔬菜",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Stir-fry%20Vegetables.png"
+        },
+        {
+            "idIngredient": "304",
+            "strIngredient": "草莓",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Strawberry.png"
+        },
+        {
+            "idIngredient": "305",
+            "strIngredient": "糖",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sugar.png"
+        },
+        {
+            "idIngredient": "306",
+            "strIngredient": "葡萄干",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sultanas.png"
+        },
+        {
+            "idIngredient": "307",
+            "strIngredient": "葵花籽油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sunflower%20Oil.png"
+        },
+        {
+            "idIngredient": "308",
+            "strIngredient": "罗望子球",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tamarind%20Ball.png"
+        },
+        {
+            "idIngredient": "309",
+            "strIngredient": "罗望子酱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tamarind%20Paste.png"
+        },
+        {
+            "idIngredient": "310",
+            "strIngredient": "泰国鱼露",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Thai%20Fish%20Sauce.png"
+        },
+        {
+            "idIngredient": "311",
+            "strIngredient": "泰国绿咖喱酱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Thai%20Green%20Curry%20Paste.png"
+        },
+        {
+            "idIngredient": "312",
+            "strIngredient": "泰国红咖喱酱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Thai%20Red%20Curry%20Paste.png"
+        },
+        {
+            "idIngredient": "313",
+            "strIngredient": "百里香",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Thyme.png"
+        },
+        {
+            "idIngredient": "315",
+            "strIngredient": "番茄酱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tomato%20Ketchup.png"
+        },
+        {
+            "idIngredient": "316",
+            "strIngredient": "番茄酱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tomato%20Puree.png"
+        },
+        {
+            "idIngredient": "317",
+            "strIngredient": "西红柿",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tomatoes.png"
+        },
+        {
+            "idIngredient": "318",
+            "strIngredient": "托尔达尔",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Toor%20Dal.png"
+        },
+        {
+            "idIngredient": "319",
+            "strIngredient": "金枪鱼",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tuna.png"
+        },
+        {
+            "idIngredient": "320",
+            "strIngredient": "姜黄",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Turmeric.png"
+        },
+        {
+            "idIngredient": "321",
+            "strIngredient": "姜黄粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Turmeric%20Powder.png"
+        },
+        {
+            "idIngredient": "322",
+            "strIngredient": "萝卜",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Turnips.png"
+        },
+        {
+            "idIngredient": "323",
+            "strIngredient": "香草",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Vanilla.png"
+        },
+        {
+            "idIngredient": "324",
+            "strIngredient": "香草精",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Vanilla%20Extract.png"
+        },
+        {
+            "idIngredient": "325",
+            "strIngredient": "小牛肉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Veal.png"
+        },
+        {
+            "idIngredient": "326",
+            "strIngredient": "素食黄油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Vegan%20Butter.png"
+        },
+        {
+            "idIngredient": "327",
+            "strIngredient": "植物油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Vegetable%20Oil.png"
+        },
+        {
+            "idIngredient": "328",
+            "strIngredient": "蔬菜汤",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Vegetable%20Stock.png"
+        },
+        {
+            "idIngredient": "329",
+            "strIngredient": "蔬菜汤块",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Vegetable%20Stock%20Cube.png"
+        },
+        {
+            "idIngredient": "330",
+            "strIngredient": "油醋汁",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Vinaigrette%20Dressing.png"
+        },
+        {
+            "idIngredient": "331",
+            "strIngredient": "葡萄叶",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Vine%20Leaves.png"
+        },
+        {
+            "idIngredient": "332",
+            "strIngredient": "醋",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Vinegar.png"
+        },
+        {
+            "idIngredient": "333",
+            "strIngredient": "水",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Water.png"
+        },
+        {
+            "idIngredient": "334",
+            "strIngredient": "白巧克力片",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/White%20Chocolate%20Chips.png"
+        },
+        {
+            "idIngredient": "335",
+            "strIngredient": "白鱼",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/White%20Fish.png"
+        },
+        {
+            "idIngredient": "336",
+            "strIngredient": "白魚片",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/White%20Fish%20Fillets.png"
+        },
+        {
+            "idIngredient": "337",
+            "strIngredient": "白醋",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/White%20Vinegar.png"
+        },
+        {
+            "idIngredient": "338",
+            "strIngredient": "白葡萄酒",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/White%20Wine.png"
+        },
+        {
+            "idIngredient": "339",
+            "strIngredient": "全脂牛奶",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Whole%20Milk.png"
+        },
+        {
+            "idIngredient": "340",
+            "strIngredient": "全麦",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Whole%20Wheat.png"
+        },
+        {
+            "idIngredient": "341",
+            "strIngredient": "全麦面包",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Wholegrain%20Bread.png"
+        },
+        {
+            "idIngredient": "342",
+            "strIngredient": "伍斯特酱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Worcestershire%20Sauce.png"
+        },
+        {
+            "idIngredient": "343",
+            "strIngredient": "酸奶",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Yogurt.png"
+        },
+        {
+            "idIngredient": "344",
+            "strIngredient": "西葫芦",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Zucchini.png"
+        },
+        {
+            "idIngredient": "345",
+            "strIngredient": "椒盐脆饼",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pretzels.png"
+        },
+        {
+            "idIngredient": "346",
+            "strIngredient": "奶油干酪",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cream%20Cheese.png"
+        },
+        {
+            "idIngredient": "347",
+            "strIngredient": "糖霜",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Icing%20Sugar.png"
+        },
+        {
+            "idIngredient": "348",
+            "strIngredient": "太妃糖爆米花",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Toffee%20Popcorn.png"
+        },
+        {
+            "idIngredient": "349",
+            "strIngredient": "焦糖",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Caramel.png"
+        },
+        {
+            "idIngredient": "350",
+            "strIngredient": "焦糖酱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Caramel%20Sauce.png"
+        },
+        {
+            "idIngredient": "351",
+            "strIngredient": "宽面条",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tagliatelle.png"
+        },
+        {
+            "idIngredient": "352",
+            "strIngredient": "意大利宽面条",
+            "strDescription": "",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fettuccine.png"
+        },
+        {
+            "idIngredient": "353",
+            "strIngredient": "凝固奶油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Clotted%20Cream.png"
+        },
+        {
+            "idIngredient": "354",
+            "strIngredient": "玉米粉",
+            "strDescription": "",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Corn%20Flour.png"
+        },
+        {
+            "idIngredient": "355",
+            "strIngredient": "贻贝",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mussels.png"
+        },
+        {
+            "idIngredient": "356",
+            "strIngredient": "菲迪奥",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fideo.png"
+        },
+        {
+            "idIngredient": "357",
+            "strIngredient": "安康鱼",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Monkfish.png"
+        },
+        {
+            "idIngredient": "358",
+            "strIngredient": "粉丝意大利面",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Vermicelli%20Pasta.png"
+        },
+        {
+            "idIngredient": "359",
+            "strIngredient": "鱿鱼宝宝",
+            "strDescription": "",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Baby%20Squid.png"
+        },
+        {
+            "idIngredient": "360",
+            "strIngredient": "乌贼",
+            "strDescription": "",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Squid.png"
+        },
+        {
+            "idIngredient": "361",
+            "strIngredient": "鱼汤",
+            "strDescription": "",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fish%20Stock.png"
+        },
+        {
+            "idIngredient": "362",
+            "strIngredient": "沙丁鱼",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pilchards.png"
+        },
+        {
+            "idIngredient": "363",
+            "strIngredient": "黑橄榄",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Black%20Olives.png"
+        },
+        {
+            "idIngredient": "364",
+            "strIngredient": "洋葱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Onion.png"
+        },
+        {
+            "idIngredient": "365",
+            "strIngredient": "番茄",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tomato.png"
+        },
+        {
+            "idIngredient": "366",
+            "strIngredient": "鸭子",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Duck.png"
+        },
+        {
+            "idIngredient": "367",
+            "strIngredient": "鸭腿",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Duck%20Legs.png"
+        },
+        {
+            "idIngredient": "368",
+            "strIngredient": "鸡汤块",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chicken%20Stock%20Cube.png"
+        },
+        {
+            "idIngredient": "369",
+            "strIngredient": "宽面条",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pappardelle%20Pasta.png"
+        },
+        {
+            "idIngredient": "370",
+            "strIngredient": "帕切里意大利面",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Paccheri%20Pasta.png"
+        },
+        {
+            "idIngredient": "371",
+            "strIngredient": "扁面条",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Linguine%20Pasta.png"
+        },
+        {
+            "idIngredient": "373",
+            "strIngredient": "甜豌豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sugar%20Snap%20Peas.png"
+        },
+        {
+            "idIngredient": "374",
+            "strIngredient": "硬皮面包",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Crusty%20Bread.png"
+        },
+        {
+            "idIngredient": "375",
+            "strIngredient": "新鲜奶酪",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fromage%20Frais.png"
+        },
+        {
+            "idIngredient": "376",
+            "strIngredient": "蛤蜊",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Clams.png"
+        },
+        {
+            "idIngredient": "377",
+            "strIngredient": "帕萨塔",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Passata.png"
+        },
+        {
+            "idIngredient": "378",
+            "strIngredient": "菜籽油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rapeseed%20Oil.png"
+        },
+        {
+            "idIngredient": "379",
+            "strIngredient": "斯蒂尔顿奶酪",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Stilton%20Cheese.png"
+        },
+        {
+            "idIngredient": "380",
+            "strIngredient": "羊腿",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lamb%20Leg.png"
+        },
+        {
+            "idIngredient": "381",
+            "strIngredient": "羊肩",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lamb%20Shoulder.png"
+        },
+        {
+            "idIngredient": "382",
+            "strIngredient": "杏",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Apricot.png"
+        },
+        {
+            "idIngredient": "383",
+            "strIngredient": "胡桃南瓜",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Butternut%20Squash.png"
+        },
+        {
+            "idIngredient": "384",
+            "strIngredient": "蒸粗麦粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Couscous.png"
+        },
+        {
+            "idIngredient": "387",
+            "strIngredient": "牛肉碎",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Minced%20Beef.png"
+        },
+        {
+            "idIngredient": "388",
+            "strIngredient": "火鸡肉末",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Turkey%20Mince.png"
+        },
+        {
+            "idIngredient": "389",
+            "strIngredient": "烧烤酱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Barbeque%20Sauce.png"
+        },
+        {
+            "idIngredient": "390",
+            "strIngredient": "甜玉米",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sweetcorn.png"
+        },
+        {
+            "idIngredient": "391",
+            "strIngredient": "鹅油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Goose%20Fat.png"
+        },
+        {
+            "idIngredient": "392",
+            "strIngredient": "鸭油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Duck%20Fat.png"
+        },
+        {
+            "idIngredient": "393",
+            "strIngredient": "茴香",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fennel.png"
+        },
+        {
+            "idIngredient": "394",
+            "strIngredient": "红酒醋",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Red%20Wine%20Vinegar.png"
+        },
+        {
+            "idIngredient": "395",
+            "strIngredient": "菜豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Haricot%20Beans.png"
+        },
+        {
+            "idIngredient": "396",
+            "strIngredient": "迷迭香",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rosemary.png"
+        },
+        {
+            "idIngredient": "397",
+            "strIngredient": "奶油豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Butter%20Beans.png"
+        },
+        {
+            "idIngredient": "398",
+            "strIngredient": "斑豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pinto%20Beans.png"
+        },
+        {
+            "idIngredient": "399",
+            "strIngredient": "番茄酱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tomato%20Sauce.png"
+        },
+        {
+            "idIngredient": "401",
+            "strIngredient": "马斯卡彭",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mascarpone.png"
+        },
+        {
+            "idIngredient": "402",
+            "strIngredient": "马苏里拉奶酪",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mozzarella.png"
+        },
+        {
+            "idIngredient": "403",
+            "strIngredient": "意大利乳清干酪",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ricotta.png"
+        },
+        {
+            "idIngredient": "405",
+            "strIngredient": "杏干",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Dried%20Apricots.png"
+        },
+        {
+            "idIngredient": "406",
+            "strIngredient": "刺山柑",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Capers.png"
+        },
+        {
+            "idIngredient": "407",
+            "strIngredient": "香蕉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Banana.png"
+        },
+        {
+            "idIngredient": "408",
+            "strIngredient": "覆盆子",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Raspberry.png"
+        },
+        {
+            "idIngredient": "409",
+            "strIngredient": "蓝莓",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Blueberry.png"
+        },
+        {
+            "idIngredient": "410",
+            "strIngredient": "核桃",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Walnuts.png"
+        },
+        {
+            "idIngredient": "411",
+            "strIngredient": "山核桃",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pecan%20Nuts.png"
+        },
+        {
+            "idIngredient": "412",
+            "strIngredient": "枫糖浆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Maple%20Syrup.png"
+        },
+        {
+            "idIngredient": "413",
+            "strIngredient": "浅棕色软糖",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Light%20Brown%20Soft%20Sugar.png"
+        },
+        {
+            "idIngredient": "414",
+            "strIngredient": "深棕色软糖",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Dark%20Brown%20Soft%20Sugar.png"
+        },
+        {
+            "idIngredient": "415",
+            "strIngredient": "黑巧克力片",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Dark%20Chocolate%20Chips.png"
+        },
+        {
+            "idIngredient": "416",
+            "strIngredient": "牛奶巧克力",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Milk%20Chocolate.png"
+        },
+        {
+            "idIngredient": "417",
+            "strIngredient": "黑巧克力",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Dark%20Chocolate.png"
+        },
+        {
+            "idIngredient": "418",
+            "strIngredient": "南瓜",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pumpkin.png"
+        },
+        {
+            "idIngredient": "419",
+            "strIngredient": "酥皮糕点",
+            "strDescription": null,
+            "strType": "糕点",
+            "image_url": "https://www.themealdb.com/images/ingredients/Shortcrust%20Pastry.png"
+        },
+        {
+            "idIngredient": "420",
+            "strIngredient": "花生饼干",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Peanut%20Cookies.png"
+        },
+        {
+            "idIngredient": "421",
+            "strIngredient": "明胶叶",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Gelatine%20Leafs.png"
+        },
+        {
+            "idIngredient": "422",
+            "strIngredient": "花生脆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Peanut%20Brittle.png"
+        },
+        {
+            "idIngredient": "423",
+            "strIngredient": "桃子",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Peaches.png"
+        },
+        {
+            "idIngredient": "424",
+            "strIngredient": "黄椒",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Yellow%20Pepper.png"
+        },
+        {
+            "idIngredient": "425",
+            "strIngredient": "青椒",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Green%20Pepper.png"
+        },
+        {
+            "idIngredient": "426",
+            "strIngredient": "西葫芦",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Courgettes.png"
+        },
+        {
+            "idIngredient": "427",
+            "strIngredient": "罐装番茄",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tinned%20Tomatos.png"
+        },
+        {
+            "idIngredient": "428",
+            "strIngredient": "栗子",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chestnuts.png"
+        },
+        {
+            "idIngredient": "429",
+            "strIngredient": "野生蘑菇",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Wild%20Mushrooms.png"
+        },
+        {
+            "idIngredient": "430",
+            "strIngredient": "松露油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Truffle%20Oil.png"
+        },
+        {
+            "idIngredient": "431",
+            "strIngredient": "奶豆腐",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Paneer.png"
+        },
+        {
+            "idIngredient": "432",
+            "strIngredient": "印度烤饼",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Naan%20Bread.png"
+        },
+        {
+            "idIngredient": "433",
+            "strIngredient": "扁豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lentils.png"
+        },
+        {
+            "idIngredient": "434",
+            "strIngredient": "烤蔬菜",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Roasted%20Vegetables.png"
+        },
+        {
+            "idIngredient": "435",
+            "strIngredient": "芸豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Kidney%20Beans.png"
+        },
+        {
+            "idIngredient": "436",
+            "strIngredient": "混合谷物",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mixed%20Grain.png"
+        },
+        {
+            "idIngredient": "437",
+            "strIngredient": "芝麻酱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tahini.png"
+        },
+        {
+            "idIngredient": "438",
+            "strIngredient": "玉米饼",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tortillas.png"
+        },
+        {
+            "idIngredient": "439",
+            "strIngredient": "乌冬面",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Udon%20Noodles.png"
+        },
+        {
+            "idIngredient": "440",
+            "strIngredient": "卷心菜",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cabbage.png"
+        },
+        {
+            "idIngredient": "441",
+            "strIngredient": "香菇",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Shiitake%20Mushrooms.png"
+        },
+        {
+            "idIngredient": "442",
+            "strIngredient": "味醂",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mirin.png"
+        },
+        {
+            "idIngredient": "443",
+            "strIngredient": "芝麻油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sesame%20Seed%20Oil.png"
+        },
+        {
+            "idIngredient": "444",
+            "strIngredient": "法棍面包",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Baguette.png"
+        },
+        {
+            "idIngredient": "445",
+            "strIngredient": "藤番茄",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Vine%20Tomatoes.png"
+        },
+        {
+            "idIngredient": "446",
+            "strIngredient": "羊脂",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Suet.png"
+        },
+        {
+            "idIngredient": "447",
+            "strIngredient": "瑞典人",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Swede.png"
+        },
+        {
+            "idIngredient": "448",
+            "strIngredient": "火腿",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ham.png"
+        },
+        {
+            "idIngredient": "449",
+            "strIngredient": "牡蛎",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Oysters.png"
+        },
+        {
+            "idIngredient": "450",
+            "strIngredient": "肥硕",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Stout.png"
+        },
+        {
+            "idIngredient": "451",
+            "strIngredient": "猪油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lard.png"
+        },
+        {
+            "idIngredient": "452",
+            "strIngredient": "腰花",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Lamb%20Kidney.png"
+        },
+        {
+            "idIngredient": "453",
+            "strIngredient": "牛肾",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Beef%20Kidney.png"
+        },
+        {
+            "idIngredient": "454",
+            "strIngredient": "黑线鳕",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Haddock.png"
+        },
+        {
+            "idIngredient": "455",
+            "strIngredient": "熏黑线鳕",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Smoked%20Haddock.png"
+        },
+        {
+            "idIngredient": "456",
+            "strIngredient": "抱子甘蓝",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Brussels%20Sprouts.png"
+        },
+        {
+            "idIngredient": "457",
+            "strIngredient": "葡萄干",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Raisins.png"
+        },
+        {
+            "idIngredient": "458",
+            "strIngredient": "醋栗",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Currants.png"
+        },
+        {
+            "idIngredient": "459",
+            "strIngredient": "蛋奶冻",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Custard.png"
+        },
+        {
+            "idIngredient": "460",
+            "strIngredient": "混合剥皮",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mixed%20Peel.png"
+        },
+        {
+            "idIngredient": "461",
+            "strIngredient": "红醋栗",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Redcurrants.png"
+        },
+        {
+            "idIngredient": "462",
+            "strIngredient": "黑莓",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Blackberry.png"
+        },
+        {
+            "idIngredient": "463",
+            "strIngredient": "榛子",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Hazlenuts.png"
+        },
+        {
+            "idIngredient": "464",
+            "strIngredient": "布雷本苹果",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Braeburn%20Apples.png"
+        },
+        {
+            "idIngredient": "465",
+            "strIngredient": "红色食用色素",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Red%20Food%20Colouring.png"
+        },
+        {
+            "idIngredient": "466",
+            "strIngredient": "粉色食用色素",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pink%20Food%20Colouring.png"
+        },
+        {
+            "idIngredient": "467",
+            "strIngredient": "蓝色食用色素",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Blue%20Food%20Colouring.png"
+        },
+        {
+            "idIngredient": "468",
+            "strIngredient": "黄色食用色素",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Yellow%20Food%20Colouring.png"
+        },
+        {
+            "idIngredient": "469",
+            "strIngredient": "杏子酱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Apricot%20Jam.png"
+        },
+        {
+            "idIngredient": "470",
+            "strIngredient": "杏仁糖",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Marzipan.png"
+        },
+        {
+            "idIngredient": "471",
+            "strIngredient": "杏仁",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Almonds.png"
+        },
+        {
+            "idIngredient": "472",
+            "strIngredient": "黑布丁",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Black%20Pudding.png"
+        },
+        {
+            "idIngredient": "473",
+            "strIngredient": "烤豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Baked%20Beans.png"
+        },
+        {
+            "idIngredient": "474",
+            "strIngredient": "白面粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/White%20Flour.png"
+        },
+        {
+            "idIngredient": "475",
+            "strIngredient": "酵母",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Yeast.png"
+        },
+        {
+            "idIngredient": "476",
+            "strIngredient": "水果混合",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fruit%20Mix.png"
+        },
+        {
+            "idIngredient": "477",
+            "strIngredient": "干果",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Dried%20Fruit.png"
+        },
+        {
+            "idIngredient": "478",
+            "strIngredient": "樱桃",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cherry.png"
+        },
+        {
+            "idIngredient": "479",
+            "strIngredient": "冰镇樱桃",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Glace%20Cherry.png"
+        },
+        {
+            "idIngredient": "480",
+            "strIngredient": "糖蜜",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Treacle.png"
+        },
+        {
+            "idIngredient": "481",
+            "strIngredient": "麦片",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Oatmeal.png"
+        },
+        {
+            "idIngredient": "482",
+            "strIngredient": "燕麦",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Oats.png"
+        },
+        {
+            "idIngredient": "483",
+            "strIngredient": "蛋",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Egg.png"
+        },
+        {
+            "idIngredient": "484",
+            "strIngredient": "牛腱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Beef%20Shin.png"
+        },
+        {
+            "idIngredient": "485",
+            "strIngredient": "香草束",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Bouquet%20Garni.png"
+        },
+        {
+            "idIngredient": "486",
+            "strIngredient": "淡奶油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Single%20Cream.png"
+        },
+        {
+            "idIngredient": "487",
+            "strIngredient": "红酒果冻",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Red%20Wine%20Jelly.png"
+        },
+        {
+            "idIngredient": "488",
+            "strIngredient": "苹果",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Apples.png"
+        },
+        {
+            "idIngredient": "489",
+            "strIngredient": "山羊奶酪",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Goats%20Cheese.png"
+        },
+        {
+            "idIngredient": "490",
+            "strIngredient": "火腿",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Prosciutto.png"
+        },
+        {
+            "idIngredient": "491",
+            "strIngredient": "无盐黄油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Unsalted%20Butter.png"
+        },
+        {
+            "idIngredient": "492",
+            "strIngredient": "布里",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Brie.png"
+        },
+        {
+            "idIngredient": "493",
+            "strIngredient": "龙蒿叶",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tarragon%20Leaves.png"
+        },
+        {
+            "idIngredient": "494",
+            "strIngredient": "细香葱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chives.png"
+        },
+        {
+            "idIngredient": "495",
+            "strIngredient": "梨",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pears.png"
+        },
+        {
+            "idIngredient": "496",
+            "strIngredient": "白巧克力",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/White%20Chocolate.png"
+        },
+        {
+            "idIngredient": "497",
+            "strIngredient": "八角",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Star%20Anise.png"
+        },
+        {
+            "idIngredient": "498",
+            "strIngredient": "老虎虾",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tiger%20Prawns.png"
+        },
+        {
+            "idIngredient": "499",
+            "strIngredient": "吉士粉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Custard%20Powder.png"
+        },
+        {
+            "idIngredient": "500",
+            "strIngredient": "椰丝",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Desicated%20Coconut.png"
+        },
+        {
+            "idIngredient": "501",
+            "strIngredient": "冷冻豌豆",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Frozen%20Peas.png"
+        },
+        {
+            "idIngredient": "502",
+            "strIngredient": "猪肉碎",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Minced%20Pork.png"
+        },
+        {
+            "idIngredient": "503",
+            "strIngredient": "奶油玉米",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Creamed%20Corn.png"
+        },
+        {
+            "idIngredient": "504",
+            "strIngredient": "晒干的西红柿",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sun-Dried%20Tomatoes.png"
+        },
+        {
+            "idIngredient": "505",
+            "strIngredient": "第戎芥末",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Dijon%20Mustard.png"
+        },
+        {
+            "idIngredient": "506",
+            "strIngredient": "塔巴斯科辣椒酱",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tabasco%20Sauce.png"
+        },
+        {
+            "idIngredient": "507",
+            "strIngredient": "菜籽油",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Canola%20Oil.png"
+        },
+        {
+            "idIngredient": "508",
+            "strIngredient": "鳕鱼",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cod.png"
+        },
+        {
+            "idIngredient": "509",
+            "strIngredient": "鳕鱼",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Salt%20Cod.png"
+        },
+        {
+            "idIngredient": "510",
+            "strIngredient": "西非荔枝果",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ackee.png"
+        },
+        {
+            "idIngredient": "511",
+            "strIngredient": "混蛋",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Jerk.png"
+        },
+        {
+            "idIngredient": "512",
+            "strIngredient": "碎牛肉",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ground%20Beef.png"
+        },
+        {
+            "idIngredient": "513",
+            "strIngredient": "小茄子",
+            "strDescription": "茄子（Solanum melongena）或茄子是一种茄属植物，其果实可食用。茄子是北美、澳大利亚和新西兰的俗名；在英式英语中，它是 aubergine，在南亚和南非，它是 brinjal。\n\n这种果实广泛用于烹饪。作为茄属植物，它与番茄和土豆有关。它最初是从野生茄属植物 S. incanum 驯化而来，可能经历了两次独立的驯化，一次在南亚，一次在东亚。",
+            "strType": "蔬菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Baby%20Aubergine.png"
+        },
+        {
+            "idIngredient": "514",
+            "strIngredient": "西班牙海鲜饭",
+            "strDescription": "海鲜饭[a] 是一道具有古老根源的瓦伦西亚米饭，但其现代形式起源于 19 世纪中叶西班牙东海岸阿尔布费拉泻湖周围地区，毗邻瓦伦西亚市。许多非西班牙人将海鲜饭视为西班牙的国菜，但大多数西班牙人认为它是一道瓦伦西亚地方菜。瓦伦西亚人则将海鲜饭视为他们的标志之一。\n\n海鲜饭的种类包括瓦伦西亚海鲜饭、蔬菜海鲜饭（西班牙语：paella de verduras）、海鲜海鲜饭（西班牙语：paella de mariscos）和混合海鲜饭（西班牙语：paella mixta）等。瓦伦西亚海鲜饭被认为是最初的配方，由白米饭、青豆（bajoqueta 和 tavella）、肉类（鸡肉、鸭肉和兔肉）、白豆（garrofón）、蜗牛和藏红花和迷迭香等调味料组成。另一种非常常见但季节性的食材是洋蓟。海鲜饭用海鲜代替肉类，不放豆类和绿色蔬菜。混合海鲜饭是陆生动物肉、海鲜、蔬菜和有时豆类的自由组合。大多数海鲜饭厨师使用 bomba 米，因为它不太可能煮过头，但瓦伦西亚人倾向于使用一种稍微粘稠（因此更容易煮过头）的品种，称为 Senia。所有类型的海鲜饭都使用橄榄油。",
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Paella%20Rice.png"
+        },
+        {
+            "idIngredient": "515",
+            "strIngredient": "苏格兰帽",
+            "strDescription": "苏格兰帽辣椒，又称邦尼辣椒或加勒比红辣椒，是一种辣椒，因其外形与 tam o' shanter 帽子相似而得名。尼日利亚约鲁巴语使用者也称其为 ata rodo，主要分布在加勒比海岛屿；圭亚那（在那里它被称为火球辣椒）、马尔代夫群岛（在那里它被称为 githeyo mirus）、巴拿马（在那里它被称为 aji chombo）和西非也有发现。大多数苏格兰帽辣椒的辣度等级为 100,000-350,000 斯科维尔单位。相比之下，大多数墨西哥胡椒的辣度等级为 2,500 至 8,000 斯科维尔单位。然而，一些加勒比海岛屿种植了完全甜的苏格兰帽辣椒品种，称为 cachucha 辣椒。\n\n这些辣椒用于调味世界各地的许多不同菜肴和美食，并经常用于辣酱和调味品中。苏格兰帽辣椒的味道更甜，形状更结实，与经常混淆的哈瓦那辣椒不同，它为牙买加风味菜肴（猪肉/鸡肉）和其他加勒比菜肴赋予了独特的风味。苏格兰帽辣椒主要用于西非、安提瓜、基蒂蒂亚/尼维斯、安圭拉、多米尼加、圣卢西亚、圣文森特、格林纳达、特立尼达、牙买加、巴巴多斯、圭亚那、苏里南、海地和开曼群岛美食和辣椒酱，但它们也经常出现在其他加勒比食谱中。它也用于哥斯达黎加和巴拿马的加勒比风味食谱，如米饭和豆子、Rondón、香肠、牛肉饼和酸橘汁腌鱼。\n\n新鲜成熟的苏格兰帽辣椒可以从绿色变为黄色再变为猩红色，然而这种辣椒的许多其他品种成熟后会变成橙色、黄​​色、桃色甚至巧克力棕色。",
+            "strType": "蔬菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Scotch%20Bonnet.png"
+        },
+        {
+            "idIngredient": "516",
+            "strIngredient": "牛尾",
+            "strDescription": "牛尾（有时拼作 ox tail 或 ox-tail）是牛尾巴的烹饪名称。以前，它仅指公牛或阉牛（阉割过的雄性）的尾巴。[需要引用] 牛尾通常重 2 至 4 磅（1-1.8 公斤），去皮后切成短段出售。\n\n牛尾是一种多骨、富含明胶的肉，通常慢炖[1]或炖煮。它是汤的传统汤底。传统的准备工作涉及慢炖，因此一些现代食谱使用高压锅来走捷径。牛尾是意大利菜 coda alla vaccinara（罗马美食的经典）的主要成分。在英国和爱尔兰，它是粉末、速溶和预制罐头汤的流行调味料。牛尾也是俄罗斯肉冻开胃菜 (холодец 或 студень) 的流行底料之一，还有猪蹄或耳朵或牛“膝盖”，但由于牛尾符合犹太教规，因此是俄罗斯犹太人的首选食材。\n\n牛尾汤是南美、西非、中国、西班牙 [2] 和印度尼西亚的流行传统菜肴。在中国菜中，牛尾通常被制成一种叫做牛尾汤 (niúwěi tāng，牛尾汤) 的汤。在韩国菜中，用牛尾制成的汤被称为 kkori gomtang (参见 gomguk)。这是一种用盐调味的浓汤，配上一碗米饭食用。它可以用作制作 tteokguk (年糕汤) 的汤料。在牙买加、特立尼达和其他西印度文化中，用奶油豆炖牛尾或作为主菜 (配米饭) 很受欢迎。牛尾在南非也很受欢迎，那里的人经常用一种叫做 potjie 的传统煎锅来烹制牛尾，这是一种放在明火上的三脚铸铁锅。津巴布韦等其他南部非洲地区的人也会吃牛尾，配上 sadza 和蔬菜一起食用。在美国，牛尾是非裔美国人和西印度家庭的主食。在古巴菜中，可以用牛尾做一道炖菜，叫做 rabo encendido。在菲律宾，人们用花生炖牛尾，叫做 Kare-kare。在伊朗，人们用慢炖牛尾，代替牛腿，做一道主菜，叫做 Baghla-Poli-Mahicheh，用米饭、牛腿（或牛尾）和莳萝、香菜、欧芹和大蒜等香草混合物烹制而成。\n\n在美国，牛尾的肉类切割分类为 NAMP 1791。",
+            "strType": "肉",
+            "image_url": "https://www.themealdb.com/images/ingredients/Oxtail.png"
+        },
+        {
+            "idIngredient": "517",
+            "strIngredient": "蚕豆",
+            "strDescription": "Vicia faba，又名蚕豆、蚕豆、田豆、铃豆或 tic 豆，是豆科的一种开花植物。它原产于北非[可疑 - 讨论]西南亚和南亚，并在其他地区广泛种植。[需要引证] 之前已发现一种 Vicia faba var. equina Pers. - 马豆品种。",
+            "strType": "蔬菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Broad%20Beans.png"
+        },
+        {
+            "idIngredient": "518",
+            "strIngredient": "红鲷鱼",
+            "strDescription": "北红鲷（Lutjanus campechanus）是一种原产于西大西洋（包括墨西哥湾）的鲷鱼，栖息在与珊瑚礁相关的环境中。该物种具有重要的商业价值，也是备受追捧的游钓鱼种。\n\n北红鲷的身体形状与其他鲷鱼非常相似，例如红树林鲷鱼、羊鲷鱼、巷鲷鱼和狗鲷鱼。它们都具有倾斜的轮廓、中到大的鳞片、多刺的背鳍和侧扁的身体。北红鲷的牙齿短而尖，像针一样，但它们没有羊鲷鱼、狗鲷鱼和红树林鲷鱼上突出的上犬齿。这种鲷鱼成熟时身长约为 39 厘米（15 英寸）。成年时通常身长为 60 厘米（24 英寸），但可能达到 100 厘米（39 英寸）。已公布的最大体重为 38 公斤（84 磅），最长的记录年龄为 100 岁以上。北红鲷的颜色为浅红色，背部颜色更深。它有 10 个背棘、14 个软背鳍条、3 个臀棘和 8 到 9 个臀鳍软鳍条。幼鱼（体长不到 30-35 厘米）的侧面也可能有一个黑斑，位于前软背鳍条下方，随着年龄增长，黑斑会逐渐褪色。",
+            "strType": "鱼",
+            "image_url": "https://www.themealdb.com/images/ingredients/Red%20Snapper.png"
+        },
+        {
+            "idIngredient": "519",
+            "strIngredient": "麦芽醋",
+            "strDescription": "醋是一种液体，由约 5-20% 的乙酸 (CH3COOH)、水和其他微量化学物质（可能包括调味剂）组成。乙酸是由乙酸菌发酵乙醇产生的。醋现在主要用作烹饪原料或腌制食品。作为最容易制造的弱酸，它在历史上具有多种工业、医疗和家庭用途，其中一些用途（例如用作一般家用清洁剂）至今仍很常见。\n\n商用醋是通过快速或慢速发酵过程生产的。一般来说，传统醋采用慢速方法，发酵过程缓慢进行，持续数月或长达一年。较长的发酵期可以积累由乙酸菌组成的无毒粘液。快速方法将醋母（细菌培养物）添加到源液体中，然后加入空气以充氧并促进最快的发酵。在快速生产过程中，醋的生产时间可在 20 小时到三天之间。",
+            "strType": "调料",
+            "image_url": "https://www.themealdb.com/images/ingredients/Malt%20Vinegar.png"
+        },
+        {
+            "idIngredient": "520",
+            "strIngredient": "米醋",
+            "strDescription": "米醋是一种由发酵的大米制成的醋，产于中国、日本、韩国和越南。\n\n中国米醋比日本米醋味道浓烈，颜色从清澈到各种红色、棕色和黑色不等，因此被称为米酒醋。中国醋，尤其是日本醋，比西方蒸馏醋酸性低，因此西方蒸馏醋不适合替代米醋。大多数亚洲米醋也比西方世界通常使用的醋更温和、更甜，黑醋是个明显的例外。中国米醋是用黄酒（一种米酒）制成的。",
+            "strType": "醋",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rice%20Vinegar.png"
+        },
+        {
+            "idIngredient": "521",
+            "strIngredient": "菱角",
+            "strDescription": "荸荠，又名中国荸荠或菱角，是一种草状莎草，原产于亚洲（中国、日本、印度、菲律宾等）、澳大利亚、热带非洲以及太平洋和印度洋的各个岛屿。许多国家都种植荸荠，以获取其可食用的球茎。\n\n荸荠根本不是坚果，而是一种生长在沼泽、水下和泥土中的水生植物。它有茎状的管状绿叶，长约 1.5 米。菱角也被称为荸荠，但两者无关，经常混淆。\n\n荸荠小而圆的球茎果肉脆而白，可以生吃、稍微煮一下或烤一下，也经常腌制或罐装。它们是中国菜中很受欢迎的配料。在中国，荸荠通常是生吃，有时加糖食用。它们也可以磨成面粉，用于制作荸荠糕，荸荠糕是点心菜肴中常见的一种。它们在蔬菜中很不寻常，即使经过烹饪或罐装，它们仍能保持脆度，因为它们的细胞壁通过某些酚类化合物（如阿魏酸低聚物）交联和强化。其他以这种方式保持脆度的蔬菜也具有这种特性，包括油莎豆和莲藕。球茎含有抗生素剂 puchiin，这种物质在高温下稳定。除了可食用的球茎外，叶子还可用于牛饲料、覆盖物或堆肥。\n\n球茎富含碳水化合物（约占干重的 90%），尤其是淀粉（约占干重的 60%），也是膳食纤维、核黄素、维生素 B6、钾、铜和锰的良好来源。\n\n如果生吃，植物表面可能会传播姜片虫病。",
+            "strType": "茢",
+            "image_url": "https://www.themealdb.com/images/ingredients/Water%20Chestnut.png"
+        },
+        {
+            "idIngredient": "522",
+            "strIngredient": "豆腐",
+            "strDescription": "豆腐，又称豆腐，是一种通过凝固豆浆，然后将凝乳压成柔软的白色块状而制成的食物。它是东亚和东南亚美食的组成部分。豆腐可以是软的、硬的或超硬的。豆腐味道淡雅，可用于咸味和甜味菜肴。它通常会根据菜肴的口味进行调味或腌制。\n\n豆腐的卡路里含量低，蛋白质含量相对较高。它富含铁，钙或镁含量也可能很高，具体取决于制造过程中使用的凝固剂（例如氯化钙、硫酸钙、硫酸镁）。",
+            "strType": "凝乳",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tofu.png"
+        },
+        {
+            "idIngredient": "523",
+            "strIngredient": "Doubanjiang",
+            "strDescription": "豆瓣酱（IPA：[tôupântɕjâŋ]），简称豆瓣，或 Toban-djan，辣椒豆瓣酱，是一种由发酵的蚕豆、大豆、盐、米和各种香料制成的辛辣咸酱。豆瓣酱有原味和辣味两种，辣味豆瓣酱含有红辣椒，称为辣豆瓣酱（拼音：là dòubànjiàng；là 意为“辣”或“辛辣”）。\n\n它特别用于川菜，事实上，四川人通常称它为“川菜之魂”。一种特别著名的品种是郫县豆瓣（简体中文：郫县豆瓣；繁体中文：郫县豆瓣；拼音：Píxiàn dòubàn），以四川郫县命名。[1]\n\n这种酱汁有时会用油炒熟，与米饭或面条一起作为快餐食用，也常用作炸豆腐菜肴和凉拌豆腐沙拉的主要调味料。它也经常与方便面混合。\n\n在许多华人社区和食品工厂，豆瓣酱只用大豆和盐制作，不含四川风味豆瓣酱中典型的蚕豆或辣椒。\n\n在韩国料理中，一种类似的豆酱被称为大酱。",
+            "strType": "酱",
+            "image_url": "https://www.themealdb.com/images/ingredients/Doubanjian.png"
+        },
+        {
+            "idIngredient": "524",
+            "strIngredient": "发酵黑豆",
+            "strDescription": "豆豉（中文：豆豉；拼音：dòuchǐ）或 tochi 是一种发酵和腌制的黑豆。在英语中，它被称为发酵黑豆、中国发酵黑豆（中文：黑豆豆豉；拼音：hēidòu dòuchǐ）、咸黑豆、咸黑豆或黑豆。它们是中国菜中最受欢迎的调味品，在中国，它们最广泛用于制作黑豆酱菜肴。[1][需要页面] \n\n豆豉是通过发酵和腌制黑豆制成的。黑色大豆是最常用的，这个过程会使豆子变软，而且大多是半干的（如果让豆子变干）。普通大豆（白大豆）也被使用，但这不会产生“咸黑豆”；相反，这些豆子会变成棕色。气味刺鼻、辛辣；味道咸，略带苦味和甜味。[需要引证]用白大豆制成的产品称为mianchi。\n\n其工艺和产品类似于ogiri和iru，两者都是非洲发酵豆制品[需要引证]。\n\nDouchi，“中国咸黑豆”和“黑大豆”不应与黑豆混淆，黑豆是一种常见的豆类，常用于中美洲、南美洲和加勒比地区的美食。",
+            "strType": "豆",
+            "image_url": "https://www.themealdb.com/images/ingredients/Fermented%20Black%20Beans.png"
+        },
+        {
+            "idIngredient": "525",
+            "strIngredient": "葱",
+            "strDescription": "大葱（葱、青葱和沙拉洋葱）是各种葱属植物的蔬菜。大葱的味道比大多数洋葱温和。它们的近亲包括大蒜、青葱、韭菜、细香葱和中国洋葱。\n\n虽然许多葱属植物的鳞茎可用作食物，但大葱的显著特征是它们没有完全发育的鳞茎。与所有葱属植物一样，大葱有空心的管状绿叶，直接从鳞茎中长出。这些叶子被用作蔬菜；它们可以生吃或煮熟后食用。叶子经常被切碎做成其他菜肴，就像洋葱或大蒜一样。大葱也称为大葱或青葱，实际上是非常嫩的洋葱，在鳞茎膨胀之前就被收获了。",
+            "strType": "蔬菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Scallions.png"
+        },
+        {
+            "idIngredient": "526",
+            "strIngredient": "花椒",
+            "strDescription": "四川胡椒、花椒或四川胡椒是中国菜肴中常用的香料。它至少来自两种全球性花椒属，包括拟花椒和花椒。花椒属属于芸香科或柑橘科，尽管它的名字如此，但与黑胡椒或辣椒都没有密切关系。\n\n种子周围的果壳或果壳（果皮）可以整个使用，尤其是在川菜中，细磨的粉末是五香粉的成分之一。它也用于传统中药。果皮最常用，但在中国的一些地区也会使用各种物种的叶子。\n\n另一种原产于中国的花椒属植物，即 Z. schinifolium，被称为 xiāng jiāo zi（香椒子，芳香胡椒）或 qīng huā jiāo（青花椒，绿花椒），在河北用作香料。\n\n虽然花椒属不同物种的确切风味和成分各不相同，但大多数都具有相同的基本特征。因此，虽然术语“四川胡椒”和山椒可能分别特指 Z. simulans 和 Z. piperitum，但两者通常可互换使用。\n\n相关物种用于西藏、不丹、尼泊尔、泰国和印度（孔卡尼人和北阿坎德人）和托巴巴塔克人的美食中。在不丹，这种辣椒被称为thingye，广泛用于制作汤、粥和phaag sha paa（猪肉片）。[需要引证]在尼泊尔，timur用于制作流行的食物momo、thukpa、炒面、鸡肉辣椒和其他肉类菜肴。它也广泛用于自制泡菜。人们将timur作为治疗胃病或消化问题的药物，用温水与蒜瓣和山盐一起服用。",
+            "strType": "香料",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sichuan%20Pepper.png"
+        },
+        {
+            "idIngredient": "527",
+            "strIngredient": "馄饨皮",
+            "strDescription": "馄饨皮。用面粉、水、鸡蛋和盐制成的薄如纸的方形面团，用于制作馄饨、蛋卷和饺子。",
+            "strType": "糕点",
+            "image_url": "https://www.themealdb.com/images/ingredients/Wonton%20Skin.png"
+        },
+        {
+            "idIngredient": "528",
+            "strIngredient": "淀粉",
+            "strDescription": "淀粉或淀粉是一种聚合碳水化合物，由大量葡萄糖单元通过糖苷键连接而成。这种多糖由大多数绿色植物产生，用于储存能量。它是人类饮食中最常见的碳水化合物，在土豆、小麦、玉米、大米和木薯等主食中含量丰富。\n\n纯淀粉是一种白色、无味、无臭的粉末，不溶于冷水或酒精。它由两种分子组成：线性和螺旋直链淀粉和支链淀粉。根据植物的不同，淀粉通常含有 20% 至 25% 的直链淀粉和 75% 至 80% 的支链淀粉（按重量计算）。[4] 糖原是动物的葡萄糖储存，是支链淀粉的更高度分支的版本。\n\n在工业上，淀粉被转化为糖，例如通过麦芽加工，然后发酵以生产乙醇，用于啤酒、威士忌和生物燃料的生产。淀粉经过加工可制成许多用于加工食品的糖。将大多数淀粉与温水混合可制成糊状物，如小麦糊，可用作增稠剂、硬化剂或胶粘剂。淀粉最大的工业非食品用途是作为造纸工艺中的粘合剂。熨烫前可将淀粉涂抹在某些服装的某些部分，使其变硬。",
+            "strType": "边",
+            "image_url": "https://www.themealdb.com/images/ingredients/Starch.png"
+        },
+        {
+            "idIngredient": "529",
+            "strIngredient": "米酒",
+            "strDescription": "米酒是一种由大米发酵和蒸馏而成的酒精饮料，传统上在东亚、东南亚和南亚饮用。米酒由转化为糖的大米淀粉发酵而成。微生物是将淀粉转化为糖的酶的来源。[1] \n\n米酒的酒精含量通常为 18-25% ABV。米酒在亚洲美食中用于正式晚宴和宴会以及烹饪。它们也用于宗教和礼仪场合。",
+            "strType": "葡萄酒",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rice%20wine.png"
+        },
+        {
+            "idIngredient": "530",
+            "strIngredient": "料酒",
+            "strDescription": "将其加入砂锅、酱汁和腌料中，即可获得圆润鲜亮的味道。",
+            "strType": "葡萄酒",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cooking%20wine.png"
+        },
+        {
+            "idIngredient": "531",
+            "strIngredient": "鸭酱",
+            "strDescription": "鸭酱（或橙酱）是一种具有酸甜口味和半透明橙色外观的调味品，类似于稀薄的果冻。它是中餐馆提供的，用于蘸炸菜，例如馄饨条、春卷、蛋卷、鸭肉、鸡肉、鱼肉，或与米饭或面条一起食用。它通常与酱油、芥末、辣酱或红辣椒粉一起装在单份包装中。它可以用作食物（例如家禽）的釉料。尽管它的名字如此，但这种酱汁不是用鸭肉制成的。",
+            "strType": "酱",
+            "image_url": "https://www.themealdb.com/images/ingredients/Duck%20Sauce.png"
+        },
+        {
+            "idIngredient": "532",
+            "strIngredient": "辣椒酱",
+            "strDescription": "辣椒酱或红辣椒酱是一种由辣椒粉、糯米、酱油粉、和盐制成的咸味、甜味和辣味的发酵调味品。",
+            "strType": "酱",
+            "image_url": "https://www.themealdb.com/images/ingredients/Gochujang.png"
+        },
+        {
+            "idIngredient": "533",
+            "strIngredient": "豆芽",
+            "strDescription": "豆芽是世界各地的常见食材。它们在东亚美食中尤为常见。\n\n常见的豆芽有两种：\n\n绿豆芽由绿色的绿豆制成\n\n大豆芽由黄色、颗粒较大的大豆制成\n\n它们通常需要一周时间才能完全长成。发芽的豆子比原来的豆子更有营养，而且烹饪时间要短得多。",
+            "strType": "蔬菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Bean%20Sprouts.png"
+        },
+        {
+            "idIngredient": "534",
+            "strIngredient": "面条",
+            "strDescription": "面条是许多文化中的主食。它们由无酵面团制成，面团被拉伸、挤压或压平，然后切成各种形状。虽然长而薄的条状可能是最常见的，但许多种类的面条被切成波浪形、螺旋形、管状、细绳形或贝壳形，或折叠起来，或切成其他形状。面条通常在沸水中煮熟，有时加入食用油或盐。它们通常是煎或炸的。面条通常与酱汁或汤一起食用。面条可以冷藏以供短期储存，也可以干燥并储存以备将来使用。讨论面条时必须说明其材料成分或地缘文化起源。该词源于德语单词 Nudel。[1]",
+            "strType": "边",
+            "image_url": "https://www.themealdb.com/images/ingredients/Noodles.png"
+        },
+        {
+            "idIngredient": "535",
+            "strIngredient": "木耳",
+            "strDescription": "Auricularia auricula-judae，又名犹太耳、木耳、果冻耳或许多其他俗名，是一种可食用的木耳目真菌，在世界各地都有发现。子实体以其明显的耳朵形状和棕色颜色为特征；它生长在木材上，尤其是接骨木上。它的种名源于人们相信犹大·伊斯卡里奥特在接骨木上上吊自杀；俗名“犹大的耳朵”在很大程度上被腐败的“犹太耳朵”所掩盖，而今天有时使用“果冻耳”和其他名称。这种真菌全年都可以在世界各地的温带地区找到，它生长在死木和活木上。\n\n在西方，A. auricula-judae 直到 19 世纪才在民间医学中用于治疗包括喉咙痛、眼睛痛和黄疸在内的疾病，并用作收敛剂。虽然它在西方并不广泛食用，但它在中国早已很受欢迎，以至于澳大利亚在 20 世纪初向中国出口了大量的黑木耳。如今，这种真菌是许多中国菜肴中的流行配料，例如酸辣汤，也用于中药。在加纳，它也被用作补血剂。现代对可能的医学应用的研究得出了不同的结论，认为黑木耳具有抗肿瘤、降血糖、抗凝和降低胆固醇的功效。",
+            "strType": "蔬菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Wood%20Ear%20Mushrooms.png"
+        },
+        {
+            "idIngredient": "536",
+            "strIngredient": "黑朗姆酒",
+            "strDescription": "朗姆酒是一种蒸馏酒，由甘蔗副产品（如糖蜜）或直接由甘蔗汁通过发酵和蒸馏工艺制成。蒸馏液是一种清澈的液体，通常在橡木桶中陈酿。\n\n世界上大部分朗姆酒产自加勒比地区和拉丁美洲。澳大利亚、葡萄牙、奥地利、加拿大、斐济、印度、日本、毛里求斯、尼泊尔、新西兰、菲律宾、留尼汪岛、南非、西班牙、瑞典、台湾、泰国、英国和美国也生产朗姆酒。\n\n朗姆酒有各种等级。淡朗姆酒通常用于调制鸡尾酒，而“金朗姆酒”和“黑朗姆酒”通常直接饮用或加冰饮用，或用于烹饪，但现在通常与混合饮料一起饮用。还有优质朗姆酒，可直接饮用或加冰饮用。\n\n朗姆酒在西印度群岛的大多数岛屿以及沿海省份和纽芬兰的文化中扮演着重要角色。这种饮料与皇家海军（当时将其与水或啤酒混合制成烈酒）和海盗（当时将其作为 bumbo 饮用）有着密切的联系。朗姆酒也是一种流行的经济交换媒介，用于资助诸如奴隶制（参见三角贸易）、有组织犯罪和军事叛乱（例如美国革命和澳大利亚的朗姆酒叛乱）​​等企业。",
+            "strType": "精神",
+            "image_url": "https://www.themealdb.com/images/ingredients/Dark%20Rum.png"
+        },
+        {
+            "idIngredient": "537",
+            "strIngredient": "淡朗姆酒",
+            "strDescription": "朗姆酒是一种蒸馏酒，由甘蔗副产品（如糖蜜）或直接由甘蔗汁通过发酵和蒸馏工艺制成。蒸馏液是一种清澈的液体，通常在橡木桶中陈酿。\n\n世界上大部分朗姆酒产自加勒比地区和拉丁美洲。澳大利亚、葡萄牙、奥地利、加拿大、斐济、印度、日本、毛里求斯、尼泊尔、新西兰、菲律宾、留尼汪岛、南非、西班牙、瑞典、台湾、泰国、英国和美国也生产朗姆酒。\n\n朗姆酒有各种等级。淡朗姆酒通常用于调制鸡尾酒，而“金朗姆酒”和“黑朗姆酒”通常直接饮用或加冰饮用，或用于烹饪，但现在通常与混合饮料一起饮用。还有优质朗姆酒，可直接饮用或加冰饮用。\n\n朗姆酒在西印度群岛的大多数岛屿以及沿海省份和纽芬兰的文化中扮演着重要角色。这种饮料与皇家海军（当时将其与水或啤酒混合制成烈酒）和海盗（当时将其作为 bumbo 饮用）有着密切的联系。朗姆酒也是一种流行的经济交换媒介，用于资助诸如奴隶制（参见三角贸易）、有组织犯罪和军事叛乱（例如美国革命和澳大利亚的朗姆酒叛乱）​​等企业。",
+            "strType": "精神",
+            "image_url": "https://www.themealdb.com/images/ingredients/Light%20Rum.png"
+        },
+        {
+            "idIngredient": "538",
+            "strIngredient": "朗姆酒",
+            "strDescription": "朗姆酒是一种蒸馏酒，由甘蔗副产品（如糖蜜）或直接由甘蔗汁通过发酵和蒸馏工艺制成。蒸馏液是一种清澈的液体，通常在橡木桶中陈酿。\n\n世界上大部分朗姆酒产自加勒比地区和拉丁美洲。澳大利亚、葡萄牙、奥地利、加拿大、斐济、印度、日本、毛里求斯、尼泊尔、新西兰、菲律宾、留尼汪岛、南非、西班牙、瑞典、台湾、泰国、英国和美国也生产朗姆酒。\n\n朗姆酒有各种等级。淡朗姆酒通常用于调制鸡尾酒，而“金朗姆酒”和“黑朗姆酒”通常直接饮用或加冰饮用，或用于烹饪，但现在通常与混合饮料一起饮用。还有优质朗姆酒，可直接饮用或加冰饮用。\n\n朗姆酒在西印度群岛的大多数岛屿以及沿海省份和纽芬兰的文化中扮演着重要角色。这种饮料与皇家海军（当时将其与水或啤酒混合制成烈酒）和海盗（当时将其作为 bumbo 饮用）有着密切的联系。朗姆酒也是一种流行的经济交换媒介，用于资助诸如奴隶制（参见三角贸易）、有组织犯罪和军事叛乱（例如美国革命和澳大利亚的朗姆酒叛乱）​​等企业。",
+            "strType": "精神",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rum.png"
+        },
+        {
+            "idIngredient": "539",
+            "strIngredient": "英式松饼",
+            "strDescription": "英式松饼是一种小而圆的扁平酵母发酵面包，通常水平切片、烘烤并涂上黄油。[2] 烤英式松饼在美国经常用作早餐食品，可以搭配甜味配料（例如果酱或蜂蜜）或咸味配料（例如鸡蛋、香肠片、培根或奶酪）。英式松饼还用作各种早餐三明治的面包，是班尼迪克蛋及其大多数变种的重要成分。\n\n在美国和受美国影响的地区，它们被称为英式松饼，以区别于美国松饼，后者是更大、更甜的迷你烘焙快餐面包。它们与葡萄牙美食中的 bolo do caco 非常相似。",
+            "strType": "面包",
+            "image_url": "https://www.themealdb.com/images/ingredients/English%20Muffins.png"
+        },
+        {
+            "idIngredient": "540",
+            "strIngredient": "松饼",
+            "strDescription": "松饼是一种个人份量的烘焙食品。它可以指两种不同的食物，一种是半发酵的扁面包，另一种是类似纸杯蛋糕的速食面包。扁面包起源于英国或欧洲，至少可以追溯到 18 世纪初，而速食面包起源于 19 世纪的北美。这两种食物如今在世界各地都很常见。",
+            "strType": "面包",
+            "image_url": "https://www.themealdb.com/images/ingredients/Muffins.png"
+        },
+        {
+            "idIngredient": "541",
+            "strIngredient": "白葡萄酒醋",
+            "strDescription": "葡萄酒醋由红葡萄酒或白葡萄酒制成，是南欧和中欧、塞浦路斯和以色列最常用的醋。与葡萄酒一样，葡萄酒醋的品质也有很大差异。品质较好的葡萄酒醋在木桶中陈化长达两年，风味复杂醇厚。葡萄酒醋的酸度往往低于白醋或苹果醋。更昂贵的葡萄酒醋由单个品种的葡萄酒制成，例如香槟、雪利酒或灰比诺。",
+            "strType": "敷料",
+            "image_url": "https://www.themealdb.com/images/ingredients/White%20Wine%20Vinegar.png"
+        },
+        {
+            "idIngredient": "542",
+            "strIngredient": "烟熏三文鱼",
+            "strDescription": "熏鲑鱼是一种鲑鱼制品，通常是经过腌制和热熏或冷熏的鱼片。由于价格适中，熏鲑鱼被认为是一道美味佳肴。虽然熏鲑鱼有时也被称为 lox，但它们是不同的产品。",
+            "strType": "鱼",
+            "image_url": "https://www.themealdb.com/images/ingredients/Smoked%20Salmon.png"
+        },
+        {
+            "idIngredient": "543",
+            "strIngredient": "玛氏巧克力棒",
+            "strDescription": "玛氏巧克力棒是玛氏公司生产的一种巧克力棒。它最早于 1932 年由 Forrest Mars, Sr. 在英国斯劳生产。这种巧克力棒有两种不同的配方。最初的英国版巧克力棒由牛奶巧克力包裹焦糖和牛轧糖，其配方类似于十年前推出的美国糖果棒 Milky Way。美国版的玛氏巧克力棒由牛轧糖和烤杏仁包裹，外面包裹着牛奶巧克力；后来，焦糖也被添加到配方中。美国版于 2002 年停产，但此后又短暂恢复生产。",
+            "strType": "糖果",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mars%20Bar.png"
+        },
+        {
+            "idIngredient": "544",
+            "strIngredient": "脆米饼",
+            "strDescription": "Rice Krispies（在澳大利亚和新西兰也被称为 Rice Bubbles）是凯洛格公司于 1927 年推出的一种早餐麦片，并于 1928 年向公众推出。Rice Krispies 由脆米（大米和糖浆制成，煮熟、干燥和烘烤后制成米粒形状或“浆果”）制成，膨胀后形成非常薄且中空的壁，既脆又脆。当将牛奶加入麦片中时，壁会塌陷，发出“啪、啪、啪”的声音。\n\nRice Krispies 麦片有着悠久的广告历史，精灵卡通人物 Snap、Crackle 和 Pop 为该品牌做广告。1963 年，滚石乐队为 Rice Krispies 电视广告录制了一首短歌。",
+            "strType": "谷物",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rice%20Krispies.png"
+        },
+        {
+            "idIngredient": "545",
+            "strIngredient": "安丘辣椒",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ancho%20Chillies.png"
+        },
+        {
+            "idIngredient": "546",
+            "strIngredient": "杏仁奶",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Almond%20Milk.png"
+        },
+        {
+            "idIngredient": "548",
+            "strIngredient": "多香果",
+            "strDescription": null,
+            "strType": "未知",
+            "image_url": "https://www.themealdb.com/images/ingredients/Allspice.png"
+        },
+        {
+            "idIngredient": "550",
+            "strIngredient": "杏仁提取物",
+            "strDescription": "杏仁（Prunus dulcis，同义词 Prunus amygdalus）是一种原产于中东地中海气候地区的树种，但在其他地方广泛种植。杏仁也是这种树的可食用和广泛种植的种子的名称。在李属中，它与桃子一起被归类为杏仁亚属，与其他亚属的区别在于种子周围的壳（内果皮）上有褶皱。\n\n杏仁的果实是核果，由外壳和硬壳组成，里面有种子，但不是真正的坚果。剥壳杏仁是指去除外壳以露出种子。杏仁有带壳的和不带壳的。去皮杏仁是去壳杏仁，用热水处理以软化种皮，然后去除种皮以露出白色胚芽。",
+            "strType": "水果",
+            "image_url": "https://www.themealdb.com/images/ingredients/Almond%20Extract.png"
+        },
+        {
+            "idIngredient": "552",
+            "strIngredient": "肚",
+            "strDescription": "牛肚是各种农场动物胃内的一种可食用内衬。大多数牛肚来自牛和羊。",
+            "strType": "肉",
+            "image_url": "https://www.themealdb.com/images/ingredients/Tripe.png"
+        },
+        {
+            "idIngredient": "553",
+            "strIngredient": "山羊肉",
+            "strDescription": "家山羊或简称山羊（Capra aegagrus hircus）是家山羊的一个亚种，由西南亚和东欧的野山羊驯化而来。山羊属于牛科动物和山羊羚羊亚科，这意味着它与绵羊密切相关。山羊有 300 多个不同的品种。山羊是最古老的驯养动物之一，在世界大部分地区都被用来制作牛奶、肉、毛皮和皮毛。山羊奶经常被制成山羊奶酪。",
+            "strType": "肉",
+            "image_url": "https://www.themealdb.com/images/ingredients/Goat%20Meat.png"
+        },
+        {
+            "idIngredient": "554",
+            "strIngredient": "黑豆",
+            "strDescription": "黑龟豆是一种小而有光泽的普通豆类 (Phaseolus vulgaris)，在拉丁美洲美食中特别受欢迎，但在路易斯安那州南部的卡津和克里奥尔美食中也可以找到它。与大多数普通豆类一样，它原产于美洲，但已被引入世界各地。它也用于东印度烹饪、旁遮普美食，在马哈拉施特拉美食中，它被称为 Kala Ghevada。在美国等国家，它与 vigna mungo（黑豆）互换使用。黑龟豆通常简称为黑豆（西班牙语为 frijoles negros、zaragoza、judía negra、poroto negro 或 caraota o habichuela negra；葡萄牙语为 feijão preto），尽管这个术语可能会与其他黑豆混淆。",
+            "strType": "豆",
+            "image_url": "https://www.themealdb.com/images/ingredients/Black%20Beans.png"
+        },
+        {
+            "idIngredient": "555",
+            "strIngredient": "鳀鱼片",
+            "strDescription": "凤尾鱼是一种细小的银色鱼，产自地中海和南欧海岸。它们通常以盐腌、油浸和切片的形式出售。它们通常是扁平状或卷成罐头或罐子状，或者被磨碎并与油或黄油混合制成糊状，装在管子里出售。凤尾鱼本身非常咸，但与酱汁、调味品或意大利面混合后，它们会增添美妙的风味。",
+            "strType": "鱼",
+            "image_url": "https://www.themealdb.com/images/ingredients/Anchovy%20Fillet.png"
+        },
+        {
+            "idIngredient": "556",
+            "strIngredient": "拉斯艾尔汉努特",
+            "strDescription": "Ras el hanout 或 rass el hanout（阿拉伯语：راس الحانوت‎ raʾs al-ḥānūt，发音为 [rɑʔs ælħɑːnuːt]（关于此声音））是一种香料混合物，在突尼斯、阿尔及利亚和摩洛哥以各种形式出现。[1] 它在北非美食中扮演的角色与印度美食中的 garam masala 相似。阿拉伯语中的名字意思是“店主”，暗示卖家提供的最好的香料混合物。Ras el hanout 用于许多美味的菜肴，有时涂在肉或鱼上，或搅拌到蒸粗麦粉或米饭中。\n\n没有明确的香料成分来组成 ras el hanout。每个商店、公司或家庭可能都有自己的混合物。混合物通常由十几种不同比例的香料组成。常用的配料包括小豆蔻、孜然、丁香、肉桂、肉豆蔻、肉豆蔻、多香果、干姜、辣椒、芫荽籽、胡椒、甜辣椒粉和辣椒粉、葫芦巴和干姜黄。一些香料可能是该地区特有的，例如灰浆果、油莎豆、天堂谷物、鸢尾根、僧人胡椒、荜茇、干玫瑰花蕾、茴香籽或大茴香、高良姜、荜茇。配料可以先烘烤，然后磨碎或捣碎在研钵中混合在一起。有些制剂包括盐或糖，但这通常不是公认的做法。大蒜、藏红花、坚果或干香草通常不包括在内，因为它们通常单独添加到菜肴中，但一些商业制剂，特别是在欧洲和北美，可能含有它们。\n\nras el hanout 的成分与 Baharat 香料混合物略有不同，但它们之间的区别主要在于它们所搭配的菜肴类型和地区，而不是其中的成分。虽然柏柏尔人也使用过它，但不应将其与埃塞俄比亚的“berbere”香料混合物混淆。\n\n某些所谓的壮阳药，包括臭名昭著的危险“绿色金属甲虫”斑蝥，出现在许多摩洛哥处方中，但这些似乎与调味目的无关。",
+            "strType": "香料",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ras%20el%20hanout.png"
+        },
+        {
+            "idIngredient": "557",
+            "strIngredient": "酥皮糕点",
+            "strDescription": "Filo 或 phyllo（希腊语：φύλλο“叶子”）是一种非常薄的无酵面团，用于制作中东和巴尔干美食中的果仁蜜饼和 börek 等糕点。以 Filo 为基础的糕点是将许多涂有油或黄油的 Filo 片叠放在一起，然后烘烤而成。",
+            "strType": "糕点",
+            "image_url": "https://www.themealdb.com/images/ingredients/Filo%20Pastry.png"
+        },
+        {
+            "idIngredient": "558",
+            "strIngredient": "橙花水",
+            "strDescription": "橙花水，或橙花水，是蒸馏新鲜苦橙花以获得其精油后产生的清澈芳香的副产品。\n\n用途\nMediterranean Relief.jpg\n这种精油水传统上被用作许多地中海传统甜点菜肴的芳香剂，例如法国的 gibassier 和 pompe à l'huile，西班牙的 Roscón de Reyes（国王蛋糕），突尼斯的 Samsa 或摩洛哥咖啡，但最近它已进入其他美食。例如，橙花水在欧洲用于调味玛德琳蛋糕，在墨西哥用于调味小婚礼蛋糕和 Pan de muerto，在美国用于制作橙花烤饼和棉花糖。橙花水还用作一些鸡尾酒的配料，例如 Ramos Gin Fizz。在马耳他和许多北非以及中东国家，橙花水被广泛用作治疗胃痛的药物，并用于给小孩和成人服用。\n\n橙花水一直是北非和中东烹饪中经常使用的传统配料。在阿拉伯果仁蜜饼中，橙花水经常与甜糖浆混合以增加风味。人们认为橙花以这种方式使用是因为它们被视为传统的新娘花，因此象征着纯洁（白色、小巧和精致）。在中东，它还会添加到白开水中以掩盖高矿物质含量和其他令人不快的味道（例如，那些因储存在 qulla（一种陶罐，以类似于 zeer 的方式保持水凉爽而产生的味道）；有些人会添加香味，而不管白开水的味道如何。",
+            "strType": "喝",
+            "image_url": "https://www.themealdb.com/images/ingredients/Orange%20Blossom%20Water.png"
+        },
+        {
+            "idIngredient": "559",
+            "strIngredient": "蜜饯果皮",
+            "strDescription": "蜜饯水果，又称结晶水果或糖渍水果，自 14 世纪以来就已存在。将整个水果、小块水果或果皮放入加热的糖浆中，糖浆会吸收水果内部的水分，最终将其保存下来。",
+            "strType": "糖果",
+            "image_url": "https://www.themealdb.com/images/ingredients/Candied%20Peel.png"
+        },
+        {
+            "idIngredient": "560",
+            "strIngredient": "柑曼怡酒",
+            "strDescription": "Grand Marnier 是法国利口酒品牌。该品牌最著名的产品是 Grand Marnier Cordon Rouge，这是一款橙味利口酒，由 Alexandre Marnier-Lapostolle 于 1880 年发明。它由干邑白兰地、苦橙蒸馏精华和糖混合而成。Grand Marnier Cordon Rouge 酒精含量为 40%。",
+            "strType": "酒",
+            "image_url": "https://www.themealdb.com/images/ingredients/Grand%20Marnier.png"
+        },
+        {
+            "idIngredient": "561",
+            "strIngredient": "雪利酒",
+            "strDescription": "雪利酒是一种加强葡萄酒，由西班牙安达卢西亚赫雷斯德拉弗龙特拉市附近种植的白葡萄酿制而成。",
+            "strType": "葡萄酒",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sherry.png"
+        },
+        {
+            "idIngredient": "562",
+            "strIngredient": "玫瑰水",
+            "strDescription": "玫瑰水是一种将玫瑰花瓣浸泡在水中制成的调味水。此外，它还是玫瑰花瓣蒸馏液的纯露部分，是生产用于香水的玫瑰油的副产品。它用于调味食物、作为某些化妆品和药物制剂的成分，并用于整个欧洲和亚洲的宗教目的。",
+            "strType": "喝",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rose%20water.png"
+        },
+        {
+            "idIngredient": "563",
+            "strIngredient": "混合香料",
+            "strDescription": "混合香料，也称布丁香料，是一种英国[1]甜香料混合物，类似于美国使用的南瓜派香料。肉桂是主要的味道，还有肉豆蔻和多香果。它经常用于烘焙，或与水果或其他甜食搭配。",
+            "strType": "香料",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mixed%20Spice.png"
+        },
+        {
+            "idIngredient": "564",
+            "strIngredient": "碎肉",
+            "strDescription": "碎肉是切碎的干果、蒸馏酒和香料的混合物，有时还会加入牛油、牛肉或鹿肉。最初，碎肉总是含有肉。许多现代食谱都含有牛油，但有时会用植物起酥油代替。",
+            "strType": "香料",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mincemeat.png"
+        },
+        {
+            "idIngredient": "565",
+            "strIngredient": "红薯",
+            "strDescription": "红薯或甘薯是旋花科的双子叶植物。其块根大、富含淀粉、味道甜美，是一种根类蔬菜。嫩叶和嫩芽有时可作为蔬菜食用。",
+            "strType": "根类蔬菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sweet%20Potatoes.png"
+        },
+        {
+            "idIngredient": "566",
+            "strIngredient": "面包卷",
+            "strDescription": "面包卷是一种小面包，通常是圆形或长方形，作为餐食配菜（直接食用或搭配黄油食用）。面包卷可以整个食用，也可以横着切开，在两半之间夹馅。面包卷也常用于制作类似于用面包片制作的三明治。世界各地的大多数美食中都有面包卷。在《Deipnosophistae》中，作者 Athenaeus（约 170 年 - 约 230 年）描述了古典世界中的一些面包、蛋糕和糕点。提到的面包包括烤饼、蜂蜜油面包、撒满罂粟籽的蘑菇形面包，以及在烤肉叉上烤制的军事特色面包卷。",
+            "strType": "面包",
+            "image_url": "https://www.themealdb.com/images/ingredients/Bread%20Rolls.png"
+        },
+        {
+            "idIngredient": "567",
+            "strIngredient": "包子",
+            "strDescription": "包子是一种小巧的、有时是甜的面包制品[1]或面包卷。虽然包子的形状和大小各异，但最常见的是手掌大小或更小，顶部圆而底部平。",
+            "strType": "面包",
+            "image_url": "https://www.themealdb.com/images/ingredients/Bun.png"
+        },
+        {
+            "idIngredient": "568",
+            "strIngredient": "土豆面包",
+            "strDescription": "土豆面包是一种用土豆粉或土豆代替部分普通小麦粉的面包。它有多种烹饪方法，包括在热烤盘或平底锅上烘烤，或在烤箱中烘烤。它可能是发酵的或未发酵的，也可能加入各种其他配料。土豆和小麦粉的比例因食谱而异，有些食谱以土豆为主，而有些食谱以小麦粉为主。有些食谱需要土豆泥，有些食谱需要脱水土豆片。它在许多国家/地区都有商业产品，配料、烹饪方法和其他变量也大体相同。",
+            "strType": "面包",
+            "image_url": "https://www.themealdb.com/images/ingredients/Potatoe%20Buns.png"
+        },
+        {
+            "idIngredient": "569",
+            "strIngredient": "猪肉碎",
+            "strDescription": "碎肉在北美以外地区（即英国和英联邦国家）称为肉末或碎肉，在印度次大陆称为 keema 或 qeema（印度语：क़ीमा (Devanagari)，قیمہ (Nastaleeq)，（发音为 [ˈqiːmaː]）），是用绞肉机或切肉刀切碎的肉。一种常见的碎肉是牛肉末，但许多其他类型的肉也以类似的方式制备，包括猪肉、羊肉和家禽。在印度次大陆，羊肉和山羊肉也被切碎以制作 keema。",
+            "strType": "肉",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ground%20Pork.png"
+        },
+        {
+            "idIngredient": "570",
+            "strIngredient": "猪排",
+            "strDescription": "猪排和其他肉排一样，是猪腰肉的垂直切块，通常包含肋骨或部分脊椎骨。猪排未经加工，比其他猪肉更瘦。猪排通常作为单独一份食用。",
+            "strType": "肉",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pork%20Chops.png"
+        },
+        {
+            "idIngredient": "571",
+            "strIngredient": "育空黄金土豆",
+            "strDescription": "育空黄金土豆是一种大型土豆品种，其最显著的特征是其表皮薄而光滑，无芽眼，果肉呈黄色。这种土豆是 20 世纪 60 年代由加拿大安大略省圭尔夫市的 Garnet Johnston 在圭尔夫大学的 Geoff Rowberry 的帮助下培育出来的。1966 年进行了正式杂交，育空黄金土豆最终于 1980 年投放市场。",
+            "strType": "根类蔬菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Yukon%20Gold%20Potatoes.png"
+        },
+        {
+            "idIngredient": "572",
+            "strIngredient": "黄洋葱",
+            "strDescription": "棕色洋葱或黄洋葱是一种味道浓郁的干洋葱。它们的内部呈绿白色、浅黄色或白色；其纸质外皮呈​​黄棕色或浅金色",
+            "strType": "蔬菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Yellow%20Onion.png"
+        },
+        {
+            "idIngredient": "573",
+            "strIngredient": "牛肉浓缩汤",
+            "strDescription": "肉汤，有时也被称为骨汤，是一种美味的烹饪液体，是许多菜肴的基础，特别是汤、炖菜和酱汁。制作肉汤需要用水或酒将动物骨头或肉、海鲜或蔬菜炖煮，通常要煮很长时间。可以添加蔬菜丁或其他香料来增加味道。",
+            "strType": "库存",
+            "image_url": "https://www.themealdb.com/images/ingredients/Beef%20Stock%20Concentrate.png"
+        },
+        {
+            "idIngredient": "574",
+            "strIngredient": "浓缩鸡汤",
+            "strDescription": "肉汤，有时也被称为骨汤，是一种美味的烹饪液体，是许多菜肴的基础，特别是汤、炖菜和酱汁。制作肉汤需要用水或酒将动物骨头或肉、海鲜或蔬菜炖煮，通常要煮很长时间。可以添加蔬菜丁或其他香料来增加味道。",
+            "strType": "库存",
+            "image_url": "https://www.themealdb.com/images/ingredients/Chicken%20Stock%20Concentrate.png"
+        },
+        {
+            "idIngredient": "575",
+            "strIngredient": "波斯黄瓜",
+            "strDescription": "黄瓜（Cucumis sativus）是葫芦科的一种广泛栽培的植物。它是一种蔓生藤本植物，结出黄瓜状果实，可用作蔬菜。黄瓜主要有三种品种：切片黄瓜、腌黄瓜和无籽黄瓜。在这些品种中，已经培育出了几个栽培品种。在北美，“野生黄瓜”一词指的是 Echinocystis 和 Marah 属的植物，但这些植物与黄瓜没有密切关系。黄瓜原产于南亚，但现在在大多数大陆都有生长。全球市场上有许多不同类型的黄瓜在交易。",
+            "strType": "蔬菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Persian%20Cucumber.png"
+        },
+        {
+            "idIngredient": "576",
+            "strIngredient": "蛋黄酱",
+            "strDescription": "蛋黄酱，俗称 mayo，是一种浓稠的冷调味品或调味汁，常用于三明治和沙拉或炸薯条。它也是塔塔酱等酱料的底料。",
+            "strType": "酱",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mayonnaise.png"
+        },
+        {
+            "idIngredient": "577",
+            "strIngredient": "是拉差",
+            "strDescription": "是拉差辣椒酱 (Sriracha) 是一种辣酱或辣椒酱，由辣椒、蒸馏醋、大蒜、糖和盐制成。",
+            "strType": "酱",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sriracha.png"
+        },
+        {
+            "idIngredient": "578",
+            "strIngredient": "大黄",
+            "strDescription": "大黄是蓼科大黄属栽培植物的统称。大黄是一种多年生草本植物，由短而粗的根茎长成。历史上，不同的植物在英语中被称为“大黄”。",
+            "strType": "蔬菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Rhubarb.png"
+        },
+        {
+            "idIngredient": "579",
+            "strIngredient": "皮塔饼",
+            "strDescription": "皮塔饼或皮塔饼是一种用酵母发酵的圆形扁面包，由小麦粉烘烤而成，常见于地中海、中东和邻近地区。",
+            "strType": "面包",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pita%20Bread.png"
+        },
+        {
+            "idIngredient": "580",
+            "strIngredient": "碎小麦",
+            "strDescription": "碾碎干小麦是一种谷物食品，由几种不同小麦品种的碎粒（最常见的是硬粒小麦）制成。它起源于中东美食。",
+            "strType": "谷物",
+            "image_url": "https://www.themealdb.com/images/ingredients/Bulgur%20Wheat.png"
+        },
+        {
+            "idIngredient": "581",
+            "strIngredient": "藜麦",
+            "strDescription": "藜麦是苋菜科的一种开花植物。它是一种一年生草本植物，主要​​种植其可食用的种子；其种子富含蛋白质、膳食纤维、B 族维生素和膳食矿物质，含量比许多谷物都要高。",
+            "strType": "粮食",
+            "image_url": "https://www.themealdb.com/images/ingredients/Quinoa.png"
+        },
+        {
+            "idIngredient": "582",
+            "strIngredient": "莳萝泡菜",
+            "strDescription": "腌黄瓜是将黄瓜浸泡在盐水、醋或其他溶液中，然后放置一段时间发酵，方法是将黄瓜浸泡在酸性溶液中或通过乳酸发酵使其变酸。腌黄瓜通常是混合腌菜的一部分。",
+            "strType": "蔬菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Dill%20Pickles.png"
+        },
+        {
+            "idIngredient": "583",
+            "strIngredient": "芝麻汉堡面包",
+            "strDescription": "面包是一种小巧的、有时是甜的面包制品或面包卷。虽然它们的形状和大小各异，但最常见的是手掌大小或更小，顶部圆而底部平。面包通常由面粉、糖、牛奶、酵母和黄油制成。",
+            "strType": "面包",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sesame%20Seed%20Burger%20Buns.png"
+        },
+        {
+            "idIngredient": "585",
+            "strIngredient": "面包",
+            "strDescription": "面包是一种小巧的、有时是甜的面包制品或面包卷。虽然它们的形状和大小各异，但最常见的是手掌大小或更小，顶部圆而底部平。面包通常由面粉、糖、牛奶、酵母和黄油制成。",
+            "strType": "面包",
+            "image_url": "https://www.themealdb.com/images/ingredients/Buns.png"
+        },
+        {
+            "idIngredient": "586",
+            "strIngredient": "冰山生菜",
+            "strDescription": "冰山莴苣是一种叶子脆脆的莴苣，长在球形的头状花序上，类似卷心菜。它被认为是一种较甜的莴苣品种，如长叶莴苣和奶油莴苣。成熟的冰山莴苣直径约为一英尺。",
+            "strType": "蔬菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Iceberg%20Lettuce.png"
+        },
+        {
+            "idIngredient": "587",
+            "strIngredient": "小黄瓜酱",
+            "strDescription": "调味酱是一种由切碎的蔬菜、水果或香草制成的经过烹饪和腌制的产品，通常用作调味品来提升主食的美味。例如酸辣酱和北美调味酱，一种与热狗或汉堡一起食用的腌黄瓜酱。",
+            "strType": "酱",
+            "image_url": "https://www.themealdb.com/images/ingredients/Gherkin%20Relish.png"
+        },
+        {
+            "idIngredient": "588",
+            "strIngredient": "芝士片",
+            "strDescription": "再制奶酪是一种由奶酪和其他未发酵的乳制品与乳化剂混合制成的食品。其中可能还含有植物油、盐、食用色素或糖等其他成分。因此，再制奶酪的口味、颜色和质地多种多样。",
+            "strType": "奶酪",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cheese%20Slices.png"
+        },
+        {
+            "idIngredient": "589",
+            "strIngredient": "缩短",
+            "strDescription": "起酥油是室温下呈固体状态的任何脂肪，用于制作易碎的糕点和其他食品。尽管黄油在室温下呈固体状态，并且经常用于制作糕点，但“起酥油”一词很少指黄油，而与人造黄油更接近。",
+            "strType": "胖的",
+            "image_url": "https://www.themealdb.com/images/ingredients/Shortening.png"
+        },
+        {
+            "idIngredient": "590",
+            "strIngredient": "温水",
+            "strDescription": "水是一种无机的、透明的、无味的、无臭的、几乎无色的化学物质，是地球水圈的主要成分，也是大多数生物体液的主要成分。尽管它不提供任何热量或有机营养，但它对所有已知的生命形式都至关重要。它的化学式是 H2O，这意味着它的每个分子都含有一个氧原子和两个氢原子，它们通过共价键连接。水是标准环境温度和压力下 H2O 的液态名称。它以雨的形式形成降水，以雾的形式形成气溶胶。云是由悬浮的水滴和冰（其固态）形成的。当细小的冰晶分解时，可能会以雪的形式沉淀下来。水的气态是蒸汽或水蒸气。水不断地通过蒸发、蒸腾（蒸散）、凝结、沉淀和径流的水循环，通常会流入大海。",
+            "strType": "液体",
+            "image_url": "https://www.themealdb.com/images/ingredients/Warm%20Water.png"
+        },
+        {
+            "idIngredient": "591",
+            "strIngredient": "开水",
+            "strDescription": "水是一种无机的、透明的、无味的、无臭的、几乎无色的化学物质，是地球水圈的主要成分，也是大多数生物体液的主要成分。尽管它不提供任何热量或有机营养，但它对所有已知的生命形式都至关重要。它的化学式是 H2O，这意味着它的每个分子都含有一个氧原子和两个氢原子，它们通过共价键连接。水是标准环境温度和压力下 H2O 的液态名称。它以雨的形式形成降水，以雾的形式形成气溶胶。云是由悬浮的水滴和冰（其固态）形成的。当细小的冰晶分解时，可能会以雪的形式沉淀下来。水的气态是蒸汽或水蒸气。水不断地通过蒸发、蒸腾（蒸散）、凝结、沉淀和径流的水循环，通常会流入大海。",
+            "strType": "液体",
+            "image_url": "https://www.themealdb.com/images/ingredients/Boiling%20Water.png"
+        },
+        {
+            "idIngredient": "592",
+            "strIngredient": "泡菜汁",
+            "strDescription": "腌制是通过在盐水中进行厌氧发酵或浸泡在醋中来保存或延长食物保质期的过程。在东亚，醋汁也用作腌制介质。腌制过程通常会影响食物的质地、口感和风味。",
+            "strType": "汁",
+            "image_url": "https://www.themealdb.com/images/ingredients/Pickle%20Juice.png"
+        },
+        {
+            "idIngredient": "593",
+            "strIngredient": "糖粉",
+            "strDescription": "糖粉，也称为糖粉或糖霜，是将砂糖磨成粉末状制成的细磨糖。它通常含有少量的抗结块剂，以防止结块并改善流动性",
+            "strType": "糖",
+            "image_url": "https://www.themealdb.com/images/ingredients/Powdered%20Sugar.png"
+        },
+        {
+            "idIngredient": "594",
+            "strIngredient": "香肠",
+            "strDescription": "Kielbasa 是一种来自波兰的肉香肠，也是波兰美食的主食。在美式英语中，该词通常指任何种类的肉制成的粗糙 U 形熏制香肠，与英式英语中的 Wiejska 香肠非常相似。",
+            "strType": "肉",
+            "image_url": "https://www.themealdb.com/images/ingredients/Kielbasa.png"
+        },
+        {
+            "idIngredient": "595",
+            "strIngredient": "波兰香肠",
+            "strDescription": "Kielbasa 是一种来自波兰的肉香肠，也是波兰美食的主食。在美式英语中，该词通常指任何种类的肉制成的粗糙 U 形熏制香肠，与英式英语中的 Wiejska 香肠非常相似。",
+            "strType": "肉",
+            "image_url": "https://www.themealdb.com/images/ingredients/Polish%20Sausage.png"
+        },
+        {
+            "idIngredient": "596",
+            "strIngredient": "酸菜",
+            "strDescription": "酸菜是切碎的生卷心菜，经过各种乳酸菌发酵而成。酸菜保质期长，酸味独特，这都是因为细菌发酵卷心菜叶中的糖分时会产生乳酸。",
+            "strType": "蔬菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sauerkraut.png"
+        },
+        {
+            "idIngredient": "597",
+            "strIngredient": "葛缕子籽",
+            "strDescription": "葛缕子，又名子午线茴香和波斯小茴香 (Carum carvi)，是一种两年生植物......例如，它用于炖牛肉、酸菜和葛缕子籽蛋糕。根可以作为蔬菜烹饪，如欧洲防风草或胡萝卜",
+            "strType": "香料",
+            "image_url": "https://www.themealdb.com/images/ingredients/Caraway%20Seed.png"
+        },
+        {
+            "idIngredient": "598",
+            "strIngredient": "鲱鱼",
+            "strDescription": "鲱鱼是饲料鱼，主要属于鲱科。鲱鱼经常成群结队地游动于渔场周围和海岸附近，尤其常见于北太平洋和北大西洋的浅水温带水域，包括波罗的海，以及南美洲西海岸。",
+            "strType": "鱼",
+            "image_url": "https://www.themealdb.com/images/ingredients/Herring.png"
+        },
+        {
+            "idIngredient": "599",
+            "strIngredient": "果酱",
+            "strDescription": "果酱是水果、蔬菜和糖的制品，通常储存在玻璃果酱罐和梅森罐中。\n\n全球范围内生产多种果酱，包括甜味果酱（例如由草莓或杏子制成的果酱）和咸味果酱（例如由西红柿或南瓜制成的果酱）。所用原料及其制作方法决定了果酱的类型；果酱、果冻和柑橘酱都是不同类型的果酱的例子，根据所用水果的不同而有所不同。在英语中，复数形式的“preserves”一词用于描述所有类型的果酱和果冻。",
+            "strType": "保存",
+            "image_url": "https://www.themealdb.com/images/ingredients/Jam.png"
+        },
+        {
+            "idIngredient": "600",
+            "strIngredient": "穆卢希耶",
+            "strDescription": "Mulukhiyah、molokheyya、molokhia 或 mulukhiyyah（阿拉伯语：ملوخية‎ mulūkhiyyah）希腊语：molokha 是 Corchorus olitorius 的叶子，英文俗称黄麻、nalta jute、tossa jute、黄麻锦葵或 Jew's mallow。它是一种蔬菜。它在中东、东非和北非国家很受欢迎，在菲律宾被称为“Saluyot”。Mulukhiyah 相当苦，煮沸后，产生的液体是一种浓稠、粘稠的肉汤；它通常被描述为“粘糊糊的”，很像煮熟的秋葵。Mulukhiyah 通常是煮熟后吃的，而不是生吃，最常见的是做成一种汤或炖菜，在当地语言中通常与蔬菜同名。传统上，mulukhiyah 是用鸡肉或至少是鸡汤调味烹制的，并与白米饭一起食用，并配上柠檬或酸橙。",
+            "strType": "蔬菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Mulukhiyah.png"
+        },
+        {
+            "idIngredient": "601",
+            "strIngredient": "寿司饭",
+            "strDescription": "作为日本的主食，了解如何烹饪日本米饭是成为日本烹饪大师的重要第一步。煮熟的日本米饭应该轻盈、蓬松，煮熟后略带粘性",
+            "strType": "米",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sushi%20Rice.png"
+        },
+        {
+            "idIngredient": "602",
+            "strIngredient": "无花果",
+            "strDescription": "无花果是桑科的一种开花植物，原产于亚洲，又名无花果。无花果果实又称无花果，因此在商业种植无花果的地区是一种重要的作物。",
+            "strType": "水果",
+            "image_url": "https://www.themealdb.com/images/ingredients/Figs.png"
+        },
+        {
+            "idIngredient": "603",
+            "strIngredient": "苹果酒",
+            "strDescription": "苹果酒 (/ˈsaɪdər/ SY-dər) 是一种由苹果发酵汁制成的酒精饮料。苹果酒在英国（尤其是英格兰西部）和爱尔兰共和国随处可见。英国的人均苹果酒消费量居世界首位，而且英国拥有世界上最大的苹果酒生产公司。英格兰西南部的苹果酒通常酒味更浓。苹果酒在许多英联邦国家也很受欢迎，例如印度、加拿大、澳大利亚和新西兰。除了英国及其前殖民地外，苹果酒在葡萄牙（主要在米尼奥和马德拉）、法国（尤其是诺曼底和布列塔尼）、意大利北部（皮埃蒙特和弗留利）和西班牙北部（尤其是阿斯图里亚斯公国和巴斯克地区）也很受欢迎。中欧也有自己的苹果酒，莱茵兰-普法尔茨州和黑森州生产一种特别酸的苹果酒，称为 Apfelwein。在美国，各种发酵苹果酒通常被称为烈性苹果酒，以区分含酒精的苹果酒和不含酒精的苹果酒或“甜苹果酒”（同样由苹果制成）。在加拿大，如果没有苹果，苹果酒就不能称为苹果酒。此外，根据加拿大食品和药品法规，苹果酒中无水酒精的含量不得低于 2.5% 或高于 13%。",
+            "strType": "喝",
+            "image_url": "https://www.themealdb.com/images/ingredients/Cider.png"
+        },
+        {
+            "idIngredient": "604",
+            "strIngredient": "甜菜根",
+            "strDescription": "甜菜根是甜菜植物的主根部分，在加拿大和美国通常称为甜菜，而在英式英语中将这种蔬菜称为甜菜根，也称为餐桌甜菜、花园甜菜、红甜菜、晚餐甜菜或金甜菜。",
+            "strType": "蔬菜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Beetroot.png"
+        },
+        {
+            "idIngredient": "605",
+            "strIngredient": "沙丁鱼",
+            "strDescription": "“沙丁鱼”和“沙丁鱼”是鲱鱼科中各种小型油性饲料鱼的常用名称。“沙丁鱼”一词最早在 15 世纪初用于英语，可能来自地中海撒丁岛，那里曾经盛产沙丁鱼。",
+            "strType": "海鲜",
+            "image_url": "https://www.themealdb.com/images/ingredients/Sardines.png"
+        },
+        {
+            "idIngredient": "606",
+            "strIngredient": "恰巴塔",
+            "strDescription": "恰巴塔面包是一种意大利白面包，由小麦粉、水、盐、酵母和橄榄油制成，由意大利威尼托大区罗维戈省阿德里亚的一位面包师于 1982 年发明，以响应法式长棍面包的流行。",
+            "strType": "面包",
+            "image_url": "https://www.themealdb.com/images/ingredients/Ciabatta.png"
+        },
+        {
+            "idIngredient": "607",
+            "strIngredient": "荞麦",
+            "strDescription": "荞麦（Fagopyrum esculentum）或普通荞麦，是一种因其类似谷物的种子和作为覆盖作物而种植的植物。“荞麦”这个名字还用于其他几个物种，例如 Fagopyrum tataricum，一种在亚洲种植的家养食用植物。尽管名字如此，荞麦与小麦并没有密切的关系，因为它不是草。相反，荞麦与酢浆草、虎杖和大黄有关。荞麦被称为假谷物，因为其种子的烹饪用途与谷物相同，因为它们的成分是复合碳水化合物。",
+            "strType": "粮食",
+            "image_url": "https://www.themealdb.com/images/ingredients/Buckwheat.png"
+        },
+        {
+            "idIngredient": "608",
+            "strIngredient": "梅子",
+            "strDescription": "西梅是一种干李子，最常见的是欧洲李子。并非所有李子品种或变种都可以干燥成西梅。西梅是欧洲李属品种的果肉紧实的果实（李子），可溶性固形物含量高，干燥过程中不会发酵。除了用于干燥的李子品种外，新鲜李子不再使用“西梅”一词。",
+            "strType": "水果",
+            "image_url": "https://www.themealdb.com/images/ingredients/Prunes.png"
+        }
+    ]
+}
