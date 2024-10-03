@@ -21,7 +21,7 @@ export default function Login({ navigation }) {
     // Updated backend URL for login
     const handleLogin = async () => {
         try {
-            const response = await axios.post('http://192.168.240.31:5000/api/auth/login', form);
+            const response = await axios.post('http://192.168.1.5:5000/api/auth/login', form);
 
             if (response.data.success) {
                 Alert.alert('Success', 'You have logged in successfully!');

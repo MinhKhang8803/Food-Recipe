@@ -27,7 +27,7 @@ export default function Register() {
     const handleRegister = async () => {
         const { fullName, email, password, phone } = form; // Destructure form values
         try {
-            const response = await axios.post('http://192.168.240.31:5000/api/auth/register', { fullName, email, password, phone });
+            const response = await axios.post('http://192.168.1.5:5000/api/auth/register', { fullName, email, password, phone });
             if (response.status === 201) {
                 Alert.alert('Success', 'Registration successful');
                 navigation.navigate('Login'); // Redirect to login after successful registration
