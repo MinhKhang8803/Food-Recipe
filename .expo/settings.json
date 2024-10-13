@@ -1,3 +1,6 @@
 {
-  "urlRandomness": "TcxXd-M"
+  "urlRandomness": "TcxXd-M",
+  "dev": true,
+  "minify": false,
+  "https": false
 }
