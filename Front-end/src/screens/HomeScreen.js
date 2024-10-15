@@ -6,11 +6,15 @@ import {
   Image,
   TextInput,
   ActivityIndicator,
+  TouchableOpacity, // Add TouchableOpacity for the buttons
+  StyleSheet, // Import StyleSheet for custom styles
 } from "react-native";
 import React, { useEffect, useState } from "react";
 import {
   MagnifyingGlassIcon,
   AdjustmentsHorizontalIcon,
+  HomeIcon,
+  UserIcon, // Import Home and User icons for the bottom navigation
 } from "react-native-heroicons/outline";
 import { StatusBar } from "expo-status-bar";
 import { heightPercentageToDP as hp } from "react-native-responsive-screen";
@@ -61,7 +65,7 @@ const loadCategoryDataForLanguage = async (lang) => {
   }
 };
 
-export default function HomeScreen() {
+export default function HomeScreen({ navigation }) {
   const [activeCategory, setActiveCategory] = useState("Beef");
   const [categories, setCategories] = useState([]);
   const [meals, setMeals] = useState([]);
@@ -87,7 +91,7 @@ export default function HomeScreen() {
   const loadMeals = async (category = "Beef") => {
     setIsLoading(true); // Start loading spinner
     const mealData = await loadMealDataForLanguage(i18n.language); // Dynamically load the meal data
-    
+
     const filteredMeals = mealData.filter(
       (meal) => meal.strCategory.toLowerCase() === category.toLowerCase()
     );
@@ -112,6 +116,16 @@ export default function HomeScreen() {
     i18n.changeLanguage(lang);
   };
 
+  // Navigate to User screen
+  const goToUserScreen = () => {
+    navigation.navigate('User'); // Make sure 'User' is a defined route
+  };
+
+  // Navigate to Home (Recipe) screen
+  const goToHomeScreen = () => {
+    navigation.navigate('Home'); // Assuming 'Home' is the Recipe screen
+  };
+
   // Filter meals based on search query
   const filteredMeals = meals.filter((meal) =>
     meal.strMeal.toLowerCase().includes(searchQuery.toLowerCase()) // Match search query (case-insensitive)
@@ -121,14 +135,14 @@ export default function HomeScreen() {
     <View className="flex-1 bg-white">
       <StatusBar style="dark" />
 
-      <SafeAreaView>
-        {isLoading ? ( // Show loading spinner if data is being loaded
+      <SafeAreaView style={{ flex: 1 }}>
+        {isLoading ? (
           <ActivityIndicator size="large" color="#f64e32" />
         ) : (
           <ScrollView
             showsVerticalScrollIndicator={false}
             contentContainerStyle={{
-              paddingBottom: 50,
+              paddingBottom: 100, // Ensure enough space for the sticky bottom navigation
             }}
             className="space-y-6 pt-14"
           >
@@ -224,6 +238,45 @@ export default function HomeScreen() {
           </ScrollView>
         )}
       </SafeAreaView>
+
+      {/* Sticky Bottom Navigation */}
+      <View style={styles.bottomNav}>
+        <TouchableOpacity style={styles.navButton} onPress={goToHomeScreen}>
+          <HomeIcon size={24} color="#075eec" />
+          <Text style={styles.navText}>{t("Home")}</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.navButton} onPress={goToUserScreen}>
+          <UserIcon size={24} color="#075eec" />
+          <Text style={styles.navText}>{t("User")}</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 }
+
+// Styles for the sticky bottom navigation
+const styles = StyleSheet.create({
+  bottomNav: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    backgroundColor: '#fff',
+    paddingVertical: 10,
+    borderTopWidth: 1,
+    borderTopColor: '#ddd',
+  },
+  navButton: {
+    flex: 1,
+    alignItems: 'center',
+  },
+  navText: {
+    marginTop: 4,
+    fontSize: 12,
+    color: '#075eec',
+  },
+});

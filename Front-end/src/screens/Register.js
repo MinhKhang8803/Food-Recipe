@@ -25,17 +25,35 @@ export default function Register() {
 
     // Updated backend URL
     const handleRegister = async () => {
-        const { fullName, email, password, phone } = form; // Destructure form values
+        const { fullName, email, password, phone } = form;
+    
+        // Ensure all required fields are filled
+        if (!fullName || !email || !password || !phone) {
+            Alert.alert('Error', 'Please fill in all fields');
+            return;
+        }
+    
         try {
-            const response = await axios.post('http://192.168.1.5:5000/api/auth/register', { fullName, email, password, phone });
+            const response = await axios.post('https://food-recipe-k8jh.onrender.com/api/auth/register', {
+                fullName,
+                email,
+                password,
+                phone
+            });
+            console.log(response.status);
+            
             if (response.status === 201) {
                 Alert.alert('Success', 'Registration successful');
-                navigation.navigate('Login'); // Redirect to login after successful registration
+                navigation.navigate('Login');
             } else {
-                Alert.alert('Error', 'Failed to register. Try again.');
+                Alert.alert('Error', response.data.message || 'Failed to register. Try again.');
             }
         } catch (error) {
-            Alert.alert('Error', error.response?.data?.message || 'An error occurred during registration.');
+            if (error.response) {
+                Alert.alert('Error', error.response.data.message || 'Server error occurred');
+            } else {
+                Alert.alert('Error', 'Unable to connect to the server');
+            }
             console.error('Registration error: ', error);
         }
     };
