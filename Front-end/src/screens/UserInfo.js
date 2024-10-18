@@ -202,7 +202,7 @@ export default function UserInfo() {
                 {/* Nút tạo bài viết */}
                 <View style={styles.createPostContainer}>
                     <TouchableOpacity style={styles.createPostButton} onPress={() => setModalVisible(true)}>
-                        <Text style={styles.createPostText}>Tạo bài viết</Text>
+                        <Text style={styles.createPostText}>Create Post</Text>
                     </TouchableOpacity>
                 </View>
 
@@ -223,7 +223,7 @@ export default function UserInfo() {
 
                                 {/* Nút xóa bài viết */}
                                 <TouchableOpacity style={styles.deleteButton} onPress={() => handleDeletePost(post._id)}>
-                                    <Text style={styles.deleteButtonText}>Xóa bài viết</Text>
+                                    <Text style={styles.deleteButtonText}>Delete Post</Text>
                                 </TouchableOpacity>
                             </View>
 
@@ -250,17 +250,17 @@ export default function UserInfo() {
 
                                     {/* Nút chọn ảnh */}
                                     <TouchableOpacity style={styles.imageButton} onPress={pickImage}>
-                                        <Text style={styles.imageButtonText}>Chọn hình ảnh</Text>
+                                        <Text style={styles.imageButtonText}>Choose Picture</Text>
                                     </TouchableOpacity>
 
                                     {/* Nút đăng bài */}
                                     <TouchableOpacity style={styles.postButton} onPress={handlePostSubmit}>
-                                        <Text style={styles.postButtonText}>Đăng</Text>
+                                        <Text style={styles.postButtonText}>Post</Text>
                                     </TouchableOpacity>
 
                                     {/* Nút hủy */}
                                     <TouchableOpacity style={styles.cancelButton} onPress={() => setModalVisible(false)}>
-                                        <Text style={styles.cancelButtonText}>Hủy</Text>
+                                        <Text style={styles.cancelButtonText}>Cancel</Text>
                                     </TouchableOpacity>
                                 </View>
                             </Modal>
@@ -278,12 +278,12 @@ export default function UserInfo() {
                             <View style={styles.commentInputContainer}>
                                 <TextInput
                                     style={styles.commentInput}
-                                    placeholder="Nhập bình luận..."
+                                    placeholder="Enter comment..."
                                     value={commentText}
                                     onChangeText={setCommentText}
                                 />
                                 <TouchableOpacity style={styles.commentButton} onPress={() => handleAddComment(post._id)}>
-                                    <Text style={styles.commentButtonText}>Bình luận</Text>
+                                    <Text style={styles.commentButtonText}>Comment</Text>
                                 </TouchableOpacity>
                             </View>
                         </View>
