@@ -11,6 +11,8 @@ import {
 } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import axios from 'axios'; // Import axios for API requests
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
 
 export default function Login({ navigation }) {
     const [form, setForm] = useState({
@@ -21,15 +23,23 @@ export default function Login({ navigation }) {
     // Updated backend URL for login
     const handleLogin = async () => {
         try {
-            const response = await axios.post('http://192.168.1.5:5000/api/auth/login', form);
-
+            const response = await axios.post('http://192.168.1.10:5000/api/auth/login', form);
+    
             if (response.data.success) {
+                const token = response.data.token;
+                await AsyncStorage.setItem('token', token);
+            
+                // Lưu thông tin người dùng, bao gồm cả avatarUrl
+                const userData = response.data.user;
+                await AsyncStorage.setItem('user', JSON.stringify(userData));
+            
                 Alert.alert('Success', 'You have logged in successfully!');
-                navigation.navigate('Home');  // Navigate to Home if login is successful
-            } else {
-                Alert.alert('Login Failed', response.data.message || 'Something went wrong.');
+                navigation.navigate('Home');
             }
+            
+            
         } catch (error) {
+            console.log('Login Error:', error);  // Thêm log để xem toàn bộ lỗi
             if (error.response) {
                 Alert.alert('Login Failed', error.response.data.message || 'Invalid credentials.');
             } else {
@@ -37,6 +47,7 @@ export default function Login({ navigation }) {
             }
         }
     };
+    
 
 
 

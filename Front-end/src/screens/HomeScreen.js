@@ -101,6 +101,18 @@ export default function HomeScreen({ navigation }) {
   };
 
   useEffect(() => {
+    const checkToken = async () => {
+        const token = await AsyncStorage.getItem('token');
+        if (!token) {
+            Alert.alert('Session Expired', 'Please log in again.');
+            navigation.navigate('Login');  // Điều hướng người dùng đến trang Login
+        }
+    };
+    checkToken();
+}, []);
+
+
+  useEffect(() => {
     loadCategories();  // Load categories dynamically
     loadMeals();       // Load meals for the default category (Beef)
   }, [i18n.language]); // Re-load when language changes

@@ -6,7 +6,8 @@ const userSchema = new mongoose.Schema({
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true },
   phone: { type: String },
-  role: { type: String, default: "user" }
+  role: { type: String, default: "user" },
+  avatarUrl: { type: String, default: '' },  // Thêm trường avatarUrl với giá trị mặc định là chuỗi rỗng
 });
 
 // Hash password before saving only if it has not been hashed already
