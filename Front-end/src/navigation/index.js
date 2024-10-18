@@ -4,9 +4,12 @@ import HomeScreen from "../screens/HomeScreen";
 import WelcomeScreen from "../screens/WelcomeScreen";
 import RecipeDetailsScreen from "../screens/RecipeDetailsScreen";
 import UserScreen from '../screens/UserScreen';
-import UserInfo from "../screens/UserInfo";
-import Login from "../screens/Login";  // Import the Login screen
-import Register from "../screens/Register";  // Import the Register screen
+import Login from "../screens/Login";  
+import Register from "../screens/Register";  
+import AdminHome from "../admin/AdminHomeScreen";
+import ReportsScreen from "../admin/ReportsScreen";  
+import PremiumNotificationsScreen from "../admin/PremiumNotificationsScreen"; 
+import BanUsersScreen from "../admin/BanUsersScreen";  
 
 const Stack = createNativeStackNavigator();
 
@@ -15,7 +18,7 @@ export default function AppNavigation() {
     <Stack.Navigator
       initialRouteName="Welcome"
       screenOptions={{
-        headerShown: false,  // Hide headers for all screens
+        headerShown: false, 
       }}
     >
       <Stack.Screen name="Welcome" component={WelcomeScreen} />
@@ -25,6 +28,10 @@ export default function AppNavigation() {
       <Stack.Screen name="User" component={UserScreen} />
       <Stack.Screen name="UserInfo" component={UserInfo} />
       <Stack.Screen name="RecipeDetails" component={RecipeDetailsScreen} />
+      <Stack.Screen name="AdminScreen" component={AdminHome} />
+      <Stack.Screen name="Reports" component={ReportsScreen} />  
+      <Stack.Screen name="PremiumNotifications" component={PremiumNotificationsScreen} />  
+      <Stack.Screen name="BanUsers" component={BanUsersScreen} />  
     </Stack.Navigator>
   );
 }

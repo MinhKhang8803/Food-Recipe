@@ -23,7 +23,7 @@ export default function Login({ navigation }) {
     // Updated backend URL for login
     const handleLogin = async () => {
         try {
-            const response = await axios.post('http://192.168.1.10:5000/api/auth/login', form);
+            const response = await axios.post('https://food-recipe-k8jh.onrender.com/api/auth/login', form);
     
             if (response.data.success) {
                 const token = response.data.token;
@@ -34,7 +34,14 @@ export default function Login({ navigation }) {
                 await AsyncStorage.setItem('user', JSON.stringify(userData));
             
                 Alert.alert('Success', 'You have logged in successfully!');
-                navigation.navigate('Home');
+                
+                if (userData.role === 'admin') {
+                    navigation.navigate('AdminScreen');  
+                } else {
+                    navigation.navigate('User', { user: userData });  
+                }
+            } else {
+                Alert.alert('Login Failed', response.data.message || 'Something went wrong.');
             }
             
             
