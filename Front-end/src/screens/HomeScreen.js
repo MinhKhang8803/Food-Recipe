@@ -102,14 +102,14 @@ export default function HomeScreen({ navigation }) {
 
   useEffect(() => {
     const checkToken = async () => {
-        const token = await AsyncStorage.getItem('token');
-        if (!token) {
-            Alert.alert('Session Expired', 'Please log in again.');
-            navigation.navigate('Login');  // Điều hướng người dùng đến trang Login
-        }
+      const token = await AsyncStorage.getItem('token');
+      if (!token) {
+        Alert.alert('Session Expired', 'Please log in again.');
+        navigation.navigate('Login');  // Điều hướng người dùng đến trang Login
+      }
     };
     checkToken();
-}, []);
+  }, []);
 
 
   useEffect(() => {
@@ -131,6 +131,10 @@ export default function HomeScreen({ navigation }) {
   // Navigate to User screen
   const goToUserScreen = () => {
     navigation.navigate('User'); // Make sure 'User' is a defined route
+  };
+
+  const goToUserInfo = () => {
+    navigation.navigate('UserInfo'); // Điều hướng đến màn hình UserInfo
   };
 
   // Navigate to Home (Recipe) screen
@@ -256,6 +260,11 @@ export default function HomeScreen({ navigation }) {
         <TouchableOpacity style={styles.navButton} onPress={goToHomeScreen}>
           <HomeIcon size={24} color="#075eec" />
           <Text style={styles.navText}>{t("Home")}</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.navButton} onPress={goToUserInfo}>
+          <UserIcon size={24} color="#075eec" />
+          <Text style={styles.navText}>{t("Profile")}</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.navButton} onPress={goToUserScreen}>
