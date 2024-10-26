@@ -142,6 +142,11 @@ export default function HomeScreen({ navigation }) {
     navigation.navigate('Home'); // Assuming 'Home' is the Recipe screen
   };
 
+  // Navigate to SocialUser screen
+  const goToSocialUser = () => {
+    navigation.navigate('SocialUser'); // Điều hướng đến màn hình SocialUser
+  };
+
   // Filter meals based on search query
   const filteredMeals = meals.filter((meal) =>
     meal.strMeal.toLowerCase().includes(searchQuery.toLowerCase()) // Match search query (case-insensitive)
@@ -264,7 +269,13 @@ export default function HomeScreen({ navigation }) {
 
         <TouchableOpacity style={styles.navButton} onPress={goToUserInfo}>
           <UserIcon size={24} color="#075eec" />
-          <Text style={styles.navText}>{t("Profile")}</Text>
+          <Text style={styles.navText}>{t("Change Information")}</Text>
+        </TouchableOpacity>
+
+        {/* Social Button */}
+        <TouchableOpacity style={styles.navButton} onPress={goToSocialUser}>
+          <UserIcon size={24} color="#075eec" />
+          <Text style={styles.navText}>{t("Social")}</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.navButton} onPress={goToUserScreen}>

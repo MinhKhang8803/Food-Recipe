@@ -9,6 +9,7 @@ import Register from "../screens/Register";
 import Login from "../screens/Login";  
 import AdminHome from "../admin/AdminHomeScreen";
 import ReportsScreen from "../admin/ReportsScreen";  
+import SocialUser from "../screens/SocialUser";
 import PremiumNotificationsScreen from "../admin/PremiumNotificationsScreen"; 
 import BanUsersScreen from "../admin/BanUsersScreen";  
 
@@ -26,6 +27,7 @@ export default function AppNavigation() {
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="Register" component={Register} />
       <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen name="SocialUser" component={SocialUser} />
       <Stack.Screen name="User" component={UserScreen} />
       <Stack.Screen name="UserInfo" component={UserInfo} />
       <Stack.Screen name="RecipeDetails" component={RecipeDetailsScreen} />

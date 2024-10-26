@@ -25,6 +25,7 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);   // Authentication routes
 app.use('/api/posts', postRoutes);  // Post-related routes
 app.use('/api/users', userRoutes);  // User-related routes (for fetching user profile, etc.)
+app.use('/api', postRoutes);
 
 // Start the server
 const PORT = process.env.PORT || 5000;

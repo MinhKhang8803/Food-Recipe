@@ -23,7 +23,7 @@ export default function Login({ navigation }) {
     // Updated backend URL for login
     const handleLogin = async () => {
         try {
-            const response = await axios.post('http://192.168.1.10:5000/api/auth/login', form);
+            const response = await axios.post('http://192.168.1.6:5000/api/auth/login', form);
     
             if (response.data.success) {
                 const token = response.data.token;
@@ -38,7 +38,7 @@ export default function Login({ navigation }) {
                 if (userData.role === 'admin') {
                     navigation.navigate('AdminScreen');  
                 } else {
-                    navigation.navigate('User', { user: userData });  
+                    navigation.navigate('Home', { user: userData });  
                 }
             } else {
                 Alert.alert('Login Failed', response.data.message || 'Something went wrong.');

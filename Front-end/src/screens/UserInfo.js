@@ -1,455 +1,173 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, Image, TouchableOpacity, SafeAreaView, ScrollView, StyleSheet, TextInput, Modal, Alert } from 'react-native';
-import { heightPercentageToDP as hp } from 'react-native-responsive-screen';
-import { useNavigation } from '@react-navigation/native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import {
+    View,
+    Text,
+    Image,
+    TouchableOpacity,
+    TextInput,
+    SafeAreaView,
+    Alert,
+} from 'react-native';
+import * as ImagePicker from 'expo-image-picker';
 import axios from 'axios';
-import * as ImagePicker from 'expo-image-picker';  // Import thư viện image-picker để chọn ảnh
+import { useNavigation } from '@react-navigation/native';
 import { storage } from '../../firebase';  // Firebase storage
+import AsyncStorage from '@react-native-async-storage/async-storage';  // AsyncStorage for JWT token
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';  // Import các hàm từ firebase/storage
 
-export default function UserInfo() {
-    const [userData, setUserData] = useState({ fullName: '', avatarUrl: '', email: '' });
-    const [modalVisible, setModalVisible] = useState(false);
-    const [postContent, setPostContent] = useState('');
-    const [imageUri, setImageUri] = useState(null);  // Lưu URI của ảnh được chọn
-    const [posts, setPosts] = useState([]);  // Danh sách bài viết
-    const [commentText, setCommentText] = useState('');  // Bình luận người dùng nhập vào
+
+export default function UserInfo() {  // Đổi tên component thành UserScreen
     const navigation = useNavigation();
-    const backendUrl = 'http://192.168.1.10:5000';  // Backend URL
+    const backendUrl = 'http://192.168.1.6:5000';  // Replace with your actual IP and port
+    const [avatar, setAvatar] = useState(null);  // Avatar image URL
+    const [userData, setUserData] = useState({
+        fullName: 'John Doe',  // Default user data, replace with actual data from your API
+        email: 'john.doe@example.com',
+    });
+
+    // Fetch user data when component loads
+    const fetchUserData = async () => {
+        try {
+            const token = await AsyncStorage.getItem('token');
+            const storedUserData = await AsyncStorage.getItem('user');
+            if (storedUserData) {
+                const userData = JSON.parse(storedUserData);
+                setUserData(userData);
+                setAvatar(userData.avatarUrl);  // Hiển thị avatar từ AsyncStorage
+            }
+    
+            if (!token) {
+                Alert.alert('Session Expired', 'Please log in again.');
+                navigation.navigate('Login');
+            }
+        } catch (error) {
+            console.error('Failed to load user data:', error);
+            Alert.alert('Error', 'Failed to load user data');
+        }
+    };
+    
 
     useEffect(() => {
-        const fetchUserData = async () => {
-            try {
-                const storedUserData = await AsyncStorage.getItem('user');
-                if (storedUserData) {
-                    setUserData(JSON.parse(storedUserData));
-                }
-            } catch (error) {
-                console.error('Error fetching user data:', error);
-            }
-        };
+        fetchUserData();  // Fetch user data when the component loads
+    }, []);
 
-        const fetchPosts = async () => {
-            try {
-                const token = await AsyncStorage.getItem('token');
-                const response = await axios.get(`${backendUrl}/api/posts/${userData._id}/posts`, {
-                    headers: {
-                        Authorization: `Bearer ${token}`,
-                    },
-                });
-                setPosts(response.data);  // Cập nhật danh sách bài viết
-            } catch (error) {
-                console.error('Error fetching posts:', error);
-            }
-        };
-
-        fetchUserData();
-        fetchPosts();  // Lấy danh sách bài viết khi component load
-    }, [userData._id]);
-
-    // Chọn ảnh từ thư viện và tải lên Firebase
+    // Function to handle image picking and uploading to Firebase
     const pickImage = async () => {
         try {
             let permissionResult = await ImagePicker.requestMediaLibraryPermissionsAsync();
             if (permissionResult.granted === false) {
-                alert("Permission to access camera roll is required!");
+                alert('Permission to access photo library is required!');
                 return;
             }
-
+    
             let pickerResult = await ImagePicker.launchImageLibraryAsync({
                 allowsEditing: true,
-                base64: false,  // Chỉ lấy URI file, không cần base64
+                base64: false,  // No base64, chỉ cần URI file
             });
-
-            if (!pickerResult.canceled && pickerResult.assets.length > 0) {
-                const selectedImage = pickerResult.assets[0].uri;  // Lấy URI ảnh
-                setImageUri(selectedImage);  // Cập nhật state cho ảnh
+    
+            console.log('Picker Result:', pickerResult);
+    
+            if (!pickerResult.canceled && pickerResult.assets && pickerResult.assets.length > 0) {
+                const selectedImage = pickerResult.assets[0].uri;  // Get the image URI
+                console.log('Selected Image URI:', selectedImage);  // Log URI for debugging
+                setAvatar(selectedImage);  // Set the selected image to state
+    
+                // Gọi hàm upload ảnh lên Firebase
+                await uploadImage(selectedImage);
+            } else {
+                Alert.alert('Error', 'No image selected');
             }
         } catch (error) {
-            console.error('Error picking image:', error);
+            console.error('Error during image picking:', error);
             Alert.alert('Error', 'Failed to pick an image.');
         }
     };
+    
 
-    // Upload ảnh lên Firebase và nhận URL ảnh
-    const uploadImageToFirebase = async (uri) => {
+    // Function to upload the image to Firebase
+    const uploadImage = async (uri) => {
         try {
             const response = await fetch(uri);
+            if (!response.ok) throw new Error('Failed to fetch image URI');
             const blob = await response.blob();
-            const storageRef = ref(storage, `image_posts/${userData.email}_${Date.now()}`);
+    
+            console.log('Uploading image to Firebase...');
+    
+            const storageRef = ref(storage, `avatars/${userData.email}_${Date.now()}`);
             const snapshot = await uploadBytes(storageRef, blob);
-            const downloadURL = await getDownloadURL(snapshot.ref);
-            return downloadURL;
-        } catch (error) {
-            console.error('Error uploading image:', error);
-            throw error;
-        }
-    };
-
-    // Submit bài viết và ảnh lên backend
-    const handlePostSubmit = async () => {
-        try {
+            const downloadURL = await getDownloadURL(storageRef);
+    
+            console.log('Image uploaded successfully, URL:', downloadURL);
+            setAvatar(downloadURL);  // Cập nhật ảnh mới trên màn hình
+    
+            // Gửi request PUT tới backend để cập nhật avatar URL
             const token = await AsyncStorage.getItem('token');
-            let imageUrl = '';
-
-            // Nếu người dùng đã chọn ảnh, tải ảnh lên Firebase
-            if (imageUri) {
-                imageUrl = await uploadImageToFirebase(imageUri);
-            }
-
-            const postData = {
-                userId: userData._id,
-                content: postContent,
-                image: imageUrl,  // Lưu URL của ảnh từ Firebase
-            };
-
-            const response = await axios.post(`${backendUrl}/api/posts/create`, postData, {
-                headers: {
-                    Authorization: `Bearer ${token}`,
-                },
-            });
-
-            if (response.status === 201) {
-                Alert.alert('Success', 'Post created successfully');
-                setPostContent('');  // Clear input
-                setImageUri(null);  // Clear selected image
-                setModalVisible(false);  // Close modal
-                setPosts([...posts, response.data.post]);  // Cập nhật danh sách bài viết
-            }
-        } catch (error) {
-            console.error('Error creating post:', error);
-            Alert.alert('Error', 'Failed to create post.');
-        }
-    };
-
-    // Hàm xóa bài viết
-    const handleDeletePost = async (postId) => {
-        try {
-            console.log('Deleting post with ID:', postId);  // LOG kiểm tra postId
-
-            const token = await AsyncStorage.getItem('token');
-            const response = await axios.delete(`${backendUrl}/api/posts/${postId}`, {
-                headers: {
-                    Authorization: `Bearer ${token}`,
-                },
-            });
-
-            if (response.status === 200) {
-                Alert.alert('Success', 'Post deleted successfully');
-                setPosts(posts.filter(post => post._id !== postId));  // Xóa bài viết khỏi danh sách
-            }
-        } catch (error) {
-            console.error('Error deleting post:', error);  // LOG lỗi
-            Alert.alert('Error', 'Failed to delete post.');
-        }
-    };
-
-    // Hàm Like bài viết
-    const handleLikePost = async (postId) => {
-        try {
-            const token = await AsyncStorage.getItem('token');
-            const response = await axios.post(`${backendUrl}/api/posts/${postId}/like`, {}, {
-                headers: {
-                    Authorization: `Bearer ${token}`,
-                },
-            });
-
-            if (response.status === 200) {
-                setPosts(posts.map(post => post._id === postId ? { ...post, likes: response.data.likes } : post));
-            }
-        } catch (error) {
-            console.error('Error liking post:', error);
-            Alert.alert('Error', 'Failed to like post.');
-        }
-    };
-
-    // Hàm thêm bình luận
-    const handleAddComment = async (postId) => {
-        try {
-            const token = await AsyncStorage.getItem('token');
-            const response = await axios.post(`${backendUrl}/api/posts/${postId}/comment`, {
-                userId: userData._id,
-                comment: commentText,
+            const result = await axios.put(`${backendUrl}/api/users/update-avatar`, {
+                avatarUrl: downloadURL,
             }, {
                 headers: {
-                    Authorization: `Bearer ${token}`,
+                    Authorization: `Bearer ${token}`,  // Đính kèm token trong request header
                 },
             });
-
-            if (response.status === 200) {
-                setPosts(posts.map(post => post._id === postId ? { ...post, comments: response.data.comments } : post));
-                setCommentText('');  // Clear comment input
+    
+            if (result.status === 200) {
+                // Cập nhật lại thông tin người dùng trong AsyncStorage sau khi URL avatar được cập nhật
+                const updatedUserData = { ...userData, avatarUrl: downloadURL };
+                await AsyncStorage.setItem('user', JSON.stringify(updatedUserData));
+    
+                setUserData(updatedUserData);  // Cập nhật lại state người dùng
+                Alert.alert('Success', 'Profile picture updated successfully!');
             }
         } catch (error) {
-            console.error('Error adding comment:', error);
-            Alert.alert('Error', 'Failed to add comment.');
+            console.error('Error uploading image:', error);
+            Alert.alert('Error', 'Failed to upload image.');
         }
     };
+    
+    
 
     return (
-        <SafeAreaView style={styles.container}>
-            <ScrollView contentContainerStyle={styles.scrollContent}>
-                {/* Header */}
-                <View style={styles.header}>
-                    <Image
-                        source={userData.avatarUrl ? { uri: userData.avatarUrl } : require('../../assets/images/default-avatar.png')}
-                        style={styles.avatar}
-                    />
-                    <Text style={styles.name}>{userData.fullName}</Text>
-                </View>
+        <SafeAreaView style={{ flex: 1, padding: 16 }}>
+            <View style={{ alignItems: 'center', marginBottom: 20 }}>
+                {/* Display Avatar */}
+                <Image
+                    source={avatar ? { uri: avatar } : require('../../assets/images/default-avatar.png')}
+                    style={{ width: 100, height: 100, borderRadius: 50 }}
+                />
 
-                {/* Nút tạo bài viết */}
-                <View style={styles.createPostContainer}>
-                    <TouchableOpacity style={styles.createPostButton} onPress={() => setModalVisible(true)}>
-                        <Text style={styles.createPostText}>Create Post</Text>
-                    </TouchableOpacity>
-                </View>
+                {/* Button to upload new avatar */}
+                <TouchableOpacity onPress={pickImage} style={{ marginTop: 10 }}>
+                    <Text style={{ color: '#075eec' }}>Change Profile Picture</Text>
+                </TouchableOpacity>
+            </View>
 
-                {/* Hiển thị danh sách bài viết */}
-                <View style={styles.postsContainer}>
-                    {posts.map((post) => (
-                        <View key={post._id} style={styles.post}>
-                            <Text style={styles.postContent}>{post.content}</Text>
-                            {post.image && (
-                                <Image source={{ uri: post.image }} style={styles.postImage} />
-                            )}
+            {/* Display user info */}
+            <View style={{ marginBottom: 20 }}>
+                <Text style={{ fontSize: 18, fontWeight: 'bold' }}>Full Name</Text>
+                <TextInput
+                    style={{ borderBottomWidth: 1, marginBottom: 10 }}
+                    value={userData.fullName}
+                    onChangeText={(text) => setUserData({ ...userData, fullName: text })}
+                />
 
-                            {/* Nút Like */}
-                            <View style={styles.postActions}>
-                                <TouchableOpacity style={styles.likeButton} onPress={() => handleLikePost(post._id)}>
-                                    <Text style={styles.likeButtonText}>Like ({post.likes})</Text>
-                                </TouchableOpacity>
+                <Text style={{ fontSize: 18, fontWeight: 'bold' }}>Email</Text>
+                <TextInput
+                    style={{ borderBottomWidth: 1 }}
+                    value={userData.email}
+                    onChangeText={(text) => setUserData({ ...userData, email: text })}
+                />
+            </View>
 
-                                {/* Nút xóa bài viết */}
-                                <TouchableOpacity style={styles.deleteButton} onPress={() => handleDeletePost(post._id)}>
-                                    <Text style={styles.deleteButtonText}>Delete Post</Text>
-                                </TouchableOpacity>
-                            </View>
-
-                            {/* Modal tạo bài viết */}
-                            <Modal
-                                animationType="slide"
-                                transparent={true}
-                                visible={modalVisible}
-                                onRequestClose={() => setModalVisible(false)}
-                            >
-                                <View style={styles.modalView}>
-                                    <TextInput
-                                        style={styles.postInput}
-                                        placeholder="Viết bài viết..."
-                                        multiline
-                                        value={postContent}
-                                        onChangeText={setPostContent}
-                                    />
-
-                                    {/* Hiển thị ảnh được chọn nếu có */}
-                                    {imageUri && (
-                                        <Image source={{ uri: imageUri }} style={styles.previewImage} />
-                                    )}
-
-                                    {/* Nút chọn ảnh */}
-                                    <TouchableOpacity style={styles.imageButton} onPress={pickImage}>
-                                        <Text style={styles.imageButtonText}>Choose Picture</Text>
-                                    </TouchableOpacity>
-
-                                    {/* Nút đăng bài */}
-                                    <TouchableOpacity style={styles.postButton} onPress={handlePostSubmit}>
-                                        <Text style={styles.postButtonText}>Post</Text>
-                                    </TouchableOpacity>
-
-                                    {/* Nút hủy */}
-                                    <TouchableOpacity style={styles.cancelButton} onPress={() => setModalVisible(false)}>
-                                        <Text style={styles.cancelButtonText}>Cancel</Text>
-                                    </TouchableOpacity>
-                                </View>
-                            </Modal>
-
-                            {/* Hiển thị bình luận */}
-                            <View style={styles.commentsContainer}>
-                                {post.comments.map((comment, index) => (
-                                    <Text key={index} style={styles.commentText}>
-                                        {comment.comment}
-                                    </Text>
-                                ))}
-                            </View>
-
-                            {/* Nhập bình luận */}
-                            <View style={styles.commentInputContainer}>
-                                <TextInput
-                                    style={styles.commentInput}
-                                    placeholder="Enter comment..."
-                                    value={commentText}
-                                    onChangeText={setCommentText}
-                                />
-                                <TouchableOpacity style={styles.commentButton} onPress={() => handleAddComment(post._id)}>
-                                    <Text style={styles.commentButtonText}>Comment</Text>
-                                </TouchableOpacity>
-                            </View>
-                        </View>
-                    ))}
-                </View>
-            </ScrollView>
+            {/* Button to save changes */}
+            <TouchableOpacity
+                onPress={() => {
+                    // TODO: Save changes logic
+                    alert('Changes saved!');
+                }}
+                style={{ backgroundColor: '#075eec', padding: 10, borderRadius: 5, alignItems: 'center' }}
+            >
+                <Text style={{ color: '#fff' }}>Save Changes</Text>
+            </TouchableOpacity>
         </SafeAreaView>
     );
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-    },
-    scrollContent: {
-        paddingBottom: 50,
-    },
-    header: {
-        alignItems: 'center',
-        backgroundColor: '#f64e32',
-        padding: 20,
-    },
-    avatar: {
-        width: 100,
-        height: 100,
-        borderRadius: 50,
-        marginBottom: 10,
-    },
-    name: {
-        fontSize: hp(3),
-        fontWeight: '700',
-        color: '#fff',
-    },
-    createPostContainer: {
-        padding: 20,
-        alignItems: 'center',
-    },
-    createPostButton: {
-        backgroundColor: '#075eec',
-        padding: 15,
-        borderRadius: 10,
-    },
-    createPostText: {
-        color: '#fff',
-        fontSize: hp(2.2),
-    },
-    modalView: {
-        margin: 20,
-        backgroundColor: 'white',
-        borderRadius: 20,
-        padding: 35,
-        alignItems: 'center',
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.25,
-        shadowRadius: 4,
-        elevation: 5,
-    },
-    postInput: {
-        height: 100,
-        width: '100%',
-        borderColor: 'gray',
-        borderWidth: 1,
-        marginBottom: 15,
-        padding: 10,
-        borderRadius: 10,
-    },
-    previewImage: {
-        width: 200,
-        height: 200,
-        resizeMode: 'cover',
-        marginBottom: 15,
-    },
-    imageButton: {
-        backgroundColor: '#f64e32',
-        padding: 10,
-        borderRadius: 10,
-        marginBottom: 10,
-    },
-    imageButtonText: {
-        color: '#fff',
-        fontSize: 16,
-    },
-    postButton: {
-        backgroundColor: '#f64e32',
-        padding: 10,
-        borderRadius: 10,
-    },
-    postButtonText: {
-        color: 'white',
-        fontSize: 18,
-    },
-    cancelButton: {
-        marginTop: 10,
-    },
-    cancelButtonText: {
-        color: '#075eec',
-    },
-    postsContainer: {
-        paddingVertical: 20,
-    },
-    post: {
-        marginBottom: 20,
-        padding: 15,
-        backgroundColor: '#f9f9f9',
-        borderRadius: 10,
-    },
-    postContent: {
-        fontSize: hp(2),
-        marginBottom: 10,
-    },
-    postImage: {
-        width: '100%',
-        height: 200,
-        borderRadius: 10,
-    },
-    postActions: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-    },
-    likeButton: {
-        backgroundColor: '#4caf50',
-        padding: 10,
-        borderRadius: 10,
-    },
-    likeButtonText: {
-        color: '#fff',
-        textAlign: 'center',
-    },
-    deleteButton: {
-        backgroundColor: '#ff4444',
-        padding: 10,
-        borderRadius: 10,
-    },
-    deleteButtonText: {
-        color: '#fff',
-        textAlign: 'center',
-    },
-    commentsContainer: {
-        marginTop: 10,
-    },
-    commentText: {
-        backgroundColor: '#e0e0e0',
-        padding: 5,
-        borderRadius: 5,
-        marginTop: 5,
-    },
-    commentInputContainer: {
-        flexDirection: 'row',
-        marginTop: 10,
-    },
-    commentInput: {
-        flex: 1,
-        borderColor: '#ccc',
-        borderWidth: 1,
-        borderRadius: 5,
-        padding: 5,
-    },
-    commentButton: {
-        backgroundColor: '#075eec',
-        padding: 10,
-        marginLeft: 5,
-        borderRadius: 5,
-    },
-    commentButtonText: {
-        color: '#fff',
-    },
-});

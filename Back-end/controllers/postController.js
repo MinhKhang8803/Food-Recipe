@@ -91,3 +91,19 @@ exports.addComment = async (req, res) => {
         res.status(500).json({ message: 'Server error', error });
     }
 };
+
+// Lấy tất cả bài đăng (dành cho trang Social)
+exports.getAllPosts = async (req, res) => {
+    const { userId } = req.query;  // Lấy userId từ query parameters
+
+    try {
+        // Lấy tất cả bài viết, loại trừ bài của người dùng hiện tại
+        const posts = await Post.find({ userId: { $ne: userId } })  // $ne: Not Equal (loại bỏ bài viết của chính người dùng)
+            .populate('userId', 'fullName avatarUrl')  // Lấy tên và avatar của người đăng bài
+            .populate('comments.userId', 'fullName');  // Lấy thông tin người dùng đã bình luận (chỉ fullName)
+
+        res.status(200).json(posts);
+    } catch (error) {
+        res.status(500).json({ message: 'Error fetching posts', error });
+    }
+};
