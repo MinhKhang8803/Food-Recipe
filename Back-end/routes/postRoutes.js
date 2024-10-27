@@ -6,7 +6,9 @@ const {
     deletePost,
     likePost,
     addComment,
-    getAllPosts
+    getAllPosts,
+    deleteComment,
+    editComment
 } = require('../controllers/postController');
 const router = express.Router();
 
@@ -33,5 +35,9 @@ router.post('/:postId/like', likePost);
 
 // Route thêm bình luận
 router.post('/:postId/comment', addComment);
+
+// Routes cho xóa và chỉnh sửa bình luận
+router.delete('/:postId/comment/:commentId', deleteComment);
+router.put('/:postId/comment/:commentId', editComment);
 
 module.exports = router;

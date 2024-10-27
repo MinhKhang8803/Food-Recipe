@@ -1,13 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, ScrollView, Image, TouchableOpacity, TextInput, StyleSheet } from 'react-native';
+import { View, Text, ScrollView, Image, TouchableOpacity, TextInput, StyleSheet, Modal, Alert } from 'react-native';
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import moment from 'moment';
 
 export default function SocialUser() {
     const [posts, setPosts] = useState([]);
     const [userId, setUserId] = useState(null);  // Lưu trữ userId của người dùng hiện tại
     const backendUrl = 'http://192.168.1.6:5000';  // Replace with your actual IP and port
     const [commentText, setCommentText] = useState('');  // Bình luận người dùng nhập vào
+    const [selectedComment, setSelectedComment] = useState(null);  // Bình luận đang chọn
+    const [modalVisible, setModalVisible] = useState(false);  // Hiển thị modal
+    const [isEditing, setIsEditing] = useState(false);  // Chế độ chỉnh sửa
+    const [newCommentText, setNewCommentText] = useState('');  // Nội dung mới của bình luận
+
 
     useEffect(() => {
         const fetchPosts = async () => {
@@ -55,7 +61,11 @@ export default function SocialUser() {
     const handleAddComment = async (postId) => {
         try {
             const token = await AsyncStorage.getItem('token');
+            const user = await AsyncStorage.getItem('user');
+            const parsedUser = JSON.parse(user);
+
             const response = await axios.post(`${backendUrl}/api/posts/${postId}/comment`, {
+                userId: parsedUser._id,
                 comment: commentText,
             }, {
                 headers: {
@@ -65,10 +75,68 @@ export default function SocialUser() {
 
             if (response.status === 200) {
                 setPosts(posts.map(post => post._id === postId ? { ...post, comments: response.data.comments } : post));
-                setCommentText('');  // Clear comment input
+                setCommentText('');
             }
         } catch (error) {
             console.error('Error adding comment:', error);
+        }
+    };
+
+    const handleLongPressComment = (comment, postId) => {
+        if (comment.userId._id === userId) {
+            setSelectedComment({ ...comment, postId });
+            setNewCommentText(comment.comment);
+            setModalVisible(true);
+        }
+    };
+
+    const handleDeleteComment = async () => {
+        try {
+            const token = await AsyncStorage.getItem('token');
+            const response = await axios.delete(
+                `${backendUrl}/api/posts/${selectedComment.postId}/comment/${selectedComment._id}`,
+                {
+                    headers: { Authorization: `Bearer ${token}` },
+                    data: { userId },
+                }
+            );
+
+            if (response.status === 200) {
+                setPosts(posts.map(post => post._id === selectedComment.postId ? { ...post, comments: response.data.comments } : post));
+                setModalVisible(false);
+                setSelectedComment(null);
+            }
+        } catch (error) {
+            console.error('Error deleting comment:', error);
+        }
+    };
+
+    const handleEditComment = async () => {
+        if (!newCommentText.trim()) {
+            Alert.alert('Error', 'Comment cannot be empty');
+            return;
+        }
+        try {
+            const token = await AsyncStorage.getItem('token');
+            const response = await axios.put(
+                `${backendUrl}/api/posts/${selectedComment.postId}/comment/${selectedComment._id}`,
+                {
+                    userId,
+                    newComment: newCommentText,
+                },
+                {
+                    headers: { Authorization: `Bearer ${token}` },
+                }
+            );
+
+            if (response.status === 200) {
+                setPosts(posts.map(post => post._id === selectedComment.postId ? { ...post, comments: response.data.comments } : post));
+                setModalVisible(false);
+                setIsEditing(false);
+                setSelectedComment(null);
+            }
+        } catch (error) {
+            console.error('Error editing comment:', error);
         }
     };
 
@@ -83,7 +151,7 @@ export default function SocialUser() {
 
                     {/* Hiển thị nội dung bài đăng */}
                     <Text style={styles.postContent}>{post.content}</Text>
-                    
+
                     {/* Hiển thị ảnh nếu có */}
                     {post.image && (
                         <Image source={{ uri: post.image }} style={styles.postImage} />
@@ -98,14 +166,17 @@ export default function SocialUser() {
                     <View style={styles.commentsContainer}>
                         <Text style={styles.commentTitle}>Comments:</Text>
                         {post.comments.map((comment, index) => (
-                            <View key={index} style={styles.commentBox}>
-                                <Text style={styles.commentUser}>
-                                    {comment.userId?.fullName || 'Anonymous'}: {/* Hiển thị tên người bình luận */}
-                                </Text>
-                                <Text style={styles.commentText}>
-                                    {comment.comment}
-                                </Text>
-                            </View>
+                            <TouchableOpacity key={index} onLongPress={() => handleLongPressComment(comment, post._id)}>
+                                <View style={styles.commentBox}>
+                                    <Text style={styles.commentUser}>
+                                        {comment.userId?.fullName || 'Anonymous'}:
+                                    </Text>
+                                    <Text style={styles.commentText}>{comment.comment}</Text>
+                                    <Text style={styles.commentDate}>
+                                        {moment(comment.updatedAt || comment.createdAt).format('HH:mm DD/MM/YYYY')}
+                                    </Text>
+                                </View>
+                            </TouchableOpacity>
                         ))}
                     </View>
 
@@ -123,6 +194,47 @@ export default function SocialUser() {
                     </View>
                 </View>
             ))}
+
+            {/* Modal hiện tùy chọn Edit và Delete */}
+            <Modal
+                animationType="slide"
+                transparent={true}
+                visible={modalVisible}
+                onRequestClose={() => {
+                    setModalVisible(false);
+                    setIsEditing(false);
+                }}
+            >
+                <View style={styles.modalOverlay}>
+                    <View style={styles.modalView}>
+                        {isEditing ? (
+                            <>
+                                <TextInput
+                                    style={styles.editInput}
+                                    value={newCommentText}
+                                    onChangeText={setNewCommentText}
+                                    placeholder="Edit your comment"
+                                />
+                                <TouchableOpacity onPress={handleEditComment} style={styles.modalButton}>
+                                    <Text style={styles.modalButtonText}>Save</Text>
+                                </TouchableOpacity>
+                            </>
+                        ) : (
+                            <>
+                                <TouchableOpacity onPress={() => setIsEditing(true)} style={styles.modalButton}>
+                                    <Text style={styles.modalButtonText}>Edit</Text>
+                                </TouchableOpacity>
+                                <TouchableOpacity onPress={handleDeleteComment} style={styles.modalButton}>
+                                    <Text style={styles.modalButtonText}>Delete</Text>
+                                </TouchableOpacity>
+                                <TouchableOpacity onPress={() => setModalVisible(false)} style={styles.modalButton}>
+                                    <Text style={styles.modalButtonText}>Cancel</Text>
+                                </TouchableOpacity>
+                            </>
+                        )}
+                    </View>
+                </View>
+            </Modal>
         </ScrollView>
     );
 }
@@ -206,5 +318,41 @@ const styles = StyleSheet.create({
     },
     commentButtonText: {
         color: '#fff',
+    },
+    modalOverlay: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    },
+    modalView: {
+        width: 250,
+        backgroundColor: 'white',
+        borderRadius: 10,
+        padding: 20,
+        alignItems: 'center',
+    },
+    modalButton: {
+        paddingVertical: 10,
+        width: '100%',
+        alignItems: 'center',
+    },
+    modalButtonText: {
+        fontSize: 16,
+        fontWeight: 'bold',
+        color: '#075eec',
+    },
+    editInput: {
+        width: '100%',
+        borderColor: '#ccc',
+        borderWidth: 1,
+        borderRadius: 5,
+        padding: 10,
+        marginBottom: 10,
+    },
+    commentDate: {
+        fontSize: 12,
+        color: 'gray',
+        marginTop: 2,
     },
 });
