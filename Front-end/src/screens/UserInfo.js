@@ -18,7 +18,7 @@ import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';  // Import 
 
 export default function UserInfo() {  // Đổi tên component thành UserScreen
     const navigation = useNavigation();
-    const backendUrl = 'http://192.168.1.6:5000';  // Replace with your actual IP and port
+    const backendUrl = 'http://192.168.1.7:5000';  // Replace with your actual IP and port
     const [avatar, setAvatar] = useState(null);  // Avatar image URL
     const [userData, setUserData] = useState({
         fullName: 'John Doe',  // Default user data, replace with actual data from your API

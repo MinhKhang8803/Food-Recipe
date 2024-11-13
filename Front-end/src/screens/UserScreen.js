@@ -7,6 +7,7 @@ import axios from 'axios';
 import * as ImagePicker from 'expo-image-picker';  // Import thư viện image-picker để chọn ảnh
 import { storage } from '../../firebase';  // Firebase storage
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';  // Import các hàm từ firebase/storage
+import moment from 'moment';
 
 export default function UserScreen() {
     const [userData, setUserData] = useState({ fullName: '', avatarUrl: '', email: '' });
@@ -16,7 +17,14 @@ export default function UserScreen() {
     const [posts, setPosts] = useState([]);  // Danh sách bài viết
     const [commentText, setCommentText] = useState('');  // Bình luận người dùng nhập vào
     const navigation = useNavigation();
-    const backendUrl = 'http://192.168.1.6:5000';  // Backend URL
+    const backendUrl = 'http://192.168.1.7:5000';  // Backend URL
+    const [userId, setUserId] = useState(null);  // ID của người dùng hiện tại
+    const [selectedComment, setSelectedComment] = useState(null);  // Bình luận được chọn
+    const [isEditing, setIsEditing] = useState(false);  // Chế độ chỉnh sửa
+    const [newCommentText, setNewCommentText] = useState('');  // Nội dung mới của bình luận
+    const [postModalVisible, setPostModalVisible] = useState(false);  // Hiển thị Modal đăng bài
+    const [commentModalVisible, setCommentModalVisible] = useState(false);  // Hiển thị Modal bình luận
+
 
     useEffect(() => {
         const fetchUserData = async () => {
@@ -192,6 +200,83 @@ export default function UserScreen() {
         }
     };
 
+    // Hàm xử lý nhấn giữ bình luận
+    const handleLongPressComment = (comment, postId) => {
+        if (comment.userId._id === userData._id) {  // Kiểm tra nếu bình luận là của người dùng hiện tại
+            console.log('Long press detected on user comment:', comment.comment); // LOG kiểm tra
+            setSelectedComment({ ...comment, postId });
+            setNewCommentText(comment.comment);  // Thiết lập nội dung ban đầu khi chỉnh sửa
+            setCommentModalVisible(true);  // Hiển thị Modal cho bình luận
+        }
+    };
+
+    // Hàm xử lý xóa bình luận
+    const handleDeleteComment = async () => {
+        try {
+            const token = await AsyncStorage.getItem('token'); // Lấy token từ AsyncStorage
+            const response = await axios.delete(
+                `${backendUrl}/api/posts/${selectedComment.postId}/comment/${selectedComment._id}`,
+                {
+                    headers: { Authorization: `Bearer ${token}` }, // Gửi token xác thực
+                    data: { userId: userData._id }, // Gửi ID người dùng trong body request
+                }
+            );
+
+            if (response.status === 200) {
+                // Cập nhật danh sách bình luận sau khi xóa thành công
+                setPosts(posts.map(post =>
+                    post._id === selectedComment.postId
+                        ? { ...post, comments: response.data.comments }
+                        : post
+                ));
+                setCommentModalVisible(false); // Đóng modal
+                setSelectedComment(null); // Clear bình luận đang chọn
+                Alert.alert('Success', 'Comment deleted successfully');
+            }
+        } catch (error) {
+            console.error('Error deleting comment:', error); // Log lỗi để debug
+            Alert.alert('Error', error.response?.data?.message || 'Failed to delete comment.');
+        }
+    };
+
+
+    // Hàm xử lý chỉnh sửa bình luận
+    const handleEditComment = async () => {
+        if (!newCommentText.trim()) {
+            Alert.alert('Error', 'Comment cannot be empty');
+            return;
+        }
+        try {
+            const token = await AsyncStorage.getItem('token'); // Lấy token từ AsyncStorage
+            const response = await axios.put(
+                `${backendUrl}/api/posts/${selectedComment.postId}/comment/${selectedComment._id}`,
+                {
+                    userId: userData._id, // Gửi đúng ID người dùng hiện tại
+                    newComment: newCommentText, // Nội dung mới của bình luận
+                },
+                {
+                    headers: { Authorization: `Bearer ${token}` }, // Đính kèm token xác thực
+                }
+            );
+
+            if (response.status === 200) {
+                // Cập nhật danh sách bình luận sau khi chỉnh sửa thành công
+                setPosts(posts.map(post =>
+                    post._id === selectedComment.postId
+                        ? { ...post, comments: response.data.comments }
+                        : post
+                ));
+                setCommentModalVisible(false); // Đóng modal
+                setIsEditing(false); // Thoát chế độ chỉnh sửa
+                setSelectedComment(null); // Clear bình luận đang chọn
+            }
+        } catch (error) {
+            console.error('Error editing comment:', error); // LOG lỗi
+            Alert.alert('Error', error.response?.data?.message || 'Failed to edit comment.'); // Hiển thị thông báo lỗi
+        }
+    };
+
+
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView contentContainerStyle={styles.scrollContent}>
@@ -218,32 +303,31 @@ export default function UserScreen() {
                     visible={modalVisible}
                     onRequestClose={() => setModalVisible(false)}
                 >
-                    <View style={styles.modalContainer}>
+                    <View style={styles.modalOverlay}>
                         <View style={styles.modalView}>
                             <TextInput
                                 style={styles.postInput}
-                                placeholder="Viết bài viết..."
-                                multiline
                                 value={postContent}
                                 onChangeText={setPostContent}
+                                placeholder="Enter your post content"
+                                multiline={true}
                             />
 
-                            {/* Hiển thị ảnh được chọn nếu có */}
                             {imageUri && (
-                                <Image source={{ uri: imageUri }} style={styles.previewImage} />
+                                <Image
+                                    source={{ uri: imageUri }}
+                                    style={styles.previewImage}
+                                />
                             )}
 
-                            {/* Nút chọn ảnh */}
                             <TouchableOpacity style={styles.imageButton} onPress={pickImage}>
-                                <Text style={styles.imageButtonText}>Choose Picture</Text>
+                                <Text style={styles.imageButtonText}>Pick an Image</Text>
                             </TouchableOpacity>
 
-                            {/* Nút đăng bài */}
                             <TouchableOpacity style={styles.postButton} onPress={handlePostSubmit}>
-                                <Text style={styles.postButtonText}>Post</Text>
+                                <Text style={styles.postButtonText}>Submit Post</Text>
                             </TouchableOpacity>
 
-                            {/* Nút hủy */}
                             <TouchableOpacity style={styles.cancelButton} onPress={() => setModalVisible(false)}>
                                 <Text style={styles.cancelButtonText}>Cancel</Text>
                             </TouchableOpacity>
@@ -251,22 +335,69 @@ export default function UserScreen() {
                     </View>
                 </Modal>
 
+                {/* Modal chỉnh sửa bình luận */}
+                <Modal
+                    animationType="slide"
+                    transparent={true}
+                    visible={commentModalVisible}
+                    onRequestClose={() => setCommentModalVisible(false)}
+                >
+                    <View style={styles.modalOverlay}>
+                        <View style={styles.modalView}>
+                            {isEditing ? (
+                                <>
+                                    <TextInput
+                                        style={styles.editInput}
+                                        value={newCommentText}
+                                        onChangeText={setNewCommentText}
+                                        placeholder="Edit your comment"
+                                    />
+                                    <TouchableOpacity onPress={handleEditComment} style={styles.modalButton}>
+                                        <Text style={styles.modalButtonText}>Save</Text>
+                                    </TouchableOpacity>
+                                </>
+                            ) : (
+                                <>
+                                    <TouchableOpacity onPress={() => setIsEditing(true)} style={styles.modalButton}>
+                                        <Text style={styles.modalButtonText}>Edit</Text>
+                                    </TouchableOpacity>
+                                    <TouchableOpacity onPress={handleDeleteComment} style={styles.modalButton}>
+                                        <Text style={styles.modalButtonText}>Delete</Text>
+                                    </TouchableOpacity>
+                                    <TouchableOpacity onPress={() => setCommentModalVisible(false)} style={styles.modalButton}>
+                                        <Text style={styles.modalButtonText}>Cancel</Text>
+                                    </TouchableOpacity>
+                                </>
+                            )}
+                        </View>
+                    </View>
+                </Modal>
+
+
                 {/* Hiển thị danh sách bài viết */}
                 <View style={styles.postsContainer}>
                     {posts.map((post) => (
                         <View key={post._id} style={styles.post}>
+                            {/* Hiển thị tên người đăng và thời gian đăng bài */}
+                            <Text style={styles.postAuthor}>
+                                {post.userId?.fullName || 'Anonymous'}
+                            </Text>
+                            <Text style={styles.postDate}>
+                                {post.createdAt ? moment(post.createdAt).format('HH:mm DD/MM/YYYY') : ''}
+                            </Text>
+
+                            {/* Hiển thị nội dung và hình ảnh bài viết */}
                             <Text style={styles.postContent}>{post.content}</Text>
                             {post.image && (
                                 <Image source={{ uri: post.image }} style={styles.postImage} />
                             )}
 
-                            {/* Nút Like */}
+                            {/* Nút Like và Xóa bài viết */}
                             <View style={styles.postActions}>
                                 <TouchableOpacity style={styles.likeButton} onPress={() => handleLikePost(post._id)}>
                                     <Text style={styles.likeButtonText}>Like ({post.likes})</Text>
                                 </TouchableOpacity>
 
-                                {/* Nút xóa bài viết */}
                                 <TouchableOpacity style={styles.deleteButton} onPress={() => handleDeletePost(post._id)}>
                                     <Text style={styles.deleteButtonText}>Delete Post</Text>
                                 </TouchableOpacity>
@@ -274,12 +405,22 @@ export default function UserScreen() {
 
                             {/* Hiển thị bình luận */}
                             <View style={styles.commentsContainer}>
+                                <Text style={styles.commentTitle}>Comments:</Text>
                                 {post.comments.map((comment, index) => (
-                                    <Text key={index} style={styles.commentText}>
-                                        {comment.comment}
-                                    </Text>
+                                    <TouchableOpacity key={index} onLongPress={() => handleLongPressComment(comment, post._id)}>
+                                        <View style={styles.commentBox}>
+                                            <Text style={styles.commentUser}>
+                                                {comment.userId?.fullName || 'Anonymous'}:
+                                            </Text>
+                                            <Text style={styles.commentText}>{comment.comment}</Text>
+                                            <Text style={styles.commentDate}>
+                                                {moment(comment.updatedAt || comment.createdAt).format('HH:mm DD/MM/YYYY')}
+                                            </Text>
+                                        </View>
+                                    </TouchableOpacity>
                                 ))}
                             </View>
+
 
                             {/* Nhập bình luận */}
                             <View style={styles.commentInputContainer}>
@@ -296,6 +437,47 @@ export default function UserScreen() {
                         </View>
                     ))}
                 </View>
+                {/* Modal hiện tùy chọn Edit và Delete */}
+                <Modal
+                    animationType="slide"
+                    transparent={true}
+                    visible={commentModalVisible}
+                    onRequestClose={() => {
+                        setCommentModalVisible(false);
+                        setIsEditing(false);
+                    }}
+                >
+                    <View style={styles.modalOverlay}>
+                        <View style={styles.modalView}>
+                            {isEditing ? (
+                                <>
+                                    <TextInput
+                                        style={styles.editInput}
+                                        value={newCommentText}
+                                        onChangeText={setNewCommentText}
+                                        placeholder="Edit your comment"
+                                    />
+                                    <TouchableOpacity onPress={handleEditComment} style={styles.modalButton}>
+                                        <Text style={styles.modalButtonText}>Save</Text>
+                                    </TouchableOpacity>
+                                </>
+                            ) : (
+                                <>
+                                    <TouchableOpacity onPress={() => setIsEditing(true)} style={styles.modalButton}>
+                                        <Text style={styles.modalButtonText}>Edit</Text>
+                                    </TouchableOpacity>
+                                    <TouchableOpacity onPress={handleDeleteComment} style={styles.modalButton}>
+                                        <Text style={styles.modalButtonText}>Delete</Text>
+                                    </TouchableOpacity>
+                                    <TouchableOpacity onPress={() => setCommentModalVisible(false)} style={styles.modalButton}>
+                                        <Text style={styles.modalButtonText}>Cancel</Text>
+                                    </TouchableOpacity>
+                                </>
+                            )}
+                        </View>
+                    </View>
+                </Modal>
+
             </ScrollView>
         </SafeAreaView>
     );
@@ -475,5 +657,64 @@ const styles = StyleSheet.create({
     },
     commentButtonText: {
         color: '#fff',
+    },
+    postAuthor: {
+        fontSize: hp(2.2),
+        fontWeight: 'bold',
+        marginBottom: 3,
+    },
+    postDate: {
+        fontSize: hp(1.8),
+        color: 'gray',
+        marginBottom: 10,
+    },
+    commentTitle: {
+        fontWeight: 'bold',
+        marginBottom: 5,
+    },
+    commentBox: {
+        backgroundColor: '#e0e0e0',
+        padding: 5,
+        borderRadius: 5,
+        marginTop: 5,
+    },
+    commentUser: {
+        fontWeight: 'bold',
+    },
+    commentDate: {
+        fontSize: 12,
+        color: 'gray',
+        marginTop: 2,
+    },
+    modalOverlay: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    },
+    modalView: {
+        width: 250,
+        backgroundColor: 'white',
+        borderRadius: 10,
+        padding: 20,
+        alignItems: 'center',
+    },
+    modalButton: {
+        paddingVertical: 10,
+        width: '100%',
+        alignItems: 'center',
+    },
+    modalButtonText: {
+        fontSize: 16,
+        fontWeight: 'bold',
+        color: '#075eec',
+    },
+    editInput: {
+        width: '100%',
+        borderColor: '#ccc',
+        borderWidth: 1,
+        borderRadius: 5,
+        padding: 10,
+        marginBottom: 10,
     },
 });

@@ -7,7 +7,7 @@ import moment from 'moment';
 export default function SocialUser() {
     const [posts, setPosts] = useState([]);
     const [userId, setUserId] = useState(null);  // Lưu trữ userId của người dùng hiện tại
-    const backendUrl = 'http://192.168.1.6:5000';  // Replace with your actual IP and port
+    const backendUrl = 'http://192.168.1.7:5000';  // Replace with your actual IP and port
     const [commentText, setCommentText] = useState('');  // Bình luận người dùng nhập vào
     const [selectedComment, setSelectedComment] = useState(null);  // Bình luận đang chọn
     const [modalVisible, setModalVisible] = useState(false);  // Hiển thị modal
