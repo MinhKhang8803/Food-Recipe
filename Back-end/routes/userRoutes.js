@@ -10,6 +10,7 @@ router.put('/update-avatar', authMiddleware, updateAvatar);
 router.post('/ban', async (req, res) => {
     const { email, reason, banDuration } = req.body;
 
+    console.log('Request body:', req.body);
     if (!email || !reason || !banDuration) {
         return res.status(400).json({ message: 'All fields are required.' });
     }
