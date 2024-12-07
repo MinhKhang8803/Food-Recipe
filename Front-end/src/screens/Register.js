@@ -104,7 +104,7 @@ export default function Register() {
                             source={require("../../assets/favicon.png")} />
 
                         <Text style={styles.title}>
-                            Sign up for <Text style={{ color: 'f64e32' }}>CookingApp</Text>
+                            Sign up for <Text style={{ color: '#f64e32' }}>CookingApp</Text>
                         </Text>
 
                         <Text style={styles.subtitle}>
