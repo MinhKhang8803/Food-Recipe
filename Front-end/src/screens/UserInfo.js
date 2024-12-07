@@ -35,7 +35,7 @@ export default function UserInfo() {  // Đổi tên component thành UserScreen
                 setUserData(userData);
                 setAvatar(userData.avatarUrl);  // Hiển thị avatar từ AsyncStorage
             }
-    
+
             if (!token) {
                 Alert.alert('Session Expired', 'Please log in again.');
                 navigation.navigate('Login');
@@ -45,7 +45,7 @@ export default function UserInfo() {  // Đổi tên component thành UserScreen
             Alert.alert('Error', 'Failed to load user data');
         }
     };
-    
+
 
     useEffect(() => {
         fetchUserData();  // Fetch user data when the component loads
@@ -59,19 +59,19 @@ export default function UserInfo() {  // Đổi tên component thành UserScreen
                 alert('Permission to access photo library is required!');
                 return;
             }
-    
+
             let pickerResult = await ImagePicker.launchImageLibraryAsync({
                 allowsEditing: true,
                 base64: false,  // No base64, chỉ cần URI file
             });
-    
+
             console.log('Picker Result:', pickerResult);
-    
+
             if (!pickerResult.canceled && pickerResult.assets && pickerResult.assets.length > 0) {
                 const selectedImage = pickerResult.assets[0].uri;  // Get the image URI
                 console.log('Selected Image URI:', selectedImage);  // Log URI for debugging
                 setAvatar(selectedImage);  // Set the selected image to state
-    
+
                 // Gọi hàm upload ảnh lên Firebase
                 await uploadImage(selectedImage);
             } else {
@@ -82,7 +82,7 @@ export default function UserInfo() {  // Đổi tên component thành UserScreen
             Alert.alert('Error', 'Failed to pick an image.');
         }
     };
-    
+
 
     // Function to upload the image to Firebase
     const uploadImage = async (uri) => {
@@ -90,16 +90,16 @@ export default function UserInfo() {  // Đổi tên component thành UserScreen
             const response = await fetch(uri);
             if (!response.ok) throw new Error('Failed to fetch image URI');
             const blob = await response.blob();
-    
+
             console.log('Uploading image to Firebase...');
-    
+
             const storageRef = ref(storage, `avatars/${userData.email}_${Date.now()}`);
             const snapshot = await uploadBytes(storageRef, blob);
             const downloadURL = await getDownloadURL(storageRef);
-    
+
             console.log('Image uploaded successfully, URL:', downloadURL);
             setAvatar(downloadURL);  // Cập nhật ảnh mới trên màn hình
-    
+
             // Gửi request PUT tới backend để cập nhật avatar URL
             const token = await AsyncStorage.getItem('token');
             const result = await axios.put(`${backendUrl}/api/users/update-avatar`, {
@@ -109,12 +109,12 @@ export default function UserInfo() {  // Đổi tên component thành UserScreen
                     Authorization: `Bearer ${token}`,  // Đính kèm token trong request header
                 },
             });
-    
+
             if (result.status === 200) {
                 // Cập nhật lại thông tin người dùng trong AsyncStorage sau khi URL avatar được cập nhật
                 const updatedUserData = { ...userData, avatarUrl: downloadURL };
                 await AsyncStorage.setItem('user', JSON.stringify(updatedUserData));
-    
+
                 setUserData(updatedUserData);  // Cập nhật lại state người dùng
                 Alert.alert('Success', 'Profile picture updated successfully!');
             }
@@ -123,8 +123,8 @@ export default function UserInfo() {  // Đổi tên component thành UserScreen
             Alert.alert('Error', 'Failed to upload image.');
         }
     };
-    
-    
+
+
 
     return (
         <SafeAreaView style={{ flex: 1, padding: 16 }}>

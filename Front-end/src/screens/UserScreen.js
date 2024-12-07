@@ -103,46 +103,46 @@ export default function UserScreen() {
     };
 
     // Submit bài viết và ảnh lên backend
-const handlePostSubmit = async () => {
-    // Kiểm tra nếu người dùng không nhập nội dung và không chọn ảnh
-    if (!postContent.trim() && !imageUri) {
-        Alert.alert('Error', 'Users need to enter complete post information');
-        return;  // Dừng lại nếu không có thông tin đầy đủ
-    }
-
-    try {
-        const token = await AsyncStorage.getItem('token');
-        let imageUrl = '';
-
-        // Nếu người dùng đã chọn ảnh, tải ảnh lên Firebase
-        if (imageUri) {
-            imageUrl = await uploadImageToFirebase(imageUri);
+    const handlePostSubmit = async () => {
+        // Kiểm tra nếu người dùng không nhập nội dung và không chọn ảnh
+        if (!postContent.trim() && !imageUri) {
+            Alert.alert('Error', 'Users need to enter complete post information');
+            return;  // Dừng lại nếu không có thông tin đầy đủ
         }
 
-        const postData = {
-            userId: userData._id,
-            content: postContent,
-            image: imageUrl,  // Lưu URL của ảnh từ Firebase
-        };
+        try {
+            const token = await AsyncStorage.getItem('token');
+            let imageUrl = '';
 
-        const response = await axios.post(`${backendUrl}/api/posts/create`, postData, {
-            headers: {
-                Authorization: `Bearer ${token}`,
-            },
-        });
+            // Nếu người dùng đã chọn ảnh, tải ảnh lên Firebase
+            if (imageUri) {
+                imageUrl = await uploadImageToFirebase(imageUri);
+            }
 
-        if (response.status === 201) {
-            Alert.alert('Success', 'Post created successfully');
-            setPostContent('');  // Clear input
-            setImageUri(null);  // Clear selected image
-            setModalVisible(false);  // Close modal
-            setPosts([...posts, response.data.post]);  // Cập nhật danh sách bài viết
+            const postData = {
+                userId: userData._id,
+                content: postContent,
+                image: imageUrl,  // Lưu URL của ảnh từ Firebase
+            };
+
+            const response = await axios.post(`${backendUrl}/api/posts/create`, postData, {
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                },
+            });
+
+            if (response.status === 201) {
+                Alert.alert('Success', 'Post created successfully');
+                setPostContent('');  // Clear input
+                setImageUri(null);  // Clear selected image
+                setModalVisible(false);  // Close modal
+                setPosts([...posts, response.data.post]);  // Cập nhật danh sách bài viết
+            }
+        } catch (error) {
+            console.error('Error creating post:', error);
+            Alert.alert('Error', 'Failed to create post.');
         }
-    } catch (error) {
-        console.error('Error creating post:', error);
-        Alert.alert('Error', 'Failed to create post.');
-    }
-};
+    };
 
     // Hàm xóa bài viết
     const handleDeletePost = async (postId) => {
@@ -209,7 +209,6 @@ const handlePostSubmit = async () => {
     // Hàm xử lý nhấn giữ bình luận
     const handleLongPressComment = (comment, postId) => {
         if (comment.userId._id === userData._id) {  // Kiểm tra nếu bình luận là của người dùng hiện tại
-            console.log('Long press detected on user comment:', comment.comment); // LOG kiểm tra
             setSelectedComment({ ...comment, postId });
             setNewCommentText(comment.comment);  // Thiết lập nội dung ban đầu khi chỉnh sửa
             setCommentModalVisible(true);  // Hiển thị Modal cho bình luận
@@ -499,7 +498,7 @@ const styles = StyleSheet.create({
     },
     header: {
         alignItems: 'center',
-        backgroundColor: '#f64e32',
+        backgroundColor: '#D07545',
         padding: 20,
     },
     avatar: {
@@ -561,7 +560,7 @@ const styles = StyleSheet.create({
         borderRadius: 10,
     },
     imageButton: {
-        backgroundColor: '#f64e32',
+        backgroundColor: '#EA6116',
         padding: 10,
         borderRadius: 10,
         marginBottom: 10,
@@ -585,7 +584,7 @@ const styles = StyleSheet.create({
         fontSize: 18,
     },
     cancelButton: {
-        backgroundColor: '#ff4444',
+        backgroundColor: 'red',
         padding: 10,
         borderRadius: 10,
         width: '100%',

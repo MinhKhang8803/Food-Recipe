@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {
   StyleSheet,
   SafeAreaView,
@@ -19,29 +19,7 @@ export default function Login({ navigation }) {
     password: '',
   });
 
-  const [error, setError] = useState(''); // State to store error message
-
-  // Reset form and error when navigating to the login page again
-  useEffect(() => {
-    const unsubscribe = navigation.addListener('focus', () => {
-      // Reset form and error when the screen is focused
-      setForm({ email: '', password: '' });
-      setError('');
-    });
-
-    return unsubscribe; // Cleanup listener when navigating away
-  }, [navigation]);
-
   const handleLogin = async () => {
-    // Reset error message before checking
-    setError('');
-
-    // Check if both email and password are provided
-    if (!form.email || !form.password) {
-      setError('User needs to enter information'); // Set error if missing
-      return; // Prevent login attempt if fields are empty
-    }
-
     try {
       const response = await axios.post('http://192.168.1.6:5000/api/auth/login', form);
 
@@ -51,9 +29,6 @@ export default function Login({ navigation }) {
         const userData = response.data.user;
         await AsyncStorage.setItem('user', JSON.stringify(userData));
         Alert.alert('Success', 'You have logged in successfully!');
-
-        // Reset form on successful login
-        setForm({ email: '', password: '' });
 
         if (userData.role === 'admin') {
           navigation.navigate('AdminScreen');
@@ -74,7 +49,7 @@ export default function Login({ navigation }) {
   };
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: '#f64e32' }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: 'white' }}>
       <View style={styles.container}>
         <KeyboardAwareScrollView>
           <View style={styles.header}>
@@ -85,7 +60,7 @@ export default function Login({ navigation }) {
               source={require("../../assets/favicon.png")}
             />
             <Text style={styles.title}>
-              Sign in to <Text style={{ color: '#075eec' }}>CookingApp</Text>
+              Sign in to <Text style={{ color: '#f64e32' }}>CookingApp</Text>
             </Text>
             <Text style={styles.subtitle}>
               Get access to your recipes and more
@@ -122,10 +97,9 @@ export default function Login({ navigation }) {
               />
             </View>
 
-            {/* Display error message if there is one */}
-            {error ? (
-              <Text style={styles.errorText}>{error}</Text>
-            ) : null}
+            <TouchableOpacity onPress={() => navigation.navigate('ForgotPassword')}>
+              <Text style={styles.formLink}>Forgot password?</Text>
+            </TouchableOpacity>
 
             <View style={styles.formAction}>
               <TouchableOpacity onPress={handleLogin}>
@@ -190,6 +164,13 @@ const styles = StyleSheet.create({
     marginTop: 4,
     marginBottom: 16,
   },
+  formLink: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#075eec',
+    textAlign: 'center',
+    marginBottom: 16,
+  },
   formFooter: {
     fontSize: 15,
     fontWeight: '600',
@@ -237,12 +218,5 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: '#fff',
   },
-  /** Error Text */
-  errorText: {
-    color: 'red',
-    fontSize: 14,
-    fontWeight: '600',
-    textAlign: 'center',
-    marginBottom: 16,
-  },
 });
+
