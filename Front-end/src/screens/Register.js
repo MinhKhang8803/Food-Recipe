@@ -188,7 +188,7 @@ export default function Register() {
 
                 <TouchableOpacity onPress={() => navigation.navigate('Login')} style={{ marginTop: 'auto' }}>
                     <Text style={styles.formFooter}>
-                        Already have an account? <Text style={{ textDecorationLine: 'underline' }}>Sign in</Text>
+                        Already have an account? <Text style={{ textDecorationLine: 'underline', color: '#f64e32' }}>Sign in</Text>
                     </Text>
                 </TouchableOpacity>
             </View>
@@ -283,8 +283,8 @@ const styles = StyleSheet.create({
         paddingVertical: 10,
         paddingHorizontal: 20,
         borderWidth: 1,
-        backgroundColor: '#075eec',
-        borderColor: '#075eec',
+        backgroundColor: '#f64e32',
+        borderColor: '#f64e32',
     },
     btnText: {
         fontSize: 18,
