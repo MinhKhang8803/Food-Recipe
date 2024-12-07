@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   StyleSheet,
   SafeAreaView,
@@ -19,7 +19,29 @@ export default function Login({ navigation }) {
     password: '',
   });
 
+  const [error, setError] = useState(''); // State to store error message
+
+  // Reset form and error when navigating to the login page again
+  useEffect(() => {
+    const unsubscribe = navigation.addListener('focus', () => {
+      // Reset form and error when the screen is focused
+      setForm({ email: '', password: '' });
+      setError('');
+    });
+
+    return unsubscribe; // Cleanup listener when navigating away
+  }, [navigation]);
+
   const handleLogin = async () => {
+    // Reset error message before checking
+    setError('');
+
+    // Check if both email and password are provided
+    if (!form.email || !form.password) {
+      setError('User needs to enter information'); // Set error if missing
+      return; // Prevent login attempt if fields are empty
+    }
+
     try {
       const response = await axios.post('http://192.168.1.6:5000/api/auth/login', form);
 
@@ -30,6 +52,9 @@ export default function Login({ navigation }) {
         await AsyncStorage.setItem('user', JSON.stringify(userData));
         Alert.alert('Success', 'You have logged in successfully!');
 
+        // Reset form on successful login
+        setForm({ email: '', password: '' });
+
         if (userData.role === 'admin') {
           navigation.navigate('AdminScreen');
         } else {
@@ -39,7 +64,6 @@ export default function Login({ navigation }) {
         Alert.alert('Login Failed', response.data.message || 'Something went wrong.');
       }
     } catch (error) {
-      console.log('Login Error:', error);
       if (error.response) {
         Alert.alert('Login Failed', error.response.data.message || 'Invalid credentials.');
       } else {
@@ -97,9 +121,10 @@ export default function Login({ navigation }) {
               />
             </View>
 
-            <TouchableOpacity onPress={() => navigation.navigate('ForgotPassword')}>
-              <Text style={styles.formLink}>Forgot password?</Text>
-            </TouchableOpacity>
+            {/* Display error message if there is one */}
+            {error ? (
+              <Text style={styles.errorText}>{error}</Text>
+            ) : null}
 
             <View style={styles.formAction}>
               <TouchableOpacity onPress={handleLogin}>
@@ -164,13 +189,6 @@ const styles = StyleSheet.create({
     marginTop: 4,
     marginBottom: 16,
   },
-  formLink: {
-    fontSize: 16,
-    fontWeight: '600',
-    color: '#075eec',
-    textAlign: 'center',
-    marginBottom: 16,
-  },
   formFooter: {
     fontSize: 15,
     fontWeight: '600',
@@ -218,5 +236,12 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: '#fff',
   },
+  /** Error Text */
+  errorText: {
+    color: 'red',
+    fontSize: 14,
+    fontWeight: '600',
+    textAlign: 'center',
+    marginBottom: 16,
+  },
 });
-
