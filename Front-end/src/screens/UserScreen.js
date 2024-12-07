@@ -17,7 +17,7 @@ export default function UserScreen() {
     const [posts, setPosts] = useState([]);  // Danh sách bài viết
     const [commentText, setCommentText] = useState('');  // Bình luận người dùng nhập vào
     const navigation = useNavigation();
-    const backendUrl = 'http://192.168.1.7:5000';  // Backend URL
+    const backendUrl = 'http://192.168.1.6:5000';  // Backend URL
     const [userId, setUserId] = useState(null);  // ID của người dùng hiện tại
     const [selectedComment, setSelectedComment] = useState(null);  // Bình luận được chọn
     const [isEditing, setIsEditing] = useState(false);  // Chế độ chỉnh sửa
@@ -103,40 +103,46 @@ export default function UserScreen() {
     };
 
     // Submit bài viết và ảnh lên backend
-    const handlePostSubmit = async () => {
-        try {
-            const token = await AsyncStorage.getItem('token');
-            let imageUrl = '';
+const handlePostSubmit = async () => {
+    // Kiểm tra nếu người dùng không nhập nội dung và không chọn ảnh
+    if (!postContent.trim() && !imageUri) {
+        Alert.alert('Error', 'Users need to enter complete post information');
+        return;  // Dừng lại nếu không có thông tin đầy đủ
+    }
 
-            // Nếu người dùng đã chọn ảnh, tải ảnh lên Firebase
-            if (imageUri) {
-                imageUrl = await uploadImageToFirebase(imageUri);
-            }
+    try {
+        const token = await AsyncStorage.getItem('token');
+        let imageUrl = '';
 
-            const postData = {
-                userId: userData._id,
-                content: postContent,
-                image: imageUrl,  // Lưu URL của ảnh từ Firebase
-            };
-
-            const response = await axios.post(`${backendUrl}/api/posts/create`, postData, {
-                headers: {
-                    Authorization: `Bearer ${token}`,
-                },
-            });
-
-            if (response.status === 201) {
-                Alert.alert('Success', 'Post created successfully');
-                setPostContent('');  // Clear input
-                setImageUri(null);  // Clear selected image
-                setModalVisible(false);  // Close modal
-                setPosts([...posts, response.data.post]);  // Cập nhật danh sách bài viết
-            }
-        } catch (error) {
-            console.error('Error creating post:', error);
-            Alert.alert('Error', 'Failed to create post.');
+        // Nếu người dùng đã chọn ảnh, tải ảnh lên Firebase
+        if (imageUri) {
+            imageUrl = await uploadImageToFirebase(imageUri);
         }
-    };
+
+        const postData = {
+            userId: userData._id,
+            content: postContent,
+            image: imageUrl,  // Lưu URL của ảnh từ Firebase
+        };
+
+        const response = await axios.post(`${backendUrl}/api/posts/create`, postData, {
+            headers: {
+                Authorization: `Bearer ${token}`,
+            },
+        });
+
+        if (response.status === 201) {
+            Alert.alert('Success', 'Post created successfully');
+            setPostContent('');  // Clear input
+            setImageUri(null);  // Clear selected image
+            setModalVisible(false);  // Close modal
+            setPosts([...posts, response.data.post]);  // Cập nhật danh sách bài viết
+        }
+    } catch (error) {
+        console.error('Error creating post:', error);
+        Alert.alert('Error', 'Failed to create post.');
+    }
+};
 
     // Hàm xóa bài viết
     const handleDeletePost = async (postId) => {
