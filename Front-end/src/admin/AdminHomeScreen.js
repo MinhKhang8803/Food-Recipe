@@ -33,10 +33,6 @@ const AdminHomeScreen = ({ navigation }) => {
             <TouchableOpacity style={styles.navButton} onPress={() => navigation.navigate('BanUsers')}>
                 <Text style={styles.navButtonText}>Ban User</Text>
             </TouchableOpacity>
-
-            <TouchableOpacity style={styles.navButton} onPress={() => navigation.navigate('PremiumNotifications')}>
-                <Text style={styles.navButtonText}>Premium Purchases</Text>
-            </TouchableOpacity>
         </ScrollView>
     );
 };

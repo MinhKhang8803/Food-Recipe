@@ -1,16 +1,32 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TextInput, TouchableOpacity, ScrollView, Alert } from 'react-native';
+import axios from 'axios';
 
 const BanUsersScreen = () => {
     const [email, setEmail] = useState('');
     const [reason, setReason] = useState('');
     const [banDuration, setBanDuration] = useState('');
 
-    const handleBan = () => {
-        if (email && reason && banDuration) {
-            Alert.alert('User Banned', `User ${email} has been banned for ${banDuration} with reason: ${reason}`);
-        } else {
+    const handleBan = async () => {
+        if (!email || !reason || !banDuration) {
             Alert.alert('Error', 'Please fill out all fields');
+            return;
+        }
+
+        try {
+            const response = await axios.post(
+                'https://food-recipe-k8jh.onrender.com/api/users/ban-user',
+                { email, reason, banDuration },
+                { headers: { Authorization: 'Bearer <YOUR_AUTH_TOKEN>' } } // Replace with actual auth token
+            );
+
+            Alert.alert('Success', `User ${email} has been banned successfully!`);
+            setEmail('');
+            setReason('');
+            setBanDuration('');
+        } catch (error) {
+            console.error('Ban error:', error.response.data.message);
+            Alert.alert('Error', error.response?.data?.message || 'Something went wrong');
         }
     };
 

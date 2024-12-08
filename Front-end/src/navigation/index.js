@@ -33,7 +33,6 @@ export default function AppNavigation() {
       <Stack.Screen name="RecipeDetails" component={RecipeDetailsScreen} />
       <Stack.Screen name="AdminScreen" component={AdminHome} />
       <Stack.Screen name="Reports" component={ReportsScreen} />  
-      <Stack.Screen name="PremiumNotifications" component={PremiumNotificationsScreen} />  
       <Stack.Screen name="BanUsers" component={BanUsersScreen} />  
     </Stack.Navigator>
   );

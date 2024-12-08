@@ -1,21 +1,16 @@
-// controllers/userController.js
-const User = require('../models/User');  // Declare User model only once at the top
+const User = require('../models/User');  
 
-// Update the avatar URL for the user
-// Update avatar URL
-// Update avatar URL
 exports.updateAvatar = async (req, res) => {
     const { avatarUrl } = req.body;
 
     try {
-        const user = await User.findById(req.user.userId);  // Lấy thông tin user từ token
+        const user = await User.findById(req.user.userId); 
         if (!user) {
             return res.status(404).json({ message: 'User not found' });
         }
 
-        // Cập nhật URL avatar mới
         user.avatarUrl = avatarUrl;  
-        await user.save();  // Lưu thay đổi vào MongoDB
+        await user.save(); 
 
         return res.status(200).json({ message: 'Avatar updated successfully', avatarUrl: user.avatarUrl });
     } catch (error) {
@@ -24,8 +19,6 @@ exports.updateAvatar = async (req, res) => {
     }
 };
 
-
-// Fetch logged-in user profile
 exports.getUserProfile = async (req, res) => {
     try {
         console.log('Fetching user with ID:', req.user.id);
@@ -39,5 +32,34 @@ exports.getUserProfile = async (req, res) => {
     } catch (error) {
         console.error('Error fetching user profile:', error);
         res.status(500).json({ message: 'Server error' });
+    }
+};
+
+exports.banUser = async (req, res) => {
+    const { email, reason, banDuration } = req.body;
+
+    try {
+        const user = await User.findOne({ email });
+        if (!user) {
+            return res.status(404).json({ message: 'User not found' });
+        }
+
+        const existingBan = await Ban.findOne({ email });
+        if (existingBan) {
+            return res.status(400).json({ message: 'User is already banned' });
+        }
+
+        const newBan = new Ban({
+            email,
+            reason,
+            banDuration,
+        });
+
+        await newBan.save();
+
+        return res.status(200).json({ message: 'User banned successfully', ban: newBan });
+    } catch (error) {
+        console.error('Error banning user:', error);
+        return res.status(500).json({ message: 'Server error' });
     }
 };
