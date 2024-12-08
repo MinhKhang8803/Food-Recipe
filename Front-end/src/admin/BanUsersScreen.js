@@ -6,7 +6,7 @@ import axios from 'axios';
 const BanUsersScreen = () => {
     const [email, setEmail] = useState('');
     const [reason, setReason] = useState('');
-    const [banDuration, setBanDuration] = useState('7 days'); // Default selected option
+    const [banDuration, setBanDuration] = useState('7 days'); 
 
     const handleBan = async () => {
         if (!email || !reason || !banDuration) {
@@ -16,10 +16,9 @@ const BanUsersScreen = () => {
 
         try {
             const response = await axios.post(
-                'http://<YOUR_BACKEND_API_URL>/api/users/ban-user',
+                'https://food-recipe-k8jh.onrender.com/api/users/ban-user',
                 { email, reason, banDuration },
-                { headers: { Authorization: 'Bearer <YOUR_AUTH_TOKEN>' } }
-            );
+            );a
 
             Alert.alert('Success', `User ${email} has been banned for ${banDuration}`);
             setEmail('');

@@ -6,14 +6,16 @@ import moment from 'moment';
 
 export default function SocialUser() {
     const [posts, setPosts] = useState([]);
-    const [userId, setUserId] = useState(null);  // Lưu trữ userId của người dùng hiện tại
-    const backendUrl = 'http://192.168.1.6:5000';  // Replace with your actual IP and port
-    const [commentText, setCommentText] = useState('');  // Bình luận người dùng nhập vào
-    const [selectedComment, setSelectedComment] = useState(null);  // Bình luận đang chọn
-    const [modalVisible, setModalVisible] = useState(false);  // Hiển thị modal
-    const [isEditing, setIsEditing] = useState(false);  // Chế độ chỉnh sửa
-    const [newCommentText, setNewCommentText] = useState('');  // Nội dung mới của bình luận
-
+    const [userId, setUserId] = useState(null);
+    const [searchKeyword, setSearchKeyword] = useState('');
+    const [searchResults, setSearchResults] = useState([]);
+    const [isSearching, setIsSearching] = useState(false);
+    const backendUrl = 'https://food-recipe-k8jh.onrender.com';
+    const [commentText, setCommentText] = useState('');
+    const [selectedComment, setSelectedComment] = useState(null);
+    const [modalVisible, setModalVisible] = useState(false);
+    const [isEditing, setIsEditing] = useState(false);
+    const [newCommentText, setNewCommentText] = useState('');
 
     useEffect(() => {
         const fetchPosts = async () => {
@@ -21,25 +23,41 @@ export default function SocialUser() {
                 const token = await AsyncStorage.getItem('token');
                 const user = await AsyncStorage.getItem('user');
                 const parsedUser = JSON.parse(user);
-                setUserId(parsedUser._id);  // Lưu userId của người dùng hiện tại
+                setUserId(parsedUser._id);
 
-                // Gọi API để lấy bài viết của những người khác
                 const response = await axios.get(`${backendUrl}/api/social/posts`, {
-                    params: { userId: parsedUser._id },  // Truyền userId qua query parameters
+                    params: { userId: parsedUser._id },
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
                 });
-                setPosts(response.data);  // Cập nhật danh sách bài viết
+                setPosts(response.data);
             } catch (error) {
-                console.error('Error fetching posts:', error);  // LOG lỗi để kiểm tra
+                console.error('Error fetching posts:', error);
             }
         };
 
-        fetchPosts();  // Lấy danh sách bài đăng khi component load
+        fetchPosts();
     }, []);
 
-    // Hàm Like bài viết
+    const handleSearch = async () => {
+        if (!searchKeyword.trim()) return;
+        setIsSearching(true);
+
+        try {
+            const token = await AsyncStorage.getItem('token');
+            const response = await axios.get(`${backendUrl}/api/users/search`, {
+                params: { keyword: searchKeyword },
+                headers: { Authorization: `Bearer ${token}` },
+            });
+            setSearchResults(response.data);
+        } catch (error) {
+            console.error('Error searching users:', error);
+        } finally {
+            setIsSearching(false);
+        }
+    };
+
     const handleLikePost = async (postId) => {
         try {
             const token = await AsyncStorage.getItem('token');
@@ -57,7 +75,6 @@ export default function SocialUser() {
         }
     };
 
-    // Hàm thêm bình luận
     const handleAddComment = async (postId) => {
         try {
             const token = await AsyncStorage.getItem('token');
@@ -144,25 +161,61 @@ export default function SocialUser() {
         <ScrollView contentContainerStyle={styles.container}>
             <Text style={styles.title}>Social Feed</Text>
 
+            <View style={styles.searchContainer}>
+                <TextInput
+                    style={styles.searchInput}
+                    placeholder="Search users..."
+                    value={searchKeyword}
+                    onChangeText={setSearchKeyword}
+                    onSubmitEditing={handleSearch}
+                />
+                <TouchableOpacity style={styles.searchButton} onPress={handleSearch}>
+                    <Text style={styles.searchButtonText}>Search</Text>
+                </TouchableOpacity>
+            </View>
+
+            {searchResults.length > 0 && (
+                <View style={styles.searchResultsContainer}>
+                    <Text style={styles.searchResultsTitle}>Search Results:</Text>
+                    <FlatList
+                        data={searchResults}
+                        keyExtractor={(item) => item._id}
+                        renderItem={({ item }) => (
+                            <View style={styles.userItem}>
+                                <Text style={styles.userName}>{item.fullName || 'Anonymous'}</Text>
+                                {item.avatarUrl && (
+                                    <Image source={{ uri: item.avatarUrl }} style={styles.userAvatar} />
+                                )}
+                            </View>
+                        )}
+                    />
+                </View>
+            )}
+
+            {/* Danh sách bài viết */}
+            <Text style={styles.title}>Social Feed</Text>
             {posts.map((post) => (
                 <View key={post._id} style={styles.post}>
-                    {/* Hiển thị tên tác giả ở đây */}
+                    <Text style={styles.postAuthor}>{post.userId?.fullName || 'Anonymous'}</Text>
+                    <Text style={styles.postContent}>{post.content}</Text>
+                    {post.image && <Image source={{ uri: post.image }} style={styles.postImage} />}
+                </View>
+            ))}
+
+            {posts.map((post) => (
+                <View key={post._id} style={styles.post}>
                     <Text style={styles.postAuthor}>{post.userId?.fullName || 'Anonymous'}</Text>
 
-                    {/* Hiển thị nội dung bài đăng */}
                     <Text style={styles.postContent}>{post.content}</Text>
 
-                    {/* Hiển thị ảnh nếu có */}
                     {post.image && (
                         <Image source={{ uri: post.image }} style={styles.postImage} />
                     )}
 
-                    {/* Nút Like */}
                     <TouchableOpacity style={styles.likeButton} onPress={() => handleLikePost(post._id)}>
                         <Text style={styles.likeButtonText}>Like ({post.likes})</Text>
                     </TouchableOpacity>
 
-                    {/* Hiển thị bình luận */}
                     <View style={styles.commentsContainer}>
                         <Text style={styles.commentTitle}>Comments:</Text>
                         {post.comments.map((comment, index) => (
@@ -180,7 +233,6 @@ export default function SocialUser() {
                         ))}
                     </View>
 
-                    {/* Nhập bình luận */}
                     <View style={styles.commentInputContainer}>
                         <TextInput
                             style={styles.commentInput}
@@ -195,7 +247,6 @@ export default function SocialUser() {
                 </View>
             ))}
 
-            {/* Modal hiện tùy chọn Edit và Delete */}
             <Modal
                 animationType="slide"
                 transparent={true}
@@ -243,6 +294,38 @@ const styles = StyleSheet.create({
     container: {
         padding: 20,
     },
+    searchContainer: { flexDirection: 'row', marginBottom: 10 },
+    searchInput: {
+        flex: 1,
+        borderColor: '#ccc',
+        borderWidth: 1,
+        borderRadius: 5,
+        padding: 5,
+    },
+    searchButton: {
+        backgroundColor: '#4caf50',
+        padding: 10,
+        marginLeft: 5,
+        borderRadius: 5,
+        alignItems: 'center',
+    },
+    searchButtonText: { color: '#fff' },
+    searchResultsContainer: { marginTop: 10 },
+    searchResultsTitle: { fontSize: 18, fontWeight: 'bold', marginBottom: 5 },
+    userItem: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        backgroundColor: '#f1f1f1',
+        padding: 10,
+        borderRadius: 5,
+        marginBottom: 5,
+    },
+    userName: { fontSize: 16, marginRight: 10 },
+    userAvatar: { width: 40, height: 40, borderRadius: 20 },
+    post: { marginBottom: 20, padding: 15, backgroundColor: '#f9f9f9', borderRadius: 10 },
+    postAuthor: { fontSize: 18, fontWeight: 'bold', marginBottom: 5 },
+    postContent: { fontSize: 16, marginBottom: 10 },
+    postImage: { width: '100%', height: 200, borderRadius: 10, marginBottom: 10 },
     title: {
         fontSize: 24,
         marginBottom: 20,

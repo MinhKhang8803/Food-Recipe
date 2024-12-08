@@ -11,7 +11,6 @@ import AdminHome from "../admin/AdminHomeScreen";
 import ReportsScreen from "../admin/ReportsScreen";  
 import SocialUser from "../screens/SocialUser";
 import PremiumNotificationsScreen from "../admin/PremiumNotificationsScreen"; 
-import BanUsersScreen from "../admin/BanUsersScreen";  
 
 const Stack = createNativeStackNavigator();
 

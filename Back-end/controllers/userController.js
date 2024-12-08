@@ -36,6 +36,21 @@ exports.getUserProfile = async (req, res) => {
     }
 };
 
+exports.searchUsers = async (req, res) => {
+    const { keyword } = req.query; 
+
+    try {
+        const users = await User.find({
+            fullName: { $regex: keyword, $options: 'i' }, 
+        }).select('fullName avatarUrl');
+
+        res.status(200).json(users);
+    } catch (error) {
+        console.error('Error searching users:', error);
+        res.status(500).json({ message: 'Server error' });
+    }
+};
+
 exports.banUser = async (req, res) => {
     const { email, reason, banDuration } = req.body;
 

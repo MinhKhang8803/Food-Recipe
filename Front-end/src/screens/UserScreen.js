@@ -17,7 +17,7 @@ export default function UserScreen() {
     const [posts, setPosts] = useState([]);  // Danh sách bài viết
     const [commentText, setCommentText] = useState('');  // Bình luận người dùng nhập vào
     const navigation = useNavigation();
-    const backendUrl = 'http://192.168.1.6:5000';  // Backend URL
+    const backendUrl = 'https://food-recipe-k8jh.onrender.com';  // Backend URL
     const [userId, setUserId] = useState(null);  // ID của người dùng hiện tại
     const [selectedComment, setSelectedComment] = useState(null);  // Bình luận được chọn
     const [isEditing, setIsEditing] = useState(false);  // Chế độ chỉnh sửa
