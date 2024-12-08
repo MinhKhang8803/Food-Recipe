@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, ScrollView, Image, TouchableOpacity, TextInput, StyleSheet, Modal, Alert } from 'react-native';
+import { View, Text, ScrollView, Image, TouchableOpacity, TextInput, StyleSheet, Modal, Alert, FlatList } from 'react-native';
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import moment from 'moment';
+import { useNavigation } from '@react-navigation/native';
 
 export default function SocialUser() {
     const [posts, setPosts] = useState([]);
@@ -16,6 +17,7 @@ export default function SocialUser() {
     const [modalVisible, setModalVisible] = useState(false);
     const [isEditing, setIsEditing] = useState(false);
     const [newCommentText, setNewCommentText] = useState('');
+    const navigation = useNavigation();
 
     useEffect(() => {
         const fetchPosts = async () => {
@@ -181,18 +183,20 @@ export default function SocialUser() {
                         data={searchResults}
                         keyExtractor={(item) => item._id}
                         renderItem={({ item }) => (
-                            <View style={styles.userItem}>
+                            <TouchableOpacity
+                                style={styles.userItem}
+                                onPress={() => navigation.navigate('OtherUserScreen', { userId: item._id })}
+                            >
                                 <Text style={styles.userName}>{item.fullName || 'Anonymous'}</Text>
                                 {item.avatarUrl && (
                                     <Image source={{ uri: item.avatarUrl }} style={styles.userAvatar} />
                                 )}
-                            </View>
+                            </TouchableOpacity>
                         )}
                     />
                 </View>
             )}
 
-            {/* Danh sách bài viết */}
             <Text style={styles.title}>Social Feed</Text>
             {posts.map((post) => (
                 <View key={post._id} style={styles.post}>

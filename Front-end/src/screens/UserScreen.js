@@ -4,26 +4,26 @@ import { heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { useNavigation } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
-import * as ImagePicker from 'expo-image-picker';  // Import thư viện image-picker để chọn ảnh
-import { storage } from '../../firebase';  // Firebase storage
-import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';  // Import các hàm từ firebase/storage
+import * as ImagePicker from 'expo-image-picker';  
+import { storage } from '../../firebase'; 
+import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';  
 import moment from 'moment';
 
 export default function UserScreen() {
     const [userData, setUserData] = useState({ fullName: '', avatarUrl: '', email: '' });
     const [modalVisible, setModalVisible] = useState(false);
     const [postContent, setPostContent] = useState('');
-    const [imageUri, setImageUri] = useState(null);  // Lưu URI của ảnh được chọn
-    const [posts, setPosts] = useState([]);  // Danh sách bài viết
-    const [commentText, setCommentText] = useState('');  // Bình luận người dùng nhập vào
+    const [imageUri, setImageUri] = useState(null);  
+    const [posts, setPosts] = useState([]); 
+    const [commentText, setCommentText] = useState(''); 
     const navigation = useNavigation();
-    const backendUrl = 'https://food-recipe-k8jh.onrender.com';  // Backend URL
-    const [userId, setUserId] = useState(null);  // ID của người dùng hiện tại
-    const [selectedComment, setSelectedComment] = useState(null);  // Bình luận được chọn
-    const [isEditing, setIsEditing] = useState(false);  // Chế độ chỉnh sửa
-    const [newCommentText, setNewCommentText] = useState('');  // Nội dung mới của bình luận
-    const [postModalVisible, setPostModalVisible] = useState(false);  // Hiển thị Modal đăng bài
-    const [commentModalVisible, setCommentModalVisible] = useState(false);  // Hiển thị Modal bình luận
+    const backendUrl = 'https://food-recipe-k8jh.onrender.com';  
+    const [userId, setUserId] = useState(null);  
+    const [selectedComment, setSelectedComment] = useState(null); 
+    const [isEditing, setIsEditing] = useState(false);  
+    const [newCommentText, setNewCommentText] = useState(''); 
+    const [postModalVisible, setPostModalVisible] = useState(false);  
+    const [commentModalVisible, setCommentModalVisible] = useState(false); 
 
 
     useEffect(() => {
@@ -39,13 +39,13 @@ export default function UserScreen() {
             }
         };
 
-        fetchUserData();  // Gọi hàm lấy dữ liệu người dùng khi component load
+        fetchUserData();  
     }, []);
 
     useEffect(() => {
         const fetchPosts = async () => {
             if (!userData._id) {
-                return;  // Nếu userData._id chưa được gán, không gọi API lấy bài viết
+                return; 
             }
             try {
                 const token = await AsyncStorage.getItem('token');
@@ -54,16 +54,15 @@ export default function UserScreen() {
                         Authorization: `Bearer ${token}`,
                     },
                 });
-                setPosts(response.data);  // Cập nhật danh sách bài viết
+                setPosts(response.data);  
             } catch (error) {
-                console.error('Error fetching posts:', error);  // LOG lỗi để kiểm tra
+                console.error('Error fetching posts:', error);  
             }
         };
 
-        fetchPosts();  // Gọi hàm lấy danh sách bài viết mỗi khi userData._id thay đổi
+        fetchPosts();  
     }, [userData._id]);
 
-    // Chọn ảnh từ thư viện và tải lên Firebase
     const pickImage = async () => {
         try {
             let permissionResult = await ImagePicker.requestMediaLibraryPermissionsAsync();
@@ -74,12 +73,12 @@ export default function UserScreen() {
 
             let pickerResult = await ImagePicker.launchImageLibraryAsync({
                 allowsEditing: true,
-                base64: false,  // Chỉ lấy URI file, không cần base64
+                base64: false, 
             });
 
             if (!pickerResult.canceled && pickerResult.assets.length > 0) {
-                const selectedImage = pickerResult.assets[0].uri;  // Lấy URI ảnh
-                setImageUri(selectedImage);  // Cập nhật state cho ảnh
+                const selectedImage = pickerResult.assets[0].uri; 
+                setImageUri(selectedImage); 
             }
         } catch (error) {
             console.error('Error picking image:', error);
@@ -87,7 +86,6 @@ export default function UserScreen() {
         }
     };
 
-    // Upload ảnh lên Firebase và nhận URL ảnh
     const uploadImageToFirebase = async (uri) => {
         try {
             const response = await fetch(uri);
@@ -102,19 +100,16 @@ export default function UserScreen() {
         }
     };
 
-    // Submit bài viết và ảnh lên backend
     const handlePostSubmit = async () => {
-        // Kiểm tra nếu người dùng không nhập nội dung và không chọn ảnh
         if (!postContent.trim() && !imageUri) {
             Alert.alert('Error', 'Users need to enter complete post information');
-            return;  // Dừng lại nếu không có thông tin đầy đủ
+            return; 
         }
 
         try {
             const token = await AsyncStorage.getItem('token');
             let imageUrl = '';
 
-            // Nếu người dùng đã chọn ảnh, tải ảnh lên Firebase
             if (imageUri) {
                 imageUrl = await uploadImageToFirebase(imageUri);
             }
@@ -122,7 +117,7 @@ export default function UserScreen() {
             const postData = {
                 userId: userData._id,
                 content: postContent,
-                image: imageUrl,  // Lưu URL của ảnh từ Firebase
+                image: imageUrl, 
             };
 
             const response = await axios.post(`${backendUrl}/api/posts/create`, postData, {
@@ -133,10 +128,10 @@ export default function UserScreen() {
 
             if (response.status === 201) {
                 Alert.alert('Success', 'Post created successfully');
-                setPostContent('');  // Clear input
-                setImageUri(null);  // Clear selected image
-                setModalVisible(false);  // Close modal
-                setPosts([...posts, response.data.post]);  // Cập nhật danh sách bài viết
+                setPostContent(''); 
+                setImageUri(null);  
+                setModalVisible(false);  
+                setPosts([...posts, response.data.post]); 
             }
         } catch (error) {
             console.error('Error creating post:', error);
@@ -144,7 +139,6 @@ export default function UserScreen() {
         }
     };
 
-    // Hàm xóa bài viết
     const handleDeletePost = async (postId) => {
         try {
             const token = await AsyncStorage.getItem('token');
@@ -156,15 +150,14 @@ export default function UserScreen() {
 
             if (response.status === 200) {
                 Alert.alert('Success', 'Post deleted successfully');
-                setPosts(posts.filter(post => post._id !== postId));  // Xóa bài viết khỏi danh sách
+                setPosts(posts.filter(post => post._id !== postId)); 
             }
         } catch (error) {
-            console.error('Error deleting post:', error);  // LOG lỗi
+            console.error('Error deleting post:', error); 
             Alert.alert('Error', 'Failed to delete post.');
         }
     };
 
-    // Hàm Like bài viết
     const handleLikePost = async (postId) => {
         try {
             const token = await AsyncStorage.getItem('token');
@@ -183,7 +176,6 @@ export default function UserScreen() {
         }
     };
 
-    // Hàm thêm bình luận
     const handleAddComment = async (postId) => {
         try {
             const token = await AsyncStorage.getItem('token');
@@ -198,7 +190,7 @@ export default function UserScreen() {
 
             if (response.status === 200) {
                 setPosts(posts.map(post => post._id === postId ? { ...post, comments: response.data.comments } : post));
-                setCommentText('');  // Clear comment input
+                setCommentText('');  
             }
         } catch (error) {
             console.error('Error adding comment:', error);
@@ -206,78 +198,72 @@ export default function UserScreen() {
         }
     };
 
-    // Hàm xử lý nhấn giữ bình luận
     const handleLongPressComment = (comment, postId) => {
-        if (comment.userId._id === userData._id) {  // Kiểm tra nếu bình luận là của người dùng hiện tại
+        if (comment.userId._id === userData._id) {  
             setSelectedComment({ ...comment, postId });
-            setNewCommentText(comment.comment);  // Thiết lập nội dung ban đầu khi chỉnh sửa
-            setCommentModalVisible(true);  // Hiển thị Modal cho bình luận
+            setNewCommentText(comment.comment); 
+            setCommentModalVisible(true);  
         }
     };
 
-    // Hàm xử lý xóa bình luận
     const handleDeleteComment = async () => {
         try {
-            const token = await AsyncStorage.getItem('token'); // Lấy token từ AsyncStorage
+            const token = await AsyncStorage.getItem('token'); 
             const response = await axios.delete(
                 `${backendUrl}/api/posts/${selectedComment.postId}/comment/${selectedComment._id}`,
                 {
-                    headers: { Authorization: `Bearer ${token}` }, // Gửi token xác thực
-                    data: { userId: userData._id }, // Gửi ID người dùng trong body request
+                    headers: { Authorization: `Bearer ${token}` }, 
+                    data: { userId: userData._id }, 
                 }
             );
 
             if (response.status === 200) {
-                // Cập nhật danh sách bình luận sau khi xóa thành công
                 setPosts(posts.map(post =>
                     post._id === selectedComment.postId
                         ? { ...post, comments: response.data.comments }
                         : post
                 ));
-                setCommentModalVisible(false); // Đóng modal
-                setSelectedComment(null); // Clear bình luận đang chọn
+                setCommentModalVisible(false); 
+                setSelectedComment(null); 
                 Alert.alert('Success', 'Comment deleted successfully');
             }
         } catch (error) {
-            console.error('Error deleting comment:', error); // Log lỗi để debug
+            console.error('Error deleting comment:', error); 
             Alert.alert('Error', error.response?.data?.message || 'Failed to delete comment.');
         }
     };
 
-
-    // Hàm xử lý chỉnh sửa bình luận
     const handleEditComment = async () => {
         if (!newCommentText.trim()) {
             Alert.alert('Error', 'Comment cannot be empty');
             return;
         }
         try {
-            const token = await AsyncStorage.getItem('token'); // Lấy token từ AsyncStorage
+            const token = await AsyncStorage.getItem('token'); 
             const response = await axios.put(
                 `${backendUrl}/api/posts/${selectedComment.postId}/comment/${selectedComment._id}`,
                 {
-                    userId: userData._id, // Gửi đúng ID người dùng hiện tại
-                    newComment: newCommentText, // Nội dung mới của bình luận
+                    userId: userData._id, 
+                    newComment: newCommentText, 
                 },
                 {
-                    headers: { Authorization: `Bearer ${token}` }, // Đính kèm token xác thực
+                    headers: { Authorization: `Bearer ${token}` },
                 }
             );
 
             if (response.status === 200) {
-                // Cập nhật danh sách bình luận sau khi chỉnh sửa thành công
                 setPosts(posts.map(post =>
                     post._id === selectedComment.postId
                         ? { ...post, comments: response.data.comments }
                         : post
                 ));
-                setCommentModalVisible(false); // Đóng modal
-                setIsEditing(false); // Thoát chế độ chỉnh sửa
-                setSelectedComment(null); // Clear bình luận đang chọn
+                setCommentModalVisible(false); 
+                setIsEditing(false); 
+                setSelectedComment(null); 
             }
         } catch (error) {
-            console.error('Error editing comment:', error); // LOG lỗi
-            Alert.alert('Error', error.response?.data?.message || 'Failed to edit comment.'); // Hiển thị thông báo lỗi
+            console.error('Error editing comment:', error);
+            Alert.alert('Error', error.response?.data?.message || 'Failed to edit comment.'); 
         }
     };
 
@@ -285,7 +271,6 @@ export default function UserScreen() {
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView contentContainerStyle={styles.scrollContent}>
-                {/* Header */}
                 <View style={styles.header}>
                     <Image
                         source={userData.avatarUrl ? { uri: userData.avatarUrl } : require('../../assets/images/default-avatar.png')}
@@ -294,14 +279,12 @@ export default function UserScreen() {
                     <Text style={styles.name}>{userData.fullName}</Text>
                 </View>
 
-                {/* Nút tạo bài viết */}
                 <View style={styles.createPostContainer}>
                     <TouchableOpacity style={styles.createPostButton} onPress={() => setModalVisible(true)}>
                         <Text style={styles.createPostText}>Create Post</Text>
                     </TouchableOpacity>
                 </View>
 
-                {/* Modal tạo bài viết */}
                 <Modal
                     animationType="slide"
                     transparent={true}
@@ -340,7 +323,6 @@ export default function UserScreen() {
                     </View>
                 </Modal>
 
-                {/* Modal chỉnh sửa bình luận */}
                 <Modal
                     animationType="slide"
                     transparent={true}
@@ -378,12 +360,9 @@ export default function UserScreen() {
                     </View>
                 </Modal>
 
-
-                {/* Hiển thị danh sách bài viết */}
                 <View style={styles.postsContainer}>
                     {posts.map((post) => (
                         <View key={post._id} style={styles.post}>
-                            {/* Hiển thị tên người đăng và thời gian đăng bài */}
                             <Text style={styles.postAuthor}>
                                 {post.userId?.fullName || 'Anonymous'}
                             </Text>
@@ -391,13 +370,11 @@ export default function UserScreen() {
                                 {post.createdAt ? moment(post.createdAt).format('HH:mm DD/MM/YYYY') : ''}
                             </Text>
 
-                            {/* Hiển thị nội dung và hình ảnh bài viết */}
                             <Text style={styles.postContent}>{post.content}</Text>
                             {post.image && (
                                 <Image source={{ uri: post.image }} style={styles.postImage} />
                             )}
 
-                            {/* Nút Like và Xóa bài viết */}
                             <View style={styles.postActions}>
                                 <TouchableOpacity style={styles.likeButton} onPress={() => handleLikePost(post._id)}>
                                     <Text style={styles.likeButtonText}>Like ({post.likes})</Text>
@@ -408,7 +385,6 @@ export default function UserScreen() {
                                 </TouchableOpacity>
                             </View>
 
-                            {/* Hiển thị bình luận */}
                             <View style={styles.commentsContainer}>
                                 <Text style={styles.commentTitle}>Comments:</Text>
                                 {post.comments.map((comment, index) => (
@@ -426,8 +402,6 @@ export default function UserScreen() {
                                 ))}
                             </View>
 
-
-                            {/* Nhập bình luận */}
                             <View style={styles.commentInputContainer}>
                                 <TextInput
                                     style={styles.commentInput}
@@ -442,7 +416,7 @@ export default function UserScreen() {
                         </View>
                     ))}
                 </View>
-                {/* Modal hiện tùy chọn Edit và Delete */}
+
                 <Modal
                     animationType="slide"
                     transparent={true}
@@ -529,7 +503,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'rgba(0, 0, 0, 0.6)',  // Background tối
+        backgroundColor: 'rgba(0, 0, 0, 0.6)', 
     },
     modalView: {
         width: '90%',

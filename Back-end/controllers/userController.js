@@ -1,5 +1,6 @@
 const User = require('../models/User');  
 const BanUser = require('../models/Ban');
+const Report = require('../models/Report');
 
 exports.updateAvatar = async (req, res) => {
     const { avatarUrl } = req.body;
@@ -76,6 +77,30 @@ exports.banUser = async (req, res) => {
         return res.status(200).json({ message: 'User banned successfully', ban: newBan });
     } catch (error) {
         console.error('Error banning user:', error);
+        return res.status(500).json({ message: 'Server error' });
+    }
+};
+
+exports.reportPost = async (req, res) => {
+    const { postId, reason } = req.body;
+
+    try {
+        const existingReport = await Report.findOne({ postId, reportedBy: req.user.userId });
+        if (existingReport) {
+            return res.status(400).json({ message: 'You have already reported this post.' });
+        }
+
+        const newReport = new Report({
+            postId,
+            reportedBy: req.user.userId,
+            reason,
+        });
+
+        await newReport.save();
+
+        return res.status(200).json({ message: 'Report submitted successfully.', report: newReport });
+    } catch (error) {
+        console.error('Error reporting post:', error);
         return res.status(500).json({ message: 'Server error' });
     }
 };

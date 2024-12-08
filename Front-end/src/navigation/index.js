@@ -11,6 +11,7 @@ import AdminHome from "../admin/AdminHomeScreen";
 import BanUsersScreen from "../admin/BanUsersScreen";
 import ReportsScreen from "../admin/ReportsScreen";  
 import SocialUser from "../screens/SocialUser";
+import OtherUserScreen from '../screens/OtherUserScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -33,6 +34,7 @@ export default function AppNavigation() {
       <Stack.Screen name="AdminScreen" component={AdminHome} />
       <Stack.Screen name="Reports" component={ReportsScreen} />  
       <Stack.Screen name="BanUsers" component={BanUsersScreen} />  
+      <Stack.Screen name="OtherUserScreen" component={OtherUserScreen} />
     </Stack.Navigator>
   );
 }
