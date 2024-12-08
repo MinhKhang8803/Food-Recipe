@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, Image, TouchableOpacity, ScrollView, TextInput, StyleSheet, Alert } from 'react-native';
+import { View, Text, Image, TouchableOpacity, ScrollView, TextInput, StyleSheet, Alert, Modal, KeyboardAvoidingView } from 'react-native';
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import moment from 'moment';
@@ -8,7 +8,7 @@ import { useRoute, useNavigation } from '@react-navigation/native';
 export default function OtherUserScreen() {
     const route = useRoute();
     const navigation = useNavigation();
-    const { userId } = route.params; 
+    const { userId } = route.params;
     const [userData, setUserData] = useState({});
     const [posts, setPosts] = useState([]);
     const [commentText, setCommentText] = useState('');
@@ -82,6 +82,11 @@ export default function OtherUserScreen() {
 
         try {
             const token = await AsyncStorage.getItem('token');
+            if (!token) {
+                Alert.alert('Error', 'Authentication token is missing.');
+                return;
+            }
+
             await axios.post(
                 `${backendUrl}/api/posts/report`,
                 { postId: selectedPostId, reason: reportReason },
@@ -92,9 +97,11 @@ export default function OtherUserScreen() {
             setModalVisible(false);
             setReportReason('');
         } catch (error) {
-            Alert.alert('Error', 'Failed to report the post.');
+            console.error('Error reporting post:', error);
+            Alert.alert('Error', error.response?.data?.message || 'Failed to report the post.');
         }
     };
+
 
     return (
         <ScrollView style={styles.container}>
@@ -145,7 +152,7 @@ export default function OtherUserScreen() {
                 </View>
             ))}
             <Modal visible={modalVisible} transparent animationType="slide">
-                <View style={styles.modalContainer}>
+                <KeyboardAvoidingView style={styles.modalContainer} behavior="padding">
                     <View style={styles.modalContent}>
                         <Text style={styles.modalTitle}>Report Post</Text>
                         <TextInput
@@ -153,6 +160,7 @@ export default function OtherUserScreen() {
                             placeholder="Enter reason for reporting"
                             value={reportReason}
                             onChangeText={setReportReason}
+                            multiline
                         />
                         <View style={styles.modalActions}>
                             <TouchableOpacity onPress={() => setModalVisible(false)} style={styles.cancelButton}>
@@ -163,8 +171,9 @@ export default function OtherUserScreen() {
                             </TouchableOpacity>
                         </View>
                     </View>
-                </View>
+                </KeyboardAvoidingView>
             </Modal>
+
         </ScrollView>
     );
 }
