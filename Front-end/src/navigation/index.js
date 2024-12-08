@@ -8,9 +8,9 @@ import UserInfo from "../screens/UserInfo";
 import Register from "../screens/Register"; 
 import Login from "../screens/Login";  
 import AdminHome from "../admin/AdminHomeScreen";
+import BanUsersScreen from "../admin/BanUsersScreen";
 import ReportsScreen from "../admin/ReportsScreen";  
 import SocialUser from "../screens/SocialUser";
-import PremiumNotificationsScreen from "../admin/PremiumNotificationsScreen"; 
 
 const Stack = createNativeStackNavigator();
 
