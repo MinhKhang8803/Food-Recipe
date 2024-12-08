@@ -67,7 +67,7 @@ export default function Register() {
         }
 
         try {
-            const response = await axios.post('https://food-recipe-k8jh.onrender.com/api/auth/register', {
+            const response = await axios.post('http://192.168.1.6:5000/api/auth/register', {
                 fullName,
                 email,
                 password,
@@ -104,7 +104,7 @@ export default function Register() {
                             source={require("../../assets/favicon.png")} />
 
                         <Text style={styles.title}>
-                            Sign up for <Text style={{ color: '#f64e32' }}>CookingApp</Text>
+                            Sign up for <Text style={{ color: '#f64e32' }}>KT Recipe</Text>
                         </Text>
 
                         <Text style={styles.subtitle}>

@@ -48,7 +48,7 @@ export default function WelcomeScreen() {
             fontSize: hp(5),
           }}
         >
-          Food Cafe
+          KT Recipe
         </Text>
 
         <Text

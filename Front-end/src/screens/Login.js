@@ -43,7 +43,7 @@ export default function Login({ navigation }) {
     }
 
     try {
-      const response = await axios.post('https://food-recipe-k8jh.onrender.com/api/auth/login', form);
+      const response = await axios.post('http://192.168.1.6:5000/api/auth/login', form);
 
       if (response.data.success) {
         const token = response.data.token;
@@ -84,7 +84,7 @@ export default function Login({ navigation }) {
               source={require("../../assets/favicon.png")}
             />
             <Text style={styles.title}>
-              Sign in to <Text style={{ color: '#f64e32' }}>CookingApp</Text>
+              Sign in to <Text style={{ color: '#f64e32' }}>KT Recipe</Text>
             </Text>
             <Text style={styles.subtitle}>
               Get access to your recipes and more
