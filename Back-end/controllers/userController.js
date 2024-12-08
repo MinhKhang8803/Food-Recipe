@@ -1,5 +1,5 @@
 const User = require('../models/User');  
-const BanUser = require('../models/BanUser');
+const BanUser = require('../models/Ban');
 
 exports.updateAvatar = async (req, res) => {
     const { avatarUrl } = req.body;
