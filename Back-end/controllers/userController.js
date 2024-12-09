@@ -108,3 +108,43 @@ exports.reportPost = async (req, res) => {
         return res.status(500).json({ message: 'Server error' });
     }
 };
+
+exports.getReports = async (req, res) => {
+    try {
+        const reports = await Report.find()
+            .populate('reportedBy', 'fullName') 
+            .populate('postId', 'content image'); 
+
+        res.status(200).json(reports);
+    } catch (error) {
+        console.error('Error fetching reports:', error);
+        res.status(500).json({ message: 'Server error' });
+    }
+};
+
+exports.deletePostAndReport = async (req, res) => {
+    const { postId, reportId } = req.params;
+
+    try {
+        await Post.findByIdAndDelete(postId); 
+        await Report.findByIdAndDelete(reportId); 
+
+        res.status(200).json({ message: 'Post and report deleted successfully.' });
+    } catch (error) {
+        console.error('Error deleting post and report:', error);
+        res.status(500).json({ message: 'Server error' });
+    }
+};
+
+exports.dismissReport = async (req, res) => {
+    const { reportId } = req.params;
+
+    try {
+        await Report.findByIdAndDelete(reportId); 
+
+        res.status(200).json({ message: 'Report dismissed successfully.' });
+    } catch (error) {
+        console.error('Error dismissing report:', error);
+        res.status(500).json({ message: 'Server error' });
+    }
+};
