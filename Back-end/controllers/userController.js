@@ -56,7 +56,6 @@ exports.banUser = async (req, res) => {
     const { email, reason, banDuration } = req.body;
 
     if (!email || !reason || !banDuration) {
-        console.error('Missing required fields:', { email, reason, banDuration });
         return res.status(400).json({ message: 'Email, reason, and ban duration are required' });
     }
 
@@ -89,7 +88,6 @@ exports.banUser = async (req, res) => {
         return res.status(500).json({ message: 'Server error', error: error.message });
     }
 };
-
 
 exports.reportPost = async (req, res) => {
     const { postId, reason } = req.body; 

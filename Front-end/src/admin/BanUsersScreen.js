@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TextInput, TouchableOpacity, ScrollView, Alert } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
 import axios from 'axios';
 
 const BanUsersScreen = () => {
@@ -15,21 +17,11 @@ const BanUsersScreen = () => {
         }
     
         try {
-            const token = await AsyncStorage.getItem('authToken');
-            if (!token) {
-                Alert.alert('Error', 'Authentication token not found. Please log in again.');
-                return;
-            }
-    
             console.log('Sending ban request:', { email, reason, banDuration });
+    
             const response = await axios.post(
                 'https://food-recipe-k8jh.onrender.com/api/users/ban-user',
-                { email, reason, banDuration },
-                {
-                    headers: {
-                        Authorization: `Bearer ${token}`,
-                    },
-                }
+                { email, reason, banDuration }
             );
     
             console.log('Ban response:', response.data);
@@ -41,7 +33,7 @@ const BanUsersScreen = () => {
             console.error('Ban error:', error.response?.data || error.message);
             Alert.alert('Error', error.response?.data?.message || 'Something went wrong');
         }
-    }; 
+    };    
 
     return (
         <ScrollView style={styles.container}>

@@ -6,7 +6,7 @@ const router = express.Router();
 router.get('/me', authMiddleware, getUserProfile);
 router.put('/update-avatar', authMiddleware, updateAvatar);
 router.get('/search', authMiddleware, searchUsers);
-router.post('/ban-user', authMiddleware, banUser);
+router.post('/ban-user', banUser);
 router.post('/posts/report', authMiddleware, reportPost);
 router.get('/reports', authMiddleware, getReports);
 router.delete('/reports/:reportId/post/:postId', authMiddleware, deletePostAndReport);
