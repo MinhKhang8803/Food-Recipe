@@ -84,6 +84,10 @@ exports.banUser = async (req, res) => {
 exports.reportPost = async (req, res) => {
     const { postId, reason } = req.body; 
 
+    if (!postId || !reason) {
+        return res.status(400).json({ message: 'Post ID and reason are required' });
+    }
+
     try {
         const existingReport = await Report.findOne({ postId, reportedBy: req.user.userId });
         if (existingReport) {
@@ -100,7 +104,7 @@ exports.reportPost = async (req, res) => {
 
         return res.status(200).json({ message: 'Report submitted successfully.', report: newReport });
     } catch (error) {
-        console.error('Error reporting post:', error);
+        console.error('Error reporting post:', error.message);
         return res.status(500).json({ message: 'Server error' });
     }
 };

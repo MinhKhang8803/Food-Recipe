@@ -93,7 +93,7 @@ export default function OtherUserScreen() {
             }
 
             await axios.post(
-                `${backendUrl}/api/posts/report`, 
+                `${backendUrl}/api/users/posts/report`, 
                 { postId: selectedPostId, reason: reportReason },
                 { headers: { Authorization: `Bearer ${token}` } }
             );

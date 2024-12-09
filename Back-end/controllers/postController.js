@@ -1,8 +1,6 @@
-// controllers/postController.js
 const Post = require('../models/Post');
-const User = require('../models/User');  // Import User để lấy thông tin người dùng
+const User = require('../models/User');  
 
-// Create a post with an image
 exports.createPost = async (req, res) => {
     const { userId, content, image } = req.body;
 
@@ -15,12 +13,11 @@ exports.createPost = async (req, res) => {
     }
 };
 
-// Fetch posts for a specific user
 exports.getPosts = async (req, res) => {
     try {
         const posts = await Post.find({ userId: req.params.userId })
-            .populate('userId', 'fullName avatarUrl')  // Lấy thông tin người đăng bài
-            .populate('comments.userId', 'fullName');  // Lấy thông tin người bình luận
+            .populate('userId', 'fullName avatarUrl') 
+            .populate('comments.userId', 'fullName'); 
 
         res.status(200).json(posts);
     } catch (error) {
@@ -28,29 +25,27 @@ exports.getPosts = async (req, res) => {
     }
 };
 
-// Delete a post
 exports.deletePost = async (req, res) => {
     const { postId } = req.params;
 
     try {
-        console.log('Post ID to delete:', postId);  // LOG kiểm tra ID bài viết cần xóa
+        console.log('Post ID to delete:', postId);  
         const post = await Post.findById(postId);
         
         if (!post) {
-            console.log('Post not found');  // LOG nếu không tìm thấy bài viết
+            console.log('Post not found'); 
             return res.status(404).json({ message: 'Post not found' });
         }
 
-        console.log('Deleting post...');  // LOG trước khi xóa bài viết
-        await Post.findByIdAndDelete(postId);  // Sử dụng phương thức findByIdAndDelete để xóa bài viết
+        console.log('Deleting post...'); 
+        await Post.findByIdAndDelete(postId); 
         res.status(200).json({ message: 'Post deleted successfully' });
     } catch (error) {
-        console.error('Error during deletion:', error);  // LOG lỗi chi tiết
+        console.error('Error during deletion:', error);
         res.status(500).json({ message: 'Server error', error });
     }
 };
 
-// Like a post
 exports.likePost = async (req, res) => {
     const { postId } = req.params;
 
@@ -60,7 +55,7 @@ exports.likePost = async (req, res) => {
             return res.status(404).json({ message: 'Post not found' });
         }
 
-        post.likes += 1;  // Tăng số lượng Like lên 1
+        post.likes += 1;  
         await post.save();
 
         res.status(200).json({ message: 'Post liked successfully', likes: post.likes });
@@ -70,7 +65,6 @@ exports.likePost = async (req, res) => {
     }
 };
 
-// Add a comment to a post
 exports.addComment = async (req, res) => {
     const { postId } = req.params;
     const { userId, comment } = req.body;
@@ -81,23 +75,20 @@ exports.addComment = async (req, res) => {
             return res.status(404).json({ message: 'Post not found' });
         }
 
-        // Lấy thông tin người dùng từ userId
         const user = await User.findById(userId).select('fullName');
         if (!user) {
             return res.status(404).json({ message: 'User not found' });
         }
 
-        // Thêm bình luận mới cùng với createdAt
         const newComment = {
             userId,
             comment,
-            createdAt: new Date(),  // Lưu thời gian tạo bình luận
+            createdAt: new Date(),  
         };
 
         post.comments.push(newComment);
         await post.save();
 
-        // Populate lại bình luận để có đầy đủ thông tin người dùng
         await post.populate('comments.userId', 'fullName');
 
         res.status(200).json({ message: 'Comment added successfully', comments: post.comments });
@@ -107,7 +98,6 @@ exports.addComment = async (req, res) => {
     }
 };
 
-// controllers/postController.js
 
 exports.deleteComment = async (req, res) => {
     const { postId, commentId } = req.params;
@@ -119,7 +109,6 @@ exports.deleteComment = async (req, res) => {
             return res.status(404).json({ message: 'Post not found' });
         }
 
-        // Tìm và xóa bình luận
         const commentIndex = post.comments.findIndex(
             (comment) => comment._id.toString() === commentId && comment.userId.toString() === userId
         );
@@ -128,10 +117,9 @@ exports.deleteComment = async (req, res) => {
             return res.status(403).json({ message: 'Unauthorized to delete this comment' });
         }
 
-        post.comments.splice(commentIndex, 1); // Xóa bình luận
+        post.comments.splice(commentIndex, 1); 
         await post.save();
 
-        // Populate lại bình luận để có đầy đủ thông tin người dùng và thời gian
         await post.populate('comments.userId', 'fullName');
 
         res.status(200).json({ message: 'Comment deleted successfully', comments: post.comments });
