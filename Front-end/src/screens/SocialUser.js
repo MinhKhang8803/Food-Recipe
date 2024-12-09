@@ -18,6 +18,7 @@ export default function SocialUser() {
     const [isEditing, setIsEditing] = useState(false);
     const [newCommentText, setNewCommentText] = useState('');
     const navigation = useNavigation();
+    const [noResults, setNoResults] = useState(false);
 
     useEffect(() => {
         const fetchPosts = async () => {
@@ -45,16 +46,26 @@ export default function SocialUser() {
     const handleSearch = async () => {
         if (!searchKeyword.trim()) return;
         setIsSearching(true);
-
+        setNoResults(false); 
+    
         try {
             const token = await AsyncStorage.getItem('token');
             const response = await axios.get(`${backendUrl}/api/users/search`, {
                 params: { keyword: searchKeyword },
                 headers: { Authorization: `Bearer ${token}` },
             });
-            setSearchResults(response.data);
+    
+            if (response.data && response.data.length > 0) {
+                setSearchResults(response.data);
+                setNoResults(false); 
+            } else {
+                setSearchResults([]); 
+                setNoResults(true); 
+            }
         } catch (error) {
             console.error('Error searching users:', error);
+            setSearchResults([]);
+            setNoResults(true);
         } finally {
             setIsSearching(false);
         }
@@ -176,6 +187,12 @@ export default function SocialUser() {
                 </TouchableOpacity>
             </View>
 
+            {noResults && (
+                <View style={styles.noResultsContainer}>
+                    <Text style={styles.noResultsText}>User Not Found</Text>
+                </View>
+            )}
+
             {searchResults.length > 0 && (
                 <View style={styles.searchResultsContainer}>
                     <Text style={styles.searchResultsTitle}>Search Results:</Text>
@@ -197,7 +214,6 @@ export default function SocialUser() {
                 </View>
             )}
 
-            <Text style={styles.title}>Social Feed</Text>
             {posts.map((post) => (
                 <View key={post._id} style={styles.post}>
                     <Text style={styles.postAuthor}>{post.userId?.fullName || 'Anonymous'}</Text>
@@ -316,6 +332,14 @@ const styles = StyleSheet.create({
     searchButtonText: { color: '#fff' },
     searchResultsContainer: { marginTop: 10 },
     searchResultsTitle: { fontSize: 18, fontWeight: 'bold', marginBottom: 5 },
+    noResultsContainer: {
+        alignItems: 'center',
+        marginTop: 10,
+    },
+    noResultsText: {
+        fontSize: 16,
+        color: 'red',
+    },
     userItem: {
         flexDirection: 'row',
         alignItems: 'center',

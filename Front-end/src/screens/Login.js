@@ -10,7 +10,7 @@ import {
   Alert,
 } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
-import axios from 'axios'; // Import axios for API requests
+import axios from 'axios'; 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function Login({ navigation }) {
@@ -19,27 +19,22 @@ export default function Login({ navigation }) {
     password: '',
   });
 
-  const [error, setError] = useState(''); // State to store error message
+  const [error, setError] = useState(''); 
 
-  // Reset form and error when navigating to the login page again
   useEffect(() => {
     const unsubscribe = navigation.addListener('focus', () => {
-      // Reset form and error when the screen is focused
       setForm({ email: '', password: '' });
       setError('');
     });
 
-    return unsubscribe; // Cleanup listener when navigating away
+    return unsubscribe;
   }, [navigation]);
 
   const handleLogin = async () => {
-    // Reset error message before checking
     setError('');
-
-    // Check if both email and password are provided
     if (!form.email || !form.password) {
-      setError('User needs to enter information'); // Set error if missing
-      return; // Prevent login attempt if fields are empty
+      setError('User needs to enter information'); 
+      return; 
     }
 
     try {
@@ -52,7 +47,6 @@ export default function Login({ navigation }) {
         await AsyncStorage.setItem('user', JSON.stringify(userData));
         Alert.alert('Success', 'You have logged in successfully!');
 
-        // Reset form on successful login
         setForm({ email: '', password: '' });
 
         if (userData.role === 'admin') {
@@ -121,7 +115,6 @@ export default function Login({ navigation }) {
               />
             </View>
 
-            {/* Display error message if there is one */}
             {error ? (
               <Text style={styles.errorText}>{error}</Text>
             ) : null}
@@ -165,7 +158,6 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     color: '#929292',
   },
-  /** Header */
   header: {
     alignItems: 'center',
     justifyContent: 'center',
@@ -177,7 +169,6 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     marginBottom: 36,
   },
-  /** Form */
   form: {
     marginBottom: 24,
     paddingHorizontal: 24,
@@ -196,7 +187,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     letterSpacing: 0.15,
   },
-  /** Input */
   input: {
     marginBottom: 16,
   },
@@ -218,7 +208,6 @@ const styles = StyleSheet.create({
     borderColor: '#C9D3DB',
     borderStyle: 'solid',
   },
-  /** Button */
   btn: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -236,7 +225,6 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: '#fff',
   },
-  /** Error Text */
   errorText: {
     color: 'red',
     fontSize: 14,
