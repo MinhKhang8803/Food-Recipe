@@ -15,10 +15,9 @@ import { storage } from '../../firebase';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 
-
 export default function UserInfo() {
     const navigation = useNavigation();
-    const backendUrl = 'https://food-recipe-k8jh.onrender.com';
+    const backendUrl = 'http://192.168.1.6:5000';
     const [avatar, setAvatar] = useState(null);
     const [userData, setUserData] = useState({
         fullName: 'John Doe',
@@ -44,7 +43,6 @@ export default function UserInfo() {
             Alert.alert('Error', 'Failed to load user data');
         }
     };
-
 
     useEffect(() => {
         fetchUserData();
@@ -79,7 +77,6 @@ export default function UserInfo() {
             Alert.alert('Error', 'Failed to pick an image.');
         }
     };
-
 
     const uploadImage = async (uri) => {
         try {
@@ -118,7 +115,16 @@ export default function UserInfo() {
         }
     };
 
-
+    const handleLogout = async () => {
+        try {
+            await AsyncStorage.removeItem('token');
+            await AsyncStorage.removeItem('user');
+            navigation.replace('Login');
+        } catch (error) {
+            console.error('Error during logout:', error);
+            Alert.alert('Error', 'Failed to log out.');
+        }
+    };
 
     return (
         <SafeAreaView style={{ flex: 1, padding: 16 }}>
@@ -156,6 +162,13 @@ export default function UserInfo() {
                 style={{ backgroundColor: '#075eec', padding: 10, borderRadius: 5, alignItems: 'center' }}
             >
                 <Text style={{ color: '#fff' }}>Save Changes</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+                onPress={handleLogout}
+                style={{ backgroundColor: '#d9534f', padding: 10, borderRadius: 5, alignItems: 'center', marginTop: 20 }}
+            >
+                <Text style={{ color: '#fff' }}>Logout</Text>
             </TouchableOpacity>
         </SafeAreaView>
     );

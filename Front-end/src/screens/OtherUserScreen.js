@@ -16,7 +16,7 @@ export default function OtherUserScreen() {
     const [reportReason, setReportReason] = useState('');
     const [selectedPostId, setSelectedPostId] = useState(null);
 
-    const backendUrl = 'https://food-recipe-k8jh.onrender.com';
+    const backendUrl = 'http://192.168.1.6:5000';
 
     useEffect(() => {
         const fetchUserInfo = async () => {

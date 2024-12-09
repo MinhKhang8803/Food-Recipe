@@ -17,7 +17,7 @@ export default function UserScreen() {
     const [posts, setPosts] = useState([]); 
     const [commentText, setCommentText] = useState(''); 
     const navigation = useNavigation();
-    const backendUrl = 'https://food-recipe-k8jh.onrender.com';  
+    const backendUrl = 'http://192.168.1.6:5000';  
     const [userId, setUserId] = useState(null);  
     const [selectedComment, setSelectedComment] = useState(null); 
     const [isEditing, setIsEditing] = useState(false);  
