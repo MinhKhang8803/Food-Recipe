@@ -1,5 +1,5 @@
 const express = require('express');
-const { getUserProfile, updateAvatar, searchUsers, banUser, reportPost, getReports, deletePostAndReport, dismissReport } = require('../controllers/userController');
+const { getUserProfile, updateAvatar, searchUsers, banUser, reportPost, getReports, deletePostAndReport, dismissReport, getBannedUsers } = require('../controllers/userController');
 const authMiddleware = require('../middleware/authMiddleware');
 const router = express.Router();
 
@@ -11,5 +11,6 @@ router.post('/posts/report', authMiddleware, reportPost);
 router.get('/reports', authMiddleware, getReports);
 router.delete('/reports/:reportId/post/:postId', authMiddleware, deletePostAndReport);
 router.delete('/reports/:reportId', authMiddleware, dismissReport);
+router.get('/banned-users', getBannedUsers);
 
 module.exports = router;

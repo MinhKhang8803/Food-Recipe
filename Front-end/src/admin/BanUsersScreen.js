@@ -1,39 +1,62 @@
-import React, { useState } from 'react';
-import { View, Text, StyleSheet, TextInput, TouchableOpacity, ScrollView, Alert } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import {
+    View,
+    Text,
+    StyleSheet,
+    TextInput,
+    TouchableOpacity,
+    ScrollView,
+    Alert,
+    FlatList,
+} from 'react-native';
 import { Picker } from '@react-native-picker/picker';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-
 import axios from 'axios';
 
 const BanUsersScreen = () => {
     const [email, setEmail] = useState('');
     const [reason, setReason] = useState('');
     const [banDuration, setBanDuration] = useState('7 days');
+    const [bannedUsers, setBannedUsers] = useState([]);
+
+    useEffect(() => {
+        fetchBannedUsers();
+    }, []);
+
+    const fetchBannedUsers = async () => {
+        try {
+            const response = await axios.get('https://food-recipe-k8jh.onrender.com/api/users/banned-users');
+            setBannedUsers(response.data);
+        } catch (error) {
+            console.error('Error fetching banned users:', error.message);
+            Alert.alert('Error', 'Failed to fetch banned users');
+        }
+    };
 
     const handleBan = async () => {
         if (!email || !reason || !banDuration) {
             Alert.alert('Error', 'Please fill out all fields');
             return;
         }
-    
+
         try {
             console.log('Sending ban request:', { email, reason, banDuration });
-    
+
             const response = await axios.post(
                 'https://food-recipe-k8jh.onrender.com/api/users/ban-user',
                 { email, reason, banDuration }
             );
-    
+
             console.log('Ban response:', response.data);
             Alert.alert('Success', `User ${email} has been banned for ${banDuration}`);
             setEmail('');
             setReason('');
             setBanDuration('7 days');
+            fetchBannedUsers();
         } catch (error) {
             console.error('Ban error:', error.response?.data || error.message);
             Alert.alert('Error', error.response?.data?.message || 'Something went wrong');
         }
-    };    
+    };
 
     return (
         <ScrollView style={styles.container}>
@@ -70,6 +93,22 @@ const BanUsersScreen = () => {
             <TouchableOpacity style={styles.btn} onPress={handleBan}>
                 <Text style={styles.btnText}>Ban User</Text>
             </TouchableOpacity>
+
+            <Text style={styles.subTitle}>Banned Users</Text>
+            <FlatList
+                data={bannedUsers}
+                keyExtractor={(item) => item._id}
+                renderItem={({ item }) => (
+                    <View style={styles.banItem}>
+                        <Text style={styles.banEmail}>{item.email}</Text>
+                        <Text style={styles.banReason}>Reason: {item.reason}</Text>
+                        <Text style={styles.banDuration}>Duration: {item.banDuration}</Text>
+                        <Text style={styles.banDate}>
+                            Banned At: {new Date(item.bannedAt).toLocaleString()}
+                        </Text>
+                    </View>
+                )}
+            />
         </ScrollView>
     );
 };
@@ -83,6 +122,11 @@ const styles = StyleSheet.create({
         fontSize: 24,
         fontWeight: 'bold',
         marginBottom: 20,
+    },
+    subTitle: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        marginVertical: 20,
     },
     input: {
         height: 50,
@@ -119,6 +163,24 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontSize: 18,
         fontWeight: 'bold',
+    },
+    banItem: {
+        padding: 10,
+        borderBottomWidth: 1,
+        borderBottomColor: '#ddd',
+    },
+    banEmail: {
+        fontWeight: 'bold',
+        fontSize: 16,
+    },
+    banReason: {
+        color: '#555',
+    },
+    banDuration: {
+        color: '#555',
+    },
+    banDate: {
+        color: '#777',
     },
 });
 

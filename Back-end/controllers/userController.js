@@ -89,6 +89,16 @@ exports.banUser = async (req, res) => {
     }
 };
 
+exports.getBannedUsers = async (req, res) => {
+    try {
+        const bannedUsers = await BanUser.find().sort({ bannedAt: -1 }); 
+        res.status(200).json(bannedUsers);
+    } catch (error) {
+        console.error('Error fetching banned users:', error.message);
+        res.status(500).json({ message: 'Server error' });
+    }
+};
+
 exports.reportPost = async (req, res) => {
     const { postId, reason } = req.body; 
 
