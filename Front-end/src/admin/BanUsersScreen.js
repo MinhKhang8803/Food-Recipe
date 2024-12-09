@@ -6,7 +6,7 @@ import axios from 'axios';
 const BanUsersScreen = () => {
     const [email, setEmail] = useState('');
     const [reason, setReason] = useState('');
-    const [banDuration, setBanDuration] = useState('7 days'); 
+    const [banDuration, setBanDuration] = useState('7 days');
 
     const handleBan = async () => {
         if (!email || !reason || !banDuration) {
@@ -15,26 +15,39 @@ const BanUsersScreen = () => {
         }
 
         try {
+            const token = await AsyncStorage.getItem('authToken');
+
+            if (!token) {
+                Alert.alert('Error', 'Authentication token not found. Please log in again.');
+                return;
+            }
+
             const response = await axios.post(
                 'https://food-recipe-k8jh.onrender.com/api/users/ban-user',
                 { email, reason, banDuration },
-            );a
+                {
+                    headers: {
+                        Authorization: `Bearer ${token}`,
+                    },
+                }
+            );
 
             Alert.alert('Success', `User ${email} has been banned for ${banDuration}`);
             setEmail('');
             setReason('');
-            setBanDuration('7 days'); // Reset to default
+            setBanDuration('7 days');
         } catch (error) {
-            console.error('Ban error:', error.response?.data?.message);
-            Alert.alert('Error', error.response?.data?.message || 'Something went wrong');
+            const errorMessage = error.response?.data?.message || 'Something went wrong';
+            console.error('Ban error:', errorMessage);
+            Alert.alert('Error', errorMessage);
         }
     };
+
 
     return (
         <ScrollView style={styles.container}>
             <Text style={styles.title}>Ban User</Text>
 
-            {/* User Email */}
             <TextInput
                 style={styles.input}
                 placeholder="User Email"
@@ -42,7 +55,6 @@ const BanUsersScreen = () => {
                 onChangeText={setEmail}
             />
 
-            {/* Reason for Ban */}
             <TextInput
                 style={styles.input}
                 placeholder="Reason for Ban"
@@ -50,7 +62,6 @@ const BanUsersScreen = () => {
                 onChangeText={setReason}
             />
 
-            {/* Ban Duration Dropdown */}
             <Text style={styles.label}>Select Ban Duration</Text>
             <View style={styles.pickerContainer}>
                 <Picker
@@ -65,7 +76,6 @@ const BanUsersScreen = () => {
                 </Picker>
             </View>
 
-            {/* Ban Button */}
             <TouchableOpacity style={styles.btn} onPress={handleBan}>
                 <Text style={styles.btnText}>Ban User</Text>
             </TouchableOpacity>

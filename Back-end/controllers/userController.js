@@ -54,29 +54,28 @@ exports.searchUsers = async (req, res) => {
 
 exports.banUser = async (req, res) => {
     const { email, reason, banDuration } = req.body;
+    console.log('Ban request data:', { email, reason, banDuration });
 
     try {
         const user = await User.findOne({ email });
         if (!user) {
+            console.log('User not found for email:', email);
             return res.status(404).json({ message: 'User not found' });
         }
 
-        const existingBan = await Ban.findOne({ email });
+        const existingBan = await BanUser.findOne({ email });
         if (existingBan) {
+            console.log('User already banned:', email);
             return res.status(400).json({ message: 'User is already banned' });
         }
 
-        const newBan = new Ban({
-            email,
-            reason,
-            banDuration,
-        });
-
+        const newBan = new BanUser({ email, reason, banDuration });
         await newBan.save();
 
+        console.log('User banned successfully:', newBan);
         return res.status(200).json({ message: 'User banned successfully', ban: newBan });
     } catch (error) {
-        console.error('Error banning user:', error);
+        console.error('Error in banUser:', error); 
         return res.status(500).json({ message: 'Server error' });
     }
 };
