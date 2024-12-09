@@ -56,23 +56,30 @@ exports.banUser = async (req, res) => {
     const { email, reason, banDuration } = req.body;
 
     if (!email || !reason || !banDuration) {
+        console.error('Missing required fields:', { email, reason, banDuration });
         return res.status(400).json({ message: 'Email, reason, and ban duration are required' });
     }
 
     try {
+        console.log('Fetching user with email:', email);
         const user = await User.findOne({ email });
         if (!user) {
+            console.error('User not found:', email);
             return res.status(404).json({ message: 'User not found' });
         }
 
+        console.log('Checking if user is already banned:', email);
         const existingBan = await BanUser.findOne({ email });
         if (existingBan) {
+            console.error('User already banned:', email);
             return res.status(400).json({ message: 'User is already banned' });
         }
 
+        console.log('Creating new ban record for user:', email);
         const newBan = new BanUser({ email, reason, banDuration });
         await newBan.save();
 
+        console.log('User banned successfully:', newBan);
         return res.status(200).json({
             message: `User ${email} has been banned for ${banDuration}`,
             banDetails: newBan,
@@ -82,6 +89,7 @@ exports.banUser = async (req, res) => {
         return res.status(500).json({ message: 'Server error', error: error.message });
     }
 };
+
 
 exports.reportPost = async (req, res) => {
     const { postId, reason } = req.body; 

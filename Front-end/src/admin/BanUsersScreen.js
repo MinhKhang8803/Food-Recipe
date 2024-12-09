@@ -13,15 +13,15 @@ const BanUsersScreen = () => {
             Alert.alert('Error', 'Please fill out all fields');
             return;
         }
-
+    
         try {
             const token = await AsyncStorage.getItem('authToken');
-
             if (!token) {
                 Alert.alert('Error', 'Authentication token not found. Please log in again.');
                 return;
             }
-
+    
+            console.log('Sending ban request:', { email, reason, banDuration });
             const response = await axios.post(
                 'https://food-recipe-k8jh.onrender.com/api/users/ban-user',
                 { email, reason, banDuration },
@@ -31,18 +31,17 @@ const BanUsersScreen = () => {
                     },
                 }
             );
-
+    
+            console.log('Ban response:', response.data);
             Alert.alert('Success', `User ${email} has been banned for ${banDuration}`);
             setEmail('');
             setReason('');
             setBanDuration('7 days');
         } catch (error) {
-            const errorMessage = error.response?.data?.message || 'Something went wrong';
-            console.error('Ban error:', errorMessage);
-            Alert.alert('Error', errorMessage);
+            console.error('Ban error:', error.response?.data || error.message);
+            Alert.alert('Error', error.response?.data?.message || 'Something went wrong');
         }
-    };
-
+    }; 
 
     return (
         <ScrollView style={styles.container}>
