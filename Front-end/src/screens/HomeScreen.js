@@ -6,15 +6,15 @@ import {
   Image,
   TextInput,
   ActivityIndicator,
-  TouchableOpacity, // Add TouchableOpacity for the buttons
-  StyleSheet, // Import StyleSheet for custom styles
+  TouchableOpacity,
+  StyleSheet,
 } from "react-native";
 import React, { useEffect, useState } from "react";
 import {
   MagnifyingGlassIcon,
   AdjustmentsHorizontalIcon,
   HomeIcon,
-  UserIcon, // Import Home and User icons for the bottom navigation
+  UserIcon,
 } from "react-native-heroicons/outline";
 import { StatusBar } from "expo-status-bar";
 import { heightPercentageToDP as hp } from "react-native-responsive-screen";
@@ -23,7 +23,6 @@ import Recipes from "../components/Recipes";
 import { useTranslation } from "react-i18next";
 import { Picker } from "@react-native-picker/picker";
 
-// Function to dynamically load the correct language JSON file for meals
 const loadMealDataForLanguage = async (lang) => {
   try {
     switch (lang) {
@@ -36,15 +35,14 @@ const loadMealDataForLanguage = async (lang) => {
       case 'zh':
         return (await import('../data/all_meals_data_ZH.json')).default;
       default:
-        return (await import('../data/all_meals_data.json')).default; // English as default
+        return (await import('../data/all_meals_data.json')).default;
     }
   } catch (error) {
     console.error(`Failed to load meal data for language: ${lang}`, error);
-    return []; // Return empty array on failure
+    return [];
   }
 };
 
-// Function to dynamically load the correct language JSON file for categories
 const loadCategoryDataForLanguage = async (lang) => {
   try {
     switch (lang) {
@@ -57,11 +55,11 @@ const loadCategoryDataForLanguage = async (lang) => {
       case 'zh':
         return (await import('../data/meals_data_category_ZH.json')).default;
       default:
-        return (await import('../data/meals_data_category.json')).default; // English as default
+        return (await import('../data/meals_data_category.json')).default;
     }
   } catch (error) {
     console.error(`Failed to load category data for language: ${lang}`, error);
-    return []; // Return empty array on failure
+    return [];
   }
 };
 
@@ -69,35 +67,33 @@ export default function HomeScreen({ navigation }) {
   const [activeCategory, setActiveCategory] = useState("Beef");
   const [categories, setCategories] = useState([]);
   const [meals, setMeals] = useState([]);
-  const [isLoading, setIsLoading] = useState(false); // Loading state
-  const [searchQuery, setSearchQuery] = useState(""); // State for search input
+  const [isLoading, setIsLoading] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
   const [language, setLanguage] = useState("en");
   const { t, i18n } = useTranslation();
 
-  // Function to load categories dynamically based on the selected language
   const loadCategories = async () => {
     setIsLoading(true);
-    const categoryData = await loadCategoryDataForLanguage(i18n.language); // Load categories
+    const categoryData = await loadCategoryDataForLanguage(i18n.language);
     const categoriesWithImages = categoryData.categories.map((category) => ({
       strCategory: category.strCategory,
       strCategoryThumb: category.strCategoryThumb,
-      strCategoryTranslated: t(`${category.strCategory}`) || category.strCategory,  // Translate category if available
+      strCategoryTranslated: t(`${category.strCategory}`) || category.strCategory,
     }));
     setCategories(categoriesWithImages);
     setIsLoading(false);
   };
 
-  // Function to load meals based on category and language
   const loadMeals = async (category = "Beef") => {
-    setIsLoading(true); // Start loading spinner
-    const mealData = await loadMealDataForLanguage(i18n.language); // Dynamically load the meal data
+    setIsLoading(true);
+    const mealData = await loadMealDataForLanguage(i18n.language);
 
     const filteredMeals = mealData.filter(
       (meal) => meal.strCategory.toLowerCase() === category.toLowerCase()
     );
 
     setMeals(filteredMeals);
-    setIsLoading(false); // Stop loading spinner
+    setIsLoading(false);
   };
 
   useEffect(() => {
@@ -105,7 +101,7 @@ export default function HomeScreen({ navigation }) {
       const token = await AsyncStorage.getItem('token');
       if (!token) {
         Alert.alert('Session Expired', 'Please log in again.');
-        navigation.navigate('Login');  // Điều hướng người dùng đến trang Login
+        navigation.navigate('Login');
       }
     };
     checkToken();
@@ -113,43 +109,38 @@ export default function HomeScreen({ navigation }) {
 
 
   useEffect(() => {
-    loadCategories();  // Load categories dynamically
-    loadMeals();       // Load meals for the default category (Beef)
-  }, [i18n.language]); // Re-load when language changes
+    loadCategories();
+    loadMeals();      
+  }, [i18n.language]);
 
   const handleChangeCategory = (category) => {
-    setActiveCategory(category);  // Update selected category
-    loadMeals(category);          // Load meals for the selected category
+    setActiveCategory(category); 
+    loadMeals(category);          
   };
 
-  // Handle language change
   const changeLanguage = (lang) => {
     setLanguage(lang);
     i18n.changeLanguage(lang);
   };
 
-  // Navigate to User screen
   const goToUserScreen = () => {
-    navigation.navigate('User'); // Make sure 'User' is a defined route
+    navigation.navigate('User');
   };
 
   const goToUserInfo = () => {
-    navigation.navigate('UserInfo'); // Điều hướng đến màn hình UserInfo
+    navigation.navigate('UserInfo');
   };
 
-  // Navigate to Home (Recipe) screen
   const goToHomeScreen = () => {
-    navigation.navigate('Home'); // Assuming 'Home' is the Recipe screen
+    navigation.navigate('Home');
   };
 
-  // Navigate to SocialUser screen
   const goToSocialUser = () => {
-    navigation.navigate('SocialUser'); // Điều hướng đến màn hình SocialUser
+    navigation.navigate('SocialUser');
   };
 
-  // Filter meals based on search query
   const filteredMeals = meals.filter((meal) =>
-    meal.strMeal.toLowerCase().includes(searchQuery.toLowerCase()) // Match search query (case-insensitive)
+    meal.strMeal.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   return (
@@ -163,11 +154,10 @@ export default function HomeScreen({ navigation }) {
           <ScrollView
             showsVerticalScrollIndicator={false}
             contentContainerStyle={{
-              paddingBottom: 100, // Ensure enough space for the sticky bottom navigation
+              paddingBottom: 100,
             }}
             className="space-y-6 pt-14"
           >
-            {/* Navbar with Avatar, Bell Icon, and Language Picker */}
             <View className="mx-4 flex-row justify-between items-center">
               <AdjustmentsHorizontalIcon size={hp(4)} color={"gray"} />
               <View style={{ flexDirection: "row", alignItems: "center" }}>
@@ -181,7 +171,6 @@ export default function HomeScreen({ navigation }) {
                   className="rounded-full"
                 />
 
-                {/* Language Picker */}
                 <View style={{ marginLeft: 10 }}>
                   <Picker
                     selectedValue={language}
@@ -198,7 +187,6 @@ export default function HomeScreen({ navigation }) {
               </View>
             </View>
 
-            {/* Headlines */}
             <View className="mx-4 space-y-1 mb-2">
               <Text
                 style={{
@@ -220,7 +208,6 @@ export default function HomeScreen({ navigation }) {
               </Text>
             </View>
 
-            {/* Search Bar */}
             <View className="mx-4 flex-row items-center border rounded-xl border-black p-[6px]">
               <View className="bg-white rounded-full p-2">
                 <MagnifyingGlassIcon
@@ -232,8 +219,8 @@ export default function HomeScreen({ navigation }) {
               <TextInput
                 placeholder={t("search_placeholder")}
                 placeholderTextColor={"gray"}
-                value={searchQuery} // Bind the search query state
-                onChangeText={(text) => setSearchQuery(text)} // Update search query
+                value={searchQuery}
+                onChangeText={(text) => setSearchQuery(text)}
                 style={{
                   fontSize: hp(1.7),
                 }}
@@ -241,7 +228,6 @@ export default function HomeScreen({ navigation }) {
               />
             </View>
 
-            {/* Categories */}
             <View>
               {categories.length > 0 && (
                 <Categories
@@ -252,7 +238,6 @@ export default function HomeScreen({ navigation }) {
               )}
             </View>
 
-            {/* Meals */}
             <View>
               <Recipes meals={filteredMeals} categories={categories} />
             </View>
@@ -260,7 +245,6 @@ export default function HomeScreen({ navigation }) {
         )}
       </SafeAreaView>
 
-      {/* Sticky Bottom Navigation */}
       <View style={styles.bottomNav}>
         <TouchableOpacity style={styles.navButton} onPress={goToHomeScreen}>
           <HomeIcon size={24} color="#075eec" />
@@ -272,7 +256,6 @@ export default function HomeScreen({ navigation }) {
           <Text style={styles.navText}>{t("Change Information")}</Text>
         </TouchableOpacity>
 
-        {/* Social Button */}
         <TouchableOpacity style={styles.navButton} onPress={goToSocialUser}>
           <UserIcon size={24} color="#075eec" />
           <Text style={styles.navText}>{t("Social")}</Text>
@@ -287,7 +270,6 @@ export default function HomeScreen({ navigation }) {
   );
 }
 
-// Styles for the sticky bottom navigation
 const styles = StyleSheet.create({
   bottomNav: {
     flexDirection: 'row',

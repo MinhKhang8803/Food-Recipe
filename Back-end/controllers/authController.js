@@ -51,15 +51,13 @@ exports.login = async (req, res) => {
               fullName: user.fullName,
               email: user.email,
               role: user.role,
-              avatarUrl: user.avatarUrl || ''  // Trả về avatarUrl, mặc định là chuỗi rỗng nếu không có
+              avatarUrl: user.avatarUrl || ''
           }
       });
   } catch (error) {
       res.status(500).json({ message: 'Server error' });
   }
 };
-
-
 
 // Log out user (client-side, just remove token)
 exports.logout = (req, res) => {

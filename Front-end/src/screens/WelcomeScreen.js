@@ -27,7 +27,6 @@ export default function WelcomeScreen() {
 
       <StatusBar style="light" />
 
-      {/* Lottie Logo */}
       <View>
         <LottieView
           autoPlay
@@ -40,7 +39,6 @@ export default function WelcomeScreen() {
         />
       </View>
 
-      {/* Title and Subtitle */}
       <View className="flex items-center space-y-2">
         <Text
           className="text-white font-extrabold tracking-widest"

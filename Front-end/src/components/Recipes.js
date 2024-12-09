@@ -10,7 +10,6 @@ import Animated, { FadeInDown } from "react-native-reanimated";
 export default function Recipes({ meals = [] }) {
   const navigation = useNavigation();
 
-  // Check if meals are still loading or if there's no data
   const isLoading = meals.length === 0;
 
   return (

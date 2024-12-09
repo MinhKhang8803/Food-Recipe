@@ -2,7 +2,6 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 
 const AdminHomeScreen = ({ navigation }) => {
-    // Fake data for statistics
     const userCount = 1500;
     const postsThisWeek = 45;
     const postsThisMonth = 120;

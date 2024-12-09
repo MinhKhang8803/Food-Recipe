@@ -11,21 +11,20 @@ import {
 import * as ImagePicker from 'expo-image-picker';
 import axios from 'axios';
 import { useNavigation } from '@react-navigation/native';
-import { storage } from '../../firebase';  // Firebase storage
-import AsyncStorage from '@react-native-async-storage/async-storage';  // AsyncStorage for JWT token
-import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';  // Import các hàm từ firebase/storage
+import { storage } from '../../firebase';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 
 
-export default function UserInfo() {  // Đổi tên component thành UserScreen
+export default function UserInfo() {
     const navigation = useNavigation();
-    const backendUrl = 'https://food-recipe-k8jh.onrender.com';  // Replace with your actual IP and port
-    const [avatar, setAvatar] = useState(null);  // Avatar image URL
+    const backendUrl = 'https://food-recipe-k8jh.onrender.com';
+    const [avatar, setAvatar] = useState(null);
     const [userData, setUserData] = useState({
-        fullName: 'John Doe',  // Default user data, replace with actual data from your API
+        fullName: 'John Doe',
         email: 'john.doe@example.com',
     });
 
-    // Fetch user data when component loads
     const fetchUserData = async () => {
         try {
             const token = await AsyncStorage.getItem('token');
@@ -33,7 +32,7 @@ export default function UserInfo() {  // Đổi tên component thành UserScreen
             if (storedUserData) {
                 const userData = JSON.parse(storedUserData);
                 setUserData(userData);
-                setAvatar(userData.avatarUrl);  // Hiển thị avatar từ AsyncStorage
+                setAvatar(userData.avatarUrl);
             }
 
             if (!token) {
@@ -48,10 +47,9 @@ export default function UserInfo() {  // Đổi tên component thành UserScreen
 
 
     useEffect(() => {
-        fetchUserData();  // Fetch user data when the component loads
+        fetchUserData();
     }, []);
 
-    // Function to handle image picking and uploading to Firebase
     const pickImage = async () => {
         try {
             let permissionResult = await ImagePicker.requestMediaLibraryPermissionsAsync();
@@ -62,17 +60,16 @@ export default function UserInfo() {  // Đổi tên component thành UserScreen
 
             let pickerResult = await ImagePicker.launchImageLibraryAsync({
                 allowsEditing: true,
-                base64: false,  // No base64, chỉ cần URI file
+                base64: false,
             });
 
             console.log('Picker Result:', pickerResult);
 
             if (!pickerResult.canceled && pickerResult.assets && pickerResult.assets.length > 0) {
-                const selectedImage = pickerResult.assets[0].uri;  // Get the image URI
-                console.log('Selected Image URI:', selectedImage);  // Log URI for debugging
-                setAvatar(selectedImage);  // Set the selected image to state
+                const selectedImage = pickerResult.assets[0].uri;
+                console.log('Selected Image URI:', selectedImage);
+                setAvatar(selectedImage);
 
-                // Gọi hàm upload ảnh lên Firebase
                 await uploadImage(selectedImage);
             } else {
                 Alert.alert('Error', 'No image selected');
@@ -84,7 +81,6 @@ export default function UserInfo() {  // Đổi tên component thành UserScreen
     };
 
 
-    // Function to upload the image to Firebase
     const uploadImage = async (uri) => {
         try {
             const response = await fetch(uri);
@@ -98,24 +94,22 @@ export default function UserInfo() {  // Đổi tên component thành UserScreen
             const downloadURL = await getDownloadURL(storageRef);
 
             console.log('Image uploaded successfully, URL:', downloadURL);
-            setAvatar(downloadURL);  // Cập nhật ảnh mới trên màn hình
+            setAvatar(downloadURL);
 
-            // Gửi request PUT tới backend để cập nhật avatar URL
             const token = await AsyncStorage.getItem('token');
             const result = await axios.put(`${backendUrl}/api/users/update-avatar`, {
                 avatarUrl: downloadURL,
             }, {
                 headers: {
-                    Authorization: `Bearer ${token}`,  // Đính kèm token trong request header
+                    Authorization: `Bearer ${token}`,
                 },
             });
 
             if (result.status === 200) {
-                // Cập nhật lại thông tin người dùng trong AsyncStorage sau khi URL avatar được cập nhật
                 const updatedUserData = { ...userData, avatarUrl: downloadURL };
                 await AsyncStorage.setItem('user', JSON.stringify(updatedUserData));
 
-                setUserData(updatedUserData);  // Cập nhật lại state người dùng
+                setUserData(updatedUserData);
                 Alert.alert('Success', 'Profile picture updated successfully!');
             }
         } catch (error) {
@@ -129,19 +123,16 @@ export default function UserInfo() {  // Đổi tên component thành UserScreen
     return (
         <SafeAreaView style={{ flex: 1, padding: 16 }}>
             <View style={{ alignItems: 'center', marginBottom: 20 }}>
-                {/* Display Avatar */}
                 <Image
                     source={avatar ? { uri: avatar } : require('../../assets/images/default-avatar.png')}
                     style={{ width: 100, height: 100, borderRadius: 50 }}
                 />
 
-                {/* Button to upload new avatar */}
                 <TouchableOpacity onPress={pickImage} style={{ marginTop: 10 }}>
                     <Text style={{ color: '#075eec' }}>Change Profile Picture</Text>
                 </TouchableOpacity>
             </View>
 
-            {/* Display user info */}
             <View style={{ marginBottom: 20 }}>
                 <Text style={{ fontSize: 18, fontWeight: 'bold' }}>Full Name</Text>
                 <TextInput
@@ -158,10 +149,8 @@ export default function UserInfo() {  // Đổi tên component thành UserScreen
                 />
             </View>
 
-            {/* Button to save changes */}
             <TouchableOpacity
                 onPress={() => {
-                    // TODO: Save changes logic
                     alert('Changes saved!');
                 }}
                 style={{ backgroundColor: '#075eec', padding: 10, borderRadius: 5, alignItems: 'center' }}

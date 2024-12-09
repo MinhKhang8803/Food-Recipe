@@ -42,25 +42,22 @@ export default function Register() {
             setError('');
         });
 
-        return unsubscribe; // Cleanup listener when navigating away
+        return unsubscribe;
     }, [navigation]);
 
     const handleRegister = async () => {
         const { fullName, email, password, phone } = form;
 
-        // Ensure all required fields are filled
         if (!fullName || !email || !password || !phone) {
             Alert.alert('Error', 'Please fill in all fields');
             return;
         }
 
-        // Check if email is in the correct format
         if (!emailPattern.test(email)) {
             setError('Please enter a valid email address with the correct domain: @gmail.com, @yahoo.com, @outlook.com');
             return;
         }
 
-        // Check if password meets the required format
         if (!passwordPattern.test(password)) {
             setError('Password must be between 8-15 characters and include at least one uppercase letter, one number, and one special character.');
             return;
@@ -77,7 +74,7 @@ export default function Register() {
 
             if (response.status === 201) {
                 Alert.alert('Success', 'Registration successful');
-                setForm({ fullName: '', email: '', password: '', phone: '' }); // Reset form on success
+                setForm({ fullName: '', email: '', password: '', phone: '' });
                 navigation.navigate('Login');
             } else {
                 Alert.alert('Error', response.data.message || 'Failed to register. Try again.');
@@ -140,7 +137,6 @@ export default function Register() {
                                 value={form.email} />
                         </View>
 
-                        {/* Display error message for email validation */}
                         {error && error.includes('email') ? (
                             <Text style={styles.errorText}>{error}</Text>
                         ) : null}
@@ -158,7 +154,6 @@ export default function Register() {
                                 value={form.password} />
                         </View>
 
-                        {/* Display password validation error under password input */}
                         {error && error.includes('Password') ? (
                             <Text style={styles.errorText}>{error}</Text>
                         ) : null}

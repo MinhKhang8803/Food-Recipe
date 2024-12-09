@@ -8,7 +8,6 @@ import Loading from "../components/Loading";
 import Animated, { FadeInDown } from "react-native-reanimated";
 import { useTranslation } from "react-i18next";
 
-// Function to dynamically load the correct language JSON file for recipe details
 const loadRecipeDetailsForLanguage = async (lang, mealId) => {
   try {
     let mealData;
@@ -27,11 +26,10 @@ const loadRecipeDetailsForLanguage = async (lang, mealId) => {
         mealData = (await import("../data/all_meals_data_ZH.json")).default;
         break;
       default:
-        mealData = (await import("../data/all_meals_data.json")).default; // English as default
+        mealData = (await import("../data/all_meals_data.json")).default;
         break;
     }
 
-    // Find the selected meal by ID
     return mealData.find((meal) => meal.idMeal === mealId);
   } catch (error) {
     console.error(`Failed to load recipe details for language: ${lang}`, error);
@@ -65,10 +63,8 @@ export default function RecipeDetailsScreen(props) {
   const getIngredientImage = (ingredient) => {
     if (!ingredient) return "https://www.themealdb.com/images/ingredients/default.png";
 
-    // Sanitize and replace spaces with underscores
     const sanitizedIngredient = ingredient.trim().replace(/\s+/g, "%20");
 
-    // Return the URL for the ingredient image
     return `https://www.themealdb.com/images/ingredients/${sanitizedIngredient}.png`;
   };
 
@@ -155,7 +151,6 @@ export default function RecipeDetailsScreen(props) {
             </Text>
           </Animated.View>
 
-          {/* Display Ingredients */}
           <Animated.View
             className="space-y-4 p-4"
             entering={FadeInDown.delay(300).duration(700).springify().damping(12)}
@@ -167,7 +162,6 @@ export default function RecipeDetailsScreen(props) {
             <View className="space-y-2 ml-3">
               {ingredientsIndexes(meal).map((i) => (
                 <View className="flex-row space-x-4 items-center" key={i}>
-                  {/* Ingredient image */}
                   <Image
                     source={{ uri: getIngredientImage(meal["strIngredient" + i]) }}
                     style={{ width: hp(5), height: hp(5), resizeMode: "cover" }}
@@ -186,7 +180,6 @@ export default function RecipeDetailsScreen(props) {
             </View>
           </Animated.View>
 
-          {/* Display Instructions */}
           <Animated.View
             className="space-y-4 p-4"
             entering={FadeInDown.delay(400).duration(700).springify().damping(12)}

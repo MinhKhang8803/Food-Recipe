@@ -38,14 +38,13 @@ export default function Categories({ categories, activeCategory, handleChangeCat
                   className="rounded-full"
                 />
               </View>
-              {/* Display Translated Category Name */}
               <Text
                 className="text-neutral-800 "
                 style={{
                   fontSize: hp(1.6),
                 }}
               >
-                {category.strCategoryTranslated} {/* Show translated name */}
+                {category.strCategoryTranslated}
               </Text>
             </TouchableOpacity>
           );

@@ -8,7 +8,6 @@ export default function RecipesCard({ index, navigation, item }) {
   const { t } = useTranslation();
   const isEven = index % 2 === 0;
   
-  // Lấy tên món ăn đã dịch
   const translatedMealName = t(`meals.${item.strMeal}`, { defaultValue: item.strMeal });
 
   return (

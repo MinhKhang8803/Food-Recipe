@@ -2,7 +2,6 @@ import React from 'react';
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
 
 const PremiumNotificationsScreen = () => {
-    // Fake data for premium purchases
     const premiumUsers = [
         { id: 1, user: 'user1@example.com', date: '2024-10-15' },
         { id: 2, user: 'user2@example.com', date: '2024-10-16' },

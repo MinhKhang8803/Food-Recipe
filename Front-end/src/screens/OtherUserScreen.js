@@ -18,7 +18,6 @@ export default function OtherUserScreen() {
 
     const backendUrl = 'https://food-recipe-k8jh.onrender.com';
 
-    // Fetch user info
     useEffect(() => {
         const fetchUserInfo = async () => {
             try {
@@ -32,7 +31,6 @@ export default function OtherUserScreen() {
         fetchUserInfo();
     }, [userId]);
 
-    // Fetch user's posts
     useEffect(() => {
         const fetchUserPosts = async () => {
             try {
@@ -49,7 +47,6 @@ export default function OtherUserScreen() {
         fetchUserPosts();
     }, [userId]);
 
-    // Like post
     const handleLikePost = async (postId) => {
         try {
             const token = await AsyncStorage.getItem('token');
@@ -62,7 +59,6 @@ export default function OtherUserScreen() {
         }
     };
 
-    // Add comment
     const handleAddComment = async (postId) => {
         try {
             const token = await AsyncStorage.getItem('token');
@@ -78,7 +74,6 @@ export default function OtherUserScreen() {
         }
     };
 
-    // Report post
     const handleReportPost = async () => {
         if (!reportReason.trim()) {
             Alert.alert('Error', 'Please enter a reason for reporting.');

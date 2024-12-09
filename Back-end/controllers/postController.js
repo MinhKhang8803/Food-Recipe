@@ -129,8 +129,6 @@ exports.deleteComment = async (req, res) => {
     }
 };
 
-
-// Chỉnh sửa bình luận
 exports.editComment = async (req, res) => {
     const { postId, commentId } = req.params;
     const { userId, newComment } = req.body;
@@ -140,8 +138,6 @@ exports.editComment = async (req, res) => {
         if (!post) {
             return res.status(404).json({ message: 'Post not found' });
         }
-
-        // Tìm bình luận và cập nhật nội dung và thời gian cập nhật
         const comment = post.comments.find(
             (comment) => comment._id.toString() === commentId && comment.userId.toString() === userId
         );
@@ -150,11 +146,9 @@ exports.editComment = async (req, res) => {
             return res.status(403).json({ message: 'Unauthorized to edit this comment' });
         }
 
-        comment.comment = newComment;  // Cập nhật nội dung bình luận
-        comment.updatedAt = new Date();  // Cập nhật thời gian chỉnh sửa
+        comment.comment = newComment;
+        comment.updatedAt = new Date();
         await post.save();
-
-        // Populate lại bình luận để có đầy đủ thông tin người dùng và thời gian
         await post.populate('comments.userId', 'fullName');
 
         res.status(200).json({ message: 'Comment edited successfully', comments: post.comments });
@@ -164,16 +158,13 @@ exports.editComment = async (req, res) => {
     }
 };
 
-
-// Lấy tất cả bài đăng (dành cho trang Social)
 exports.getAllPosts = async (req, res) => {
     const { userId } = req.query;
 
     try {
-        // Lấy tất cả bài viết, loại trừ bài của người dùng hiện tại
         const posts = await Post.find({ userId: { $ne: userId } })
             .populate('userId', 'fullName avatarUrl')
-            .populate('comments.userId', 'fullName');  // Đảm bảo comments bao gồm fullName và createdAt
+            .populate('comments.userId', 'fullName');
 
         res.status(200).json(posts);
     } catch (error) {
