@@ -18,6 +18,7 @@ export default function OtherUserScreen() {
 
     const backendUrl = 'https://food-recipe-k8jh.onrender.com';
 
+    // Fetch user info
     useEffect(() => {
         const fetchUserInfo = async () => {
             try {
@@ -31,12 +32,13 @@ export default function OtherUserScreen() {
         fetchUserInfo();
     }, [userId]);
 
+    // Fetch user's posts
     useEffect(() => {
         const fetchUserPosts = async () => {
             try {
                 const token = await AsyncStorage.getItem('token');
                 const response = await axios.get(`${backendUrl}/api/posts/${userId}/posts`, {
-                    headers: { Authorization: `Bearer ${token}` }
+                    headers: { Authorization: `Bearer ${token}` },
                 });
                 setPosts(response.data);
             } catch (error) {
@@ -47,33 +49,36 @@ export default function OtherUserScreen() {
         fetchUserPosts();
     }, [userId]);
 
+    // Like post
     const handleLikePost = async (postId) => {
         try {
             const token = await AsyncStorage.getItem('token');
             const response = await axios.post(`${backendUrl}/api/posts/${postId}/like`, {}, {
-                headers: { Authorization: `Bearer ${token}` }
+                headers: { Authorization: `Bearer ${token}` },
             });
-            setPosts(posts.map(post => post._id === postId ? { ...post, likes: response.data.likes } : post));
+            setPosts(posts.map((post) => post._id === postId ? { ...post, likes: response.data.likes } : post));
         } catch (error) {
             Alert.alert('Error', 'Failed to like post.');
         }
     };
 
+    // Add comment
     const handleAddComment = async (postId) => {
         try {
             const token = await AsyncStorage.getItem('token');
             const response = await axios.post(`${backendUrl}/api/posts/${postId}/comment`, {
                 comment: commentText,
             }, {
-                headers: { Authorization: `Bearer ${token}` }
+                headers: { Authorization: `Bearer ${token}` },
             });
-            setPosts(posts.map(post => post._id === postId ? { ...post, comments: response.data.comments } : post));
+            setPosts(posts.map((post) => post._id === postId ? { ...post, comments: response.data.comments } : post));
             setCommentText('');
         } catch (error) {
             Alert.alert('Error', 'Failed to add comment.');
         }
     };
 
+    // Report post
     const handleReportPost = async () => {
         if (!reportReason.trim()) {
             Alert.alert('Error', 'Please enter a reason for reporting.');
@@ -88,7 +93,7 @@ export default function OtherUserScreen() {
             }
 
             await axios.post(
-                `${backendUrl}/api/posts/report`,
+                `${backendUrl}/api/posts/report`, 
                 { postId: selectedPostId, reason: reportReason },
                 { headers: { Authorization: `Bearer ${token}` } }
             );
@@ -97,11 +102,10 @@ export default function OtherUserScreen() {
             setModalVisible(false);
             setReportReason('');
         } catch (error) {
-            console.error('Error reporting post:', error);
+            console.error('Error reporting post:', error.response?.data || error.message);
             Alert.alert('Error', error.response?.data?.message || 'Failed to report the post.');
         }
     };
-
 
     return (
         <ScrollView style={styles.container}>
@@ -114,7 +118,7 @@ export default function OtherUserScreen() {
             </View>
 
             <Text style={styles.sectionTitle}>Posts</Text>
-            {posts.map(post => (
+            {posts.map((post) => (
                 <View key={post._id} style={styles.postContainer}>
                     <Text style={styles.postContent}>{post.content}</Text>
                     {post.image && <Image source={{ uri: post.image }} style={styles.postImage} />}
@@ -173,7 +177,6 @@ export default function OtherUserScreen() {
                     </View>
                 </KeyboardAvoidingView>
             </Modal>
-
         </ScrollView>
     );
 }
@@ -201,8 +204,8 @@ const styles = StyleSheet.create({
     modalTitle: { fontSize: 18, fontWeight: 'bold', marginBottom: 15 },
     modalInput: { borderColor: '#ddd', borderWidth: 1, padding: 10, borderRadius: 5, marginBottom: 15 },
     modalActions: { flexDirection: 'row', justifyContent: 'space-between' },
-    cancelButton: { backgroundColor: '#aaa', padding: 10, borderRadius: 5 },
-    cancelButtonText: { color: '#fff', textAlign: 'center' },
-    submitButton: { backgroundColor: '#28a745', padding: 10, borderRadius: 5 },
+    cancelButton: { backgroundColor: '#ccc', padding: 10, borderRadius: 5 },
+    cancelButtonText: { textAlign: 'center' },
+    submitButton: { backgroundColor: '#ff4757', padding: 10, borderRadius: 5 },
     submitButtonText: { color: '#fff', textAlign: 'center' },
 });

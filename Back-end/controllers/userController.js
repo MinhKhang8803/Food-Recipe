@@ -82,7 +82,7 @@ exports.banUser = async (req, res) => {
 };
 
 exports.reportPost = async (req, res) => {
-    const { postId, reason } = req.body;
+    const { postId, reason } = req.body; 
 
     try {
         const existingReport = await Report.findOne({ postId, reportedBy: req.user.userId });
@@ -96,7 +96,7 @@ exports.reportPost = async (req, res) => {
             reason,
         });
 
-        await newReport.save();
+        await newReport.save(); 
 
         return res.status(200).json({ message: 'Report submitted successfully.', report: newReport });
     } catch (error) {

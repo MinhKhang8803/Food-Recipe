@@ -7,6 +7,6 @@ router.get('/me', authMiddleware, getUserProfile);
 router.put('/update-avatar', authMiddleware, updateAvatar);
 router.get('/search', authMiddleware, searchUsers);
 router.post('/ban-user', authMiddleware, banUser);
-router.post('/report', authMiddleware, reportPost);
+router.post('/api/posts/report', authMiddleware, reportPost);
 
 module.exports = router;

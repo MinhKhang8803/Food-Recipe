@@ -1,4 +1,3 @@
-// routes/postRoutes.js
 const express = require('express');
 const {
     createPost,
@@ -12,31 +11,24 @@ const {
 } = require('../controllers/postController');
 const router = express.Router();
 
-// Route để lấy tất cả bài đăng từ bảng posts, nhưng loại trừ bài đăng của người dùng hiện tại
 router.get('/social/posts', (req, res, next) => {
-    const { userId } = req.query;  // Lấy userId từ query parameters
+    const { userId } = req.query;  
     if (!userId) {
         return res.status(400).json({ message: 'User ID is required' });
     }
-    next();  // Tiếp tục với controller getAllPosts
+    next();  
 }, getAllPosts);
 
-// Route tạo bài viết
 router.post('/create', createPost);
 
-// Route lấy bài viết của người dùng cụ thể
 router.get('/:userId/posts', getPosts);
 
-// Route xóa bài viết
 router.delete('/:postId', deletePost);
 
-// Route like bài viết
 router.post('/:postId/like', likePost);
 
-// Route thêm bình luận
 router.post('/:postId/comment', addComment);
 
-// Routes cho xóa và chỉnh sửa bình luận
 router.delete('/:postId/comment/:commentId', deleteComment);
 router.put('/:postId/comment/:commentId', editComment);
 
