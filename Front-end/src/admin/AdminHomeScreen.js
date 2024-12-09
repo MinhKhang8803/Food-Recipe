@@ -1,10 +1,22 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Alert } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const AdminHomeScreen = ({ navigation }) => {
     const userCount = 1500;
     const postsThisWeek = 45;
     const postsThisMonth = 120;
+
+    const handleLogout = async () => {
+        try {
+            await AsyncStorage.removeItem('adminToken');
+            await AsyncStorage.removeItem('adminUser');
+            navigation.replace('Login');
+        } catch (error) {
+            console.error('Error during logout:', error);
+            Alert.alert('Error', 'Failed to log out.');
+        }
+    };
 
     return (
         <ScrollView style={styles.container}>
@@ -31,6 +43,13 @@ const AdminHomeScreen = ({ navigation }) => {
 
             <TouchableOpacity style={styles.navButton} onPress={() => navigation.navigate('BanUsers')}>
                 <Text style={styles.navButtonText}>Ban User</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+                onPress={handleLogout}
+                style={[styles.navButton, { backgroundColor: '#ff5a5f', marginTop: 30 }]}
+            >
+                <Text style={styles.navButtonText}>Logout</Text>
             </TouchableOpacity>
         </ScrollView>
     );
