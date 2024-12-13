@@ -9,6 +9,7 @@ const {
     deleteComment,
     editComment
 } = require('../controllers/postController');
+const authMiddleware = require('../middleware/authMiddleware');
 const router = express.Router();
 
 router.get('/social/posts', (req, res, next) => {
@@ -19,17 +20,18 @@ router.get('/social/posts', (req, res, next) => {
     next();  
 }, getAllPosts);
 
-router.post('/create', createPost);
+router.post('/create', authMiddleware, createPost);
 
-router.get('/:userId/posts', getPosts);
+router.get('/:userId/posts', authMiddleware, getPosts);
 
-router.delete('/:postId', deletePost);
+router.delete('/:postId', authMiddleware, deletePost);
 
-router.post('/:postId/like', likePost);
+router.post('/:postId/like', authMiddleware, likePost);
 
-router.post('/:postId/comment', addComment);
+router.post('/:postId/comment', authMiddleware, addComment);
 
-router.delete('/:postId/comment/:commentId', deleteComment);
-router.put('/:postId/comment/:commentId', editComment);
+router.delete('/:postId/comment/:commentId', authMiddleware, deleteComment);
+
+router.put('/:postId/comment/:commentId', authMiddleware, editComment);
 
 module.exports = router;
