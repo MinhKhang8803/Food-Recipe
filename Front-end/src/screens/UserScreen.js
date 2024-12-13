@@ -199,7 +199,7 @@ export default function UserScreen() {
             }
         } catch (error) {
             console.error('Error adding comment:', error);
-            Alert.alert('Error', 'Failed to add comment.');
+            Alert.alert('Error', 'Comment cannot be empty');
         }
     };
 
