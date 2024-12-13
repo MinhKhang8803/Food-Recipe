@@ -5,7 +5,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function ReportsScreen() {
     const [reports, setReports] = useState([]);
-    const backendUrl = 'https://food-recipe-k8jh.onrender.com';
+    const backendUrl = 'https://192.168.1.10';
 
     useEffect(() => {
         const fetchReports = async () => {

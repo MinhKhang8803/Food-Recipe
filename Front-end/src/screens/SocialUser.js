@@ -11,7 +11,7 @@ export default function SocialUser() {
     const [searchKeyword, setSearchKeyword] = useState('');
     const [searchResults, setSearchResults] = useState([]);
     const [isSearching, setIsSearching] = useState(false);
-    const backendUrl = 'http://192.168.1.6:5000';
+    const backendUrl = 'http://192.168.1.10:5000';
     const [commentText, setCommentText] = useState('');
     const [selectedComment, setSelectedComment] = useState(null);
     const [modalVisible, setModalVisible] = useState(false);
@@ -218,16 +218,6 @@ export default function SocialUser() {
                 <View key={post._id} style={styles.post}>
                     <Text style={styles.postAuthor}>{post.userId?.fullName || 'Anonymous'}</Text>
                     <Text style={styles.postContent}>{post.content}</Text>
-                    {post.image && <Image source={{ uri: post.image }} style={styles.postImage} />}
-                </View>
-            ))}
-
-            {posts.map((post) => (
-                <View key={post._id} style={styles.post}>
-                    <Text style={styles.postAuthor}>{post.userId?.fullName || 'Anonymous'}</Text>
-
-                    <Text style={styles.postContent}>{post.content}</Text>
-
                     {post.image && (
                         <Image source={{ uri: post.image }} style={styles.postImage} />
                     )}

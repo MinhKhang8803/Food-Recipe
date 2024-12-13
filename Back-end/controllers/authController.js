@@ -42,6 +42,7 @@ exports.login = async (req, res) => {
       if (!isMatch) return res.status(400).json({ message: 'User entered wrong email or password' });
 
       const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, { expiresIn: '1h' });
+      console.log('Generated Token:', token);
 
       return res.status(200).json({
           success: true,
@@ -57,9 +58,4 @@ exports.login = async (req, res) => {
   } catch (error) {
       res.status(500).json({ message: 'Server error' });
   }
-};
-
-// Log out user (client-side, just remove token)
-exports.logout = (req, res) => {
-  res.json({ message: 'Logged out successfully' });
 };

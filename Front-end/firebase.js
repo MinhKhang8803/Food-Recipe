@@ -1,5 +1,5 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp, getApps } from 'firebase/app';  // Import getApps để kiểm tra xem Firebase đã được khởi tạo chưa
+import { initializeApp, getApps } from 'firebase/app';  // Import getApps to check Firebase create?
 import { getStorage } from 'firebase/storage';  // Import Firebase Storage
 
 // Firebase config của bạn
@@ -13,15 +13,15 @@ const firebaseConfig = {
     appId: "1:13004024643:web:6ff746ea32636861251df6"
 };
 
-// Initialize Firebase nếu chưa được khởi tạo
+// Initialize Firebase if not already initialized
 let app;
 if (!getApps().length) {
     app = initializeApp(firebaseConfig);
 } else {
-    app = getApps()[0];  // Sử dụng app đã được khởi tạo trước đó
+    app = getApps()[0];  // use app if already initialized
 }
 
-// Initialize Firebase Storage và export nó
+// Initialize Firebase Storage and export
 const storage = getStorage(app);  // Initialize Firebase Storage
 
 export { storage };  // Export storage instance

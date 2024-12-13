@@ -5,8 +5,8 @@ const { Schema } = mongoose;
 const commentSchema = new Schema({
     userId: { type: Schema.Types.ObjectId, ref: 'User' },
     comment: { type: String, required: true },
-    createdAt: { type: Date, default: Date.now },  // Thời gian tạo bình luận
-    updatedAt: { type: Date }  // Thời gian cập nhật bình luận
+    createdAt: { type: Date, default: Date.now },
+    updatedAt: { type: Date }
 });
 
 const postSchema = new Schema({

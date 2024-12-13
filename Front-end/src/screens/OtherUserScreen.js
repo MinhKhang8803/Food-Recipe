@@ -16,7 +16,7 @@ export default function OtherUserScreen() {
     const [reportReason, setReportReason] = useState('');
     const [selectedPostId, setSelectedPostId] = useState(null);
 
-    const backendUrl = 'http://192.168.1.6:5000';
+    const backendUrl = 'http://192.168.1.10:5000';
 
     useEffect(() => {
         const fetchUserInfo = async () => {

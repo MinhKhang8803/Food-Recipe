@@ -17,7 +17,7 @@ export default function UserScreen() {
     const [posts, setPosts] = useState([]); 
     const [commentText, setCommentText] = useState(''); 
     const navigation = useNavigation();
-    const backendUrl = 'http://192.168.1.6:5000';  
+    const backendUrl = 'http://192.168.1.10:5000';  
     const [userId, setUserId] = useState(null);  
     const [selectedComment, setSelectedComment] = useState(null); 
     const [isEditing, setIsEditing] = useState(false);  
@@ -63,6 +63,7 @@ export default function UserScreen() {
         fetchPosts();  
     }, [userData._id]);
 
+    // Choose picture from gallery and upload to Firebase
     const pickImage = async () => {
         try {
             let permissionResult = await ImagePicker.requestMediaLibraryPermissionsAsync();
@@ -86,20 +87,7 @@ export default function UserScreen() {
         }
     };
 
-    const uploadImageToFirebase = async (uri) => {
-        try {
-            const response = await fetch(uri);
-            const blob = await response.blob();
-            const storageRef = ref(storage, `image_posts/${userData.email}_${Date.now()}`);
-            const snapshot = await uploadBytes(storageRef, blob);
-            const downloadURL = await getDownloadURL(snapshot.ref);
-            return downloadURL;
-        } catch (error) {
-            console.error('Error uploading image:', error);
-            throw error;
-        }
-    };
-
+    //Submit post
     const handlePostSubmit = async () => {
         if (!postContent.trim() && !imageUri) {
             Alert.alert('Error', 'Users need to enter complete post information');
@@ -125,6 +113,7 @@ export default function UserScreen() {
                     Authorization: `Bearer ${token}`,
                 },
             });
+            console.log('Token from request header:', token);
 
             if (response.status === 201) {
                 Alert.alert('Success', 'Post created successfully');
@@ -139,6 +128,22 @@ export default function UserScreen() {
         }
     };
 
+    //Upload picture to Firebase and get URL image
+    const uploadImageToFirebase = async (uri) => {
+        try {
+            const response = await fetch(uri);
+            const blob = await response.blob();
+            const storageRef = ref(storage, `image_posts/${userData.email}_${Date.now()}`);
+            const snapshot = await uploadBytes(storageRef, blob);
+            const downloadURL = await getDownloadURL(snapshot.ref);
+            return downloadURL;
+        } catch (error) {
+            console.error('Error uploading image:', error);
+            throw error;
+        }
+    };
+
+    //Delete post
     const handleDeletePost = async (postId) => {
         try {
             const token = await AsyncStorage.getItem('token');
@@ -271,6 +276,7 @@ export default function UserScreen() {
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView contentContainerStyle={styles.scrollContent}>
+                {/* Header */}
                 <View style={styles.header}>
                     <Image
                         source={userData.avatarUrl ? { uri: userData.avatarUrl } : require('../../assets/images/default-avatar.png')}
@@ -279,12 +285,14 @@ export default function UserScreen() {
                     <Text style={styles.name}>{userData.fullName}</Text>
                 </View>
 
+                {/* Create Post Button */}
                 <View style={styles.createPostContainer}>
                     <TouchableOpacity style={styles.createPostButton} onPress={() => setModalVisible(true)}>
                         <Text style={styles.createPostText}>Create Post</Text>
                     </TouchableOpacity>
                 </View>
 
+                {/* Create Post Modal */}
                 <Modal
                     animationType="slide"
                     transparent={true}
@@ -323,6 +331,7 @@ export default function UserScreen() {
                     </View>
                 </Modal>
 
+                {/* Edit Comment Modal */}
                 <Modal
                     animationType="slide"
                     transparent={true}
@@ -360,9 +369,11 @@ export default function UserScreen() {
                     </View>
                 </Modal>
 
+                {/* Show list posts */}
                 <View style={styles.postsContainer}>
                     {posts.map((post) => (
                         <View key={post._id} style={styles.post}>
+                            {/* Author and time posts */}
                             <Text style={styles.postAuthor}>
                                 {post.userId?.fullName || 'Anonymous'}
                             </Text>
