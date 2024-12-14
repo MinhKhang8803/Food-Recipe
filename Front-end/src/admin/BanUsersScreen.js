@@ -24,7 +24,7 @@ const BanUsersScreen = () => {
 
     const fetchBannedUsers = async () => {
         try {
-            const response = await axios.get('https://192.168.1.10/api/users/banned-users');
+            const response = await axios.get('https://food-recipe-k8jh.onrender.com/api/users/banned-users');
             setBannedUsers(response.data);
         } catch (error) {
             console.error('Error fetching banned users:', error.message);
@@ -42,7 +42,7 @@ const BanUsersScreen = () => {
             console.log('Sending ban request:', { email, reason, banDuration });
 
             const response = await axios.post(
-                'https://192.168.1.10/api/users/ban-user',
+                'https://food-recipe-k8jh.onrender.com/api/users/ban-user',
                 { email, reason, banDuration }
             );
 

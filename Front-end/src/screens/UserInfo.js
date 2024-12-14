@@ -17,7 +17,7 @@ import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 
 export default function UserInfo() {
     const navigation = useNavigation();
-    const backendUrl = 'http://192.168.1.10:5000';
+    const backendUrl = 'https://food-recipe-k8jh.onrender.com';
     const [avatar, setAvatar] = useState(null);
     const [userData, setUserData] = useState({
         fullName: 'John Doe',

@@ -11,7 +11,7 @@ export default function SocialUser() {
     const [searchKeyword, setSearchKeyword] = useState('');
     const [searchResults, setSearchResults] = useState([]);
     const [isSearching, setIsSearching] = useState(false);
-    const backendUrl = 'http://192.168.1.10:5000';
+    const backendUrl = 'https://food-recipe-k8jh.onrender.com';
     const [commentText, setCommentText] = useState('');
     const [selectedComment, setSelectedComment] = useState(null);
     const [modalVisible, setModalVisible] = useState(false);

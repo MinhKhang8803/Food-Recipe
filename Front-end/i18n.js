@@ -9,6 +9,8 @@ const resources = {
       fast_and_delicious: "Fast & Delicious",
       food_you_love: "Food You Love",
       search_placeholder: "Search Your Favorite Food",
+      choose_your: "Choose your ",
+      recipes: "Recipes !",
       love: "Love",
       categories: {
         Beef: "Beef",
@@ -33,6 +35,8 @@ const resources = {
       fast_and_delicious: "Fast & Delicious (UK)",
       food_you_love: "Food You Love (UK)",
       search_placeholder: "Search Your Favourite Food",
+      choose_your: "Choose your ",
+      recipes: "Recipes !",
       categories: {
         Beef: "Beef",
         Chicken: "Chicken",
@@ -56,6 +60,8 @@ const resources = {
       fast_and_delicious: "Nhanh & Ngon",
       food_you_love: "Món ăn bạn yêu thích",
       search_placeholder: "Tìm kiếm món ăn yêu thích",
+      choose_your: "Hãy chọn ",
+      recipes: "Công thức của bạn !",
       love: "Yêu",
       categories: {
         Beef: "Bò",

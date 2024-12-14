@@ -11,6 +11,7 @@ const commentSchema = new Schema({
 
 const postSchema = new Schema({
     userId: { type: Schema.Types.ObjectId, ref: 'User' },
+    description: { type: String},
     content: { type: String, required: true },
     image: { type: String },
     likes: { type: Number, default: 0 },

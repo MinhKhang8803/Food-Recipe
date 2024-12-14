@@ -4,26 +4,27 @@ import { heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { useNavigation } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
-import * as ImagePicker from 'expo-image-picker';  
-import { storage } from '../../firebase'; 
-import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';  
+import * as ImagePicker from 'expo-image-picker';
+import { storage } from '../../firebase';
+import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import moment from 'moment';
 
 export default function UserScreen() {
     const [userData, setUserData] = useState({ fullName: '', avatarUrl: '', email: '' });
     const [modalVisible, setModalVisible] = useState(false);
     const [postContent, setPostContent] = useState('');
-    const [imageUri, setImageUri] = useState(null);  
-    const [posts, setPosts] = useState([]); 
-    const [commentText, setCommentText] = useState(''); 
+    const [postDescription, setPostDescription] = useState('');
+    const [imageUri, setImageUri] = useState(null);
+    const [posts, setPosts] = useState([]);
+    const [commentText, setCommentText] = useState('');
     const navigation = useNavigation();
-    const backendUrl = 'http://192.168.1.10:5000';  
-    const [userId, setUserId] = useState(null);  
-    const [selectedComment, setSelectedComment] = useState(null); 
-    const [isEditing, setIsEditing] = useState(false);  
-    const [newCommentText, setNewCommentText] = useState(''); 
-    const [postModalVisible, setPostModalVisible] = useState(false);  
-    const [commentModalVisible, setCommentModalVisible] = useState(false); 
+    const backendUrl = 'https://food-recipe-k8jh.onrender.com';
+    const [userId, setUserId] = useState(null);
+    const [selectedComment, setSelectedComment] = useState(null);
+    const [isEditing, setIsEditing] = useState(false);
+    const [newCommentText, setNewCommentText] = useState('');
+    const [postModalVisible, setPostModalVisible] = useState(false);
+    const [commentModalVisible, setCommentModalVisible] = useState(false);
 
 
     useEffect(() => {
@@ -39,13 +40,13 @@ export default function UserScreen() {
             }
         };
 
-        fetchUserData();  
+        fetchUserData();
     }, []);
 
     useEffect(() => {
         const fetchPosts = async () => {
             if (!userData._id) {
-                return; 
+                return;
             }
             try {
                 const token = await AsyncStorage.getItem('token');
@@ -54,13 +55,13 @@ export default function UserScreen() {
                         Authorization: `Bearer ${token}`,
                     },
                 });
-                setPosts(response.data);  
+                setPosts(response.data);
             } catch (error) {
-                console.error('Error fetching posts:', error);  
+                console.error('Error fetching posts:', error);
             }
         };
 
-        fetchPosts();  
+        fetchPosts();
     }, [userData._id]);
 
     // Choose picture from gallery and upload to Firebase
@@ -74,12 +75,12 @@ export default function UserScreen() {
 
             let pickerResult = await ImagePicker.launchImageLibraryAsync({
                 allowsEditing: true,
-                base64: false, 
+                base64: false,
             });
 
             if (!pickerResult.canceled && pickerResult.assets.length > 0) {
-                const selectedImage = pickerResult.assets[0].uri; 
-                setImageUri(selectedImage); 
+                const selectedImage = pickerResult.assets[0].uri;
+                setImageUri(selectedImage);
             }
         } catch (error) {
             console.error('Error picking image:', error);
@@ -91,7 +92,7 @@ export default function UserScreen() {
     const handlePostSubmit = async () => {
         if (!postContent.trim() && !imageUri) {
             Alert.alert('Error', 'Users need to enter complete post information');
-            return; 
+            return;
         }
 
         try {
@@ -105,7 +106,8 @@ export default function UserScreen() {
             const postData = {
                 userId: userData._id,
                 content: postContent,
-                image: imageUrl, 
+                description: postDescription,
+                image: imageUrl,
             };
 
             const response = await axios.post(`${backendUrl}/api/posts/create`, postData, {
@@ -117,10 +119,10 @@ export default function UserScreen() {
 
             if (response.status === 201) {
                 Alert.alert('Success', 'Post created successfully');
-                setPostContent(''); 
-                setImageUri(null);  
-                setModalVisible(false);  
-                setPosts([...posts, response.data.post]); 
+                setPostContent('');
+                setImageUri(null);
+                setModalVisible(false);
+                setPosts([...posts, response.data.post]);
             }
         } catch (error) {
             console.error('Error creating post:', error);
@@ -155,10 +157,10 @@ export default function UserScreen() {
 
             if (response.status === 200) {
                 Alert.alert('Success', 'Post deleted successfully');
-                setPosts(posts.filter(post => post._id !== postId)); 
+                setPosts(posts.filter(post => post._id !== postId));
             }
         } catch (error) {
-            console.error('Error deleting post:', error); 
+            console.error('Error deleting post:', error);
             Alert.alert('Error', 'Failed to delete post.');
         }
     };
@@ -195,7 +197,7 @@ export default function UserScreen() {
 
             if (response.status === 200) {
                 setPosts(posts.map(post => post._id === postId ? { ...post, comments: response.data.comments } : post));
-                setCommentText('');  
+                setCommentText('');
             }
         } catch (error) {
             console.error('Error adding comment:', error);
@@ -204,21 +206,21 @@ export default function UserScreen() {
     };
 
     const handleLongPressComment = (comment, postId) => {
-        if (comment.userId._id === userData._id) {  
+        if (comment.userId._id === userData._id) {
             setSelectedComment({ ...comment, postId });
-            setNewCommentText(comment.comment); 
-            setCommentModalVisible(true);  
+            setNewCommentText(comment.comment);
+            setCommentModalVisible(true);
         }
     };
 
     const handleDeleteComment = async () => {
         try {
-            const token = await AsyncStorage.getItem('token'); 
+            const token = await AsyncStorage.getItem('token');
             const response = await axios.delete(
                 `${backendUrl}/api/posts/${selectedComment.postId}/comment/${selectedComment._id}`,
                 {
-                    headers: { Authorization: `Bearer ${token}` }, 
-                    data: { userId: userData._id }, 
+                    headers: { Authorization: `Bearer ${token}` },
+                    data: { userId: userData._id },
                 }
             );
 
@@ -228,12 +230,12 @@ export default function UserScreen() {
                         ? { ...post, comments: response.data.comments }
                         : post
                 ));
-                setCommentModalVisible(false); 
-                setSelectedComment(null); 
+                setCommentModalVisible(false);
+                setSelectedComment(null);
                 Alert.alert('Success', 'Comment deleted successfully');
             }
         } catch (error) {
-            console.error('Error deleting comment:', error); 
+            console.error('Error deleting comment:', error);
             Alert.alert('Error', error.response?.data?.message || 'Failed to delete comment.');
         }
     };
@@ -244,12 +246,12 @@ export default function UserScreen() {
             return;
         }
         try {
-            const token = await AsyncStorage.getItem('token'); 
+            const token = await AsyncStorage.getItem('token');
             const response = await axios.put(
                 `${backendUrl}/api/posts/${selectedComment.postId}/comment/${selectedComment._id}`,
                 {
-                    userId: userData._id, 
-                    newComment: newCommentText, 
+                    userId: userData._id,
+                    newComment: newCommentText,
                 },
                 {
                     headers: { Authorization: `Bearer ${token}` },
@@ -262,13 +264,13 @@ export default function UserScreen() {
                         ? { ...post, comments: response.data.comments }
                         : post
                 ));
-                setCommentModalVisible(false); 
-                setIsEditing(false); 
-                setSelectedComment(null); 
+                setCommentModalVisible(false);
+                setIsEditing(false);
+                setSelectedComment(null);
             }
         } catch (error) {
             console.error('Error editing comment:', error);
-            Alert.alert('Error', error.response?.data?.message || 'Failed to edit comment.'); 
+            Alert.alert('Error', error.response?.data?.message || 'Failed to edit comment.');
         }
     };
 
@@ -306,6 +308,14 @@ export default function UserScreen() {
                                 value={postContent}
                                 onChangeText={setPostContent}
                                 placeholder="Enter your post content"
+                                multiline={true}
+                            />
+
+                            <TextInput
+                                style={styles.postInput}
+                                value={postDescription}
+                                onChangeText={setPostDescription}
+                                placeholder="Enter your description"
                                 multiline={true}
                             />
 
@@ -514,7 +524,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'rgba(0, 0, 0, 0.6)', 
+        backgroundColor: 'rgba(0, 0, 0, 0.6)',
     },
     modalView: {
         width: '90%',
